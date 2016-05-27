@@ -27,9 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -152,9 +150,6 @@ display:inline-block;
 }
 
 
-
-
-
 /* content */
 .textbox {
   vertical-align:top;
@@ -162,29 +157,66 @@ display:inline-block;
   width:100%;
   justify-content: flex-start;
   background:#111;
-  opacity:0.9;
   margin:0 20px 20px 0;
   border-radius: 8px
-
 }
 
-.textbox h1 { 
-  padding:20px; 
-  font-size:1.5em; 
-  background:#377234;
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-}
 
 .itemcontent { 
   padding:20px; 
 }
 
-.heroshot {
-  width:100%;
+.itemcontent p:last-child { 
+  text-indent:1em; 
+  margin-bottom:0; 
 }
 
-/* text formatting */
+
+.itemcontent img {
+  margin:0 20px 20px 0;
+}
+
+
+.heroshot {
+  position:relative;
+  width:100%;
+  border-radius-bottom-left:8px;
+}
+
+.heroshot span {
+  display:block;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:10px;  
+  background:#000;  
+  opacity:0.75;
+  z-index:999;
+}
+
+.heroshot:after { 
+  content: "";
+  height:100%;
+  width:100%;
+  opacity:0;
+  background: rgba(0,0,0,0.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s; 
+    transition: all 1s;
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:998;
+}
+
+.heroshot:hover:after { 
+  opacity:1;
+}
+
+
+
+/* formatting */
 p { 
   text-indent:1em; 
   margin-bottom:20px; 
@@ -195,15 +227,45 @@ p {
 a {
   text-decoration:none;
   color:#33aa22;
+  padding:8px;
+  border-radius:8px;
 }
 
 a:hover {
   text-decoration:underline;
+  background:#33aa22;
+  color:#fff;
+}
+
+.textbox h1 { 
+  padding:20px; 
+  font-size:1.5em; 
+  /*background:#377234;*/
+  background:#573472;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+}
+
+.textbox h2 {
+  padding:20px;
+  background:#573472;
+  border-radius:8px;
+  font-size:1.4em;
 }
 
 img {
+  display:block;
   width:100%;
 }
+
+ul {
+  padding:20px;
+}
+
+ul li {
+  line-height:18px;
+}
+
 
 /* Small screens */
 @media all and (max-width: 500px) {
