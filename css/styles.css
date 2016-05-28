@@ -110,46 +110,46 @@ header {
 
 .logo a { color:#fff; }
 
-header .button  ul { 
+header .button ul { 
   position:absolute;
   display:block;
   list-style-type:none;
   color:#000;  
-  top:25px;
+  top:26px;
   right:20px;
   width:0; 
   height:0;
-    transition: width 0.2s linear;
-    -moz-transition: width 0.2s linear; /* Firefox 4 */
-    -webkit-transition: width 0.2s linear; /* Safari and Chrome */
-    -o-transition: width 0.2s linear; /* Opera */
-    -ms-transition: width 0.2s linear; /* Explorer 10 */
+    transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out; /* Firefox 4 */
+    -webkit-transition: width 0.2s ease-in-out; /* Safari and Chrome */
+    -o-transition: width 0.2s ease-in-out; /* Opera */
+    -ms-transition: width 0.2s ease-in-out; /* Explorer 10 */
 
 }
 
-header .button:hover  ul { 
+header .button:hover ul { 
   height:auto;
   width:20%;
   position:absolute;
-  /*background: rgba(0,0,0,1); */
   background: #33aa22;
-
 }
 
 header .button ul li { 
   font-size:0;
-    transition: font-size 0.1s linear;
-    -moz-transition: font-size 0.1s linear; /* Firefox 4 */
-    -webkit-transition: font-size 0.1s linear; /* Safari and Chrome */
-    -o-transition: font-size 0.1s linear; /* Opera */
-    -ms-transition: font-size 0.1s linear; /* Explorer 10 */
+  color:#33aa22;
+    transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out; /* Firefox 4 */
+    -webkit-transition: color 0.1s ease-in-out; /* Safari and Chrome */
+    -o-transition: color 0.1s ease-in-out; /* Opera */
+    -ms-transition: color 0.1s ease-in-out; /* Explorer 10 */
 }
 
-header .button:hover  ul li { 
+header .button:hover ul li { 
+  font-size:1em;
   display:block;
-  font-size:14px;
+  font-size:1em;
   line-height:30px;
-  
+  color:#fff;
 }
 
 header .button ul li a { color:#fff; }
