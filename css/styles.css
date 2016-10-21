@@ -126,7 +126,6 @@ img {
   width:100%;
 }
 
-img.small { text-align:center; width:auto; margin:0 auto;}
 
 ul {
   padding:20px;
@@ -246,7 +245,7 @@ p, .greytext { color:#ccc; }
   margin-bottom:1%;
 }
 
-.imagebox {
+.imagebox, .imageboxrace {
   display:block;
   position:relative;
   padding:20px;
@@ -258,6 +257,17 @@ p, .greytext { color:#ccc; }
   display:inline-block;
   margin-right:1%;
 }
+
+.imageboxrace {
+  text-align:center;
+}
+
+.imageboxrace img {
+  display:inline-block;
+  width:auto;
+}
+
+
 
 .right { margin-right:1%; }
 .microbox { width:49.5%; float:left; }
