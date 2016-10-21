@@ -385,10 +385,10 @@ ul.list {
   .list-itembig { width: 100%; }  
 }
 
-@media screen and (min-width: 20em) {
+@media screen and (max-width: 20em) {
    nav a { font-size:1em; }
   .list-item { width: 25%; }
-  .list-itemrace { width:33.33%; }
+  .list-itemrace { width:100%; }
   .list-itemmed { width: 75%; }    
   .list-itembig { width: 100%; }  
 }
