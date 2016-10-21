@@ -366,18 +366,13 @@ ul.list {
 
 /* media queries */
 @media screen and (min-width: 60em) {
-  .list-item {
-    width: 33.33%;
-  }
-  .list-itemmed {
-    width: 66.33%;
-  }    
-  .list-itembig {
-    width: 100%;
-  }    
+  .list-item {  width: 33.33%; }
+  .list-itemmed { width: 66.33%; }  
+  .list-itemrace { width:25%; }  
+  .list-itembig { width: 100%; }    
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 59em) {
    nav a { font-size:1em; }
   .list-item { width: 25%; }
   .list-itemrace { width:33.33%; }
@@ -385,7 +380,15 @@ ul.list {
   .list-itembig { width: 100%; }  
 }
 
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 49em) {
+   nav a { font-size:1em; }
+  .list-item { width: 25%; }
+  .list-itemrace { width:50%; }
+  .list-itemmed { width: 75%; }    
+  .list-itembig { width: 100%; }  
+}
+
+@media screen and (max-width: 29em) {
    nav a { font-size:1em; }
   .list-item { width: 25%; }
   .list-itemrace { width:100%; }
