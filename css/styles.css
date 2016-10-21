@@ -126,6 +126,8 @@ img {
   width:100%;
 }
 
+img.small { text-align:center; width:auto; margin:0 auto;}
+
 ul {
   padding:20px;
 }
@@ -181,8 +183,8 @@ p, .greytext { color:#ccc; }
 .caution { background:#efb400; }
 .positive { background:#3a6b33; }
 .legendary { background:#8a159c; }
-.rare { background:#ff8400; }
-.uncommon { background:#008aff; }
+.rare { background:#6080dc; }
+.uncommon { background:#d87d1b; }
 .default { background:#666; }
 
 
