@@ -187,50 +187,46 @@ p, .greytext { color:#ccc; }
 .default { background:#666; }
 
 
-/* container */
 
-
-.container {
-  margin-top:85px;
-  display: block
-}
-
-.content {
-  display: block
-  margin:0;
+.container { 
+  height:100vh;
+  margin-top:86px;
+  display:-webkit-flexbox;
+  display:-ms-flexbox;
+  display:flex;
+  flex-flow:row wrap;
   padding:20px;
+}
+
+.container .menu { 
+  flex:1;
+  flex-direction:row;
+  margin-right:1em; 
+}
+
+ul.list {
+  flex:4;
+  display:-webkit-flexbox;
+  display:-ms-flexbox;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.list-item {
+  flex-direction:column;
+  padding:0 1em 1em 0;
   width:100%;
-  margin:auto;
 }
 
-.microbox, .macrobox {
-  margin-bottom:1%;
-}
-
-/* isotope and masonry */
-
-.grid { }
-.gutter-sizer { width:1%; }
-/* fluid 5 columns */
-
-.grid-sizer,
-.grid-item { width: 23%; }
-
-.grid-item { 
-  margin-bottom:1%; 
-  display:block;
-}
-
-/* 2 columns wide */
-.grid-item--wide, .grid-item--full, .grid-item--menu { 
-  margin-bottom:1%; 
-  display:block;  
+.list-content {
+  flex:1 0 auto;
 }
 
 
-.grid-item--full { width: 100%;position:relative; }
-
-.grid-item--wide { width: 72%; position:relative;}
 
 .textbox { 
   padding:20px;  
@@ -269,44 +265,17 @@ p, .greytext { color:#ccc; }
 
 
 
-.right { margin-right:1%; }
-.microbox { width:49.5%; float:left; }
-.macrobox { clear:both; }
+/* media queries */
 
-
-
-.grid-item--menu ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  margin-bottom:5%;
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
 }
-
-.grid-item--menu li {
-  text-indent:0.5em;
-  line-height:22px;
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
 }
-
-.grid-item--menu li a {
-  color:#777;
-  -o-transition:color 0.4s ease-out, background 6s ease-in;
-  -ms-transition:color 0.4s ease-out, background 6s ease-in;
-  -moz-transition:color 0.4s ease-out, background 6s ease-in;
-  -webkit-transition:color 0.4s ease-out, background 6s ease-in;
-  transition:color 0.4s ease-out, background 6s ease-in;
-}
-.grid-item--menu li a:hover {
-  color:#008aff;
-}
-
-
-
-
-
-@media screen and (max-width: 440px) {
-.grid-item { width: 98%; }
-.grid-item--wide { width:98%; }
-}
-
 
 

@@ -26,29 +26,15 @@
 
 <div class="starfield"></div>
 
+
 <header>
   <div class="logo">
     <a href="#">Frackin Universe</a>
   </div>
 </header>
 
-
 <div class="container">
-  <div class="content">
-
-
-
-
-
-
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="gutter-sizer"></div>
-
-
-<!-- begin content -->
-      <div class="grid-item grid-item--menu">
-        <div class="">
+  <div class="menu">
           <h1 class="positive large">Menu</h1>
           <div class="textbox">
             <p class="heading">Mod Features</p>
@@ -139,13 +125,11 @@
               </ul>
 
           </div>
-        </div>
-      </div>
+  </div>
 
-      <div class="grid-item grid-item--wide" >
-
-
-        <div class="microbox right">
+<ul class="list">
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Apex</h1>
           <div class="imageboxrace"><img src="images/races/Apex.png" class="small"/></div>
           <div class="textbox">
@@ -155,7 +139,9 @@
             <p><span class="raretext">Immunities:</span> Jungle Tiles, Mud Tiles</p>
           </div>
         </div>
-        <div class="microbox">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Avian</h1>
           <div class="imageboxrace"><img src="images/races/Avian.png" class="small"/></div>
           <div class="textbox">
@@ -166,7 +152,9 @@
             <p><span class="raretext">Immunities:</span> None</p>
           </div>
         </div>
-        <div class="microbox right">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Floran</h1>
           <div class="imageboxrace"><img src="images/races/Floran.png" class="small"/></div>
           <div class="textbox">
@@ -178,7 +166,9 @@
             <p><span class="raretext">Immunities:</span> Shock</p>
           </div>
         </div>
-        <div class="microbox">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Glitch</h1>
           <div class="imageboxrace"><img src="images/races/Glitch.png" class="small"/></div>
           <div class="textbox">
@@ -190,8 +180,9 @@
             <p><span class="raretext">Immunities:</span> Poison, Bee Stings</p>
           </div>
         </div>
-
-        <div class="microbox right">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Human</h1>
           <div class="imageboxrace"><img src="images/races/Human.png" class="small"/></div>
           <div class="textbox">
@@ -202,7 +193,9 @@
             <p><span class="raretext">Immunities:</span> None</p>
           </div>
         </div>
-        <div class="microbox">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Hylotl</h1>
           <div class="imageboxrace"><img src="images/races/Hylotl.png" class="small"/></div>
           <div class="textbox">
@@ -214,7 +207,9 @@
             <p><span class="raretext">Immunities:</span> Wet</p>
           </div>
         </div>
-        <div class="microbox right">
+</li>
+<li class="list-item">
+        <div class="list-content">
           <h1 class="positive large">Novakid</h1>
           <div class="imageboxrace"><img src="images/races/Novakid.png" class="small"/></div>
           <div class="textbox">
@@ -225,49 +220,16 @@
             <p><span class="raretext">Immunities:</span> All radiation</p>
           </div>
         </div>
-
-
-      </div>
-
-
+</li>
+</ul>
 
 
 
-<!-- end content -->
-    </div>
 
 
-<!-- end content -->
-    </div>
-  </div>
-</div>
+        </div>
 
 
-<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-<script src="js/isotope.js"></script>
-
-<script>
-
-$(document).ready(function () {
-
-    var $container = $(".grid");
-
-    $container.imagesLoaded(function () {
-        $container.isotope();
-    });
-});
-
-$(".grid").isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    // use outer width of grid-sizer for columnWidth
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer'
-  }
-});
-
-</script>
 
 
 </body>
