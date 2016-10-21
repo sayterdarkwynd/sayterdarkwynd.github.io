@@ -95,18 +95,78 @@ header {
 }
 
 .logo {
-  -webkit-box-flex:1;
-  -webkit-flex:1;
-  -moz-box-flex:1;
-  -ms-flex:1;
-  flex:1;
-  max-width:100%;
+  margin-right:3em;
   display:inline-block;
   font-size:24px;
   vertical-align:middle;
+  width:30%;
 }
 
 .logo a { color:#fff; }
+
+
+
+nav {
+  width:70%;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  }
+  
+nav ul li {
+  display:inline-block;
+  }
+
+nav a {
+  display:block;
+  padding:0 10px; 
+  color:#FFF;
+  font-size:16px;
+  line-height: 60px;
+  text-decoration:none;
+  background: rgba(0,0,0,1);
+}
+
+nav a:hover { 
+  background-color: #6080dc; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* the height of the main nav */
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+  
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
 
 /* formatting */
 p { 
@@ -140,12 +200,6 @@ h1 {
   border-top-left-radius:0.5em;
   border-top-right-radius:0.5em;
   padding:1em;
-}
-
-
-/* hide sub menu links */
-ul.sub-menu {
-    display:none;
 }
 
 
@@ -198,12 +252,13 @@ p, .greytext { color:#ccc; }
   padding:20px;
 }
 
-.container .menu { 
+.menu { 
   -webkit-flex:1;
   -webkit-flex-direction:row;
   flex:1;
   flex-direction:row;
   margin-right:1em; 
+  height:100%;
 }
 
 ul.list {
@@ -221,7 +276,7 @@ ul.list {
   margin:0;
 }
 
-.list-item {
+.list-item, .list-itembig, .list-itemmed {
   -webkit-flex-direction:column;
   flex-direction:column;
   padding:0 1em 1em 0;
@@ -235,8 +290,6 @@ ul.list {
   flex-direction: column; 
   height: 100%;
 }
-
-
 
 .textbox { 
   padding:20px;  
@@ -280,13 +333,24 @@ ul.list {
 
 @media all and (min-width: 40em) {
   .list-item {
-    width: 50%;
+    width: 25%;
   }
+  .list-itemmed {
+    width: 75%;
+  }    
+  .list-itembig {
+    width: 100%;
+  }  
 }
+
 @media all and (min-width: 60em) {
   .list-item {
     width: 33.33%;
   }
+  .list-itemmed {
+    width: 66.33%;
+  }    
+  .list-itembig {
+    width: 100%;
+  }    
 }
-
-
