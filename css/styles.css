@@ -199,17 +199,22 @@ p, .greytext { color:#ccc; }
 }
 
 .container .menu { 
+  -webkit-flex:1;
+  -webkit-flex-direction:row;
   flex:1;
   flex-direction:row;
   margin-right:1em; 
 }
 
 ul.list {
-  flex:4;
   display:-webkit-flexbox;
   display:-ms-flexbox;
   display:flex;
+  -webkit-flex:4;
+  flex:4;
+  -webkit-flex-wrap:wrap;
   flex-wrap:wrap;
+  -webkit-justify-content:space-between;
   justify-content:space-between;
   list-style-type:none;
   padding:0;
@@ -217,12 +222,14 @@ ul.list {
 }
 
 .list-item {
+  -webkit-flex-direction:column;
   flex-direction:column;
   padding:0 1em 1em 0;
   width:100%;
 }
 
 .list-content {
+  -webkit-flex:1 0 auto;
   flex:1 0 auto;
 }
 
