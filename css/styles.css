@@ -231,6 +231,9 @@ ul.list {
 .list-content {
   -webkit-flex:1 0 auto;
   flex:1 0 auto;
+  display: flex; 
+  flex-direction: column; 
+  height: 100%;
 }
 
 
@@ -242,6 +245,7 @@ ul.list {
   background: rgba(0,0,0,0.9);  
   border-bottom-left-radius:0.5em;
   border-bottom-right-radius:0.5em;
+  height:100%;
 }
 
 .textbox p {
