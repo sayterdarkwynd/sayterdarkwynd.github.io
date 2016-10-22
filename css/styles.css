@@ -308,6 +308,7 @@ ul.list {
 
 .textbox p.type { 
   margin:0; 
+  color:#fff;
   -webkit-border-top-left-radius: 3px; 
   -moz-border-radius-topleft: 3px;
   border-top-left-radius: 3px; 
