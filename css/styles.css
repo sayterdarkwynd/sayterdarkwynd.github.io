@@ -53,7 +53,7 @@ table {
 
 body {
  font-family: 'Hobo', Fallback, sans-serif;
- font-size:14px;
+ font-size:1em;
  color:#fff;
   width:100%;
   height:100%;
@@ -96,7 +96,7 @@ header {
 
 .logo {
   margin-right:2em;
-  font-size:18px;
+  font-size:2em;
   vertical-align:middle;
 }
 
@@ -123,7 +123,7 @@ nav a {
   display:block;
   padding:0 10px; 
   color:#FFF;
-  font-size:16px;
+  font-size:1.1em;
   line-height: 60px;
   text-decoration:none;
   background: rgba(0,0,0,1);
@@ -169,7 +169,7 @@ li > a:only-child:after { content: ''; }
 /* formatting */
 p { 
   font-size:1em;
-  line-height:18px;
+  line-height:1.2em;
 }
 
 a {
@@ -190,7 +190,7 @@ ul {
 }
 
 ul li {
-  line-height:18px;
+  line-height:1.2em;
 }
 
 h1 {
@@ -290,7 +290,7 @@ ul.list {
 }
 
 .textbox { 
-  padding:20px;  
+  padding:0 20px 20px 20px;  
   width:100%;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -344,8 +344,9 @@ ul.list {
 .imagebox, .imageboxrace {
   display:block;
   position:relative;
-  padding:20px;
+  padding:20px 20px 0 20px;
   background: rgba(0,0,0,0.9);
+  text-align:center
 }
 
 .imagebox img {
@@ -354,8 +355,19 @@ ul.list {
   margin-right:1%;
 }
 
-.imageboxrace {
-  text-align:center;
+.imageboxrace ul { 
+display:inline-block;
+list-style-type:none;
+text-align:left;
+}
+
+.imageboxrace ul li {
+  font-size:1.2em;
+  line-height:2em;
+}
+
+.imageboxrace ul li img {
+vertical-align:middle;
 }
 
 .imageboxrace img {
