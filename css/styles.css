@@ -380,7 +380,7 @@ vertical-align:middle;
 }
 
 .info ul.features { list-style-type:none; margin:0;padding:1em; }
-.info ul.features li {line-height:1.6em }
+.info ul.features li {line-height:2.2em }
 
 /* media queries */
 @media screen and (min-width: 60em) {
