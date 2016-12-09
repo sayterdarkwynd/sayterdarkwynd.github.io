@@ -389,23 +389,29 @@ vertical-align:middle;
   webkit-justify-content:center;
   align-items:center;
   -webkit-align-items:center;
-  width:100%;
+  flex-direction:row;
   padding:0.4em;
 }
   
+.aligner-break {flex-direction:column;width:100%}
+
 .aligner-item p { 
   flex-direction:column;
   padding:10px;
-  margin:0;flex: 0 1 auto;
+  margin:0;
+  text-align:center;
   }
 
 .aligner-item {
   display:-webkit-flex;
   display:flex;
   width:100%;
+
   align-items:center;
+  justify-content:center;
 }
 
+.aligner-item img { width:16px; height:16px}
 .spacealigner {margin-left:0.5em;}
 
 /* media queries */
