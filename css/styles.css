@@ -412,6 +412,7 @@ vertical-align:middle;
 }
 
 .aligner-item img { width:16px !important; height:16px !important;}
+.statinfo img { width:32px !important; height:32px !important;}
 .spacealigner {margin-left:0.5em;}
 
 /* media queries */
