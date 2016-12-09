@@ -382,8 +382,31 @@ vertical-align:middle;
 .info ul.features { list-style-type:none; margin:0;padding:1em; }
 .info ul.features li {margin-top:20px;line-height:1.6em; color:#efefef !important; }
 
-.resistbox { display:inline-block;margin-right:0.5em;height:2em;width:2em;width:29%; font-size:1.1em}
-.resistbox img { display:inline-block;width:16px;height:16px;margin-right:0.5em;margin-top:6px; }
+.resistinfo {
+  display:flex;
+  display:-webkit-flex;
+  justify-content:center;
+  webkit-justify-content:center;
+  align-items:center;
+  -webkit-align-items:center;
+  width:100%;
+  padding:0.4em;
+}
+  
+.aligner-item p { 
+  flex-direction:column;
+  padding:10px;
+  margin:0;flex: 0 1 auto;
+  }
+
+.aligner-item {
+  display:-webkit-flex;
+  display:flex;
+  width:100%;
+  align-items:center;
+}
+
+.spacealigner {margin-left:0.5em;}
 
 /* media queries */
 @media screen and (min-width: 60em) {
