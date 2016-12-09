@@ -411,7 +411,7 @@ vertical-align:middle;
   justify-content:center;
 }
 
-.aligner-item img { width:16px; height:16px}
+.aligner-item img { width:16px !important; height:16px !important;}
 .spacealigner {margin-left:0.5em;}
 
 /* media queries */
