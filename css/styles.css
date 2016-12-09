@@ -383,6 +383,7 @@ vertical-align:middle;
 .info ul.features li {margin-top:20px;line-height:1.6em; color:#efefef !important; }
 
 .resistinfo {
+z-index:1;
   display:flex;
   display:-webkit-flex;
   justify-content:center;
@@ -403,12 +404,26 @@ vertical-align:middle;
   }
 
 .aligner-item {
+  position:relative;
   display:-webkit-flex;
   display:flex;
   width:100%;
-
   align-items:center;
   justify-content:center;
+}
+
+.aligner-item span {
+  position:absolute;
+  left:0;
+  font-size:1em;
+  background:#141414;
+  padding:0.5em;
+  display:none;
+  z-index:99;
+}
+
+.aligner-item:hover span {
+  display:block;
 }
 
 .aligner-item img { width:16px !important; height:16px !important;}
