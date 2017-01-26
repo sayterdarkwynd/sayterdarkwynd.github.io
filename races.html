@@ -144,8 +144,8 @@
             <p class="info">So long as you remain fed you gain substantial energy.<br/><br/>Failing to feed yourself will begin devolution, increasing your Physical Resistance, Knockback Resistance and Health at the cost of high energy loss.</p>
             <p class="type legendary">Rage of Apes</p>
             <p class="info">When wielding an axe you gain +20% Damage. Hammers grant +20% damage and +15% movement speed</p>
-            <p class="type uncommon">Demolitionist</p>
-            <p class="info">Apex love explosions. When using Grenade Launchers, they do +20% Damage. With Rocket Launchers they gain +15% damage</p>
+            <p class="type uncommon">Explosive Crits</p>
+            <p class="info">When using Grenade Launchers, they gain +20% Crit Damage. With Rocket Launchers they gain +15% Crit Chance</p>
             <p class="type uncommon">Tech Junkie</p>
             <p class="info">When using energy-based guns(FU) you gain +10% damage and +10% energy</p>
             <p class="type uncommon">Jungle Fury</p>
@@ -224,9 +224,9 @@
             <p class="type positive">Advantages</p>
             <p class="info">-65% Fall Damage, Slowed Fall, Jump Speed increase, +5% Jump Height, 35% Cosmic Resistance</p>
             <p class="type legendary">Conduit</p>
-            <p class="info">With wands and staves active, you gain additional Energy</p>
+            <p class="info">With wands and staves active, you gain additional Energy. You can channel wand power through a Dagger to shoot Cosmic bolts.</p>
             <p class="type uncommon">Mystic</p>
-            <p class="info">20% Damage bonus with Wands and Staves. With Wand and a one-handed weapon, weapon gets a 1d10+10 Crit Damage bonus</p>
+            <p class="info">20% Damage bonus with Wands and Staves. With Wand and a one-handed weapon, weapon gets a 1d10+10 Crit Damage bonus. </p>
             <p class="type uncommon">Cosmic Rage</p>
             <p class="info">5.5% Damage bonus that increases up to 25% as you lose health</p>
             <p class="type rare">Immunities:</p>
@@ -396,7 +396,7 @@
             <p class="type legendary">Arms Training</p>
             <p class="info">Perfect Blocks increase your damage (Stacks)</p>
             <p class="type legendary">Heavy Weapons</p>
-            <p class="info">When using Hammers and Axes, glitch consume Energy in exchange for increased Crit rate (Energy / 10)</p>
+            <p class="info">When using Hammers and Axes, glitch consume Food in exchange for increased Crit rate (Energy / 8)</p>
             <p class="type uncommon">Shield Wall</p>
             <p class="info">Shields give +1 Protection (passive)</p>
             <p class="type uncommon">Chivalry</p>
@@ -421,7 +421,7 @@
 
           <div class="textbox">
 
-            <p>Humans can typically last longer without food than the other races, and have wonderfully powerful legs that allow them to jump just a little longer than a few others. They are otherwise incredibly average, and a good baseline choice for a new player.</p>
+            <p>Humans have wonderfully powerful legs that allow them to jump just a little longer than many races. They are otherwise incredibly average, and a good baseline choice for a new player.</p>
 
             <p>Humans are naturally skilled at defending themselves with a shield. When you block perfectly, your defense is boosted even further! Pair that with a Shortsword, and you can really pack on the pain. If ranged combat is your style, humans are especially dangerous with Machine Pistols and Assault Rifles.</p>
             <p class="type resists">Resistances / Weaknesses</p>
@@ -473,11 +473,11 @@
               </div>
             </div>
             <p class="type positive">Advantages</p>
-            <p class="info">+Jump Hold Time</p>
+            <p class="info">+0.07s Jump Hold Time</p>
             <p class="type legendary">Defensive</p>
             <p class="info">Perfect Blocks increase your defense (Stacks)</p>
-            <p class="type uncommon">Vengeance</p>
-            <p class="info">+20% Damage with Shortswords</p>
+            <p class="type uncommon">Martial Training</p>
+            <p class="info">+20% Damage and Knockback Resistance with Shortswords</p>
             <p class="type uncommon">Precision</p>
             <p class="info">+15% Damage with Assault Rifles and Machine Pistols</p>
             <p class="type rare">Immunities:</p>
@@ -899,6 +899,7 @@
         <div class="list-content">
           <h1 class="positive large">Avikan</h1>
           <div class="imageboxrace">
+          <img src="images/races/avikan.png" class="small"/>
              <ul>
                <li><img src="images/health.png"> : +15%</li>
                <li><img src="images/energy.png"> : +15%</li>
@@ -932,7 +933,7 @@
                   <div class="aligner-item spacealigner">
                   <span class="tooltip">Fire</span>
                     <img src="images/fire.png">
-                    <p>100%</p>
+                    <p>50%</p>
                   </div>
               </div>
               <div class="resistinfo">
@@ -940,7 +941,7 @@
                   <div class="aligner-item spacealigner">
                   <span class="tooltip">Ice</span>
                     <img src="images/frozen.png">
-                    <p>-100%</p>
+                    <p>-50%</p>
                   </div>
 
                 <!-- poison -->
@@ -958,20 +959,170 @@
                   </div>
               </div>
             </div>
+            <p class="type warning">Flaws</p>
+            <p class="info">On cold biomes you suffer a hefty energy regen loss.</p>
             <p class="type epic">Environmental Bonus</p>
-            <p class="info">On desert-like biomes you gain additional power and health</p>
+            <p class="info">On desert-like biomes you gain Power, Health and a passive Health Regen</p>
             <p class="type positive">Advantages</p>
-            <p class="info">None</p>
+            <p class="info">25% Knockback Resistance</p>
             <p class="type uncommon">Wasteland Wanderer</p>
             <p class="info">+20% damage with Spears and Daggers</p>
             <p class="type uncommon">Desert Warrior</p>
             <p class="info">1h combo attacks increase damage</p>
             <p class="type rare">Immunities:</p>
-            <p class="info">Fire, Heat</p>
+            <p class="info">Fire, Heat, Sandstorms</p>
           </div>
         </div>
   	</li>
+	<li class="list-itemrace">
+        <div class="list-content">
+          <h1 class="positive large">Droden</h1>
+          <div class="imageboxrace">
+          <img src="images/races/droden.png" class="small"/>
+             <ul>
+               <li><img src="images/health.png"> : -25%</li>
+               <li><img src="images/energy.png"> : +15%</li>
+               <li><img src="images/attack.png"> : +25%</li>
+               <li><img src="images/defense.png"> : 0</li>
+             </ul>
+          </div>
 
+          <div class="textbox">
+            <p>Created as cheap war robots, the Droden have since made a name for themselves in the cosmos. They are swift and dangerous, but not incredibly tough. They are, however, extremely resilient against many environments lethal to other species.</p>
+            <p>They excel in combat, for that was their reason for being in the first place. They are especially lethal with swords, able to land critical attacks with relative ease.</p>
+            <p class="type resists">Resistances / Weaknesses</p>
+
+            <div class="info">
+              <div class="resistinfo">
+                <!-- physical -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Physical</span>
+                    <img src="images/defense2.png">
+                    <p>0</p>
+                  </div>
+
+                <!-- electric -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Electric</span>
+                    <img src="images/electric.png">
+                    <p>-70%</p>
+                  </div>
+
+                 <!-- fire -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Fire</span>
+                    <img src="images/fire.png">
+                    <p>0</p>
+                  </div>
+              </div>
+              <div class="resistinfo">
+                <!-- ice -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Ice</span>
+                    <img src="images/frozen.png">
+                    <p>0</p>
+                  </div>
+
+                <!-- poison -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Poison</span>
+                    <img src="images/poison.png">
+                    <p>80%</p>
+                  </div>
+
+                <!-- shadow -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Shadow</span>
+                    <img src="images/shadow.png">
+                    <p>0</p>
+                  </div>
+              </div>
+            </div>
+            <p class="type positive">Advantages</p>
+            <p class="info">+10% Speed</p>
+            <p class="type uncommon">Pre-Programmed Swordsman</p>
+            <p class="info">Increased critical chance with all swords</p>
+            <p class="type rare">Immunities:</p>
+            <p class="info">All Radiation, Poison, Breath</p>
+          </div>
+        </div>
+  	</li>
+	<li class="list-itemrace">
+        <div class="list-content">
+          <h1 class="positive large">Trink</h1>
+          <div class="imageboxrace">
+          <img src="images/races/trink.png" class="small"/>
+             <ul>
+               <li><img src="images/health.png"> : 0</li>
+               <li><img src="images/energy.png"> : +25%</li>
+               <li><img src="images/attack.png"> : 0</li>
+               <li><img src="images/defense.png"> : 0</li>
+             </ul>
+          </div>
+
+          <div class="textbox">
+            <p>The Trink were built by a species native to a frozen planet, and their systems run more efficiently in cold climates. Highly efficient energy consumption gives them more energy to spend, and they require less organic fuel to keep functioning. Their metal hull grants an immunity to radiation and posion, but makes them extremely vulnerable to electric attacks</p>
+            <p class="type resists">Resistances / Weaknesses</p>
+
+            <div class="info">
+              <div class="resistinfo">
+                <!-- physical -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Physical</span>
+                    <img src="images/defense2.png">
+                    <p>25%</p>
+                  </div>
+
+                <!-- electric -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Electric</span>
+                    <img src="images/electric.png">
+                    <p>-100%</p>
+                  </div>
+
+                 <!-- fire -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Fire</span>
+                    <img src="images/fire.png">
+                    <p>0</p>
+                  </div>
+              </div>
+              <div class="resistinfo">
+                <!-- ice -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Ice</span>
+                    <img src="images/frozen.png">
+                    <p>0</p>
+                  </div>
+
+                <!-- poison -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Poison</span>
+                    <img src="images/poison.png">
+                    <p>80%</p>
+                  </div>
+
+                <!-- shadow -->
+                  <div class="aligner-item spacealigner">
+                  <span class="tooltip">Shadow</span>
+                    <img src="images/shadow.png">
+                    <p>0</p>
+                  </div>
+              </div>
+            </div>
+            <p class="type warning">Flaws</p>
+            <p class="info">When electrified you suffer a massive 50% Damage loss.</p>
+            <p class="type epic">Environmental Bonus</p>
+            <p class="info">On cold biomes you gain 25% energy regeneration.</p>
+            <p class="type positive">Advantages</p>
+            <p class="info">Rarely requires food</p>
+            <p class="type uncommon">Shield-Charge</p>
+            <p class="info">Perfect Blocks restore 50% energy</p>
+            <p class="type rare">Immunities:</p>
+            <p class="info">Snow, Cold, Ice, Radiation, Poison, Breath</p>
+          </div>
+        </div>
+  	</li>
 	<li class="list-itemrace">
         <div class="list-content">
           <h1 class="positive large">Bunnykin</h1>
