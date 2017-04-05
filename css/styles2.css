@@ -218,7 +218,8 @@ h1 {
 .legendarytext { color:#8a159c; }
 .epictext { color:#e43774; }
 .raretext { color:#ff8400; }
-a, .uncommontext { color:#008aff; }
+a, .uncommontext { color:#555; }
+a:hover { color:#d1594d}
 .defaulttext { color:#666; }
 
 .whitetext { color:#fff; }
@@ -278,6 +279,7 @@ ul.list {
   padding:0 1em 1em 0;
   width:100%;
 }
+
 
 .list-content {
   -webkit-flex:1 0 auto;
@@ -356,9 +358,9 @@ ul.list {
 }
 
 .imageboxrace ul { 
-display:inline-block;
-list-style-type:none;
-text-align:left;
+  display:inline-block;
+  list-style-type:none;
+  text-align:left;
 }
 
 .imageboxrace ul li {
@@ -367,7 +369,7 @@ text-align:left;
 }
 
 .imageboxrace ul li img {
-vertical-align:middle;
+  vertical-align:middle;
 }
 
 .imageboxrace img {
@@ -375,21 +377,30 @@ vertical-align:middle;
   width:auto;
 }
 
+.sellbox a { font-weight:600 }
+.sellbox li { 
+  padding-bottom:0.4em;
+  border-bottom:2px solid #519091;
+}
 
+.plain { color: #3f3020;}
+.selfinfo { padding:6em; }
 
-.plain { 
-  color: #3f3020;
-  }
-.selfinfo { padding:4em}
+.plain img { 
+  margin:0 auto;
+  text-align:center;
+  width:auto;
+}
 
-.plain img { margin:0 auto;text-align:center;width:auto; }
-.plain .bottombreak { margin-bottom:4em;}
+.plain .bottombreak { margin-bottom:2em;}
+
 .plain p {
   color: #3f3020;
   text-align:center;
   font-size:1.4em;
-  line-height:1.2em; 
-  margin-bottom:1.2em;
+  line-height:1.4em; 
+  margin-bottom:1.4em;
+  font-weight:400;
 }
 
 .plain p.small {
@@ -399,15 +410,18 @@ vertical-align:middle;
   line-height:1.4em; 
   margin-bottom:1.4em;
   padding:1em 3em 1em 3em;
+  font-weight:300
 }
 
 .plain h1 {
 text-align:center;
-font-size:4em;
-font-weight:800;
+font-size:5em;
+font-weight:1000;
 color:#3f3020;
 padding: 0 0 1.4em 0;
 line-height:1.4em; 
+max-width:1080px;
+margin:0 auto;
 }
 
 .plain h2 {
@@ -428,6 +442,16 @@ padding: 0 0 1.4em 0;
 line-height:1.4em; 
 }
 
+.plain ul { 
+  list-style-type:none;
+  padding:0;
+  text-align:center;
+  display:inline-block;
+  width:100%
+}
+
+.plain ul li { display:inline; }
+.plain ul li.center { margin:0 2em 0 2em; }
 
 
 
@@ -481,6 +505,10 @@ z-index:1;
 .aligner-item img { width:16px !important; height:16px !important;}
 .statinfo img { width:32px !important; height:32px !important;}
 .spacealigner {margin-left:0.5em;}
+
+
+/* image gallery */
+.galleria{ max-width: 100%; height: 400px; background: #000 }
 
 /* media queries */
 @media screen and (min-width: 60em) {

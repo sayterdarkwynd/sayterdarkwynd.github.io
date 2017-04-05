@@ -9,13 +9,11 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles2.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/justifiedGallery.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
-<script>
-
-</script>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,57 +23,42 @@
 
 <body>
 
-<div class="starfield"></div>
-
-<!--<header>
-    <div class="logo">
-    <a href="#">Frackin Universe</a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a>
-            </li>
-            <li><a href="portfolio.html">Portfolio</a>
-            <ul>
-                <li><a href="#">Brand Identity</a></li>
-                <li><a href="#">Web / App Design</a></li>
-                <li><a href="#">Print Design</a></li>
-                <li><a href="#">Digital Design</a></li>
-                <li><a href="#">Illustration</a></li>
-                <li><a href="#">Pixel Art</a></li>
-                <li><a href="#">Mods</a></li>
-            </ul>
-            </li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="races.html">Frackin' Races</a></li>
-            <li><a href="#">Contributors</a></li>
-        </ul>
-    </nav>
-
-
-</header>-->
-
 <div class="container">
 
   <ul class="list">
 
 
-   <li class="list-itembig selfinfo">
+   <li id="intro" class="list-itembig selfinfo">
+      <div class="list-content">
+
+        <div class="plain sellbox">
+          <h1 class="bottombreak">Hi, I'm Chris, a designer cursed with creativity. I love design.</h1>
+
+          <ul>
+            <li><a href="#">About</a></li>
+            <li class="center"><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+        </div>
+
+    </li>
+
+   <li id="about" class="list-itembig selfinfo">
       <div class="list-content">
 
         <div class="plain">
-          <h1>Hi, I'm Chris, a designer cursed with creativity. I love design.</h1>
-
           <img src="images/port/me1.png" width= "312" class="bottombreak">
-          <p>I dedicate my life to creative pursuits, using design to make the world a bit more beautiful.</p>
-          <p>The world is in constant flux, bringing new technological innovations to the fore, and exploring these new facets of creativity excites me. I aim to help bring the future to people through creativity.</p>
-          <p>My philosophy is simple: Make if fun. If the user isn't engaged and interested...what's the point?</p>
+          <p>A die-hard gamer, I've been tinkering with games since I was a kid. Tabletop roleplaying, videogames, board games...anything that engages the player in a fun and meaningful way.</p>
+          <p>My approach to design is oriented around this whether it be concept, programming, organisation or artistic aspects of a project. I'm always seeking ways to improve both myself and the product to make the most out of every experience.</p>
+          <p>My philosophy is simple: Make design fun. If the user isn't engaged and interested...what's the point? I'm a jack-of-all-trades, bringing many talents to the fore. Interested? <a href="#" class="warningtext">Contact me</a> below.</p>
         </div>
-      </div>
-    </li>
 
-   <li class="list-itembig">
+   </li>
+
+
+
+   <li id="skills" class="list-itembig">
       <div class="list-content">
 
         <div class="plain">
@@ -97,7 +80,7 @@
 		<p class="small">Making a game isn't just about graphics or fancy physics. Worldbuilding is essential to bringing these digital universes to life.</p>
     </li>
     <li class="list-item plain">
-        <h3>CSS</h3>
+        <h3>Stylesheets</h3>
     	<p class="small">Without CSS you can't make a site all it can be, and I've got a good head for it. Responsive design is the future, and a wise designer knows it.</p>
     </li>
     <li class="list-item plain">
@@ -110,7 +93,35 @@
     </li>
 
 
-    <li class="list-itembig">
+
+
+
+
+
+
+
+
+
+    <li id="work" class="list-itembig">
+      <div class="list-content">
+        <h1 class="warning large">box</h1>
+
+
+<div id="basicExample">
+    <a href="images/biomes/bees.png">
+        <img alt="caption for image 1" src="images/biomes/bees.png"/>
+    </a>
+    <a href="images/biomes/bees.png">
+        <img alt="caption for image 2" src="images/biomes/bees.png"/>
+    </a>
+</div>
+
+
+
+      </div>
+    </li>
+
+    <li id="contact" class="list-itembig">
       <div class="list-content">
         <h1 class="warning large">box</h1>
         <div class="textbox">
@@ -121,10 +132,19 @@
 
 
 
-
-
   </ul>
 
 </div>
+
+
+  <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script type="text/javascript">
+$('#basicExample').justifiedGallery({
+    rowHeight : 70,
+    lastRow : 'nojustify',
+    margins : 3
+});
+    </script>
+
 </body>
 </html>
