@@ -7,11 +7,12 @@
   <title>Frackin Universe</title>
   <meta name="description" content="Frackin' Universe">
   <meta name="author" content="SitePoint">
+  <!-- jQ plugins -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="js/jquery.justifiedGallery.min.js"></script>
 
   <link rel="stylesheet" href="css/styles2.css">
   <link rel="stylesheet" href="css/justifiedGallery.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
@@ -94,20 +95,12 @@
 
 
 
-
-
-
-
-
-
-
-
     <li id="work" class="list-itembig">
       <div class="list-content">
         <h1 class="warning large">box</h1>
 
 
-<div id="basicExample">
+<div id="basicExample" class="justified-gallery">
     <a href="images/biomes/bees.png">
         <img alt="caption for image 1" src="images/biomes/bees.png"/>
     </a>
@@ -137,13 +130,9 @@
 </div>
 
 
-  <script src="js/jquery.justifiedGallery.min.js"></script>
+
     <script type="text/javascript">
-$('#basicExample').justifiedGallery({
-    rowHeight : 70,
-    lastRow : 'nojustify',
-    margins : 3
-});
+$("#basicExample").justifiedGallery();
     </script>
 
 </body>
