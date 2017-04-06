@@ -218,8 +218,13 @@ h1 {
 .legendarytext { color:#8a159c; }
 .epictext { color:#e43774; }
 .raretext { color:#ff8400; }
-a, .uncommontext { color:#555; }
-a:hover { color:#d1594d}
+a, .uncommontext { color:#555;   transition: color 1.0s;
+  -webkit-transition: color 1.0s;}
+a:hover { 
+color:#d1594d;
+  transition: color 1.0s;
+  -webkit-transition: color 1.0s;
+}
 .defaulttext { color:#666; }
 
 .whitetext { color:#fff; }
@@ -367,9 +372,10 @@ ul.list {
   line-height:1.4em; 
   margin-bottom:1.4em;
   font-weight:300;
-  max-width:40em;
+  max-width:59em;
   margin:0 auto;
-  margin-bottom:2em
+  margin-bottom:2em;
+  padding: 0 4em;
 }
 
 .plain p.small {
@@ -386,7 +392,7 @@ text-align:center;
 font-size:5em;
 font-weight:800;
 color:#3f3020;
-padding: 4em 0;
+padding: 3em 0;
 line-height:1.4em; 
 max-width:1080px;
 margin:0 auto;
