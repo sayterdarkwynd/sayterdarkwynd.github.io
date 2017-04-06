@@ -427,6 +427,12 @@ line-height:1.4em;
   padding:4em;
 }
 
+.topline {
+  margin:0 auto;
+  border-bottom:2px solid #519091;
+  width:4em;
+}
+
 .info ul.features { list-style-type:none; margin:0;padding:1em; }
 .info ul.features li {margin-top:20px;line-height:1.6em; color:#efefef !important; }
 
