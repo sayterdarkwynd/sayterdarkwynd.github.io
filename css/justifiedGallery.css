@@ -31,6 +31,23 @@
   filter: "alpha(opacity=0)";
   opacity: 0;
 }
+
+.justified-gallery > a > img:hover,
+.justified-gallery > div > img:hover,
+.justified-gallery > a > a > img:hover,
+.justified-gallery > div > a > img:hover {
+  animation-name: imagesizer;
+  animation-duration: 0.5;
+  width:105% !important; 
+  height:105% !important;
+  transition: width 0.25s;
+  -webkit-transition: width 0.25s;
+}
+@keyframes imagesizer {
+  from { width:100% !important; height:100% !important; }
+  to { width:105% !important; height:105% !important; }
+}
+
 .justified-gallery > a > .caption,
 .justified-gallery > div > .caption {
   display: none;
@@ -45,6 +62,8 @@
   font-size: 12px;
   font-weight: 300;
   font-family: sans-serif;
+  animation-name: fadebox;
+  animation-duration: 0.8s;
 }
 .justified-gallery > a > .caption.caption-visible,
 .justified-gallery > div > .caption.caption-visible {
