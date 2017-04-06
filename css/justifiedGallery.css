@@ -8,6 +8,9 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  max-width:1600px;
+  text-align:center;
+  margin:0 auto
 }
 .justified-gallery > a,
 .justified-gallery > div {
