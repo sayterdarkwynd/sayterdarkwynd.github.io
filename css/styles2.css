@@ -212,9 +212,9 @@ h1 {
 .light { font-weight:300; }
 
 /* text color */
-.warningtext,.negativetext { color:#d1594d; }
-.cautiontext { color:#519091; }
-.positivetext { color:#3a6b33; }
+.warningtext,.negativetext { color:#d1594d !important;; }
+.cautiontext { color:#519091 !important; }
+.positivetext { color:#3a6b33 !important;; }
 .legendarytext { color:#8a159c; }
 .epictext { color:#e43774; }
 .raretext { color:#ff8400; }
@@ -355,6 +355,7 @@ ul.list {
 
 .bottombreak {}
 .topspace { padding-top:2em; }
+.topspacelarge { padding-top:6em; }
 
 .plain { color: #3f3020;}
 
@@ -498,6 +499,8 @@ z-index:1;
 
 .clients { width:100%;}
 
+.portpic { max-width:100%;padding:0 !important;}
+
 /* animation */
 
 @keyframes fadebox {
@@ -505,26 +508,31 @@ z-index:1;
   to { opacity: 0.7 }
 }
 
-
+.list-itemmid2 img {padding-right:10px;margin-bottom:3em;margin-right:3em;clear:both;}
+.list-itemmid h1, .list-itemmid2 h1 { padding:1em;font-size:3em;font-weight:800;padding:2em 0 0 0;}
+.list-itemmid h3, .list-itemmid2 h3 { padding:1em;font-size:1.4em;font-weight:400;padding:0.4em 0 4em 0;}
+.list-itemmid p, .list-itemmid2 p { text-align:left;padding:0 1em 0 1em;}
 
 /* media queries */
 @media screen and (min-width: 60em) {
   .clients img { padding: 6em}
   .list-item {  width: 33.33%; }
+  .list-itemmid2 {  width: 100%; }
   .list-itemmed { width: 66.33%; }  
   .list-itemrace { width:25%; }  
   .list-itembig { width: 100%; }  
-  .plain p.small { padding:0 4em; }  
+  .plain p.small { padding:0 4em; }    
 }
 
 @media screen and (max-width: 59em) {
   .clients img { padding: 4em}
    nav a { font-size:1em; }
-  .list-item { width: 33.33%; }
+  .list-item {  width: 33.33%; }
   .list-itemrace { width:33.33%; }
   .list-itemmed { width: 75%; }    
   .list-itembig { width: 100%;}  
   .plain p.small { padding:0 2em; } 
+  .list-itemmid2 img {margin:0 0 4em 0;float:none;}
 }
 
 @media screen and (max-width: 49em) {
@@ -536,7 +544,7 @@ z-index:1;
   .plain { width:100% }
   .list-item .plain { width:100%}
   .plain p { padding: 0 4em}
-  .plain h1 { font-size:48px; padding:4em 0;}
+  .plain h1 { font-size:48px;}
   .plain p.small { padding:0 4em; } 
 }
 
@@ -548,3 +556,6 @@ z-index:1;
   .plain p.small { font-size:1.1em; padding: 0}
   .container { padding:0;}
 }
+
+
+.clearfix {clear:both;}
