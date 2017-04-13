@@ -334,7 +334,7 @@ line-height:1.4em;
 
 .list-itemid2 .plain a img {padding:0 !important;}
 .list-itemmid2 img {margin:0 auto;width:auto;padding:5em 0;}
-.list-itemmid2 img.large {padding-right:10px;width:auto;margin-bottom:5em;}
+.list-itemmid2 img.large {padding-right:10px;width:auto;margin-bottom:4em;}
 .list-itemmid h1, .list-itemmid2 h1 { font-size:5em;font-weight:800;padding:0;}
 .list-itemmid h1, .list-itemmid2 h2 { font-size:3em;font-weight:800;padding:0;}
 .list-itemmid h3, .list-itemmid2 h3 { font-size:1.4em;font-weight:400;padding:0 0 5em 0;}
@@ -359,6 +359,7 @@ color:#519091 !important;
 .footer { 
   background:#3f3020;
   padding:5em;
+  width:100%
 }
 
 .footer p {color : #e5e8d6 !important;}
