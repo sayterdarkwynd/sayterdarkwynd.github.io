@@ -332,6 +332,7 @@ line-height:1.4em;
   width:5em;
 }
 
+.linkedin { max-width:60px;padding:0 !important;}
 .list-itemid2 .plain a img {padding:0 !important;}
 .list-itemmid2 img {margin:0 auto;width:auto;padding:5em 0;}
 .list-itemmid2 img.large {padding-right:10px;width:auto;margin-bottom:4em;}
@@ -358,7 +359,7 @@ color:#519091 !important;
 
 .footer { 
   background:#3f3020;
-  padding:5em;
+  padding:2.5em;
   width:100%
 }
 
