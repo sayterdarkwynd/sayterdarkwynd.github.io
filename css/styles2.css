@@ -410,6 +410,7 @@ color:#519091 !important;
   .plain h2 { font-size:2.0em;}
   .plain h3 { font-size:1.4em;}
   .box img.greeting {max-width:40%}
+  .list-itemmid2 img { margin: 0 auto; width: auto; padding: 2em 1em;}  
 }
 
 @media screen and (max-width: 39em) {
@@ -423,7 +424,7 @@ color:#519091 !important;
   .plain p { padding: 0 5em}
   .plain h1 { font-size:3.5em;} 
   .box img.greeting {max-width:30%}
-  
+  .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
 }
 
 @media screen and (max-width: 29em) {
