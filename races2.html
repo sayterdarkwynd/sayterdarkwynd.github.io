@@ -73,39 +73,50 @@
 	<li class="list-itemrace">
         <div class="list-content">
           <h1 class="positive large">Apex</h1>
+
           <div class="imageboxrace">
-            <img src="images/races/Apex.png" class="small"/>
-             <ul>
-               <li><img src="images/health.png"> : 0</li>
-               <li><img src="images/energy.png"> : 0</li>
-               <li><img src="images/attack.png"> : 0</li>
-               <li><img src="images/defense.png"> : 0</li>
-             </ul>
-          </div>
-          <div class="textbox">
-		<p>At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
-		<p>They are just as happy using their animal instincts with fist weapons, and are tough to take out in a fistfight. Don't think they're brutes, though. These people are cunning, intelligent and resourceful. So long as they keep fed, they are able to out-think most races with ease!</p>
+
+			<div class="racestats">
+			  <div class="raceleft">
+			    <img src="images/races/Apex.png" class="small racepic"/>
+			  </div>
+			  <div class="raceright">
+				<ul>
+					  <li>Stats</li>
+					   <li><img src="images/health.png"> : 0</li>
+					   <li><img src="images/energy.png"> : 0</li>
+					   <li><img src="images/attack.png"> : 0</li>
+					   <li><img src="images/defense.png"> : 0</li>
+				</ul>
+			  </div>
+			</div>
+
+			<div class="textbox">
+			  <p>At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
+			  <p class="spacer_top">They are just as happy using their animal instincts with fist weapons, and are tough to take out in a fistfight. Don't think they're brutes, though. These people are cunning, intelligent and resourceful. So long as they keep fed, they are able to out-think most races with ease!</p>
+			</div>
 
 
-            <p class="type resists heading">Resistances</p>
+			<div id="contain">
+				<div class="accordion">
+
+					<div id="tab-1">
+						<a href="#tab-1" class="tab resists">Resistances<span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+
 
             <div class="info">
               <div class="resistinfo">
-                <!-- physical -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Physical</span>
                     <img src="images/defense2.png">
                     <p>0</p>
                   </div>
-
-                <!-- electric -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Electric</span>
                     <img src="images/electric.png">
                     <p>-40%</p>
                   </div>
-
-                 <!-- fire -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Fire</span>
                     <img src="images/fire.png">
@@ -113,108 +124,88 @@
                   </div>
               </div>
               <div class="resistinfo">
-                <!-- ice -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Ice</span>
                     <img src="images/frozen.png">
                     <p>25%</p>
                   </div>
-
-                <!-- poison -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Poison</span>
                     <img src="images/poison.png">
                     <p>0</p>
                   </div>
-
-                <!-- shadow -->
                   <div class="aligner-item spacealigner">
                     <span class="tooltip">Shadow</span>
                     <img src="images/shadow.png">
                     <p>0</p>
                   </div>
               </div>
-			   <div class="resistinfo">
-				 <!-- radiation -->
+			  <div class="resistinfo">
 				   <div class="aligner-item spacealigner">
 					 <span class="tooltip">Cosmic</span>
 					 <img src="images/frozen.png">
 					 <p>25%</p>
 				   </div>
 
-				 <!-- cosmic -->
 				   <div class="aligner-item spacealigner">
 					 <span class="tooltip">Radioactive</span>
 					 <img src="images/poison.png">
 					 <p>0</p>
 				   </div>
-
               </div>
-            </div>
+          </div>
+
+						</div>
+					</div>
+					<div id="tab-2">
+						<a href="#tab-2" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
+
+						</div>
+					</div>
+					<div id="tab-3">
+						<a href="#tab-3" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
+						</div>
+					</div>
+					<div id="tab-4">
+						<a href="#tab-4" class="tab positive">Racial Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
+						</div>
+					</div>
+					<div id="tab-5">
+						<a href="#tab-5" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
+						</div>
+					</div>
+
+					<div id="tab-6">
+						<a href="#tab-6" class="tab other">Advantages <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
+						</div>
+					</div>
+
+					<div id="tab-7">
+						<a href="#tab-7" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Axe: +10% Crit Chance<br/><br/>Hammers: +20% damage, +15% movement speed<br/><br/>Grenade Launcher: +20% Crit Damage<br/><br/>Rocket Launcher: +5% Crit Chance<br/><br/>Energy Guns: +10% damage, +10% energy<br/><br/>Magnorbs: +12% Damage and +2 Protection</p>
+						</div>
+					</div>
+
+					<div id="tab-8">
+						<a href="#tab-8" class="tab common">Immunities <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Jungle and Mud Tiles</p>
+						</div>
+					</div>
 
 
-
-
-
-
-<div id="contain">
-	<div class="accordion">
-		<div id="tab-1">
-			<a href="#tab-1" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<!-- <img src="http://cssdeck.com/uploads/media/posts/1/1yDVLnr.png" alt="">
-				<h1>The Big Elephant in the City</h1>
-				<span>5 days ago</span> <em class="bullet"></em> <span>17 comments</span>-->
-				<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
-				<!--<ul>
-					<li><img src="http://cssdeck.com/uploads/media/posts/6/6GKNUeI.png" alt=""></li>
-					<li><img src="http://cssdeck.com/uploads/media/posts/8/8XP0nj1.png" alt=""></li>
-					<li><img src="http://cssdeck.com/uploads/media/posts/0/0Df6hi1.png" alt=""></li>
-				</ul> -->
 			</div>
-		</div>
-		<div id="tab-2">
-			<a href="#tab-2" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
-			</div>
-		</div>
-		<div id="tab-3">
-			<a href="#tab-3" class="tab positive">Racial Perks <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
-			</div>
-		</div>
-		<div id="tab-4">
-			<a href="#tab-4" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
-			</div>
-		</div>
-
-		<div id="tab-5">
-			<a href="#tab-5" class="tab other">Advantages <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
-			</div>
-		</div>
-
-		<div id="tab-6">
-			<a href="#tab-6" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>Axe: +10% Crit Chance<br/><br/>Hammers: +20% damage, +15% movement speed<br/><br/>Grenade Launcher: +20% Crit Damage<br/><br/>Rocket Launcher: +5% Crit Chance<br/><br/>Energy Guns: +10% damage, +10% energy<br/><br/>Magnorbs: +12% Damage and +2 Protection</p>
-			</div>
-		</div>
-
-		<div id="tab-7">
-			<a href="#tab-7" class="tab common">Immunities <span class="down">+</span><span class="up">-</span></a>
-			<div class="content">
-				<p>Jungle and Mud Tiles</p>
-			</div>
-		</div>
-
-
-	</div>
 
 
 
