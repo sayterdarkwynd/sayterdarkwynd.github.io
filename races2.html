@@ -16,7 +16,7 @@
 
   <script>
   $( function() {
-    $( "#accordion:nth-child(1n)" ).accordion();
+    $( "#accordion:nth-child(1n)" ).accordion({ heightStyle: false });
   } );
   </script>
 
@@ -63,11 +63,11 @@
 
 			<div class="textbox">
 				<div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-						<p>At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
+						<p class="indent">At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -134,37 +134,37 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
-				  <div>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <div class="racial">
 					<ul>
-					  <li>Axe: +10% Crit Chance</li>
-					  <li>Hammers: +20% damage, +15% movement speed</li>
-					  <li>Grenade Launcher: +20% Crit Damage</li>
-					  <li>Rocket Launcher: +5% Crit Chance</li>
-					  <li>Magnorbs: +12% Damage and +2 Protection</li>
+					  <li><label>Axe</label>+10% Crit Chance</li>
+					  <li><label>Hammers</label>+20% damage, +15% movement speed</li>
+					  <li><label>Grenade Launcher</label>+20% Crit Damage</li>
+					  <li><label>Rocket Launcher</label>+5% Crit Chance</li>
+					  <li><label>Magnorbs</label>+12% Damage and +2 Protection</li>
 					</ul>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Jungle and Mud Tiles</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
 				  </div>
@@ -198,11 +198,11 @@
 			</div>
 			<div class="textbox">
 	            <div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>Mysticism rules Avian culture, leading these swift near-flightless bird people are extremely swift and light and quite capable when channeling raw chaos through crystals in wands and staves. When armed with these weapons they are engines of destruction.</p>
+			 			<p class="indent">Mysticism rules Avian culture, leading these swift near-flightless bird people are extremely swift and light and quite capable when channeling raw chaos through crystals in wands and staves. When armed with these weapons they are engines of destruction.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -269,36 +269,31 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Hollow bones make for a more fragile frame, reducing your maximum health.</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>With wands and staves active, you gain additional Energy. You can channel wand power through a Dagger to shoot Cosmic bolts.</br></br>You fall slowly thanks to guiding feathres, reducing fall damage by 65%.</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>You love a good breeze. In mild to moderate wind conditions you gain slower falls, more agility and more vitality.</p>
-					<ul>
-					  <li>List item one</li>
-					  <li>List item two</li>
-					  <li>List item three</li>
-					</ul>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Jump Speed increase, +5% Jump Height</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>With wands and staves active, you gain additional Energy. You can channel wand power through a Dagger to shoot Cosmic bolts.<br/><br/>20% Damage bonus with Wands and Staves. With Wand and a one-handed weapon, weapon gets a 1d10+10 Crit Damage bonus.<br/><br/>5.5% Damage bonus that increases up to 25% as you lose health</p>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Avians are omnivores, preferring seeds and fruit as their priamry diet.</p>
 				  </div>
@@ -331,11 +326,11 @@
 
 			<div class="textbox">
 				<div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>Floran ssaw man writing thingss about Floranses. Floran sstabbed man. He iss now meatss for me! Deliciouss! Floran will ssit in ssun and let it regeneratess us!</p>
+			 			<p class="indent">Floran ssaw man writing thingss about Floranses. Floran sstabbed man. He iss now meatss for me! Deliciouss! Floran will ssit in ssun and let it regeneratess us!</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -402,36 +397,31 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>At night you slowly lose Food, and lose 10% Health and 30% Energy.<br/><br/>Most basic attacks consume food (see Combat Perks for details)</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>When the sun is up, you slowly regain Food.<br/><br/>During the daytime when fed 40% or higher you will regenerate health. <br/><br/>If at full health and food, the sun will increase your energy regen speed. <br/><br/>Underground, regeneration is slower (even with with bright light), and will consume food.Can not regenerate at night</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>In forest-like biomes you gain additional Health and Energy.</p>
-					<ul>
-					  <li>List item one</li>
-					  <li>List item two</li>
-					  <li>List item three</li>
-					</ul>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Gain up to 30% maximum Energy when fed<br/><br/>Gain increased damage (up to 25%) the more you starve.</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Melee weapons, boomerangs, whips, chakrams and bows will consume food when used.<br/><br/>Bow attacks gain +10% Critical Chance and +25% Crit Damage<br/><br/>When holding spears outward for defense, gain +20% Protection (consumes food).<br/><br/>Spear attack speed increases when fed. +20% Spear damage and +8% chance of Poison attack</p>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Shock</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Florans are obligate carnivores, and prefer raw meat as their primary dietary intake. They can tolerate cooked food of many sorts, but take poorly to most other edibles.</p>
 				  </div>
@@ -467,11 +457,11 @@
 			</div>
 			<div class="textbox">
 				  <div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>Glitch are absolute badasses in melee combat. They are naturally tougher than other races, being metal, and most are naturals with a shield. They are patient warriors, striking at precise moments, which gives them an edge in melee combat.</p>
+			 			<p class="indent">Glitch are absolute badasses in melee combat. They are naturally tougher than other races, being metal, and most are naturals with a shield. They are patient warriors, striking at precise moments, which gives them an edge in melee combat.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -538,31 +528,31 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Increased energy regen time<br/><br/>Weakened when submerged in water-like liquids, sapping health, power, defense and energy.</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Resting in oil pools and liquid protocite will regenerate your health and increase energy (Oil movement debuff is mitigated)</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>You require little sustenance, eating sporadically.</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Hammer/Axe: consume food in exchange for (Energy/16) Crit Chance.<br/><br/>Shields give +1 Protection (passive)<br/><br/>Each step of a weapon combo increases your damage.<br/><br/>Perfect Blocks increase your damage (Stacks)</p>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Poison, Bee Stings</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Glitch dislike most organic sources of food, as "digesting" them causes physical issues. They prefer robo-food such as boltbulbs and diodia. They can, however, ingest most well-cooked foods without incident.</p>
 				  </div>
@@ -595,11 +585,11 @@
 			</div>
 			<div class="textbox">
 				<div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>It's a human. You're one of those. Nothing special, really. They're effectively the "baseline" race, with no real advantages or disadvantages.</p>
+			 			<p class="indent">It's a human. You're one of those. Nothing special, really. They're effectively the "baseline" race, with no real advantages or disadvantages.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -666,35 +656,35 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None, other than hubris</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Strong leg muscles gives humans a very slight (0.07s) jump boost. Humans eat less often than most races.</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
-				  <div>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <div class="racial">
 					<ul>
 					  <li>Assault Rifles: +15% Damage</li>
 					  <li>Shortsword: +20% Damage, +20% Knockback Resistance</li>
 					  <li>Shield: Perfect Blocks increase Protection (stacks) (cancelled when hit or failing to block)</li>
 					</ul>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Omnivore</p>
 				  </div>
@@ -728,11 +718,11 @@
 			</div>
 			<div class="textbox">
 				<div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>While they prefer peace, most Hylotl are also trained in Martial Arts due to tradition in their culture. As a result, the art of swordplay is second nature to them. With other forms of weapons, they focus on defense and excel. Shields are well used too, and they are able to withstand blows and come out restored.</p>
+			 			<p class="indent">While they prefer peace, most Hylotl are also trained in Martial Arts due to tradition in their culture. As a result, the art of swordplay is second nature to them. With other forms of weapons, they focus on defense and excel. Shields are well used too, and they are able to withstand blows and come out restored.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -799,24 +789,24 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>When submerged within water, waste water, healing water, or select other non-toxic liquids, Hylotl gain increases in Speed, Health and Protection</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Start with Liquid Collection unlocked on your Matter Manipulator</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
-				  <div>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <div class="racial">
 					<ul>
 					  <li>Broadsword: +10% Crit</li>
 					  <li>Shortsword: +20% Damage</li>
@@ -824,11 +814,11 @@
 					  <li>Shield: Perfect Blocks restore health</li>
 					</ul>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>None</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Omnivore</p>
 				  </div>
@@ -864,11 +854,11 @@
 			</div>
 			<div class="textbox">
 				<div id="accordion" class="race">
-					<h3 class="other">Species Info <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="other heading">Species Info <span class="down">+</span><span class="up">-</span></h3>
 					<div>
-			 			<p>With no real culture of their own, the Novakids roam the galaxy as intrepid explorers. They are obsessed with earthen Wild West themes, and they each adore Pistols and Sniper Rifles as defensive and offensive tools. They are tough to push around, and fleet of foot.</p>
+			 			<p class="indent">With no real culture of their own, the Novakids roam the galaxy as intrepid explorers. They are obsessed with earthen Wild West themes, and they each adore Pistols and Sniper Rifles as defensive and offensive tools. They are tough to push around, and fleet of foot.</p>
 					</div>
-					<h3 class="resists">Resists <span class="down">+</span><span class="up">-</span></h3>
+					<h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
 					<div class="raceresistblock">
 						  <div class="resistitem">
 							<div class="resistleft">
@@ -935,35 +925,35 @@
 							</div>
 						  </div>
 					</div>
-				  <h3 class="warning">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>When the sun is down, your Physical Resistance drops 10% and you lose 25% of your Energy.</p>
 				  </div>
-				  <h3 class="legendary">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>When well fed (65%), you can regenerate your health.</p>
 				  </div>
-				  <h3 class="epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>On Chromatic, Alien, Crystalline and Irradiated biomes you gain +15% Energy and +15% Health</p>
 				  </div>
-				  <h3 class="positive">Advantages <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Glow in the Dark</p>
 				  </div>
-				  <h3 class="uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
-				  <div>
+				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+				  <div class="racial">
 					<ul>
 					  <li>Pistols: Firing Speed increases with amount of daylight. +5% Crit</li>
 					  <li>Sniper Rifle: During daylight hours you gain +10% Crit and +20% Crit Damage.</li>
 					  <li>Whip: +20% Damage</li>
 					</ul>
 				  </div>
-				  <h3 class="rare">Immunities <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Radiation Burn, Burning</p>
 				  </div>
-				  <h3 class="default">Diet <span class="down">+</span><span class="up">-</span></h3>
+				  <h3 class="default heading">Diet <span class="down">+</span><span class="up">-</span></h3>
 				  <div>
 					<p>Omnivore</p>
 				  </div>
@@ -973,13 +963,7 @@
           </div>
         </div>
 	</li>
-
-
-
-
 </ul>
-
-
 </div>
 
 
