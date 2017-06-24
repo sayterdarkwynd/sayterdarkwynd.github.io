@@ -31,34 +31,10 @@
     <div class="logo">
     <a href="#">Frackin Races</a>
     </div>
-
-    <!--<nav>
-        <ul>
-            <li><a href="#">Races</a>
-            <ul>
-                <li><a href="#">Apex</a></li>
-                <li><a href="#">Avian</a></li>
-                <li><a href="#">Floran</a></li>
-                <li><a href="#">Glitch</a></li>
-                <li><a href="#">Human</a></li>
-                <li><a href="#">Hylotl</a></li>
-                <li><a href="#">Novakid</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Mod Races</a></li>
-        </ul>
-    </nav> -->
-
 </header>
 
 <div class="container">
-
-
-
-
 	<ul class="list"><br/>
-
-
 
     <li class="list-itembig">
       <div class="list-content">
@@ -82,7 +58,7 @@
 			  </div>
 			  <div class="raceright">
 				<ul>
-					  <li>Stats</li>
+					   <li>Stats</li>
 					   <li><img src="images/health.png"> : 0</li>
 					   <li><img src="images/energy.png"> : 0</li>
 					   <li><img src="images/attack.png"> : 0</li>
@@ -96,7 +72,6 @@
 			  <p class="spacer_top">They are just as happy using their animal instincts with fist weapons, and are tough to take out in a fistfight. Don't think they're brutes, though. These people are cunning, intelligent and resourceful. So long as they keep fed, they are able to out-think most races with ease!</p>
 			</div>
 
-
 			<div id="contain">
 				<div class="accordion">
 
@@ -105,119 +80,443 @@
 						<div class="content">
 
 
-            <div class="info">
-              <div class="resistinfo">
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Physical</span>
-                    <img src="images/defense2.png">
-                    <p>0</p>
-                  </div>
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Electric</span>
-                    <img src="images/electric.png">
-                    <p>-40%</p>
-                  </div>
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Fire</span>
-                    <img src="images/fire.png">
-                    <p>0</p>
-                  </div>
-              </div>
-              <div class="resistinfo">
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Ice</span>
-                    <img src="images/frozen.png">
-                    <p>25%</p>
-                  </div>
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Poison</span>
-                    <img src="images/poison.png">
-                    <p>0</p>
-                  </div>
-                  <div class="aligner-item spacealigner">
-                    <span class="tooltip">Shadow</span>
-                    <img src="images/shadow.png">
-                    <p>0</p>
-                  </div>
-              </div>
-			  <div class="resistinfo">
-				   <div class="aligner-item spacealigner">
-					 <span class="tooltip">Cosmic</span>
-					 <img src="images/frozen.png">
-					 <p>25%</p>
-				   </div>
-
-				   <div class="aligner-item spacealigner">
-					 <span class="tooltip">Radioactive</span>
-					 <img src="images/poison.png">
-					 <p>0</p>
-				   </div>
-              </div>
-          </div>
+ 							<div class="raceresistblock">
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/physical.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Physical</span><p>0%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/electric.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Electric</span><p>0%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/fire.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Fire</span><p>-30%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/ice.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Ice</span><p>30%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/poison.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Poison</span><p>10%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/shadow.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Shadow</span><p>0%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/cosmic.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Cosmic</span><p>-10%</p>
+								    </div>
+								  </div>
+								  <div class="resistitem">
+								    <div class="resistleft">
+								      <img src="images/elements/radioactive.png" />
+								    </div>
+								    <div class="resistright">
+								      <span>Radiation</span><p>0%</p>
+								    </div>
+								  </div>
+ 							</div>
 
 						</div>
 					</div>
-					<div id="tab-2">
-						<a href="#tab-2" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-12">
+						<a href="#tab-12" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
+						</div>
+					</div>
+					<div id="tab-13">
+						<a href="#tab-13" class="tab legendary">Racial Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
+						</div>
+					</div>
+					<div id="tab-14">
+						<a href="#tab-14" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
+						</div>
+					</div>
+					<div id="tab-15">
+						<a href="#tab-15" class="tab positive">Advantages <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
+						</div>
+					</div>
+					<div id="tab-16">
+						<a href="#tab-16" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Axe: +10% Crit Chance<br/><br/>Hammers: +20% damage, +15% movement speed<br/><br/>Grenade Launcher: +20% Crit Damage<br/><br/>Rocket Launcher: +5% Crit Chance<br/><br/>Energy Guns: +10% damage, +10% energy<br/><br/>Magnorbs: +12% Damage and +2 Protection</p>
+						</div>
+					</div>
+					<div id="tab-17">
+						<a href="#tab-17" class="tab default">Immunities <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Jungle and Mud Tiles</p>
+						</div>
+					</div>
+					<div id="tab-18">
+						<a href="#tab-18" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
 
 						</div>
 					</div>
-					<div id="tab-3">
-						<a href="#tab-3" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
+			</div>
+          </div>
+        </div>
+	</li>
+
+
+	<li class="list-itemrace">
+        <div class="list-content">
+          <h1 class="positive large">Avian</h1>
+
+          <div class="imageboxrace">
+
+			<div class="racestats">
+			  <div class="raceleft">
+			    <img src="images/races/Avian.png" class="small racepic"/>
+			  </div>
+			  <div class="raceright">
+				<ul>
+					   <li>Stats</li>
+					   <li><img src="images/health.png"> : -15%</li>
+					   <li><img src="images/energy.png"> : 10%</li>
+					   <li><img src="images/attack.png"> : 5%</li>
+					   <li><img src="images/defense.png"> : 0</li>
+				</ul>
+			  </div>
+			</div>
+
+			<div class="textbox">
+			  <p>Mysticism rules Avian culture, leading these swift near-flightless bird people are extremely swift and light and quite capable when channeling raw chaos through crystals in wands and staves. When armed with these weapons they are engines of destruction.</p>
+			  <p class="spacer_top">Your natural avian instincts make you downright nasty in a fight, so you do more damage. What's more, the greater the damage you suffer, the more pain you can dish out. You're a full-on berzerker. And if it happens to be windy, even better, for you can use your otherwise useless wing feathers to slow your falls even further.</p>
+			</div>
+
+			<div id="contain">
+				<div class="accordion">
+
+					<div id="tab-21">
+						<a href="#tab-21" class="tab resists">Resistances<span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<div class="info">
+								<div class="raceresistblock">
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/physical.png" />
+										</div>
+										<div class="resistright">
+										  <span>Physical</span><p>0%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/electric.png" />
+										</div>
+										<div class="resistright">
+										  <span>Electric</span><p>25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/fire.png" />
+										</div>
+										<div class="resistright">
+										  <span>Fire</span><p>0%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/ice.png" />
+										</div>
+										<div class="resistright">
+										  <span>Ice</span><p>-40%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/poison.png" />
+										</div>
+										<div class="resistright">
+										  <span>Poison</span><p>-25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/shadow.png" />
+										</div>
+										<div class="resistright">
+										  <span>Shadow</span><p>15%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/cosmic.png" />
+										</div>
+										<div class="resistright">
+										  <span>Cosmic</span><p>25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/radioactive.png" />
+										</div>
+										<div class="resistright">
+										  <span>Radiation</span><p>0%</p>
+										</div>
+									  </div>
+								</div>
+						  </div>
+						</div>
+					</div>
+					<div id="tab-22">
+						<a href="#tab-22" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
 						</div>
 					</div>
-					<div id="tab-4">
-						<a href="#tab-4" class="tab positive">Racial Perks <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-23">
+						<a href="#tab-23" class="tab legendary">Racial Perks <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
 						</div>
 					</div>
-					<div id="tab-5">
-						<a href="#tab-5" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-24">
+						<a href="#tab-24" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
 						</div>
 					</div>
-
-					<div id="tab-6">
-						<a href="#tab-6" class="tab other">Advantages <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-25">
+						<a href="#tab-25" class="tab positive">Advantages <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
 						</div>
 					</div>
-
-					<div id="tab-7">
-						<a href="#tab-7" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-26">
+						<a href="#tab-26" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>Axe: +10% Crit Chance<br/><br/>Hammers: +20% damage, +15% movement speed<br/><br/>Grenade Launcher: +20% Crit Damage<br/><br/>Rocket Launcher: +5% Crit Chance<br/><br/>Energy Guns: +10% damage, +10% energy<br/><br/>Magnorbs: +12% Damage and +2 Protection</p>
 						</div>
 					</div>
-
-					<div id="tab-8">
-						<a href="#tab-8" class="tab common">Immunities <span class="down">+</span><span class="up">-</span></a>
+					<div id="tab-27">
+						<a href="#tab-27" class="tab default">Immunities <span class="down">+</span><span class="up">-</span></a>
 						<div class="content">
 							<p>Jungle and Mud Tiles</p>
 						</div>
 					</div>
+					<div id="tab-28">
+						<a href="#tab-28" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
 
-
+						</div>
+					</div>
 			</div>
-
-
-
-
-
           </div>
         </div>
 	</li>
+
+	<li class="list-itemrace">
+        <div class="list-content">
+          <h1 class="positive large">Floran</h1>
+
+          <div class="imageboxrace">
+
+			<div class="racestats">
+			  <div class="raceleft">
+			    <img src="images/races/Floran.png" class="small racepic"/>
+			  </div>
+			  <div class="raceright">
+				<ul>
+					   <li>Stats</li>
+					   <li><img src="images/health.png"> : 10%</li>
+					   <li><img src="images/energy.png"> : 20%</li>
+					   <li><img src="images/attack.png"> : 20%</li>
+					   <li><img src="images/defense.png"> : 0</li>
+				</ul>
+			  </div>
+			</div>
+
+			<div class="textbox">
+			  <p>At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
+			  <p class="spacer_top">They are just as happy using their animal instincts with fist weapons, and are tough to take out in a fistfight. Don't think they're brutes, though. These people are cunning, intelligent and resourceful. So long as they keep fed, they are able to out-think most races with ease!</p>
+			</div>
+
+			<div id="contain">
+				<div class="accordion">
+
+					<div id="tab-31">
+						<a href="#tab-31" class="tab resists">Resistances<span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<div class="info">
+
+
+
+								<div class="raceresistblock">
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/physical.png" />
+										</div>
+										<div class="resistright">
+										  <span>Physical</span><p>0%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/electric.png" />
+										</div>
+										<div class="resistright">
+										  <span>Electric</span><p>25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/fire.png" />
+										</div>
+										<div class="resistright">
+										  <span>Fire</span><p>-50%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/ice.png" />
+										</div>
+										<div class="resistright">
+										  <span>Ice</span><p>25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/poison.png" />
+										</div>
+										<div class="resistright">
+										  <span>Poison</span><p>-25%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/shadow.png" />
+										</div>
+										<div class="resistright">
+										  <span>Shadow</span><p>0%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/cosmic.png" />
+										</div>
+										<div class="resistright">
+										  <span>Cosmic</span><p>0%</p>
+										</div>
+									  </div>
+									  <div class="resistitem">
+										<div class="resistleft">
+										  <img src="images/elements/radioactive.png" />
+										</div>
+										<div class="resistright">
+										  <span>Radiation</span><p>0%</p>
+										</div>
+									  </div>
+								</div>
+
+						  </div>
+						</div>
+					</div>
+					<div id="tab-32">
+						<a href="#tab-32" class="tab warning">Racial Flaws <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
+						</div>
+					</div>
+					<div id="tab-33">
+						<a href="#tab-33" class="tab legendary">Racial Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
+						</div>
+					</div>
+					<div id="tab-34">
+						<a href="#tab-34" class="tab epic">Environmental Bonus <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
+						</div>
+					</div>
+					<div id="tab-35">
+						<a href="#tab-35" class="tab positive">Advantages <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
+						</div>
+					</div>
+					<div id="tab-36">
+						<a href="#tab-36" class="tab uncommon">Combat Perks <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Axe: +10% Crit Chance<br/><br/>Hammers: +20% damage, +15% movement speed<br/><br/>Grenade Launcher: +20% Crit Damage<br/><br/>Rocket Launcher: +5% Crit Chance<br/><br/>Energy Guns: +10% damage, +10% energy<br/><br/>Magnorbs: +12% Damage and +2 Protection</p>
+						</div>
+					</div>
+					<div id="tab-37">
+						<a href="#tab-37" class="tab default">Immunities <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Jungle and Mud Tiles</p>
+						</div>
+					</div>
+					<div id="tab-38">
+						<a href="#tab-38" class="tab rare">Diet <span class="down">+</span><span class="up">-</span></a>
+						<div class="content">
+							<p>Apex are omnivores, though typically prefer vegetarian dishes.</p>
+
+						</div>
+					</div>
+			</div>
+          </div>
+        </div>
+	</li>
+
 
 </ul>
 
 
 </div>
+
+
+<script type="text/javascript">
+    (function($) {
+        $(function() {
+            $(".accordion > div").accordion({ header: "h3", collapsible: true });
+        })
+    })(jQuery);
+</script>
+
+
 </body>
 </html>
