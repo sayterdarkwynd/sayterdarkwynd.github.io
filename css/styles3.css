@@ -200,7 +200,6 @@ h1 {
   padding:1em;
 }
 
-
 /* font sizes */
 
 .xlarge { font-size:2em; }
@@ -296,9 +295,6 @@ ul.list {
   width:100%;
   box-sizing: border-box;
   word-wrap: break-word;
-  background: rgba(0,0,0,0.9);  
-  border-bottom-left-radius:0.5em;
-  border-bottom-right-radius:0.5em;
   height:100%;
 }
 
@@ -307,6 +303,9 @@ ul.list {
   text-align:left;
   line-height:1.6em;
 }
+
+#tab .content { display:none;}
+#tab .content_show {display:block;}
 
 .spacer_top { margin-top:2em;}
 
@@ -559,115 +558,48 @@ vertical-align:middle;
 
 
 
-.accordion,.accordion div,.accordion h1,.accordion p,.accordion a,.accordion img,.accordion span,.accordion em,.accordion ul,.accordion li {
-	margin: 0;
-	padding: 0;
-	border: none;
+/* Accordion Content Styles */
+
+#accordion h3 {
+  display:block;
+  position:relative;
 }
-
-
-.accordion {
-	width: 100%;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-}
-
-.accordion .tab {
-	display: block;position:relative;
-	margin-top: 4px;
-	padding: 1em;
-	font: normal 1.2em 'Hobo', Fallback, sans-serif;
-	text-decoration: none;
-	color: #eee;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	background: #6c6e74;
-}
-
-.accordion div:target .tab {
-	color: #fff; 
-}
-
-.accordion .tab:hover {
-	color: #000 !important;background:#fff !important;
-}
-
-.accordion .tab span {
+#accordion h3 span {
   position:absolute;right:1em;
 }
 
-.accordion div .content {
-	display: none;
-	margin: 0;
-	background:#292929;
+#accordion h3 .up { 
+  display:none; 
 }
 
-.accordion div:target .content {
-	display: block;
+#accordion h3:focus .down { 
+  display:none;
 }
 
-.accordion > div {
-	height: 64px;
-	overflow: hidden;
-
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+#accordion h3:focus .up { 
+  display:inline-block 
 }
 
-.accordion > div:target {
-	height: auto;
+#accordion div {
+  height:auto;
 }
 
-.accordion > div:target .up {
-	display:visible
+#accordion div p { 
+  text-align:left; 
+  padding:1em;
 }
-.accordion > div:target .down {
-	display:none
+
+#accordion h3 {
+  position:relative;
+  display:block;
+  padding:1em;
+  font-size:1.2em
 }
 
 
-/* Accordion Content Styles */
-.accordion .content h1 {
-	color: white;
-	font: 1.4em/1.6em 'Hobo', Fallback, sans-serif;
-}
 
-.accordion .content p {
-	padding:1em;
-	color: white;
-	font: 1.1em/1.4em 'Hobo', Fallback, sans-serif;
-}
 
-/*.accordion .content span {
-	font: italic 1.2em/1.2em 'Hobo', Fallback, sans-serif;
-	color: #4f4f4f;
-}*/
 
-.accordion .content em.bullet {
-	width: 5px;
-	height: 5px;
-	margin: 0 5px;
-	background: #6b8f1a;
-	display: inline-block;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.accordion .content ul li {
-	list-style: none;
-	float: left;
-	margin: 5px 10px 5px 0;
-}
 
 	
-.up { }
-.down { display:visible;}
 
