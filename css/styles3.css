@@ -669,6 +669,5 @@ vertical-align:middle;
 
 	
 .up { }
-
-.down { display:none;}
+.down { display:visible;}
 
