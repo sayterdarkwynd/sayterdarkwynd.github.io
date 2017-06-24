@@ -102,64 +102,6 @@ header {
 
 .logo a { color:#fff; }
 
-
-
-nav {
-  width:70%;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  }
-  
-nav ul li {
-  display:inline-block;
-  }
-
-nav a {
-  display:block;
-  padding:0 10px; 
-  color:#FFF;
-  font-size:1.1em;
-  line-height: 60px;
-  text-decoration:none;
-  background: rgba(0,0,0,1);
-}
-
-nav a:hover { 
-  background-color: #6080dc; 
-}
-
-/* Hide Dropdowns by Default */
-nav ul ul {
-  display: none;
-  position: absolute; 
-  top: 60px; /* the height of the main nav */
-}
-  
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-  display:inherit;
-}
-  
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-  width:170px;
-  float:none;
-  display:list-item;
-  position: relative;
-}
-
-/* Second, Third and more Tiers */
-nav ul ul ul li {
-  position: relative;
-  top:-60px; 
-  left:170px;
-}
-
   
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
@@ -277,18 +219,11 @@ ul.list {
 }
 
 .list-item, .list-itembig, .list-itemmed, .list-itemrace {
-  -webkit-flex-direction:column;
-  flex-direction:column;
+  -webkit-flex-direction:row;
+ 
+  flex-direction:row;
   padding:0 1em 1em 0;
   width:100%;
-}
-
-.list-content {
-  -webkit-flex:1 0 auto;
-  flex:1 0 auto;
-  display: flex; 
-  flex-direction: column; 
-  height: 100%;
 }
 
 .textbox { 
@@ -309,6 +244,10 @@ ul.list {
 #tab .content_show {display:block;}
 
 
+.textcontent {
+  display:block;
+  height:500px
+}
 
 .textbox p.type { 
   margin:0; 
@@ -459,13 +398,13 @@ vertical-align:middle;
 }
 
 @media screen and (max-width: 64em) {
-  .list-itemrace { width:50%; }
+  .list-itemrace { width:50%; padding:5px;}
   .imageboxrace img.racepic { max-height:128px;max-width:85px;}
 }
 
 
-@media screen and (max-width: 37.5em) {
-  .list-itemrace { width:100%; }
+@media screen and (max-width: 32.5em) {
+  .list-itemrace { width:100%; padding:0;}
   .imageboxrace img.racepic { max-height:128px;max-width:85px;}
 }
 
