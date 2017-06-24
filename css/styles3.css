@@ -248,6 +248,7 @@ p, .greytext { color:#ccc; }
   display:-ms-flexbox;
   display:flex;
   flex-flow:row wrap;
+  -webkit-flex-flow:row wrap;
   padding:20px;
 }
 
@@ -291,7 +292,6 @@ ul.list {
 }
 
 .textbox { 
-  padding:2em;  
   width:100%;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -302,12 +302,13 @@ ul.list {
   text-indent:2em;
   text-align:left;
   line-height:1.6em;
+  padding:0 2em 2em 2em;
 }
 
 #tab .content { display:none;}
 #tab .content_show {display:block;}
 
-.spacer_top { margin-top:2em;}
+
 
 .textbox p.type { 
   margin:0; 
@@ -559,7 +560,7 @@ vertical-align:middle;
 
 
 /* Accordion Content Styles */
-
+#accordion { position:relative;display:block;}
 #accordion h3 {
   display:block;
   position:relative;
