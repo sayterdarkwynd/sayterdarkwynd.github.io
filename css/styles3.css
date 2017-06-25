@@ -76,22 +76,9 @@ header {
   position:fixed;
   top:0;
   left:0;
-  height:85px;
   width:100%;
   background-color: rgba(0, 0, 0, 1);  
-  padding:20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;  
-    align-items: center;
-    flex-wrap:row;
-  z-index:1200;
+  z-index:10;
 }
 
 .logo {
@@ -102,7 +89,39 @@ header {
 
 .logo a { color:#fff; }
 
+
+.headerbox {
+  position:relative;
+    padding:2em;
+    width:100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;  
+    align-items: center;
+    flex-wrap:row;  
+    margin:0 auto;
+}
   
+.bottommenu {
+  position:absolute;
+  right:1em;
+  z-index:9000;
+}
+
+.bottommenu a { 
+  color:#fff;
+  font-size:1.4em;
+  line-height:85px;
+  color:#fff;
+}
+
+
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
@@ -185,23 +204,15 @@ p, .greytext { color:#ccc; }
 
 .container { 
   height:100vh;
-  margin-top:86px;
   display:-webkit-flexbox;
   display:-ms-flexbox;
   display:flex;
   flex-flow:row wrap;
   -webkit-flex-flow:row wrap;
-  padding:20px;
+  padding:2em;
 }
 
-.menu { 
-  -webkit-flex:1;
-  -webkit-flex-direction:row;
-  flex:1;
-  flex-direction:row;
-  margin-right:1em; 
-  height:100%;
-}
+
 
 ul.list {
   display:-webkit-flexbox;
@@ -382,25 +393,6 @@ vertical-align:middle;
 
 .list-itemrace {width:50%}
 
-/* media queries */
-@media screen and (min-width: 90.01em) {.list-itemrace { width:25%; }  }
-
-@media screen and (max-width: 90em) { .list-itemrace { width:33%; }  }
-
-@media screen and (max-width: 64em) {
-  .list-itemrace { width:50%; padding:5px;margin-bottom:1em}
-  .imageboxrace img.racepic { max-height:128px;max-width:85px;}
-  body {font-size:16px}
-}
-
-
-@media screen and (max-width: 32.5em) {
-  .list-itemrace { width:100%; padding:0;}
-  .imageboxrace img.racepic { max-height:128px;max-width:85px;}
-  
-}
-
-
 
 
 /* Accordion Content Styles */
@@ -465,27 +457,40 @@ vertical-align:middle;
 
 
 .racephotos {
+  display:block;
+  width:100%;
+  padding:2em;
+  margin-top:4em;
+}
+
+.racephotos .racerow {
   display:-webkit-flex;
   display:flex;
-  justify-content:space-between;
-  -webkit-justify-content:space-between;
+  justify-content:left;
+  -webkit-justify-content:left;
   width:100%;
+  flex: 0 1 auto;  
   margin-bottom:2em;
-  padding:2em;
+  flex-wrap:wrap
 }
 
-.racephotos div {
+.racephotos .racerow div {
   position:relative;
-  outline:1px solid #fff;
-  width:128px;
-  height:128px;
+  outline:2px solid #ccc;
+    justify-content:space-between;
+  -webkit-justify-content:space-between;
+  width:64px;
+  height:64px;
   overflow:hidden;
   background:rgba(255,255,255,0.2);
+  margin:2em 2em 0 0;
 }
 
-.racephotos div:hover { outline:4px solid #fff;}
+.racephotos .racerow div:hover { 
+  outline:4px solid #fff;
+}
 
-.racephotos span { 
+.racephotos .racerow span { 
   display:none; 
   width:100%; 
   background:#fff;
@@ -496,21 +501,21 @@ vertical-align:middle;
   font-size:1.1em
 }
 
-.racephotos div:hover span {
+.racephotos .racerow div:hover span {
   position:absolute;
   display:block;
 }
 
-.racephotos img {
+.racephotos .racerow img {
   width:100%;
   max-width:100%
 }
 
+.racephotos .racerow div:last-child {
+  margin-right:0em;
+}
 
-
-
-
-/* overrides */
+/* jQ UI overrides */
 #accordion .ui-accordion-content > * { margin: 0; }
 /*.ui-accordion-content { min-height:275px; }*/
 .ui-accordion-header-active { 
@@ -519,4 +524,40 @@ vertical-align:middle;
 }
 .ui-accordion-content-active { height:auto; }
 	
+
+
+/* media queries */
+
+@media screen and (min-width: 90.01em) {
+  .container { width:75%;margin:0 auto;max-width:90.01em } 
+  .headerbox { max-width:1204px}
+  .list-itemrace { width:25%; } 
+  header .logo {font-size:2.2em}
+  .racephotos .racerow div {width:128px;height:128px;}  
+}
+
+@media screen and (max-width: 90em) { 
+  .list-itemrace { width:33%; } 
+  header .logo {font-size:2em}
+  .racephotos .racerow div { width:128px;height:128px;margin:1em 1em 0 0 }  
+}
+
+@media screen and (max-width: 64em) {
+  .list-itemrace { width:50%; padding:5px;margin-bottom:1em}
+  .imageboxrace img.racepic { max-height:128px;max-width:85px;}
+  body {font-size:16px}
+  .racephotos .racerow div { width:64px;height:64px;margint:0.6em 0.6em 0 0 }  
+  header .logo {font-size:1.8em}
+  .bottommenu {left:1em}
+  .logo {margin:0 auto;}  
+}
+
+@media screen and (max-width: 32.5em) {
+  .list-itemrace { width:100%; padding:0; }
+  .imageboxrace img.racepic { max-height:128px;max-width:85px; }
+  .racephotos .racerow div { width:32px;height:32px;margin-right:0.4em 0.4em 0 0 } 
+  header .logo {font-size:1.4em}
+}
+
+
 
