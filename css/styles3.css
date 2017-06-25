@@ -412,13 +412,15 @@ vertical-align:middle;
 
 /* Accordion Content Styles */
 #accordion { 
-position:relative;
-display:block;
-}
-#accordion h3 {
-  display:block;
   position:relative;
-  text-align:left;
+  display:block;
+}
+
+#accordion h3 {
+  text-align:left;  
+  display:block;
+  padding:1em;
+  margin-top:2px;transition:background-color 0.5s ease-out;
 }
 
 #accordion h3 span {
@@ -430,11 +432,11 @@ display:block;
 }
 
 #accordion h3:focus .down { 
-  display:none;
+  display:none;   
 }
 
 #accordion h3:focus .up { 
-  display:inline-block 
+  display:inline-block;    
 }
 
 #accordion div, .race {
@@ -446,10 +448,10 @@ display:block;
   padding:1em;
 }
 
-#accordion h3 {
-  position:relative;
-  display:block;
-  padding:1em;
+#accordion h3:hover {
+  transition:background-color 0.5s ease;
+  background-color:#fff !important;
+  color:#000;
 }
 
 .racial ul {
@@ -466,9 +468,15 @@ display:block;
 }
 
 
+
 /* overrides */
 #accordion .ui-accordion-content > * { margin: 0; }
 /*.ui-accordion-content { min-height:275px; }*/
+.ui-accordion-header-active { 
+  transition:background-color 0.5s ease;
+  background-color:#fff !important;
+  color:#000;
+}
 .ui-accordion-content-active { height:auto; }
 	
 

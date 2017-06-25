@@ -14,7 +14,7 @@
 
   <script>
   $( function() {
-    $( "#accordion:nth-child(1n)" ).accordion({ heightStyle: false });
+    $( "#accordion:nth-child(1n)" ).accordion({ heightStyle: "content", collapsible:true, active:false });
   } );
   </script>
 
@@ -942,27 +942,6 @@
 	</li>
 </ul>
 </div>
-
-
-<script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("content") == -1) {
-        x.className += " content";
-    } else {
-        x.className = x.className.replace(" content", "");
-    }
-}
-</script>
-<script>
-$(function(){
-  $('#container').masonry({
-    // options
-    itemSelector : '.item',
-    columnWidth : 240
-  });
-});
-</script>
 
 </body>
 </html>
