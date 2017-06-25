@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="css/styles3.css">
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
 
   <script>
   $( function() {
@@ -39,7 +37,7 @@
 <div class="container">
   <ul class="list">
 	<li class="list-itemrace">
-        <div class="list-content">
+
           <h1 class="positive large">Apex</h1>
 
           <div class="imageboxrace">
@@ -151,11 +149,11 @@
 				  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 				  <div class="racial">
 					<ul>
-					  <li><label class="uncommontext">Axe</label>: +10% Crit Chance</li>
-					  <li><label class="uncommontext">Hammers</label>: +20% damage, +15% movement speed</li>
-					  <li><label class="uncommontext">Grenade Launcher</label>: +20% Crit Damage</li>
-					  <li><label class="uncommontext">Rocket Launcher</label>: +5% Crit Chance</li>
-					  <li><label class="uncommontext">Magnorbs</label>: +12% Damage and +2 Protection</li>
+					  <li><label class="cautiontext">Axe</label>: +10% Crit Chance</li>
+					  <li><label class="cautiontext">Hammers</label>: +20% damage, +15% movement speed</li>
+					  <li><label class="cautiontext">Grenade Launcher</label>: +20% Crit Damage</li>
+					  <li><label class="cautiontext">Rocket Launcher</label>: +5% Crit Chance</li>
+					  <li><label class="cautiontext">Magnorbs</label>: +12% Damage and +2 Protection</li>
 					</ul>
 				  </div>
 				  <h3 class="rare heading">Immunities <span class="down">+</span><span class="up">-</span></h3>
@@ -168,16 +166,12 @@
 				  </div>
 				</div>
 			</div>
-
           </div>
-        </div>
 	</li>
 
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Avian</h1>
-
           <div class="imageboxrace">
 
 			<div class="racestats">
@@ -298,11 +292,9 @@
 				</div>
 			</div>
           </div>
-        </div>
 	</li>
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Floran</h1>
 
           <div class="imageboxrace">
@@ -426,7 +418,6 @@
 				</div>
 			</div>
           </div>
-        </div>
 	</li>
 
 
@@ -434,7 +425,6 @@
 
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Glitch</h1>
 
           <div class="imageboxrace">
@@ -556,13 +546,10 @@
 				  </div>
 				</div>
 			</div>
-
           </div>
-        </div>
 	</li>
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Human</h1>
 
           <div class="imageboxrace">
@@ -688,18 +675,13 @@
 				  </div>
 				</div>
 			</div>
-
           </div>
-        </div>
 	</li>
 
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Hylotl</h1>
-
           <div class="imageboxrace">
-
 			<div class="racestats">
 			  <div class="raceleft">
 			    <img src="images/races/Hylotl.png" class="small racepic"/>
@@ -826,20 +808,15 @@
 				  </div>
 				</div>
 			</div>
-
           </div>
-        </div>
 	</li>
 
 
 
 
 	<li class="list-itemrace">
-        <div class="list-content">
           <h1 class="positive large">Novakid</h1>
-
           <div class="imageboxrace">
-
 			<div class="racestats">
 			  <div class="raceleft">
 			    <img src="images/races/Novakid.png" class="small racepic"/>
@@ -961,9 +938,7 @@
 				  </div>
 				</div>
 			</div>
-
           </div>
-        </div>
 	</li>
 </ul>
 </div>
@@ -979,7 +954,15 @@ function myFunction(id) {
     }
 }
 </script>
-
+<script>
+$(function(){
+  $('#container').masonry({
+    // options
+    itemSelector : '.item',
+    columnWidth : 240
+  });
+});
+</script>
 
 </body>
 </html>

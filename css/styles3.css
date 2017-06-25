@@ -146,10 +146,10 @@ h1 {
 
 .xlarge { font-size:2em; }
 .large { font-size:1.5em;  }
-.heading { font-size:1.2em; }
-.med { font-size:1.0em; }
+.heading { font-size:1.1em; }
+.med { font-size:0.95em; }
 .small { font-size:0.9em; }
-.tiny { font-size:0.8em; }
+.tiny { font-size:0.85em; }
 
 
 /* font weights */
@@ -455,22 +455,15 @@ display:block;
 .racial ul {
   display:inline-block;
   list-style-type:none;
-  padding:0;
-  margin:0;
+  width:100%;
 }
 
 .racial ul li {
+  margin:0;
   text-align:left;
   font-size:1em;
-  width:100%;
   height:auto;
-  padding:1em;
 }
-
-.racial ul li label {
-  margin-bottom:1em;
-}
-
 
 
 /* overrides */
