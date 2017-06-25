@@ -218,11 +218,16 @@ ul.list {
   margin:0;
 }
 
-.list-item, .list-itembig, .list-itemmed, .list-itemrace {
+.list-item, .list-itembig, .list-itemmed {
+  display:block;height:100%
+} 
+
+
+.list-itemrace {
   -webkit-flex-direction:row;
   flex-direction:row;
   padding:0 1em 1em 0;
-  width:100%;
+  width:33%;
 }
 
 .textbox { 
@@ -242,10 +247,6 @@ ul.list {
   padding:0 2em 2em 2em;
 }
 
-.textcontent {
-  display:block;
-  height:500px
-}
 
 .textbox p.type { 
   margin:0; 
@@ -474,11 +475,7 @@ display:block;
 
 /* overrides */
 #accordion .ui-accordion-content > * { margin: 0; }
-.ui-accordion-content { min-height:275px; }
+/*.ui-accordion-content { min-height:275px; }*/
 .ui-accordion-content-active { height:auto; }
-
-
-
-
 	
 
