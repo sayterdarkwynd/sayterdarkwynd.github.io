@@ -459,31 +459,23 @@ display:block;
 }
 
 .racial ul li {
-  display:inline-block;
-  margin-top:20px;
   text-align:left;
   font-size:1em;
-  background:#262626;
   width:100%;
   height:auto;
-}
-
-.racial ul li label {
-  background:#e43774;
   padding:1em;
 }
 
-.racial ul li p {
-  display:inline-block;
+.racial ul li label {
+  margin-bottom:1em;
 }
 
+
+
 /* overrides */
-#accordion .ui-accordion-content > * {
-  margin: 0;
-  padding: 20px;
-}
-.ui-accordion-content {min-height:275px;}
-.ui-accordion-content-active {height:auto}
+#accordion .ui-accordion-content > * { margin: 0; }
+.ui-accordion-content { min-height:275px; }
+.ui-accordion-content-active { height:auto; }
 
 
 
