@@ -53,7 +53,7 @@ table {
 
 body {
  font-family: 'Hobo', Fallback, sans-serif;
- font-size:1em;
+ font-size:14px;
  color:#fff;
   width:100%;
   height:100%;
@@ -342,8 +342,6 @@ vertical-align:middle;
   width:auto;
 }
 
-.info ul.features { list-style-type:none; margin:0;padding:1em; }
-.info ul.features li {margin-top:20px;line-height:1.6em; color:#efefef !important; }
 
 .statinfo img, .raceresistblock img { width:32px; height:32px;}
 
@@ -385,26 +383,21 @@ vertical-align:middle;
 .list-itemrace {width:50%}
 
 /* media queries */
-@media screen and (min-width: 90.01em) {
- 
-  .list-itemrace { width:25%; }  
-  
-}
-@media screen and (max-width: 90em) {
- 
-  .list-itemrace { width:33%; }  
-  
-}
+@media screen and (min-width: 90.01em) {.list-itemrace { width:25%; }  }
+
+@media screen and (max-width: 90em) { .list-itemrace { width:33%; }  }
 
 @media screen and (max-width: 64em) {
-  .list-itemrace { width:50%; padding:5px;}
+  .list-itemrace { width:50%; padding:5px;margin-bottom:1em}
   .imageboxrace img.racepic { max-height:128px;max-width:85px;}
+  body {font-size:16px}
 }
 
 
 @media screen and (max-width: 32.5em) {
   .list-itemrace { width:100%; padding:0;}
   .imageboxrace img.racepic { max-height:128px;max-width:85px;}
+  
 }
 
 
@@ -447,6 +440,7 @@ vertical-align:middle;
 #accordion div p { 
   text-align:left; 
   padding:1em;
+  font-size:1.1em
 }
 
 #accordion h3:hover {
@@ -466,7 +460,53 @@ vertical-align:middle;
   text-align:left;
   font-size:1em;
   height:auto;
+  color:#ccc;
 }
+
+
+.racephotos {
+  display:-webkit-flex;
+  display:flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  width:100%;
+  margin-bottom:2em;
+  padding:2em;
+}
+
+.racephotos div {
+  position:relative;
+  outline:1px solid #fff;
+  width:128px;
+  height:128px;
+  overflow:hidden;
+  background:rgba(255,255,255,0.2);
+}
+
+.racephotos div:hover { outline:4px solid #fff;}
+
+.racephotos span { 
+  display:none; 
+  width:100%; 
+  background:#fff;
+  color:#000;
+  text-align:center;
+  bottom:0;
+  padding:0.4em;
+  font-size:1.1em
+}
+
+.racephotos div:hover span {
+  position:absolute;
+  display:block;
+}
+
+.racephotos img {
+  width:100%;
+  max-width:100%
+}
+
+
 
 
 
