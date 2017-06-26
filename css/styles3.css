@@ -559,15 +559,24 @@ vertical-align:middle;
 .slick-slide:hover {border:2px solid #3a6b33;background:rgba(0,0,0,0.2);}
 .slick-slide span {display:none;}
 .slick-slide:hover span {display:block;color:#fff;background:#3a6b33;}
-/*
-.slick-prev:after {
-  content: "<";
-  color: red;
-  font-size: 30px;
+
+.slick-next,.slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
-.slick-next:before {
-  content: ">";
-  color: red;
-  font-size: 30px;
-}*/
+.slick-active span.slick-toggle { display:none;}
+
+.list-itemrace {display:none;}

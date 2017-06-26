@@ -31,7 +31,6 @@
 <body>
 
 <div class="container">
-
 <header>
 	<div class="nav">
 		<div class="headerbox">
@@ -46,30 +45,21 @@
 
 	<div class="racewheel">
 			<div class="racerow">
-				  <div><a href="#apex"><img src="images/races/Apex.png" /><span>Apex</span></a></div>
-				  <div><a href="#avian"><img src="images/races/Avian.png" /></a><span>Avian</span></div>
-				  <div><a href="#floran"><img src="images/races/Floran.png" /></a><span>Floran</span></div>
-				  <div><a href="#glitch"><img src="images/races/Glitch.png" /></a><span>Glitch</span></div>
-				  <div><a href="#human"><img src="images/races/Human.png" /></a><span>Human</span></div>
-				  <div><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span>Hylotl</span></div>
-				  <div><a href="#novakid"><img src="images/races/Novakid.png" /></a><span>Novakid</span></div>
-				  <div><a href="#apex"><img src="images/races/Apex.png" /></a><span>Apex</span></div>
-				  <div><a href="#avian"><img src="images/races/Avian.png" /></a><span>Avian</span></div>
-				  <div><a href="#floran"><img src="images/races/Floran.png" /></a><span>Floran</span></div>
-				  <div><a href="#glitch"><img src="images/races/Glitch.png" /></a><span>Glitch</span></div>
-				  <div><a href="#human"><img src="images/races/Human.png" /></a><span>Human</span></div>
-				  <div><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span>Hylotl</span></div>
-				  <div><a href="#novakid"><img src="images/races/Novakid.png" /></a><span>Novakid</span></div>
+				  <div id="race1"><a href="#apex"><img src="images/races/Apex.png" /><span class="slick-toggle">Apex</span></a></div>
+				  <div id="race2"><a href="#avian"><img src="images/races/Avian.png" /></a><span class="slick-toggle">Avian</span></div>
+				  <div id="race3"><a href="#floran"><img src="images/races/Floran.png" /></a><span class="slick-toggle">Floran</span></div>
+				  <div id="race4"><a href="#glitch"><img src="images/races/Glitch.png" /></a><span class="slick-toggle">Glitch</span></div>
+				  <div id="race5"><a href="#human"><img src="images/races/Human.png" /></a><span class="slick-toggle">Human</span></div>
+				  <div id="race6"><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span class="slick-toggle">Hylotl</span></div>
+				  <div id="race7"><a href="#novakid"><img src="images/races/Novakid.png" /></a><span class="slick-toggle">Novakid</span></div>
 			</div>
 	</div>
 </header>
 
-
-
 <div class="spacer" id="top apex avian floran glitch"></div>
 
   <ul class="list">
-	<li class="list-itemrace" id="apex">
+	<li class="list-itemrace" id="racetoggle1">
           <h1 class="positive large">Apex</h1>
           <div class="imageboxrace">
 			<div class="racestats">
@@ -199,7 +189,7 @@
 	</li>
 
 
-	<li class="list-itemrace" id="avian">
+	<li class="list-itemrace" id="racetoggle2">
           <h1 class="positive large">Avian</h1>
           <div class="imageboxrace">
 
@@ -985,8 +975,8 @@ $( window ).scroll(function() {
 $(document).ready(function(){
     $(".racerow").slick({
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 4,
+      slidesToShow: 7,
+      slidesToScroll: 1,
       centerMode: false,
       variableWidth: true,
       speed: 500,
@@ -994,7 +984,34 @@ $(document).ready(function(){
       useTransform:false,
       arrows: true
     });
+
+
+
+
+    $("#race1").click(function(){
+      $("#racetoggle1").slideDown();
+    });
+    $("#race2").hover(function(){
+      $("#racetoggle2").slideDown();
+    });
+    $("#race3").hover(function(){
+      $("#racetoggle3").slideDown();
+    });
+    $("#race4").hover(function(){
+      $("#racetoggle4").slideDown();
+    });
+    $("#race5").hover(function(){
+      $("#racetoggle5").slideDown();
+    });
+    $("#race6").hover(function(){
+      $("#racetoggle6").slideDown();
+    });
+    $("#race7").hover(function(){
+      $("#racetoggle7").slideDown();
+    });
+
 });
+
 </script>
 
 
