@@ -9,51 +9,67 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles3.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
   <script>
   $( function() {
     $( "#accordion:nth-child(1n)" ).accordion({ heightStyle: "content", collapsible:true, active:false });
   } );
   </script>
 
+
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick-theme.css"/>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
 </head>
 
-<body onscroll="myScrollFunc()" id="top">
-
-<div class="starfield"></div>
-
-
+<body>
 
 <div class="container">
 
 <header>
-    <div class="headerbox">
-		<div class="logo">
-		<a href="#">Frackin Races</a>
+	<div class="nav">
+		<div class="headerbox">
+			<div class="logo">
+			  <a href="#">Frackin Races</a>
+			</div>
+			<div class="bottommenu">
+				<a href="#top">^ Top</a>
+			</div>
 		</div>
-		<div class="bottommenu">
-			<a href="#top">^ Top</a>
-		</div>
+	</div>
+
+	<div class="racewheel">
+
+			<div class="racerow">
+
+				  <div><a href="#apex"><img src="images/races/Apex.png" /><span>Apex</span></a></div>
+				  <div><a href="#avian"><img src="images/races/Avian.png" /></a><span>Avian</span></div>
+				  <div><a href="#floran"><img src="images/races/Floran.png" /></a><span>Floran</span></div>
+				  <div><a href="#glitch"><img src="images/races/Glitch.png" /></a><span>Glitch</span></div>
+				  <div><a href="#human"><img src="images/races/Human.png" /></a><span>Human</span></div>
+				  <div><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span>Hylotl</span></div>
+				  <div><a href="#novakid"><img src="images/races/Novakid.png" /></a><span>Novakid</span></div>
+				  <div><a href="#apex"><img src="images/races/Apex.png" /></a><span>Apex</span></div>
+				  <div><a href="#avian"><img src="images/races/Avian.png" /></a><span>Avian</span></div>
+				  <div><a href="#floran"><img src="images/races/Floran.png" /></a><span>Floran</span></div>
+				  <div><a href="#glitch"><img src="images/races/Glitch.png" /></a><span>Glitch</span></div>
+				  <div><a href="#human"><img src="images/races/Human.png" /></a><span>Human</span></div>
+				  <div><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span>Hylotl</span></div>
+				  <div><a href="#novakid"><img src="images/races/Novakid.png" /></a><span>Novakid</span></div>
+			</div>
+
 	</div>
 </header>
 
-<div class="racephotos">
-        <div class="racerow">
-		  <div><a href="#apex"><img src="images/races/Apex.png" /></a><span>Apex</span></div>
-		  <div><a href="#avian"><img src="images/races/Avian.png" /></a><span>Avian</span></div>
-		  <div><a href="#floran"><img src="images/races/Floran.png" /></a><span>Floran</span></div>
-		  <div><a href="#glitch"><img src="images/races/Glitch.png" /></a><span>Glitch</span></div>
-		  <div><a href="#human"><img src="images/races/Human.png" /></a><span>Human</span></div>
-		  <div><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span>Hylotl</span></div>
-		  <div><a href="#novakid"><img src="images/races/Novakid.png" /></a><span>Novakid</span></div>
-        </div>
-</div>
+
+
+<div class="spacer" id="top apex avian floran glitch"></div>
 
   <ul class="list">
 	<li class="list-itemrace" id="apex">
@@ -309,7 +325,6 @@
 			</div>
           </div>
 	</li>
-
 	<li class="list-itemrace" id="floran">
           <h1 class="positive large">Floran</h1>
 
@@ -963,6 +978,25 @@
 <script>
 $( window ).scroll(function() {
   $( ".bottommenu" ).css( "display", "inline" );
+});
+</script>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $(".racerow").slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 4,
+      centerMode: false,
+      variableWidth: true,
+      speed: 500,
+      cssEase: 'linear',
+      useTransform:false,
+      arrows: true
+    });
 });
 </script>
 
