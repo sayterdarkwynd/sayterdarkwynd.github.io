@@ -1,0 +1,285 @@
+
+
+/* nav */
+header {
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%; 
+  z-index:10;
+  background:#000;
+}
+
+.headerbox {
+    position:relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;  
+    align-items: center;
+    margin:0 auto;
+    padding:2em;
+}
+
+.logo {
+  margin-right:2em;
+  font-size:2em;
+  vertical-align:middle;
+}
+
+.logo a { color:#fff; }
+
+
+/* racewheel widget */
+.racewheel {
+  display:block;
+  position:relative;
+  width:100%;
+  padding:1em;
+  background: rgba(255,255,255,0.85);
+}
+
+.racerow div {position:relative !important;}
+
+.racerow div span { 
+  position:absolute;
+  color:#000;
+  width:100%;
+  background:#fff;
+  display:block;
+  bottom:0px;
+  z-index:2000;
+  text-align:center;
+}
+.racerow div:hover span {display:block;}
+
+.racerow img { display:block; }
+
+
+
+
+/* slick carousel */
+.slick-arrow {visibility:hidden}
+.slick-slider { margin:0 auto; width:100%}
+.slick-list { display:block;width:100%;overflow:inherit !important;}
+.slick-slide { 
+  display:block;
+  border:2px solid #fff;
+  width: 64px;
+  height:64px !important; 
+  overflow:hidden;
+  margin-right:1em;
+}
+
+.slick-slide:hover {border:2px solid #3a6b33;background:rgba(0,0,0,0.2);}
+.slick-slide span {display:none;}
+.slick-slide:hover span {display:block;color:#fff;background:#3a6b33;}
+
+.slick-next,.slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+/* race widget */
+.itemrace {
+  display:none;
+  height:auto;
+  width:100%;
+}
+
+.racecontent {
+  background:#000;
+}
+
+.raceinfo {
+  display:-webkit-flex;
+  display:flex;
+  justify-content:space-between;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+  padding:2em;
+}
+
+.photo {display:inline-block;flex:1;}
+.photo img { width:128px;}
+.textsplat { display:inline-block;flex:3;}
+.textsplat p {font-size:1.2em;}
+
+
+.racestats {
+  display:-webkit-flex;
+  display:flex;
+  justify-content:space-between;
+  -webkit-flex-direction:column;
+  flex-direction:column;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;  
+}
+
+.racestats h3 {
+  width:100%;
+  padding:1em;
+}
+
+.resistitem h4 { width: 100%;display:block; }
+.resistitem h4 img { width:32px;height:32px;margin: 0 10px 5px 0}
+
+.racestats img { 
+  display:inline-block;
+  width:32px;
+  height:32px;
+}
+
+.raceresistblock {
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-items:center;
+  flex-wrap:wrap;
+  font-size:1.2em;
+  flex-wrap:wrap;
+}
+
+.raceresistblock .resistitem {
+  display:flex;
+  padding:1em;
+  flex-direction:row;
+}
+
+
+
+.raceresistblock p {
+  display:inline;
+}
+
+.raceresistblock .resistitem span {
+  color:#fff;
+}
+
+
+.resistitem .resistleft { display:inline-block;width:33%; }
+.resistitem .resistright {display:inline-block;width: 66%; }
+
+
+
+/* Accordion Content Styles */
+#accordion { 
+  position:relative;
+  display:block;
+}
+
+#accordion h3 {
+  text-align:left;  
+  display:block;
+  padding:1em;
+  margin-top:2px;
+  transition:background-color 0.5s ease-out;
+}
+
+#accordion h3 span {
+  position:absolute;right:1em;
+}
+
+#accordion h3 .up { 
+  display:none; 
+}
+
+#accordion h3:focus .down { 
+  display:none;   
+}
+
+#accordion h3:focus .up { 
+  display:inline-block;    
+}
+
+#accordion div, .race {
+  height:auto;
+}
+
+#accordion div p { 
+  text-align:left; 
+  padding:1em;
+  font-size:1.1em
+}
+
+#accordion h3:hover {
+  transition:background-color 0.5s ease;
+  background-color:#fff !important;
+  color:#000;
+}
+
+ul.racial {
+  list-style-type:none;
+  display:flex;
+  flex-direction:row;
+  padding:0;
+  }
+
+ul.racial img {display:inline-block;width:32px;}
+
+ul.racial li { width:15% }
+
+.spacer {margin-top:1em;}
+
+/* jQ UI overrides */
+#accordion .ui-accordion-content > * { margin: 0; }
+/*.ui-accordion-content { min-height:275px; }*/
+.ui-accordion-header-active { 
+  transition:background-color 0.5s ease;
+
+}
+.ui-accordion-content-active { height:auto; }
+
+
+/* media queries */
+
+@media screen and (min-width: 90.01em) {
+  .container { margin:0 auto;max-width:90.01em;margin-top:13em; } 
+  .headerbox,.racerow { max-width:1204px}
+  header .logo {font-size:2.2em}
+}
+
+@media screen and (max-width: 90em) { 
+  .container { ;margin:0 auto;max-width:90.01em;margin-top:12.85em; } 
+  header .logo {font-size:2em}
+}
+
+@media screen and (max-width: 64em) {
+  .container { margin:0 auto;max-width:90.01em;margin-top:12em; } 
+  header .logo {font-size:1.8em}
+  .logo {margin:0 auto;}
+}
+
+@media screen and (max-width: 32.5em) {
+  .container { margin:0 auto;margin-top:11.6em; } 
+  header .logo {font-size:1.4em}
+  .raceresistblock .resistitem {
+    width:25%;
+    display:flex;
+    padding:1em;
+    flex-direction:column;
+}  
+}
+
