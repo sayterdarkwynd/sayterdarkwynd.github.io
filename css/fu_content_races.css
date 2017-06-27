@@ -4,7 +4,7 @@
 header {
   display:block;
   position:absolute;
-  top:50%;
+  bottom:2em;
   left:0;
   width:100%; 
 }
@@ -20,7 +20,7 @@ h1 {
   text-align:center;
   padding:0;
   margin:0;
-  padding:0 0 2em 0;
+  padding:0 0 0.5em 0;
 }
 
 /* racewheel widget */
@@ -32,6 +32,7 @@ h1 {
   background: rgba(255,255,255,0.25);
   border-top:1px solid #fff;
   border-bottom:1px solid #fff;
+  z-index:2;
 }
 
 .racerow div {position:relative !important;}
@@ -52,6 +53,8 @@ h1 {
 
 
 .close { position:absolute; top:0.5em;right:0.5em; color:#fff;font-size:32px}
+
+
 
 
 /* slick carousel */
@@ -75,6 +78,7 @@ h1 {
 .slick-next {right:0px !important;}
 
 /* race widget */
+
 .itemrace {
   position:relative;
   display:none;
@@ -82,10 +86,12 @@ h1 {
   width:100%;
   border:4px solid #fff;
   background: #3d5074;
-  zindex:99;
+  z-index:99;
   margin:0 auto;
   max-width:60em;
   padding:2em;
+  max-height:100%;
+  overflow-y:scroll;
 }
 
 .itemrace h1 {
@@ -327,29 +333,70 @@ ul.racial li { width:15% }
 .ui-accordion-content-active { height:auto; }
 
 
-/* media queries */
-
-@media screen and (min-width: 90.01em) {
 
 
+
+/* ----------------custom scrollbar---------------- */
+
+::-webkit-scrollbar {
+    width: 0.6em;
+    padding:1em;
 }
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    height:50px;
+    background:#fff;
+}
+        
 
-@media screen and (max-width: 90em) { 
+/* ----------------modal stuff---------------- */
+
+.container { position:relative; padding:0;}  
+
+.modal {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.4);
+  z-index:12;
+  display:none
+}      
+        
+        
   
+        
+     
+/* ----------------media queries---------------- */
+
+@media screen and (min-width: 64.01em) {
+.itemrace { max-width:60%;max-height:90%;top:2em}
 }
 
 @media screen and (max-width: 64em) {
-#accordion ul { padding:2em 0 2em 0 }
-.attributes-content .item .stat2 { width:25%; }
-.photo {margin: 0 0 2em 0;}
-.attributes { padding:0 0 1em 0}
-.attributes-content .item { margin-top:1em;}
-.attributes-content {flex-direction:column;}
- .item.leftatt, .item.rightatt {width:100%}
+  #accordion ul { padding:2em 0 2em 0 }
+  .attributes-content .item .stat2 { width:25%; }
+  .photo {margin: 0 0 2em 0;}
+  .attributes { padding:0 0 1em 0}
+  .attributes-content .item { margin-top:1em;}
+  .attributes-content {flex-direction:column;}
+  .item.leftatt, .item.rightatt {width:100%}
+  .itemrace { max-width:70%;max-height:90%;top:2em}
 }
 
 @media screen and (max-width: 32.5em) {
- 
+
+  #accordion ul { padding: 0 1em}
+  .textsplat p, #accordion ul li, #accordion div p {font-size:1.0em}
+  #accordion h3, .attributes h3 { font-size:1.1em;}
+  #accordion h3 span { right:1em; } 
   .raceinfo {flex-direction:column;}
   .raceresistblock .resistitem {
     width:25%;
@@ -357,5 +404,6 @@ ul.racial li { width:15% }
     padding:1em;
     flex-direction:column;
   }  
+  .itemrace { max-width:90%;max-height:90%;top:1em}
 }
 
