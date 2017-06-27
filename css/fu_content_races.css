@@ -56,7 +56,7 @@ h1 {
 
 /* slick carousel */
 .slick-arrow {display:inline-block;}
-.slick-slider { margin:0 auto; width:100%;}
+.slick-slider { margin:0 auto; width:100%; width:98%; padding:0 2em 0 2em;}
 .slick-slide { 
   display:block;
   border:2px solid #fff;
@@ -71,7 +71,7 @@ h1 {
 .slick-slide span {display:none;}
 .slick-slide:hover span {display:block;color:#fff;background:#3a6b33;}
 
-.slick-prev {left:0px !important;z-index:200}
+.slick-prev {left:-2em !important;z-index:200}
 .slick-next {right:0px !important;}
 
 /* race widget */
@@ -303,20 +303,22 @@ ul.racial li { width:15% }
 
 #accordion ul {
   list-style-type:none;
-  margin:0;padding:0;border:0;
-  padding:2em;
+  margin:0;
+  padding:0;
+  border:0;
+  margin:1em 0 1em 0;  
 }
 
 #accordion ul li {
   font-size:1.2em;
-  margin-bottom:1em;
+  line-height:1.6em;
 }
 
 
 #accordion i { display:inline-block;padding:0.5em;font-size:1.4em;}
 
 /* jQ UI overrides */
-#accordion .ui-accordion-content > * { margin: 0; }
+
 /*.ui-accordion-content { min-height:275px; }*/
 .ui-accordion-header-active { 
   transition:background-color 0.5s ease;
