@@ -47,7 +47,7 @@ table {
 
 @font-face {
     font-family: 'Hobo'; 
-    src: url('Hobo.ttf');
+    src: url('Hobo.ttf'),url("hobo.ttf");
 }
 
 
