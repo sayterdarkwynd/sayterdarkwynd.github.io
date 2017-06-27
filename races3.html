@@ -35,14 +35,8 @@
 
 
 <header>
-	<div class="nav">
-		<div class="headerbox">
-			<div class="logo">
-			  <a href="#">Frackin Races</a>
-			</div>
-		</div>
-	</div>
-
+	<h1>Frackin Races</h1>
+	<p>Swipe to browse races</p>
 	<div class="racewheel">
 			<div class="racerow">
 				  <div id="race1"><a href="#apex"><img src="images/races/Apex.png" /><span class="slick-toggle">Apex</span></a></div>
@@ -52,6 +46,9 @@
 				  <div id="race5"><a href="#human"><img src="images/races/Human.png" /></a><span class="slick-toggle">Human</span></div>
 				  <div id="race6"><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span class="slick-toggle">Hylotl</span></div>
 				  <div id="race7"><a href="#novakid"><img src="images/races/Novakid.png" /></a><span class="slick-toggle">Novakid</span></div>
+
+				  <div id="race7"><a href="#novakid"><img src="images/races/Fenerox.png" /></a><span class="slick-toggle">Fenerox</span></div>
+				  <div id="race7"><a href="#novakid"><img src="images/races/Fenerox.png" /></a><span class="slick-toggle">Shadow</span></div>
 			</div>
 	</div>
 </header>
@@ -59,97 +56,69 @@
 
 <div class="container">
 
+
+
+
+
+
+
+
 		<div class="itemrace" id="racetoggle1">
-		  	<h1 class="positive large">Apex</h1>
+		<a class="close" href="races3.html">X</a>
+
+		  	<h1 class="large">Apex</h1>
 		  		<div class="racecontent">
 					<div class="raceinfo">
 						<div class="photo">
 						  <img src="images/races/Apex.png" class="small racepic"/>
 						</div>
 						<div class="textsplat">
-
-							<p class="indent">At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
-							<p class="spacer">Diet: Omnivore</p>
-							<p>Immune: Jungle Dirt and Mud tile slowing</p>
-
-							<p class="spacer">Attribute Bonuses</p>
-							<ul class="racial">
-								   <li><img src="images/health.png"> : 0</li>
-								   <li><img src="images/energy.png"> : 0</li>
-								   <li><img src="images/attack.png"> : 0</li>
-								   <li><img src="images/defense.png"> : 0</li>
-							</ul>
+							<p class="indent">At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungry, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore. Avoid raw meat.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +8% Speed, +15% Jump</p>
+							<p><label class="cautiontext">Immune</label>: Jungle Dirt and Mud tile slowing</p>
 					   </div>
 					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>30</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>-10</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
 					<div id="accordion" class="race racestats">
-					  <h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
-						  <div class="raceresistblock">
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/physical.png" />Physical</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/electric.png" />Electric</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/fire.png" />Fire</h4>
-								  -30%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/ice.png" />Ice</h4>
-								  30%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/poison.png" />Poison</h4>
-								  10%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/shadow.png" />Shadow</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/cosmic.png" />Cosmic</h4>
-								  -10%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/radioactive.png" />Radiation</h4>
-								  0%
-								</div>
-							  </div>
+
+					  <h3 class="white blacktext ">Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">High metabolism</label> requires more frequent eating.</li>
+							  <li>When fed over <label class="cautiontext">60%</label> you gain a substantial boost to your maximum <label class="cautiontext">Energy</label>. However, such a bonus comes at a price: Failing to stay well fed will begin the <label class="cautiontext">de-evolution process</label>. This will <label class="cautiontext">substantially reduce energy</label> but <label class="cautiontext">increases Physical Resistance, Knockback Resistance and maximum Health</label>.</li>
+							  <li><label class="cautiontext">Start the game</label> with +1 Matter Manipulator radius</li>
+							</ul>
 						  </div>
-					  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
-						  </div>
-					  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
-						  </div>
-					  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+
+					  <h3 class="white blacktext ">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 						  <div>
 							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
 						  </div>
-					  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
-						  </div>
-					  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+
+					  <h3 class="white blacktext ">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
 							  <li><label class="cautiontext">Axe</label>: +10% Crit Chance</li>
@@ -159,115 +128,13 @@
 							  <li><label class="cautiontext">Magnorbs</label>: +12% Damage and +2 Protection</li>
 							</ul>
 						  </div>
+
 					</div>
 			  </div>
 		</div>
 
 
 
-		<div class="itemrace" id="racetoggle2">
-		  	<h1 class="positive large">Apex</h1>
-		  		<div class="racecontent">
-					<div class="raceinfo">
-						<div class="photo">
-						  <img src="images/races/Apex.png" class="small racepic"/>
-						</div>
-						<div class="textsplat">
-
-							<p class="indent">At home in a jungle and able to walk with ease, the Apex are still quite tied to their instincts despite the best efforts of the MiniKnog. Their primal side tends to present itself when they are hungering, for the conversion process has a high metabolic impact. The less you eat, the more sturdy you become.</p>
-							<p class="spacer">Diet: Omnivore</p>
-							<p>Immune: Jungle Dirt and Mud tile slowing</p>
-
-							<p class="spacer">Attribute Bonuses</p>
-							<ul class="racial">
-								   <li><img src="images/health.png"> : 0</li>
-								   <li><img src="images/energy.png"> : 0</li>
-								   <li><img src="images/attack.png"> : 0</li>
-								   <li><img src="images/defense.png"> : 0</li>
-							</ul>
-					   </div>
-					</div>
-					<div id="accordion" class="race racestats">
-					  <h3 class="resists heading">Resists <span class="down">+</span><span class="up">-</span></h3>
-						  <div class="raceresistblock">
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/physical.png" />Physical</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/electric.png" />Electric</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/fire.png" />Fire</h4>
-								  -30%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/ice.png" />Ice</h4>
-								  30%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/poison.png" />Poison</h4>
-								  10%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/shadow.png" />Shadow</h4>
-								  0%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/cosmic.png" />Cosmic</h4>
-								  -10%
-								</div>
-							  </div>
-							  <div class="resistitem">
-								<div class="resistright">
-								  <h4><img src="images/elements/radioactive.png" />Radiation</h4>
-								  0%
-								</div>
-							  </div>
-						  </div>
-					  <h3 class="warning heading">Racial Flaws <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>High metabolism requires additional food. <br/><br/>See Racial Perks below for additional information.</p>
-						  </div>
-					  <h3 class="legendary heading">Racial Perks <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>When well fed, gain a substantial boost to your maximum Energy. However, such a bonus comes at a price:<br/><br/>Failing to stay well fed will begin the de-evolution process. This drops your energy substantially but you gain Physical Resistance, Knockback Resistance and Health.</p>
-						  </div>
-					  <h3 class="epic heading">Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>In Jungles, Rainforests, Primeval Forests, Forests and Snow biomes you gain increased Health and Energy</p>
-						  </div>
-					  <h3 class="positive heading">Advantages <span class="down">+</span><span class="up">-</span></h3>
-						  <div>
-							<p>+8% Speed, +15% Jump<br/><br/>Has access to a starting Matter Manipulator with +1 radius</p>
-						  </div>
-					  <h3 class="uncommon heading">Combat Perks <span class="down">+</span><span class="up">-</span></h3>
-						  <div class="racial">
-							<ul>
-							  <li><label class="cautiontext">Axe</label>: +10% Crit Chance</li>
-							  <li><label class="cautiontext">Hammers</label>: +20% damage, +15% movement speed</li>
-							  <li><label class="cautiontext">Grenade Launcher</label>: +20% Crit Damage</li>
-							  <li><label class="cautiontext">Rocket Launcher</label>: +5% Crit Chance</li>
-							  <li><label class="cautiontext">Magnorbs</label>: +12% Damage and +2 Protection</li>
-							</ul>
-						  </div>
-					</div>
-			  </div>
-		</div>
 
 
 
@@ -281,25 +148,25 @@ $( window ).scroll(function() {
 
 <script>
 $(document).ready(function(){
-    $(".racerow").slick({
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      centerMode: false,
-      variableWidth: true,
-      speed: 500,
-      cssEase: 'linear',
-      useTransform:false,
-      arrows: true
+
+$('.racerow').slick({
+  dots: false,
+  speed: 300,
+  infinite:true,
+  slidesToShow: 0,
+  slidesToScroll: 3,
+  centerMode: false,
+  variableWidth:true,
+  centerPadding: '40px',
+  arrows:true
+});
+
+
+
+    $("#race1").hover(function(){
+      $("#racetoggle1").show();
     });
-
-
-
-
-    $("#race1").click(function(){
-      $("#racetoggle1").toggle();
-    });
-    $("#race2").click(function(){
+    $("#race2").hover(function(){
       $("#racetoggle2").toggle();
     });
     $("#race3").hover(function(){

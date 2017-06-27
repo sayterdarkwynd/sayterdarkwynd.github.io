@@ -21,6 +21,9 @@
 .legendarytext { color:#8a159c; }
 .epictext { color:#e43774; }
 .raretext { color:#ff8400; }
+.whitetext { color:#fff;}
+.blacktext { color:#000;}
+
 a, .uncommontext { color:#008aff; }
 .defaulttext { color:#666; }
 
@@ -38,4 +41,4 @@ p, .greytext { color:#ccc; }
 .default { background:#666 !important; }
 .other { background:#2e5e44 !important; }
 .resists { background:#6d3347 !important;}
-
+.white { background:#fff !important;}
