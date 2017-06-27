@@ -115,6 +115,7 @@ h1 {
   padding:1em;
   font-size:1.2em;
   margin-bottom:0.5em;
+  transition:background-color 0.5s ease-out;
 }
 
 .item.leftatt { width:25%; }
@@ -258,6 +259,7 @@ ul.racial li { width:15% }
   transition:background-color 0.5s ease-out;
   font-size:1.2em;
   border:1px solid #fff;
+  background:none;
 }
 
 #accordion h3 span {
@@ -291,7 +293,7 @@ ul.racial li { width:15% }
   display:block;color:#fff;
 }
 
-#accordion h3:hover, #accordion h3:focus {
+#accordion h3:hover, #accordion h3:focus,  .attributes h3:hover, .attributes h3:focus {
   transition:background-color 0.5s ease;
   background-color:#fff !important;
   color:#000;
