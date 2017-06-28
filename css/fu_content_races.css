@@ -377,7 +377,7 @@ ul.racial li { width:15% }
 /* ----------------media queries---------------- */
 
 @media screen and (min-width: 64.01em) {
-.itemrace { max-width:60%;max-height:90%;top:2em}
+.itemrace { top:2em}
 }
 
 @media screen and (max-width: 64em) {
@@ -388,7 +388,7 @@ ul.racial li { width:15% }
   .attributes-content .item { margin-top:1em;}
   .attributes-content {flex-direction:column;}
   .item.leftatt, .item.rightatt {width:100%}
-  .itemrace { max-width:70%;max-height:90%;top:2em}
+  .itemrace { max-width:70%;max-height:76%;top:2em}
 }
 
 @media screen and (max-width: 32.5em) {
@@ -404,6 +404,6 @@ ul.racial li { width:15% }
     padding:1em;
     flex-direction:column;
   }  
-  .itemrace { max-width:90%;max-height:90%;top:1em}
+  .itemrace { max-width:90%;max-height:81%;top:1em}
 }
 
