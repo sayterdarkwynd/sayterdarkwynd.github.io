@@ -171,6 +171,7 @@ h1 {
 
 .photo {display:inline-block;flex:1;margin-right: 1em;}
 .photo img { width:128px;margin:0 auto}
+.photo2 img {width:auto;margin:0 auto;}
 .textsplat { display:inline-block;flex:3;}
 .textsplat p {font-size:1.2em;color:#fff;}
 
