@@ -30,8 +30,8 @@ h1 {
   width:100%;
   padding:1em;
   background: rgba(255,255,255,0.25);
-  border-top:1px solid #fff;
-  border-bottom:1px solid #fff;
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
   z-index:2;
 }
 
@@ -67,7 +67,7 @@ h1 {
   height:128px !important; 
   overflow:hidden;
   margin-right:1em;
-  text-align:center;
+  text-align:center;border-radius:2em;
 }
 
 .slick-slide:hover, .slick-slide:active, .slick-slide:focus, .active {border:2px solid #3a6b33;background:rgba(0,0,0,0.2);}
@@ -92,6 +92,7 @@ h1 {
   max-height:94%;
   padding:2em;
   overflow-y:scroll;
+  border-radius:2em;
 }
 
 .itemrace h1 {
