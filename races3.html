@@ -53,8 +53,12 @@
 				  <div id="race9"><a href="#argonian"><img src="images/races/argonian.png" /></a><span class="slick-toggle">Argonian</span></div>
 				  <div id="race10"><a href="#avali"><img src="images/races/avali.png" /></a><span class="slick-toggle">Avali</span></div>
 				  <div id="race11"><a href="#avikan"><img src="images/races/avikan.png" /></a><span class="slick-toggle">Avikan</span></div>
+				  <div id="race14"><a href="#bunnykin"><img src="images/races/bunnykin.png" /></a><span class="slick-toggle">Bunnykin</span></div>
+
 				  <div id="race12"><a href="#droden"><img src="images/races/droden.png" /></a><span class="slick-toggle">Droden</span></div>
+
 				  <div id="race13"><a href="#trink"><img src="images/races/trink.png" /></a><span class="slick-toggle">Trink</span></div>
+
 			</div>
 	</div>
 </header>
@@ -977,6 +981,70 @@
 			  </div>
 		</div>
 
+		<div class="itemrace" id="racetoggle14">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Bunnykin</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/bunnykin.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">They aren't hardy, but they sure are fast. And almost no other race can out-leap them. They are quite skilled with boomerangs, and have honed their poofy, adorable paws into defensive implements when using fist weapons.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Herbivore. Does not digest meat.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +18% Speed, +20% Jump</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Mobility</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: None</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>30</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>20</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>-100</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>40</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>When <label class="cautiontext">Electrified</label> you lose 50% of your damage output.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>On <label class="cautiontext">lush</label>, <label class="cautiontext">forest</label> and <label class="cautiontext">rainforest</label> biomes you gain a +10% bonus to Health and +20% to Energy.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li class="spacer">Perfect blocks restore energy</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
 
 
 
@@ -1076,6 +1144,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle13").fadeIn();
+    });
+    $("#race14").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle14").fadeIn();
     });
 });
 
