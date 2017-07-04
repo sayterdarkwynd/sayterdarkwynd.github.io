@@ -61,7 +61,7 @@
 				  <div id="race17"><a href="#munari"><img src="images/races/munari.png" /></a><span class="slick-toggle">Munari</span></div>
 				  <div id="race18"><a href="#neko"><img src="images/races/neko.png" /></a><span class="slick-toggle">Neko</span></div>
 
-
+				  <div id="race19"><a href="#neko"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
 
 				  <div id="race13"><a href="#trink"><img src="images/races/trink.png" /></a><span class="slick-toggle">Trink</span></div>
 
@@ -1326,6 +1326,77 @@
 		</div>
 
 
+		<div class="itemrace" id="racetoggle19">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Nightar</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/nightar.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">An offshoot of humanity, rooted in scientific experimentation. They are, by and large, much the same as their 'lesser' kin. One key difference separates them: Darkness, and how they utilize it.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: Glow in the Dark</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Melee</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Bio-Ooze</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>5</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>During daylight hours you slowly lose max Health and Physical Resistance (<label class="cautiontext">to a maximum of -25%</label>)</li>
+							  <li class="spacer">In <label class="cautiontext">low light</label>, your damage can increase up to <label class="cautiontext">+20%</label> and your speed increases up to <label class="cautiontext">+10%</label></li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>In near or total darkness you gain <label class="cautiontext">+20% Health and Physical Resistance</label>.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">All Swords</label>: When in near or total darkness, can fire Shadow Bursts. 1h bursts do <label class="cautiontext">1d4+4</label> Damage, while 2h bursts do <label class="cautiontext">1d8+4</label> Damage.</li>
+							  <li class="spacer"><label class="cautiontext">Shortsword</label>: +5% Damage, +3% chance for a Shadow Burst.</li>
+							  <li class="spacer"><label class="cautiontext">Shortsword x2</label>: +5% Jump</li>
+							  <li class="spacer"><label class="cautiontext">Broadsword</label>: +4% Crit, +5% Damage,  +6% chance for a Shadow Burst.</li>
+							  <li class="spacer"><label class="cautiontext">Shield</label>: +25% Knockback Resistance</li>
+							  <li class="spacer">Perfect blocks increase your Protection by 3%(stacks). Stack is removed when taking damage or failing a block.</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 
 </div>
 
@@ -1448,6 +1519,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle18").fadeIn();
+    });
+    $("#race19").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle19").fadeIn();
     });
 });
 
