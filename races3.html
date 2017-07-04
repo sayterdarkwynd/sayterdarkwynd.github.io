@@ -48,6 +48,8 @@
 				  <div id="race5"><a href="#human"><img src="images/races/Human.png" /></a><span class="slick-toggle">Human</span></div>
 				  <div id="race6"><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span class="slick-toggle">Hylotl</span></div>
 				  <div id="race7"><a href="#novakid"><img src="images/races/Novakid.png" /></a><span class="slick-toggle">Novakid</span></div>
+				  <!-- custom races -->
+				  <div id="race8"><a href="#fenerox"><img src="images/races/Fenerox.png" /></a><span class="slick-toggle">Fenerox</span></div>
 			</div>
 	</div>
 </header>
@@ -558,6 +560,76 @@
 		</div>
 
 
+<!-- custom races -->
+
+		<div class="itemrace" id="racetoggle8">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Fenerox</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/novakid2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Most at home in savannahs and plains, the Fenerox are dedicated and swift hunters. Their nocturnal nature makes them a bit touchy in the sunlight, but they make up for it by being exceptionally nimble.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivore. Fenerox cannot survive without ingesting raw meat for nutrients.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +12% Speed, +11% Jump, Slight Glow (nightvision)</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Agile Fighter</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Poison</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>-10</span></div
+								><div class="stat"><img src="images/energy.png"><span>10</span></div
+								><div class="stat"><img src="images/attack.png"><span>5</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>You <label class="cautiontext">regenerate health</label> and gain <label class="cautiontext">+25% energy regeneration</label> during the night.</li>
+							  <li class="spacer">When the sun is out, you are super-alert. This has the added effect of <label class="cautiontext">+15% physical resistance</label> and <label class="cautiontext">+2 Protection</label>.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>On Savannah or Lush biomes you gain <label class="cautiontext">+15% Power</label>.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Boomerang / Chakram</label>: +10% damage, +2% Crit. +5% speed</li>
+							  <li class="spacer"><label class="cautiontext">Spear</label>: +2 Crit Chance, +10% damage. +20% protection when holding spear out.</li>
+							  <li class="spacer"><label class="cautiontext">Bow</label>: 3% chance to <label class="cautiontext">Poison</label> targets with arrows</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 
 </div>
 
@@ -626,6 +698,12 @@ $('.racerow').slick({
       $(".modal").fadeIn();
       $("#racetoggle7").fadeIn();
     });
+    $("#race8").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle8").fadeIn();
+    });
+
 });
 
 
