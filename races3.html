@@ -50,6 +50,7 @@
 				  <div id="race7"><a href="#novakid"><img src="images/races/Novakid.png" /></a><span class="slick-toggle">Novakid</span></div>
 				  <!-- custom races -->
 				  <div id="race8"><a href="#fenerox"><img src="images/races/Fenerox.png" /></a><span class="slick-toggle">Fenerox</span></div>
+				  <div id="race9"><a href="#fenerox"><img src="images/races/argonian.png" /></a><span class="slick-toggle">Argonian</span></div>
 			</div>
 	</div>
 </header>
@@ -576,7 +577,7 @@
 							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivore. Fenerox cannot survive without ingesting raw meat for nutrients.</p>
 							<p class="spacer"><label class="cautiontext">Advantages</label>: +12% Speed, +11% Jump, Slight Glow (nightvision)</p>
 							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Agile Fighter</p>
-							<p class="spacer"><label class="cautiontext">Immunities</label>: Poison</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: None</p>
 					   </div>
 					</div>
 
@@ -607,7 +608,8 @@
 					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li>You <label class="cautiontext">regenerate health</label> and gain <label class="cautiontext">+25% energy regeneration</label> during the night.</li>
+							  <li>Your high metabolism requires <label class="cautiontext">regenerate health</label> and gain <label class="cautiontext">more frequent feeding</label>.</li>
+							  <li class="spacer">You <label class="cautiontext">regenerate health</label> and gain <label class="cautiontext">+25% energy regeneration</label> during the night.</li>
 							  <li class="spacer">When the sun is out, you are super-alert. This has the added effect of <label class="cautiontext">+15% physical resistance</label> and <label class="cautiontext">+2 Protection</label>.</li>
 							</ul>
 						  </div>
@@ -630,6 +632,76 @@
 					</div>
 			  </div>
 		</div>
+
+
+
+		<div class="itemrace" id="racetoggle9">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Argonian</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/argonian2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">At home in toxic, nearly inhospitable swamps, few species are as resilient in the face of poisons. While they aren't the quickest thinkers, or the most nimble, they make for it in sheer tenacity.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore. Can eat just about anything.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +1100 Oxygen, swim speed boost</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Poison, Wet</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>-12</span></div
+								><div class="stat"><img src="images/energy.png"><span>-5</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>5</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>10</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Argonians constantly <label class="cautiontext">regenerate</label> at a slow pace.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>In bogs, swamps and other mired biomes you gain <label class="cautiontext">+25% Health</label> and <label class="cautiontext">+15% speed</label>.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Spear</label>: Attacking with a spear increases your <label class="cautiontext">defense by 10%</label></li>
+							  <li class="spacer"><label class="cautiontext">Short Spear</label>: +12 Crit Damage, +10% damage</li>
+							  <li class="spacer"><label class="cautiontext">Harpoon Gun / Crossbow</label>: +5% Crit, +15% Attack Speed</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 
 
 </div>
@@ -704,7 +776,11 @@ $('.racerow').slick({
       $(".modal").fadeIn();
       $("#racetoggle8").fadeIn();
     });
-
+    $("#race9").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle9").fadeIn();
+    });
 });
 
 
