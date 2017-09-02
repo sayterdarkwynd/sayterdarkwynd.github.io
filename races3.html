@@ -67,6 +67,7 @@
 				  <div id="race21"><a href="#orcana"><img src="images/races/orcana.png" /></a><span class="slick-toggle">Orcana</span></div>
 				  <div id="race13"><a href="#trink"><img src="images/races/trink.png" /></a><span class="slick-toggle">Trink</span></div>
 				  <div id="race22"><a href="#vespoid"><img src="images/races/vespoid.png" /></a><span class="slick-toggle">Vespoid</span></div>
+				  <div id="race36"><a href="#viera"><img src="images/races/viera.png" /></a><span class="slick-toggle">Viera</span></div>
  				  <!-- custom races<div id="race23"><a href="#vulpes"><img src="images/races/default.png" /></a><span class="slick-toggle">Vulpes</span></div>
  				  <div id="race25"><a href="#gardevan"><img src="images/races/default.png" /></a><span class="slick-toggle">Gardevan</span></div>
  				  <div id="race26"><a href="#hivewasp"><img src="images/races/wasp.png" /></a><span class="slick-toggle">Wasp</span></div>
@@ -363,7 +364,7 @@
 							  <li class="spacer"><label class="cautiontext">Crossbow / Bow</label>: Crit +4%</li>
 							  <li class="spacer"><label class="cautiontext">Shield</label>: +15% Protection, +5% Damage, +8% Max Health  (passive), 2% Health Regen</li>
 							  <li class="spacer"><label class="cautiontext">Combos</label>: Each step of a weapon combo increases your defense</li>
-							  <li class="spacer">Perfect Blocks increase your defense (Stacks). Taking damage cancels the stack. Shield Bashing restores Health.</li>
+							  <li class="spacer">Perfect Blocks increase your damage (Stacks). Taking damage or failing a block cancels the stack. Shield Bashing restores Health.</li>
 							</ul>
 						  </div>
 
@@ -2459,7 +2460,72 @@
 		</div>
 
 
+	    <div class="itemrace" id="racetoggle36">
+		  <a class="close" href="#">X</a>
 
+		  	<h1 class="large">Viera</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Mystically empowered travellers of the stars.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +12% Speed</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Slime</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>-20</span></div
+								><div class="stat"><img src="images/energy.png"><span>20</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>30</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Your metabolism functions at a higher rate than most species. You need to eat more often as a result.</li>
+
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+							<p>On forest, primeval and rainforest biomes you gain increased Energy and movement speed.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Bow</label>: +15% Damage. +15% Energy when wielding.</li>
+							  <li><label class="cautiontext">Rapier / Dagger / Shortsword</label>: Chance for a mystical blast.</li>
+							  <li><label class="cautiontext">Rapier</label>: +10% Damage, +1 Protection. <label class="cautiontext">Dual-wielding</label> Rapier + Dagger grants +2% crit chance and +5% Physical Resistance</li>
+							  <li><label class="cautiontext">Wand / Staff</label>: 15% bonus Damage and Energy.</li>
+							</ul>
+						  </div>
+					</div>
+			  </div>
+		</div>
 
 
 </div>
@@ -2668,6 +2734,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle35").fadeIn();
+    });
+    $("#race36").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle36").fadeIn();
     });
 });
 
