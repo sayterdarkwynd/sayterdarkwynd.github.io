@@ -2593,7 +2593,7 @@
 						  <div class="racial">
 							<ul>
 							  <li><label class="cautiontext">Axe</label>: Axes fill hunger when wielded and do +10% damage.</li>
-							  <li><label class="cautiontext">Spear</label>: Spears do +10% damage.</li>
+							  <li><label class="cautiontext">Spear</label>: Spears do +10% damage and increase movement speed by 10%.</li>
 							</ul>
 						  </div>
 
@@ -2623,7 +2623,6 @@ $('.racerow').slick({
   centerPadding: '40px',
   arrows:true
 });
-
 
     $("a.close").click(function(){
       $(".modal").fadeOut();
@@ -2813,6 +2812,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle36").fadeIn();
+    });
+    $("#race37").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle37").fadeIn();
     });
 });
 
