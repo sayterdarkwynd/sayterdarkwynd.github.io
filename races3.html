@@ -65,6 +65,7 @@
 				  <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
 				  <div id="race20"><a href="#ningen"><img src="images/races/ningen.png" /></a><span class="slick-toggle">Ningen</span></div>
 				  <div id="race21"><a href="#orcana"><img src="images/races/orcana.png" /></a><span class="slick-toggle">Orcana</span></div>
+				  <div id="race39"><a href="#phox"><img src="images/races/phox.png" /></a><span class="slick-toggle">Phox</span></div>
 				  <div id="race13"><a href="#trink"><img src="images/races/trink.png" /></a><span class="slick-toggle">Trink</span></div>
 				  <div id="race22"><a href="#vespoid"><img src="images/races/vespoid.png" /></a><span class="slick-toggle">Vespoid</span></div>
 				  <div id="race36"><a href="#viera"><img src="images/races/viera.png" /></a><span class="slick-toggle">Viera</span></div>
@@ -2671,6 +2672,79 @@
 					</div>
 			  </div>
 		</div>
+	
+	
+	
+	
+	
+	<div class="itemrace" id="racetoggle39">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Phox</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">A race of clever colonial foxes, the Phox are a comparatively weak race. What they lack in raw power they make up for in clever fighting.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivore, Though prefers cooked meat.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +15% Speed and Jump</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration, Agile Fighter</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Jungle Heat, Sandstorms, and Slow from Snow and Slush</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>-10</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>20</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>-50</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>-50</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>No natural defences to radiation, poison, shadow or cosmic energy.</li>
+							  <li class="spacer"><label class="cautiontext">Double Knockback.</label></li>
+							  <li class="spacer">+15% speed and jump.</li>
+							  <li class="spacer">10% Less fall damage.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+							<p>On ANY radioactive or poisonous planet except jungles, suffer a <label class="cautiontext">25% reduction in health and 33% reduction in attack power</label>!</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Spear</label>: Spears do +10% damage.</li>
+							  <li><label class="cautiontext">Sniper Rifle</label>: Sniper Rifles do +15% damage.</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
 
 
 
@@ -2894,6 +2968,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle38").fadeIn();
+    });
+    $("#race39").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle39").fadeIn();
     });
 });
 
