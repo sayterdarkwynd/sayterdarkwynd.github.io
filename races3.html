@@ -77,6 +77,7 @@
 				  <div id="race40"><a href="#peglaci"><img src="images/races/default.png" /></a><span class="slick-toggle">Peglaci</span></div>
 				  <div id="race41"><a href="#eevee"><img src="images/races/eevee.png"/></a><span class="slick-toggle">Eevee</span></div>
 				  <div id="race44"><a href="#kirhos"><img src="images/races/default.png"/></a><span class="slick-toggle">Kirhos</span></div>
+                <div id="race45"><a href="#webber"><img src="images/races/webber.png"/></a><span class="slick-toggle">Webber</span></div>
 
  				  <!-- custom races<div id="race23"><a href="#vulpes"><img src="images/races/default.png" /></a><span class="slick-toggle">Vulpes</span></div>
  				  <div id="race25"><a href="#gardevan"><img src="images/races/default.png" /></a><span class="slick-toggle">Gardevan</span></div>
@@ -3085,7 +3086,80 @@
 					</div>
 			  </div>
 		</div>
+    <div class="itemrace" id="racetoggle45">
+		  <a class="close" href="#">X</a>
 
+		  	<h1 class="large">Webber</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/webber2.png" class="small racepic" style="height:300px;width:300px;"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Humans trapped in giant, hairy, mythical spider-like creatures. Because they're capable of commiting unspeakable acts of evil at fast speeds, they're often seen as pests are should be exterminated. This is incorrect. Webbers actually have manners and common sense, unlike humans. They're cute at first, but they do tend to eat their fallen. Webbers are famous for being the only species without a known origin point and without any way of reproducing other than external cloning.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivore/Omnivore</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>:+20% Speed</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration, Speed/Ranged</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Spider webs</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>-25</span></div
+								><div class="stat"><img src="images/energy.png"><span>40</span></div
+								><div class="stat"><img src="images/attack.png"><span>-25</span></div
+								><div class="stat"><img src="images/defense.png"><span>2</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>25</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-70</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Extremely nyctophobic. You will run in complete panic when in very low visibility and get distracted from actually defending yourself. This behaviour in webbers has been unexplained for many generations. However, it's been said that the original member of their race had to avoid some sort of "night monster".</li>
+                                <li>Both beings in a webber are highly adaptative. They can survive on Earth-like and most nearly-hospitable planets.</li>
+                                <li>Webbers don't like getting up close and personal. -25% attack with most melee weapons.</li>
+						    </ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>In garden, forest, and savanna planets, you gain an extra 5% health.</p>
+                              <p>On all cold planets, you gain 10% extra health and energy, but lose 20% energy regeneration.</p>
+                              <p>In rainforests, your energy regeneration speeds up by 5%.</p>
+                              <p>On all radioactive and proto planets, your energy regeneration speed increases by 40%, but you lose 5% health.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Bow: Full damage, 25% movement speed.</li>
+							  <li>All ranged: Full damage.</li>
+                                <li>Spear: Full damage.</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
+    
+    
 
 </div>
 
@@ -3337,6 +3411,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle44").fadeIn();
+    });
+    $("#race45").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle45").fadeIn();
     });
 });
 
