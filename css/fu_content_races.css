@@ -371,7 +371,7 @@ ul.racial li { width:15% }
   position:absolute;
   width:100%;
   height:100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.8);
   z-index:12;
   display:none
 }      
@@ -383,7 +383,7 @@ ul.racial li { width:15% }
 /* ----------------media queries---------------- */
 
 @media screen and (min-width: 64.01em) {
-.itemrace { top:2em}
+.itemrace { top:5em}
 }
 
 @media screen and (max-width: 64em) {
@@ -410,6 +410,6 @@ ul.racial li { width:15% }
     padding:1em;
     flex-direction:column;
   }  
-  .itemrace { max-width:90%;max-height:81%;top:1em}
+  .itemrace { max-width:90%;max-height:90%;top:1em}
 }
 
