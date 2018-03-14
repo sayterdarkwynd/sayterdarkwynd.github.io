@@ -79,6 +79,7 @@
 				  <div id="race44"><a href="#kirhos"><img src="images/races/default.png"/></a><span class="slick-toggle">Kirhos</span></div>
                   <div id="race45"><a href="#webber"><img src="images/races/webber.png"/></a><span class="slick-toggle">Webber</span></div>
  				  <div id="race46"><a href="#woggle"><img src="images/races/woggle.png"/></a><span class="slick-toggle">Woggle</span></div>
+ 				  <div id="race47"><a href="#draconis"><img src="images/races/default.png"/></a><span class="slick-toggle">Draconis</span></div>
  				  <!-- custom races<div id="race23"><a href="#vulpes"><img src="images/races/default.png" /></a><span class="slick-toggle">Vulpes</span></div>
  				  <div id="race25"><a href="#gardevan"><img src="images/races/default.png" /></a><span class="slick-toggle">Gardevan</span></div>
  				  <div id="race26"><a href="#hivewasp"><img src="images/races/wasp.png" /></a><span class="slick-toggle">Wasp</span></div>
@@ -3219,6 +3220,75 @@
 			  </div>
 		</div>
 
+		<div class="itemrace" id="racetoggle47">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Draconis</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Humanoids with reptilian parts fused into their genetic makeup. Generally violent, physically resilient and tolerant of hot temperatures.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivore.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: Exceptional air agility, reduced fall damage</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Mobility, Exploration</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Heat, Burning</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>20</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>You fall slower thanks to small wings (<label class="cautiontext">50% fall damage</label>) and can survive impacts that kill other races.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						    <p>While in the air you have drastically increased agility and can glide quite well.</p>
+						    <p>On cold biomes, you lose <label class="cautiontext">-25% health</label>.</p>
+						    <p>On hot biomes, gain an additional <label class="cautiontext">15% speed</label> and <label class="cautiontext">15% health</label>.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li class="spacer"><label class="cautiontext">Hammer / Mace</label>: +2% Crit</li>
+							  <li class="spacer"><label class="cautiontext">Wand/Staff</label>: +12% Damage</li>
+							  <li class="spacer"><label class="cautiontext">Dagger</label>: +20% Crit Damage</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 
 </div>
 
@@ -3480,6 +3550,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle46").fadeIn();
+    });
+    $("#race47").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle47").fadeIn();
     });
 });
 
