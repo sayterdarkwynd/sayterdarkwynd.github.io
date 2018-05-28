@@ -92,7 +92,9 @@
  				  <div id="race26"><a href="#hivewasp"><img src="images/races/wasp.png" /></a><span class="slick-toggle">Wasp</span></div>
                   <div id="race45"><a href="#webber"><img src="images/races/webber.png"/></a><span class="slick-toggle">Webber</span></div>
  				  <div id="race46"><a href="#woggle"><img src="images/races/woggle.png"/></a><span class="slick-toggle">Woggle</span></div>
-				  <!-- Not covered by FR, no point in adding them here.
+ 				  <div id="race52"><a href="#inkling"><img src="images/races/default.png"/></a><span class="slick-toggle">Inkling</span></div>
+
+				 <!-- Not covered by FR, no point in adding them here.
  				  <div id="race34"><a href="#telvakian"><img src="images/races/default.png" /></a><span class="slick-toggle">Telvakian</span></div>
 				  -->
 				  <!-- WIP
@@ -3577,6 +3579,79 @@
 		</div>
 
 
+        <div class="itemrace" id="racetoggle52">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Inkling</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Colorful, chatty squid people. Light on their feet, sensitive to climate and liquids, and quite talented with their energy-based firearms.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore (favors meat)</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: 65% total fall damage</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Ranged</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Slime, Wet</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>-20</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>30</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>+5% Speed and +20% Jump</li>
+						    </ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Cold Biomes: Reduced health and energy</li>
+							  <li>Hot Biomes: Increased health and energy</li>
+							  <li>Oil, Slime/ Dark Water/ Healing Water: increase stats & give breath immunity</li>
+							  <li>Waste Water/Swamp Water: greatly reduced stats and breath</li>
+						    </ul>
+						  </div>
+					  <h3>Combat Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li class="spacer"><label class="cautiontext">Pistol/Machine Pistol</label>: +20% Damage, +15% Energy</li>
+							  <li class="spacer"><label class="cautiontext">Sniper Rifle</label>: +2% Crit Chance, +5 Crit Damage</li>
+							  <li class="spacer"><label class="cautiontext">Grenade Launcher</label>: +2% Crit Chance, +5 Crit Damage</li>
+							  <li class="spacer"><label class="cautiontext">Energy Weapon</label>: +5% Damage, +5% Energy</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
+
 </div>
 
 <script>
@@ -3862,6 +3937,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle51").fadeIn();
+    });
+    $("#race52").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle52").fadeIn();
     });
 });
 
