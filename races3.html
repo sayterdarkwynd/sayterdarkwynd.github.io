@@ -47,6 +47,7 @@
 				  <div id="race6"><a href="#hylotl"><img src="images/races/Hylotl.png" /></a><span class="slick-toggle">Hylotl</span></div>
 				  <div id="race7"><a href="#novakid"><img src="images/races/Novakid.png" /></a><span class="slick-toggle">Novakid</span></div>
 				  <div id="race8"><a href="#fenerox"><img src="images/races/Fenerox.png" /></a><span class="slick-toggle">Fenerox</span></div>
+				  <div id="race54"><a href="#shadow"><img src="images/races/default.png"/></a><span class="slick-toggle">Tenebrhae</span></div>
 				  <div id="race44"><a href="#kirhos"><img src="images/races/kirhos.png"/></a><span class="slick-toggle">Kirhos</span></div>
 				  <div id="race42"><a href="#thelusian"><img src="images/races/thelusian.png"/></a><span class="slick-toggle">Thelusian</span></div>
 				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">Radien</span></div>
@@ -3720,6 +3721,77 @@
 		</div>
 
 
+        <div class="itemrace" id="racetoggle54">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Tenebrhae</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">A mystery to the cosmos, the illusive Shadow people prefer to speak only to each other. This is simple, as other species cannot even hear their language.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Anything</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: None</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Damage</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Darkness, Shadow</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>15</span></div
+								><div class="stat"><img src="images/energy.png"><span>5</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>-20</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Darkness increases your power and protection. Light reduces it.</li>
+							  <li>Your basic attacks consume food</li>
+						    </ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+						      <p>On dark biomes you gain +2% Crit chance and +15% Energy.</p>
+						  </div>
+
+					  <h3>Combat Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li class="spacer"><label class="cautiontext">Spear</label>: 20% Shadow Burst chance</li>
+							  <li class="spacer"><label class="cautiontext">Wand/Staff</label>: +15% Health</li>
+							  <li class="spacer"><label class="cautiontext">Dagger</label>: +6% damage, 7.5% Shadow Burst chance</li>
+							  <li class="spacer"><label class="cautiontext">Shortsword</label>: 7.5% Shadow Burst chance</li>
+							  <li class="spacer"><label class="cautiontext">Magnorb</label>: +25% Protection</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
+
 </div>
 
 <script>
@@ -4015,6 +4087,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle53").fadeIn();
+    });
+    $("#race54").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle54").fadeIn();
     });
 });
 
