@@ -303,7 +303,7 @@ text-align:center;
 font-size:1.4em;
 font-weight:600;
 color:#3f3020;
-padding: 0 0 1.4em 0;
+
 line-height:1.4em; 
 }
 
@@ -428,7 +428,7 @@ color:#519091 !important;
   margin-top:-50px;
 }
 
-.main_navigation ul li { margin-left:20px;margin-right:20px;}
+.main_navigation ul li { margin-left:1em;margin-right:1em;}
 .main_navigation ul li:nth-child(2) {margin-right:2.4em}
 .main_navigation ul li:nth-child(3) {margin-left:2.4em}
 
