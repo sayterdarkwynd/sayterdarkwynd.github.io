@@ -432,7 +432,7 @@ color:#519091 !important;
 .main_navigation ul li:nth-child(2) {margin-right:2.4em}
 .main_navigation ul li:nth-child(3) {margin-left:2.4em}
 
-.skills h2,.portfolio h2, .contact h2 {
+.skills h2 {
   border-top:1px solid #bfbcb7;
   border-bottom:1px solid #bfbcb7;
   padding:1em;
@@ -442,7 +442,16 @@ color:#519091 !important;
   font-size:1.4rem
 }
 
-.skills ul p {max-width:80%}
+.about h2, .portfolio h2, .contact h2 {
+  padding:1em;
+  color:#000;
+  text-align:center;
+  font-weight:600;
+  font-size:3rem
+}
+
+
+.skills ul p {max-width:80%;font-size:1rem}
 
 .logo {margin:auto;width:64px;height:64px;}
 .cta {display:block;height:70px;width:70px;border-radius:50%;text-align:center}
@@ -465,9 +474,14 @@ color:#519091 !important;
   font-weight:600
   }  
 
+.sm {font-size:0.5rem;}
+
 ul li .logospace { border-bottom:none;}
 .contacttxt {font-size:3em;text-align:center;color:#3f3020;}  
 .primary {font-size:2rem;}
+.plain p.firstp {margin-top:1.4em;}
+.contact img { margin:0 auto;text-align:center;width:auto; }
+
 /* animation */
 @keyframes fadebox {
   from { opacity: 0.0 }
@@ -484,15 +498,8 @@ ul li .logospace { border-bottom:none;}
   .list-itemrace { width:25%; }  
   .list-itembig { width: 100%; } 
   .tagline h1 {font-size:2rem}
-.plain img { 
-  width:auto;
-  
-}
-
-.plain img.self { 
-  width:auto;
-  padding:2rem;float:left;
-}  
+  .plain img { width:auto;}
+  .plain img.self { width:auto;padding:2rem;float:left;}  
 }
 
 
