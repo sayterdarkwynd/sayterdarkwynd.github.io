@@ -33,22 +33,23 @@
   border: none;
   filter: "alpha(opacity=0)";
   opacity: 0;
-
+  filter: saturate(1);
+  -webkit-filter: saturate(0);
 }
 
 .justified-gallery > a > img:hover,
 .justified-gallery > div > img:hover,
 .justified-gallery > a > a > img:hover,
 .justified-gallery > div > a > img:hover {
-  width:105% !important; 
-  height:105% !important;
+  width:100% !important; 
+  height:100% !important;
   animation-name: imagesizer;
   animation-duration: 0.5;
   -webkit-animation-name: imagesizer;
   -webkit-animation-duration: 0.5;  
   -webkit-animation: saturator 3s infinite;  
-  transition: width 0.25s;
-  -webkit-transition: width 0.25s;
+  transition: saturation 1s;
+  -webkit-transition: saturation 1s;
   filter: saturate(1);
   -webkit-filter: saturate(1);
 }
