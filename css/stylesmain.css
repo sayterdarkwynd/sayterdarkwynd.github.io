@@ -545,6 +545,9 @@ ul li .logospace { border-bottom:none;}
   .box {position:relative;margin-top:1em}
   .box img.greeting {left:1em;top:0em;max-width:20%}
   .tagline h1 {font-size:1.5rem;line-height:3rem}
+  .main_navigation ul li { margin-left:10px;margin-right:10px;font-size:0.8em}
+  .main_navigation ul li:nth-child(2) { margin-left:1em;}
+  .main_navigation ul li:nth-child(3) { margin-right:1em;}
 }
 
 
