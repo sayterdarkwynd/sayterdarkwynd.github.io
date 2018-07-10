@@ -195,6 +195,8 @@ ul.list {
   padding:0;
   
 }
+ul.list li#work{ border:0;}
+
 .list-item, .list-itembig, .list-itemmed, .list-itemrace {
   -webkit-flex-direction:column;
   flex-direction:column;
@@ -372,7 +374,8 @@ line-height:1.4em;
 .list-itemmid h3, .list-itemmid2 h3 { font-size:1.4em;font-weight:400;padding:0 0 5em 0;font-family: 'Merriweather',serif;}
 .list-itemmid p, .list-itemmid2 p { text-align:left;padding:0 1em 0 1em;}
 
-ul.list li{ border:0;}
+
+
 .last {margin-bottom:5em;}
 
 #contact .plain a {
