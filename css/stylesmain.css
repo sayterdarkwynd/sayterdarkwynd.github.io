@@ -653,7 +653,7 @@ img.bg {
   .list-itembig { width: 100%; } 
   .plain img { width:auto;}
   .plain img.self { width:auto;padding:2rem;float:left;}  
-  .bordernone {border-right:0}
+  
 }
 
 
@@ -675,7 +675,6 @@ img.bg {
   .tagline h1 {font-size:2.0rem;line-height:3rem}
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
-  .bordernone {border-right:0px}
   section.about, section.portfolio {padding:0} 
 }
 
@@ -699,7 +698,6 @@ img.bg {
 #menu .main_navigation ul {
   margin-top:0px;
 }
-  .bordernone {border-right:0px}
   section.about, section.portfolio {padding:0}  
 }
 
