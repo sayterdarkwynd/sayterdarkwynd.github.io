@@ -23,13 +23,31 @@
 
 <body>
 
+<div id="menu">
+	<nav class="main_navigation plain">
+	  <a class="logo cta" href="">
+	    <span class="icon_logo"><img class="tinylogo" src="images/logotiny.png"/></span>
+	  </a>
+		<ul class="nostyle">
+			<li class="start"><a href="#work">WORK</a></li>
+			<li><a href="https://github.com/sayterdarkwynd" target="_new">PROJECTS</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li class="end"><a href="#contact">CONTACT</a></li>
+		</ul>
+	</nav>
+</div>
+
+
+
 <div class="container">
 
 	<nav class="main_navigation plain">
-	  <a class="logo cta"><img src="images/logotiny.png"/></a>
+	  <a class="logo cta" href="">
+	    <span class="icon_logo"><img class="tinylogo" src="images/logotiny.png"/></span>
+	  </a>
 		<ul class="nostyle">
 			<li class="start"><a href="#work">WORK</a></li>
-			<li><a href="#gaming">GAMING</a></li>
+			<li><a href="https://github.com/sayterdarkwynd" target="_new">PROJECTS</a></li>
 			<li><a href="#about">ABOUT</a></li>
 			<li class="end"><a href="#contact">CONTACT</a></li>
 		</ul>
@@ -157,7 +175,6 @@
 
    <div class="footer"></div>
 
-  </ul>
 </div>
 
 <!-- jQ plugins -->
@@ -174,7 +191,7 @@ $("#basicExample").justifiedGallery(
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
   "captionSettings" : {
-    animationDuration :500,
+    animationDuration :200,
     visibleOpacity:0.9,
     nonVisibleOpacity : 0
     }
@@ -183,7 +200,19 @@ $("#basicExample").justifiedGallery(
 </script>
 
 
-
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('#menu').fadeIn(500);
+            } else {
+                $('#menu').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
 
 </body>
 </html>
