@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,7 +47,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 strong {font-weight:400;}
@@ -517,9 +517,8 @@ ul.nostyle {
   border-top:1px solid #bfbcb7;
   border-bottom:1px solid #bfbcb7;
   padding:1em;
-  color:#000;
+  color:#3f3020;
   text-align:center;
-  font-weight:600;
   font-size:1.4rem
 }
 

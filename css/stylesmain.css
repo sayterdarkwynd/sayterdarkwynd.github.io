@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,14 +47,14 @@ table {
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 strong {font-weight:400;}
 strong.semibold {font-weight:300;}
 
 body {
- font-family: 'Hobo', Fallback, sans-serif;
+ font-family: 'Poppins', Fallback, sans-serif;
  font-size:1em;
   width:100%;
   height:100%;
@@ -96,7 +96,6 @@ h1 {
   border-top-left-radius:0.5em;
   border-top-right-radius:0.5em;
   color: #fff;
-  font-weight:800;
 }
 
 
@@ -368,12 +367,12 @@ line-height:1.4em;
 .list-itemid2 .plain a img {padding:0 !important;}
 .list-itemmid2 img {margin:0 auto;width:auto;padding:5em 0;}
 .list-itemmid2 img.large {padding-right:10px;width:auto;}
-.list-itemmid h1, .list-itemmid2 h1 { font-size:5em;font-weight:800;padding:0;}
-.list-itemmid h1, .list-itemmid2 h2 { font-size:3em;font-weight:800;padding:0;}
-.list-itemmid h3, .list-itemmid2 h3 { font-size:1.4em;font-weight:400;padding:0 0 5em 0;}
+.list-itemmid h1, .list-itemmid2 h1 { font-size:5em;font-weight:800;padding:0;font-family: 'Merriweather',serif;}
+.list-itemmid h1, .list-itemmid2 h2 { font-size:3em;font-weight:800;padding:0;font-family: 'Merriweather',serif;}
+.list-itemmid h3, .list-itemmid2 h3 { font-size:1.4em;font-weight:400;padding:0 0 5em 0;font-family: 'Merriweather',serif;}
 .list-itemmid p, .list-itemmid2 p { text-align:left;padding:0 1em 0 1em;}
 
-
+ul.list li{ border:0;}
 .last {margin-bottom:5em;}
 
 #contact .plain a {
@@ -515,10 +514,10 @@ ul.nostyle {
   border-top:1px solid #bfbcb7;
   border-bottom:1px solid #bfbcb7;
   padding:1em;
-  color:#000;
+  color:#3f3020;
   text-align:center;
-  font-weight:600;
-  font-size:1.4rem
+  font-size:1.4rem;
+  font-family: 'Merriweather',serif;
 }
 
 .about h2, .portfolio h2, .contact h2 {
@@ -526,7 +525,8 @@ ul.nostyle {
   color:#3f3020;
   text-align:center;
   font-weight:600;
-  font-size:3rem
+  font-size:3rem;
+  font-family: 'Merriweather',serif;
 }
 
 
@@ -538,10 +538,11 @@ ul.nostyle {
 .tagline { width:100%; padding:5em;margin:0 auto;text-align:center;}
 .tagline h1 { 
   margin:0;
-  font-weight:600;
+  font-weight:200;
   font-size:2.5rem;
   color: #3f3020;
-  line-height:5.6rem
+  line-height:5.6rem;
+  font-family: 'Merriweather',serif;
   }
   
 .list-item img {max-width:180px;}  
@@ -557,7 +558,7 @@ ul.nostyle {
 .sm {font-size:0.5rem;}
 
 ul li .logospace { border-bottom:none;}
-.contacttxt {font-size:3em;text-align:center;color:#3f3020;}  
+.contacttxt {font-size:3em;text-align:center;color:#3f3020;font-family:'Merriweather',serif;}  
 .primary {font-size:2rem;}
 .plain p.firstp {margin-top:1.4em;}
 .contact img { margin:0 auto;text-align:center;width:auto; }
@@ -603,7 +604,7 @@ img.bg {
   .list-itemmed { width: 66.33%; }  
   .list-itemrace { width:25%; }  
   .list-itembig { width: 100%; } 
-  .tagline h1 {font-size:2rem;padding:0 4em}
+  .tagline h1 {font-size:3rem;padding:0 4em}
   .plain img { width:auto;}
   .plain img.self { width:auto;padding:2rem;float:left;}  
 }
@@ -623,7 +624,7 @@ img.bg {
   .box img.greeting {max-width:40%}
   .list-itemmid2 img { margin: 0 auto; width: auto; padding: 2em 1em;} 
   .portpic_container { width:100%;max-width:100%;margin:0 auto;margin-bottom:4em;}
-  .tagline h1 {font-size:1.8rem;line-height:3rem}
+  .tagline h1 {font-size:2.4rem;line-height:3rem}
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
 }
@@ -653,7 +654,7 @@ img.bg {
   .plain img { padding-top:0;width:75%;}
   .box {position:relative;margin-top:1em}
   .box img.greeting {left:1em;top:0em;max-width:20%}
-  .tagline h1 {font-size:1.5rem;line-height:3rem}
+  .tagline h1 {font-size:1.76rem;line-height:3rem}
 .main_navigation ul {margin-top:0}  
 .main_navigation ul li {font-size:0.8rem}
 .main_navigation ul li a {line-height:35px;}
