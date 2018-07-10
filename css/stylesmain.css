@@ -233,7 +233,7 @@ ul.list li#work{ border:0;}
 	position:fixed;
 	top:0px;
 	width:100%; 
-	background-color:#e5e8d6;
+	background-color: rgba(250,250,250,0.98);
 	z-index:9999;
 	border-bottom:1px solid #bfbcb7;
 	display:none;
@@ -527,7 +527,7 @@ ul.nostyle {
   padding:1em;
   color:#3f3020;
   text-align:center;
-  font-weight:600;
+  font-weight:200;
   font-size:3rem;
   font-family: 'Merriweather',serif;
 }
