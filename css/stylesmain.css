@@ -409,9 +409,16 @@ color:#519091 !important;
   padding-top:20px;
   height:100px;
   font-weight:700;
+  z-index:9;
+  font-size:1.0rem;
+  font-style:normal;
+  display:block;
 }
 
 .main_navigation ul {
+  display:-webkit-box;
+  display: -webkit-flex;
+  display:-ms-flexbox;
   display:flex;
   -webkit-box-orient:horizontal;
   -webkit-box-direction:horizontal;
@@ -425,12 +432,20 @@ color:#519091 !important;
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-  margin-top:-50px;
+  margin-top:-60px;
 }
 
-.main_navigation ul li { margin-left:1em;margin-right:1em;}
-.main_navigation ul li:nth-child(2) {margin-right:2.4em}
-.main_navigation ul li:nth-child(3) {margin-left:2.4em}
+ul.nostyle {
+  padding:0;
+  list-style:none;
+}
+
+.main_navigation ul li a { display:inline-block;line-height:50px;position:relative;}
+
+.main_navigation ul li.start { margin-right:2em;}
+.main_navigation ul li.end { margin-left:2em;}
+.main_navigation ul li:nth-child(2) {margin-right:3em}
+.main_navigation ul li:nth-child(3) {margin-left:3em}
 
 .skills h2 {
   border-top:1px solid #bfbcb7;
@@ -531,6 +546,7 @@ ul li .logospace { border-bottom:none;}
   .plain h1 { font-size:3.5em;} 
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
+  .tagline {padding:2em}
 }
 
 @media screen and (max-width: 29em) {
@@ -541,13 +557,18 @@ ul li .logospace { border-bottom:none;}
   .plain p.small { font-size:1.1em;}
   .container { padding:0;}
   .plain h1 { font-size:2.5em;}
-  .plain img { padding-top:0}
+  .plain img { padding-top:0;width:75%;}
   .box {position:relative;margin-top:1em}
   .box img.greeting {left:1em;top:0em;max-width:20%}
   .tagline h1 {font-size:1.5rem;line-height:3rem}
-  .main_navigation ul li { margin-left:10px;margin-right:10px;font-size:0.8em}
-  .main_navigation ul li:nth-child(2) { margin-left:1em;}
-  .main_navigation ul li:nth-child(3) { margin-right:1em;}
+.main_navigation ul li {font-size:0.8rem}
+.main_navigation ul li a {line-height:35px;}
+.main_navigation ul li.start { margin-right:0.45em;}
+.main_navigation ul li.end { margin-left:0.45em;}
+.main_navigation ul li:nth-child(2) {margin-right:2.4em}
+.main_navigation ul li:nth-child(3) {margin-left:2.4em}
+.tagline {padding:1.76em}
+.skills ul p {max-width:100%;}
 }
 
 
