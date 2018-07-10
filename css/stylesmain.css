@@ -81,6 +81,7 @@ img {
   width:100%;
 }
 
+section {display:block;margin-bottom:4em}
 
 ul li {
   line-height:1.2em; 
@@ -429,7 +430,6 @@ color:#519091 !important;
 .break-skill {margin:20px auto;text-align:center;background:#313131;width:50px;height:1px;display:block;opacity:.3}
 
 .breaker_small {padding-top:2rem}
-.breaker {padding-top:8rem}
 .uppercase { text-transform: uppercase; }
 
 .overflowhidden {overflow:hidden;}
@@ -538,7 +538,8 @@ ul.nostyle {
 
 
   
-.tagline { width:100%; padding:5em;margin:0 auto;text-align:center;}
+.tagline { width:100%; padding:5em 10em;margin:0 auto;text-align:center;}
+
 .tagline h1 { 
   margin:0;
   font-weight:200;
@@ -607,7 +608,6 @@ img.bg {
   .list-itemmed { width: 66.33%; }  
   .list-itemrace { width:25%; }  
   .list-itembig { width: 100%; } 
-  .tagline h1 {font-size:3rem;padding:0 4em}
   .plain img { width:auto;}
   .plain img.self { width:auto;padding:2rem;float:left;}  
 }
@@ -643,7 +643,7 @@ img.bg {
   .plain h1 { font-size:3.5em;} 
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
-  .tagline {padding:2em}
+  .tagline {padding:5em 2em}
 }
 
 @media screen and (max-width: 29em) {
