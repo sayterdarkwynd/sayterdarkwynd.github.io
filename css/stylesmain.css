@@ -439,7 +439,6 @@ color:#519091 !important;
 
 .main_navigation {
   padding-top:20px;
-  height:100px;
   font-weight:700;
   z-index:9;
   font-size:1.0rem;
@@ -627,7 +626,8 @@ img.bg {
   .box img.greeting {max-width:40%}
   .list-itemmid2 img { margin: 0 auto; width: auto; padding: 2em 1em;} 
   .portpic_container { width:100%;max-width:100%;margin:0 auto;margin-bottom:4em;}
-  .tagline h1 {font-size:2.4rem;line-height:3rem}
+
+  .tagline h1 {font-size:2.0rem;line-height:3rem}
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
 }
@@ -643,7 +643,7 @@ img.bg {
   .plain h1 { font-size:3.5em;} 
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
-  .tagline {padding:5em 2em}
+  .tagline {padding:2em 2em}
 }
 
 @media screen and (max-width: 29em) {
@@ -665,7 +665,8 @@ img.bg {
 .main_navigation ul li.end { margin-left:0.45em;}
 .main_navigation ul li:nth-child(2) {margin-right:2.4em}
 .main_navigation ul li:nth-child(3) {margin-left:2.4em}
-.tagline {padding:1.76em}
+.tagline {padding:2em}
+.tagline h1 {font-size:1.4rem}
 .plain img.tinylogo { width:100%;}
 .skills ul p {max-width:100%;}
 	.main_navigation .logo span {
