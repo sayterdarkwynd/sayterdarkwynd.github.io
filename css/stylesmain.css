@@ -417,7 +417,8 @@ color:#519091 !important;
 
 .break-skill {margin:20px auto;text-align:center;background:#313131;width:50px;height:1px;display:block;opacity:.3}
 
-.breaker_small {padding-top:2rem}
+.breaker_sm {padding-top:2rem}
+.breaker {padding-top:20rem}
 .uppercase { text-transform: uppercase; }
 
 .overflowhidden {overflow:hidden;}
