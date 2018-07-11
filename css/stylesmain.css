@@ -547,10 +547,10 @@ ul.nostyle {
   display:none
 }
 .main_navigation a.logo:hover span.backbutton  { 
-  display:none
+  display:block
 }
 .main_navigation a.logo:hover span.backbutton2 { 
-  display:block
+  display:none
 }
 
 .main_navigation li:hover { 
