@@ -737,6 +737,7 @@ img.bg {
   section.about, section.portfolio {padding:0} 
   .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #555;}
   .textbox {padding:2em}
+  .textbox p, .plain p {font-size:1em}
 }
 
 @media screen and (max-width: 29em) {
@@ -756,16 +757,16 @@ img.bg {
   .tagline h3.portfolio {font-size:1rem;line-height:3rem}
   .main_navigation ul {margin-top:0}  
   .main_navigation ul li {font-size:0.8rem}
-  .main_navigation ul li a {line-height:35px;}
-  #menu .main_navigation ul li a {line-height:35px;font-size:1em}
-  .main_navigation ul li.start { margin-right:1.8em;}
-  .main_navigation ul li.end { margin-left:1.8em;}
-  .main_navigation ul li:nth-child(2) {margin-right:3.4em}
-  .main_navigation ul li:nth-child(3) {margin-left:3.4em}
+  .main_navigation ul li a {line-height:35px;;font-size:0.8em}
+  #menu .main_navigation ul li a {line-height:35px;font-size:0.8em}
+  .main_navigation ul li.start { margin-right:1.2em;}
+  .main_navigation ul li.end { margin-left:1.2em;}
+  .main_navigation ul li:nth-child(2) {margin-right:2.4em}
+  .main_navigation ul li:nth-child(3) {margin-left:2.4em}
   .plain img.tinylogo { width:100%;}
   .skills ul p {max-width:100%;}
-  
-  section.about, section.portfolio {padding:0}  
+  section.about, section.portfolio {padding:0} 
+  .textbox p, .plain p {font-size:1em}
 }
 
 
