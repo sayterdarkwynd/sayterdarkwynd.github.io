@@ -540,11 +540,17 @@ ul.nostyle {
 }
 
 
-.main_navigation .logo .backbutton, .main_navigation .logo:hover .backbutton2{ 
+.main_navigation a.logo span.backbutton  { 
   display:block
 }
-.main_navigation .logo:hover .backbutton, .main_navigation .logo .backbutton2 { 
+.main_navigation a.logo span.backbutton2 { 
   display:none
+}
+.main_navigation a.logo:hover span.backbutton  { 
+  display:none
+}
+.main_navigation a.logo:hover span.backbutton2 { 
+  display:block
 }
 
 .main_navigation li:hover { 
@@ -569,7 +575,8 @@ ul.nostyle {
   z-index:1;
   display:block;
   line-height:73px;
-  text-align:center
+  text-align:center;
+  width:70px
   }
   
 
