@@ -200,8 +200,8 @@ ul.list {
   justify-content:space-between;
   list-style-type:none;
   padding:0;
-  
 }
+
 ul.list li#work{ border:0;}
 
 .list-item, .list-itembig, .list-itemmed, .list-itemrace {
@@ -212,7 +212,6 @@ ul.list li#work{ border:0;}
   border-right:1px solid #bfbcb7;
   border-bottom:1px solid #bfbcb7
 }
-
 
 .list-content {
   -webkit-flex:1 0 auto;
