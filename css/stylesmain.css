@@ -85,6 +85,9 @@ section {display:block;margin-bottom:4em;}
 section.about, section.portfolio {
 padding:0 2em 0 2em
 }
+section.portfolio {
+padding:2em 2em 0 2em
+}
 
 ul li {
   line-height:1.2em; 
@@ -220,8 +223,8 @@ ul.list li#work{ border:0;}
 }
 
 .textbox { 
-  max-width:70em;
-  margin:0 auto;
+  padding:4em;
+  text-align:center
 }
 
 .textbox p, .textbox h1 {
@@ -397,7 +400,7 @@ color:#519091 !important;
 
 /* image gallery */
 .galleria { max-width: 100%; height: 400px; background: #000 }
-.portpic_container { width:70%;margin:0 auto;margin-bottom:4em;}
+.portpic_container { width:70%;margin:0 auto;}
 .portpic_container img { width:100% !important; }
 .portpic_container span.description {
   display:block;
@@ -504,7 +507,7 @@ ul.nostyle {
   list-style:none;
 }
 
-.main_navigation ul li a { display:inline-block;line-height:20px;position:relative;font-size:0.8em}
+.main_navigation ul li a { display:inline-block;line-height:20px;position:relative;font-size:1em}
 .main_navigation ul li.start { margin-right:2em;}
 .main_navigation ul li.end { margin-left:2em;}
 .main_navigation ul li:nth-child(2) {margin-right:3em}
@@ -598,6 +601,23 @@ ul.nostyle {
   line-height:5.6rem;
   font-family: 'Merriweather',serif;
   }
+
+.tagline h1.portfolio { 
+  margin:0;
+  font-weight:200;
+  font-size:2.5rem;
+  color: #3f3020;
+  line-height:5.6rem;
+  font-family: 'Merriweather',serif;
+  }
+.tagline h3.portfolio { 
+  margin:0;
+  font-weight:200;
+  font-size:1.5rem;
+  color: #3f3020;
+  line-height:2.6rem;
+  font-family: 'Merriweather',serif;
+  }
   
 .list-item img {max-width:180px;}  
   
@@ -687,9 +707,11 @@ img.bg {
   .plain h3 { font-size:1.4em;}
   .box img.greeting {max-width:40%}
   .list-itemmid2 img { margin: 0 auto; width: auto; padding: 2em 1em;} 
-  .portpic_container { width:100%;max-width:100%;margin:0 auto;margin-bottom:4em;}
+  .portpic_container { width:100%;max-width:100%;margin:0 auto;}
   .tagline { padding:4em 4em;}
   .tagline h1 {font-size:2.0rem;line-height:3rem;}
+  .tagline h1.portfolio {font-size:1.75rem;line-height:3rem}
+  .tagline h3.portfolio {font-size:1.4rem;line-height:3rem}  
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
   section.about, section.portfolio {padding:0} 
@@ -704,13 +726,18 @@ img.bg {
   .plain { width:100% }
   .list-item .plain { width:100%}
   .plain h1 { font-size:3.5em;} 
+  .plain img {width:100%;}
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
   .tagline { padding:4em 3em;}
   .tagline h1 {font-size:2.0rem;line-height:3rem;}
+  .tagline h1.portfolio {font-size:1.6rem;line-height:3rem}
+  .tagline h3.portfolio {font-size:1.2rem;line-height:3rem}  
   .list-item, .list-itembig, .list-itemmed, .list-itemrace {border-right:0;border-bottom:1px solid #bfbcb7}
   #menu .main_navigation ul {margin-top:0px;}
-  section.about, section.portfolio {padding:0}  
+  section.about, section.portfolio {padding:0} 
+  .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #555;}
+  .textbox {padding:2em}
 }
 
 @media screen and (max-width: 29em) {
@@ -721,22 +748,24 @@ img.bg {
   .plain p.small { font-size:1.1em;}
   .container { padding:0;}
   .plain h1 { font-size:2.5em;}
-  .plain img { padding-top:0;width:75%;}
+  .plain img { padding-top:0;width:33%;}
   .box {position:relative;margin-top:1em}
   .box img.greeting {left:1em;top:0em;max-width:20%}
   .tagline { padding:3em 2.4em;}
   .tagline h1 {font-size:1.4rem;line-height:3rem}
+  .tagline h1.portfolio {font-size:1.4rem;line-height:3rem}
+  .tagline h3.portfolio {font-size:1rem;line-height:3rem}
   .main_navigation ul {margin-top:0}  
   .main_navigation ul li {font-size:0.8rem}
   .main_navigation ul li a {line-height:35px;}
-  #menu .main_navigation ul li a {line-height:35px;font-size:0.8em}
+  #menu .main_navigation ul li a {line-height:35px;font-size:1em}
   .main_navigation ul li.start { margin-right:1.8em;}
   .main_navigation ul li.end { margin-left:1.8em;}
   .main_navigation ul li:nth-child(2) {margin-right:3.4em}
   .main_navigation ul li:nth-child(3) {margin-left:3.4em}
   .plain img.tinylogo { width:100%;}
   .skills ul p {max-width:100%;}
-  .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #555;}
+  
   section.about, section.portfolio {padding:0}  
 }
 
