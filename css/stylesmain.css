@@ -643,11 +643,21 @@ img.bg {
 }
 
 
+
+
 /* animation */
 @keyframes fadebox {
   from { opacity: 0.0 }
   to { opacity: 0.7 }
 }
+
+
+
+/* gallery overrides */
+#cboxOverlay {opacity:0.92 !important}
+#cboxClose {display:none;}
+
+
 
 /* media queries */
 

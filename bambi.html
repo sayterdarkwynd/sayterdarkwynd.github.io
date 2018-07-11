@@ -99,9 +99,6 @@
 			<a class="gallery" href="images/port/app/bambi11.jpg">
 				<img alt="App Create" src="images/thumbs/bambi11_thumb.png"/>
 			</a>
-		<script>
-		  jQuery('a.gallery').colorbox();
-		</script>
 		</div>
       </div>
     </li>
@@ -135,7 +132,7 @@
 <script src="js/jquery.justifiedGallery.min.js"></script>
 
 <script type="text/javascript">
-$("#basicExample").justifiedGallery(
+$('#basicExample').justifiedGallery(
   {
   "rowHeight" : 250,
   "margins" : 0,
@@ -148,7 +145,15 @@ $("#basicExample").justifiedGallery(
     nonVisibleOpacity : 0
     }
   }
-);
+).on('jg.complete', function () {
+    $(this).find('a').colorbox({
+        maxWidth : '80%',
+        maxHeight : '80%',
+        opacity : 0.8,
+        transition : 'elastic',
+        current : ''
+    });
+});
 </script>
 
 

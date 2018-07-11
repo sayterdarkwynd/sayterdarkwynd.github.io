@@ -53,52 +53,49 @@
 		</ul>
 	</nav>
 
-    <section>
-  <ul class="list">
-  <li class="list-itemmid2">
-    <a href="index.html#work"><img src="images/arrowback.png"></a>
-  </li>
-	<li class="list-itemmid2 plain">
+    <section class="work">
+	  <ul class="list">
+	  <li class="list-itemmid2">
+		<a href="index.html#work"><img src="images/arrowback.png"></a>
+	  </li>
+		<li class="list-itemmid2 plain">
 
-		<h2>Ashley Madison</h2>
-		<h3 class="warningtext">Controversial but powerful</h3>
-		<div class="portpic_container">
-		  <img src="images/port/ad/bigad1.jpg" class="portpic large" >
-		  <span class="description">"Sin City" Themed Lander</span>
-		</div>
+			<h2>Ashley Madison</h2>
+			<h3 class="warningtext">Controversial but powerful</h3>
+			<div class="portpic_container">
+			  <img src="images/port/ad/bigad1.jpg" class="portpic large" >
+			  <span class="description">"Sin City" Themed Lander</span>
+			</div>
 
-		  <div class="textbox">
-            <p>I worked with AvidLife (now Ruby Life) for 6 years, designing a little of just about everything while there. AshleyMadison was my primary responsibility. My work tasks included <strong>landing pages</strong>, <strong>digital marketing</strong> (including banners and social media images), <strong>front-end HTML</strong> and <strong>CSS</strong>, <strong>App design</strong> and <strong>Brand Identity</strong>, <strong>Illustration</strong>, <strong>Wireframing</strong> and <strong>Storyboards</strong>.</p>
-            <p>Several of my ads got <strong>international attention</strong>, helping to bring <strong>Ashley Madison</strong> much publicity and turn it into a household name. The Design Team worked well as a unit, and as a result we were able to substantially increase revenue with cutting edge ideas.</p>
-	      </div>
-	</li>
+			  <div class="textbox">
+				<p>I worked with AvidLife (now Ruby Life) for 6 years, designing a little of just about everything while there. AshleyMadison was my primary responsibility. My work tasks included <strong>landing pages</strong>, <strong>digital marketing</strong> (including banners and social media images), <strong>front-end HTML</strong> and <strong>CSS</strong>, <strong>App design</strong> and <strong>Brand Identity</strong>, <strong>Illustration</strong>, <strong>Wireframing</strong> and <strong>Storyboards</strong>.</p>
+				<p>Several of my ads got <strong>international attention</strong>, helping to bring <strong>Ashley Madison</strong> much publicity and turn it into a household name. The Design Team worked well as a unit, and as a result we were able to substantially increase revenue with cutting edge ideas.</p>
+			  </div>
+		</li>
 
-    <li id="work" class="list-itembig topspace">
-      <div class="list-content">
-        <a name="work"></a>
-		<div id="basicExample" class="justified-gallery">
-			<a class="gallery" href="images/port/lp/page2.png">
-				<img alt="Ashley Madison 'Shush' Lander" src="images/thumbslarge/thumbslarge_lp1.png"/>
-			</a>
-			<a class="gallery" href="images/port/sketch/sketch10.jpg">
-				<img alt="Japan-Style Shush" src="images/thumbs/sketch10_thumb.png"/>
-			</a>
-			<a class="gallery" href="images/port/ad/bigad2.jpg">
-				<img alt="Sydney Billboard" src="images/thumbs/ad2_thumb.png"/>
-			</a>
-			<a class="gallery" href="images/port/ad/bigad5.jpg">
-				<img alt="Infidelity Billboard" src="images/thumbs/ad5_thumb.png"/>
-			</a>
-			<a class="gallery" href="images/port/ad/bigad8.jpg">
-				<img alt="Dead Marriage Billboard" src="images/thumbs/ad8_thumb.png"/>
-			</a>
-		<script>
-		  jQuery('a.gallery').colorbox();
-		</script>
-		</div>
-      </div>
-    </li>
-  </ul>
+		<li id="work" class="list-itembig topspace">
+		  <div class="list-content">
+			<a name="work"></a>
+			<div id="basicExample" class="justified-gallery">
+				<a class="gallery" href="images/port/lp/page2.png">
+					<img alt="Ashley Madison 'Shush' Lander" src="images/thumbslarge/thumbslarge_lp1.png"/>
+				</a>
+				<a class="gallery" href="images/port/sketch/sketch10.jpg">
+					<img alt="Japan-Style Shush" src="images/thumbs/sketch10_thumb.png"/>
+				</a>
+				<a class="gallery" href="images/port/ad/bigad2.jpg">
+					<img alt="Sydney Billboard" src="images/thumbs/ad2_thumb.png"/>
+				</a>
+				<a class="gallery" href="images/port/ad/bigad5.jpg">
+					<img alt="Infidelity Billboard" src="images/thumbs/ad5_thumb.png"/>
+				</a>
+				<a class="gallery" href="images/port/ad/bigad8.jpg">
+					<img alt="Dead Marriage Billboard" src="images/thumbs/ad8_thumb.png"/>
+				</a>
+			</div>
+		  </div>
+		</li>
+	  </ul>
     </section>
 
 
@@ -128,7 +125,7 @@
 <script src="js/jquery.justifiedGallery.min.js"></script>
 
 <script type="text/javascript">
-$("#basicExample").justifiedGallery(
+$('#basicExample').justifiedGallery(
   {
   "rowHeight" : 250,
   "margins" : 0,
@@ -141,7 +138,15 @@ $("#basicExample").justifiedGallery(
     nonVisibleOpacity : 0
     }
   }
-);
+).on('jg.complete', function () {
+    $(this).find('a').colorbox({
+        maxWidth : '80%',
+        maxHeight : '80%',
+        opacity : 0.8,
+        transition : 'elastic',
+        current : ''
+    });
+});
 </script>
 
 
