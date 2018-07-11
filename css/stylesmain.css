@@ -533,6 +533,20 @@ ul.nostyle {
   -webkit-transition: border 1.0s;  	  
 }
 
+.main_navigation .logo span:hover {
+  background-color:#d1594d;
+  transition: background-color 1.0s;
+  -webkit-transition: background-color 1.0s;  	  
+}
+
+
+.main_navigation .logo .backbutton, .main_navigation .logo:hover .backbutton2{ 
+  display:block
+}
+.main_navigation .logo:hover .backbutton, .main_navigation .logo .backbutton2 { 
+  display:none
+}
+
 .main_navigation li:hover { 
   border-bottom:1px solid #519091;
   transition: border 1.0s;
