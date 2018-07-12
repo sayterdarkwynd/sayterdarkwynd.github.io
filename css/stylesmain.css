@@ -702,7 +702,10 @@ ul.nostyle {
 }
 
 
-.skills ul p {max-width:80%;font-size:1rem}
+.skills ul p {
+  font-size:1rem;
+  text-align:center;
+  }
 
 
 
