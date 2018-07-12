@@ -76,6 +76,8 @@ a {
   margin:0;
 }
 
+.wordlabel { /*color:#33aa22*/;font-style:oblique }
+
 img {
   display:block;
   width:100%;
