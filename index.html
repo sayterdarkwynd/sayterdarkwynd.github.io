@@ -23,7 +23,7 @@
 
 <body>
 <div id="menu">
-	<nav class="main_navigation plain">
+	<nav class="main_navigation plain animate" style="top: 0px;">
 	  <a class="logo cta" href="index.html">
 	    <span class="icon_logo"><img class="tinylogo" src="images/logotiny.png"/></span>
 	  </a>
@@ -55,7 +55,8 @@
     <section class="tagline">
     	<h1 class="title">Hi, I'm Chris DeChamplain, a Web, Graphic and UX/UI Designer currently located in Toronto.</h1>
     </section>
-<a id="about" > </a>
+
+    <a id="about" > </a>
     <section class="skills overflowhidden">
       <h2 class="uppercase spacing_mid">MY SPECIALTIES:</h2>
 	  <ul class="list">
@@ -103,7 +104,7 @@
     </section>
 
 
-    <section class="about breaker">
+    <section class="about">
 
         <div class="plain">
           <p class="firstp"><img src="images/port/me1.png" class="bottombreak self">With more than 13 years experience in <strong>Web Design</strong>, <strong>Graphic Design</strong> and <strong>UX/UI Design</strong>, I've had the pleasure to work with clients on creative projects covering a wide range of areas developing industry-leading websites, apps and user experiences. My primary skills include <strong>Digital Marketing, HTML, CSS, UX/UI Design, Adobe CS, Wordpress, Wireframing, Concept/Prototyping and Storyboarding</strong>, while <strong>Sound and Video Editing, Spriting, Illustration, Inking, Colorist, Art Direction, Team Management, Lua programming and JSON scripting</strong> round out my secondary skills.</p>
@@ -114,7 +115,7 @@
     </section>
 
     <a name="work"></a>
-    <section class="portfolio breaker">
+    <section class="portfolio">
       <h2 class="spacing_mid">Work:</h2>
   		<div class="list-content">
 			<div id="basicExample" class="justified-gallery breaker">
@@ -185,7 +186,7 @@
 $("#basicExample").justifiedGallery(
   {
   "rowHeight" : 250,
-  "margins" : 0,
+  "margins" : 10,
   "lastRow" : "nojustify",
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
