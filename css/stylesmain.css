@@ -86,8 +86,8 @@ img {
 section {display:block;}
 section.portfolio {padding:8em 0}
 
-section.about {background-color:#3f3020;padding:8rem 4rem;}
-section.about .plain p {color:#e5e8d6 !important;}
+section.about {padding:8rem 4rem;}
+
 section.contact {padding:20rem 4rem;}
 
 section.details {
