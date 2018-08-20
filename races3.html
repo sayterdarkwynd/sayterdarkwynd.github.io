@@ -65,6 +65,7 @@
 				  <div id="race15"><a href="#familiar"><img src="images/races/familiar.png" /></a><span class="slick-toggle">Familiar</span></div>
 				  <div id="race16"><a href="#felin"><img src="images/races/felin.png" /></a><span class="slick-toggle">Felin</span></div>
 				  <div id="race53"><a href="#fennix"><img src="images/races/fennix1.png"/></a><span class="slick-toggle">Fennix</span></div>
+ 				  <div id="race57"><a href="#guardianspirit"><img src="images/races/guardianspirit.png" /></a><span class="slick-toggle">Guardian Spirit</span></div>
  				  <div id="race32"><a href="#greckan"><img src="images/races/default.png" /></a><span class="slick-toggle">Greckan</span></div>
  				  <div id="race29"><a href="#gyrusen"><img src="images/races/default.png" /></a><span class="slick-toggle">Gyrusen</span></div>
 				  <div id="race38"><a href="#indix"><img src="images/races/indix.png" /></a><span class="slick-toggle">Indix</span></div>
@@ -3927,6 +3928,75 @@
 		</div>
 
 
+
+        <div class="itemrace" id="racetoggle57">
+		  <a class="close" href="#">X</a>
+		  	<h1 class="large">Guardian Spirit</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Glowing creatures that share a strong connection to light, most of this species came from the Forest of Nibel. Many of them had special talents, and by absorbing the light from their Ancestral Trees, one could claim the fallen spirit's powers for their own.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Herbivore</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +25% Speed / Jump Height</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Agility</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: None</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>-30</span></div
+								><div class="stat"><img src="images/energy.png"><span>30</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-10</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>They constantly give off a glowing aura</li>
+							  <li>+25% Speed and Jump Height</li>
+							  <li>More often than not, fragile</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+							<p><label class="cautiontext">Lush, Forest and Primeval</label>: +15% Health and Protection</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Pistol</label>: +10% Damage</li>
+							  <li class="spacer"><label class="cautiontext">Wand / Staff</label>: +30 Damage, +10% Protection</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
+
 </div>
 
 <script>
@@ -4237,6 +4307,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle56").fadeIn();
+    });
+    $("#race57").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle57").fadeIn();
     });
 });
 
