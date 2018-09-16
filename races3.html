@@ -92,15 +92,10 @@
  				  <div id="race46"><a href="#woggle"><img src="images/races/woggle.png"/></a><span class="slick-toggle">Woggle</span></div>
  				  <div id="race55"><a href="#aegi"><img src="images/races/default.png" /></a><span class="slick-toggle">Aegi</span></div>
  				  <div id="race56"><a href="#akkimari"><img src="images/races/default.png" /></a><span class="slick-toggle">Akkimari</span></div>
-				  <!-- Not covered by FR, no point in adding them here.
- 				  <div id="race34"><a href="#telvakian"><img src="images/races/default.png" /></a><span class="slick-toggle">Telvakian</span></div>
-				  -->
+ 				  <div id="race57"><a href="#sergal"><img src="images/races/default.png" /></a><span class="slick-toggle">Sergal</span></div>
 				  <!-- WIP
  				  <div id="race54"><a href="#lyceen"><img src="images/races/default.png"/></a><span class="slick-toggle">Lyceen</span></div>
  				  <div id="race55"><a href="#lombax"><img src="images/races/default.png"/></a><span class="slick-toggle">Lombax</span></div>
- 				  <div id="race56"><a href="#nebulite"><img src="images/races/default.png"/></a><span class="slick-toggle">Nebulite</span></div>
- 				  <div id="race57"><a href="#sarasinor"><img src="images/races/default.png"/></a><span class="slick-toggle">Sarasinor</span></div>
- 				  <div id="race58"><a href="#Blattra"><img src="images/races/default.png"/></a><span class="slick-toggle"></span>Blattra</div>
  				  -->
 			</div>
 	</div>
@@ -3928,6 +3923,74 @@
 		</div>
 
 
+
+
+		<div class="itemrace" id="racetoggle57">
+		  <a class="close" href="#">X</a>
+		  	<h1 class="large">Sergal</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Nomadic hunters with exceptional tracking capability. Agile and graceful, they are capable carnivores.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Carnivorous</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +7% Speed, +6% Jump</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Hunter</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: None</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>-20</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>40</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-50</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Gains the Hunter's Claw racial tech (craft the Race Effect Enable in your [C] crafting menu).</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+							<p>In Savannah, Rainforest, Jungle and Primeval biomes you gain increased vitality, jump height and run speed.</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Bow/Crossbow</label>: +15% Power</li>
+							  <li><label class="cautiontext">Dagger/Mace</label>: +15% Power</li>
+							  <li class="spacer"><label class="cautiontext">Spear</label>: +25% health, +15% Protection</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 </div>
 
 <script>
@@ -4238,6 +4301,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle56").fadeIn();
+    });
+    $("#race57").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle57").fadeIn();
     });
 });
 
