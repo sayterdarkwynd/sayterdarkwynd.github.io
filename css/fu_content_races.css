@@ -413,3 +413,19 @@ ul.racial li { width:15% }
   .itemrace { max-width:90%;max-height:90%;top:1em}
 }
 
+.paypal_btn{
+	display: inline-block;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding: 10px 14px;
+	margin: 0;
+	background: #ff6600;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+.paypal_btn:hover{ background: #e05c04; }
