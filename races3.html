@@ -50,6 +50,7 @@
 				  <div id="race42"><a href="#thelusian"><img src="images/races/thelusian.png"/></a><span class="slick-toggle">Thelusian</span></div>
 				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">Radien</span></div>
  				  <div id="race33"><a href="#mantizi"><img src="images/races/mantizi.png" /></a><span class="slick-toggle">Mantizi</span></div>
+				  <div id="race58"><a href="#Elduukhar"><img src="images/races/default.png" /></a><span class="slick-toggle">Elduukhar</span></div>
 
 				  <div id="race9"><a href="#argonian"><img src="images/races/argonian.png" /></a><span class="slick-toggle">Argonian</span></div>
 				  <div id="race10"><a href="#avali"><img src="images/races/avali.png" /></a><span class="slick-toggle">Avali</span></div>
@@ -2297,7 +2298,7 @@
 		  		<div class="racecontent">
 					<div class="raceinfo">
 						<div class="photo2">
-						  <img src="images/races/default2.png" class="small racepic"/>
+						  <img src="images/races/mantizi2.png" class="small racepic"/>
 						</div>
 						<div class="textsplat">
 							<p class="indent">A republic populated by dangerously well-trained melee combatants. Also, beetles. Cool stuff. Exceptional defenses in melee.</p>
@@ -3991,6 +3992,75 @@
 			  </div>
 		</div>
 
+
+	    <div class="itemrace" id="racetoggle58">
+		  <a class="close" href="#">X</a>
+
+		  	<h1 class="large">Elduukhar</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/default2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Stoic, wise, and elusive. The Elduukhar are exceptional craftsmen who dedicate their lives to improved skill.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Almost Anything</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: 40% Hunger reduction</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Tank</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Burning</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>20%</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>2</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>30</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>-30</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>-10</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>10</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Gain access to the Dragon Breath tech. Accessed via the Racial Tech Enabler (craft in your [C] menu)</li>
+							  <li>When wounded, your blood ignites anything it touches.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+							<p>On hot biomes you gain Health and Protection</p>
+							<p>On Aether, Crystalline, Chromatic and Red Desert biomes you gain Health and Crit Damage</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Longsword,Axe,Greataxe</label>: +20% Max Health, +15% Protection</li>
+							  <li><label class="cautiontext">Whip, Chakram, Boomerang</label>: +20% Damage, +10% Physical Resistance</li>
+							  <li><label class="cautiontext">Lunari</label>:+20% Damage, +10% Physical Resistance</li>
+							</ul>
+						  </div>
+					</div>
+			  </div>
+		</div>
+
+
 </div>
 
 <script>
@@ -4306,6 +4376,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle57").fadeIn();
+    });
+    $("#race58").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle58").fadeIn();
     });
 });
 
