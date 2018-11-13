@@ -51,6 +51,7 @@
 				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">Radien</span></div>
  				  <div id="race33"><a href="#mantizi"><img src="images/races/mantizi.png" /></a><span class="slick-toggle">Mantizi</span></div>
 				  <div id="race58"><a href="#Elduukhar"><img src="images/races/elduukhar.png" /></a><span class="slick-toggle">Elduukhar</span></div>
+                  <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
 
 				  <div id="race9"><a href="#argonian"><img src="images/races/argonian.png" /></a><span class="slick-toggle">Argonian</span></div>
 				  <div id="race10"><a href="#avali"><img src="images/races/avali.png" /></a><span class="slick-toggle">Avali</span></div>
@@ -74,7 +75,7 @@
  				  <div id="race48"><a href="#moggle"><img src="images/races/default.png"/></a><span class="slick-toggle">Moggle</span></div>
 				  <div id="race17"><a href="#munari"><img src="images/races/munari.png" /></a><span class="slick-toggle">Munari</span></div>
 				  <div id="race18"><a href="#neko"><img src="images/races/neko.png" /></a><span class="slick-toggle">Neko</span></div>
-				  <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
+
 				  <div id="race20"><a href="#ningen"><img src="images/races/ningen.png" /></a><span class="slick-toggle">Ningen</span></div>
 				  <div id="race21"><a href="#orcana"><img src="images/races/orcana.png" /></a><span class="slick-toggle">Orcana</span></div>
 				  <div id="race40"><a href="#peglaci"><img src="images/races/peglaci.png" /></a><span class="slick-toggle">Peglaci</span></div>
@@ -1375,11 +1376,11 @@
 						  <img src="images/races/default2.png" class="small racepic"/>
 						</div>
 						<div class="textsplat">
-							<p class="indent">An offshoot of humanity, rooted in scientific experimentation. They are, by and large, much the same as their 'lesser' kin. One key difference separates them: Darkness, and how they utilize it.</p>
+							<p class="indent">Subterranean creatures with a very rich and cultured history, they are very sensitive to light but dangerous in the dark.</p>
 							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore.</p>
-							<p class="spacer"><label class="cautiontext">Advantages</label>: Glow in the Dark, +10% Knockback Resist</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: Glow in the Dark, Darkness empowered</p>
 							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Melee</p>
-							<p class="spacer"><label class="cautiontext">Immunities</label>: Bio-Ooze</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Bio-Ooze, Poison</p>
 					   </div>
 					</div>
 
@@ -1389,18 +1390,18 @@
  							     <h3 class="leftatt">Attributes (%)</h3>
 								<div class="stat"><img src="images/health.png"><span>0</span></div
 								><div class="stat"><img src="images/energy.png"><span>0</span></div
-								><div class="stat"><img src="images/attack.png"><span>5</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
 								><div class="stat"><img src="images/defense.png"><span>0</span></div>
  							</div>
  							<div class="item rightatt">
  							    <h3 class="rightatt">Resistances (%)</h3>
 								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>-20</span></div
 								><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/ice.png"><span>20</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>10</span></div
 								><div class="stat2"><img src="images/elements/poison.png"><span>0</span></div
 								><div class="stat2"><img src="images/elements/shadow.png"><span>40</span></div
-								><div class="stat2"><img src="images/elements/cosmic.png"><span>-40</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>-20</span></div
 								><div class="stat2"><img src="images/elements/radioactive.png"><span>-20</span></div>
  							</div>
 					  </div>
@@ -1410,26 +1411,29 @@
 					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li>During daylight hours you slowly lose max Damage and Physical Resistance (<label class="cautiontext">to a maximum of -25%</label>)</li>
-							  <li class="spacer">In <label class="cautiontext">low light</label>, the reverse applies.</li>
+							  <li>During daylight hours you lose max Damage and Physical Resistance (<label class="cautiontext">to a maximum of -25%</label>)</li>
+							  <li class="spacer">In <label class="cautiontext">low light</label>, the reverse applies. Instead, you <label class="cautiontext">gain Damage and Physical resistance</label>.</li>
+							  <li>Additionally, <label class="cautiontext">in low-light you have vampiric attacks</label> that heal back some of the damage you inflict on foes. This deactivates in light.</li>
+							  <li>If <label class="cautiontext">in low-light conditions</label>, melee sword or knife attacks have a small chance to generate a Shadow Burst attack (5 power)</li>
 							</ul>
 						  </div>
 
 					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 						  <div>
-						    <p>See above</p>
+						    <p><label class="cautiontext">Chromatic, Desert and Red Desert</label> biomes will <label class="cautiontext">reduce</label> your protection and energy regeneration.</p>
+						    <p><label class="cautiontext">Dark biomes</label> will <label class="cautiontext">increase</label> your <label class="cautiontext">Protection</label> and <label class="cautiontext">Energy Regeneration</label>.</p>
 						  </div>
 
 					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li><label class="cautiontext">Shadow Bursts</label>: 1h bursts do <label class="cautiontext">1d4+4</label> Damage, while 2h bursts do <label class="cautiontext">1d8+4</label> Damage. (see below)</li>
-							  <li class="spacer"><label class="cautiontext">Shortsword</label>: +5% Damage, +3% chance for a Shadow Burst.</li>
-							  <li class="spacer"><label class="cautiontext">Shortsword + Shield</label>: +2 Shield Bash Push, +2% Shield Bash</li>
-							  <li class="spacer"><label class="cautiontext">Shortsword x2</label>: +1% Crit, +5% Speed</li>
-							  <li class="spacer"><label class="cautiontext">Broadsword/Longsword</label>: +1% Crit, +5% Damage,  +6% chance for a Shadow Burst.</li>
-							  <li class="spacer"><label class="cautiontext">Shield</label>: +15% Knockback Resistance, +2% Shield Bash. Increasd Shield Bash with Shortsword + Shield.</li>
-							  <li class="spacer">Perfect blocks increase your Protection by 3%(stacks). Stack is removed when taking damage or failing a block.</li>
+							  <li class="spacer"><label class="cautiontext">All Swords</label>: +1% Crit Chance</li>
+							  <li class="spacer"><label class="cautiontext">Shortsword/Dagger</label>: +10% Crit Damage</li>
+							  <li class="spacer"><label class="cautiontext">Longsword/Katana</label>: +6% Damage</li>
+							  <li class="spacer"><label class="cautiontext">Katana/Rapier + Dagger</label>: +1.5% Crit Chance</li>
+							  <li class="spacer"><label class="cautiontext">Whips</label>: +10% Speed</li>
+							  <li class="spacer"><label class="cautiontext">Shield</label>: +2% Shield Bash Chance, +25% Knockback Resistance</li>
+							  <li class="spacer"><label class="cautiontext">2x Short Blades</label>: +12% Protection, +5% Move Speed</li>
 							</ul>
 						  </div>
 
