@@ -48,7 +48,7 @@
 				  <div id="race54"><a href="#shadow"><img src="images/races/tenebrhae.png"/></a><span class="slick-toggle">Tenebrhae</span></div>
 				  <div id="race44"><a href="#kirhos"><img src="images/races/kirhos.png"/></a><span class="slick-toggle">Kirhos</span></div>
 				  <div id="race42"><a href="#thelusian"><img src="images/races/thelusian.png"/></a><span class="slick-toggle">Thelusian</span></div>
-				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">Radien</span></div>
+				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">X'i (Radien)</span></div>
  				  <div id="race33"><a href="#mantizi"><img src="images/races/mantizi.png" /></a><span class="slick-toggle">Mantizi</span></div>
 				  <div id="race58"><a href="#Elduukhar"><img src="images/races/elduukhar.png" /></a><span class="slick-toggle">Elduukhar</span></div>
                   <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
@@ -1412,7 +1412,7 @@
 						  <div class="racial">
 							<ul>
 							  <li>Racial Tech: The Conshak. Activate and Kneel when in darkness. After 10 seconds, gain <label class="cautiontext">15% resistances and Thorns for 60 seconds</label>.</li>
-							  <li>During daylight hours you lose max Damage and Physical Resistance (<label class="cautiontext">to a maximum of -25%</label>)</li>
+							  <li>During daylight hours you lose max Health, Energy, Damage and Physical Resistance (<label class="cautiontext">to a maximum of -25% for Health, Energy and Physical Resistance. Power suffers more.</label>)</li>
 							  <li class="spacer">In <label class="cautiontext">low light</label>, the reverse applies. Instead, you <label class="cautiontext">gain Damage and Physical resistance</label>.</li>
 							  <li>Additionally, <label class="cautiontext">in low-light you have vampiric attacks</label> that heal back some of the damage you inflict on foes. This deactivates in light.</li>
 							  <li>If <label class="cautiontext">in low-light conditions</label>, melee sword or knife attacks have a small chance to generate a Shadow Burst attack (5 power)</li>
@@ -3115,7 +3115,7 @@
 		<div class="itemrace" id="racetoggle43">
 		  <a class="close" href="#">X</a>
 
-		  	<h1 class="large">Radien</h1>
+		  	<h1 class="large">X'i<!--Radien--></h1>
 		  		<div class="racecontent">
 					<div class="raceinfo">
 						<div class="photo2">
@@ -3124,7 +3124,7 @@
 						<div class="textsplat">
 							<p class="indent">A unisex race of shy radioactive beings. Their main weapons are their pointed legs, giving them speed and prowess in melee. They are very hardy in irradiated environments, benefiting from radiation instead of being injured by it.</p><p>Their lack of traditional feet makes them poor swimmers, and they can experience meltdowns from staying in hot environments for too long.</p><p>They are voracious, and their abilities stem from how much food they have recently consumed. </p><p>Note that this race is intended for Survival or Hardcore mode. Their bonuses are 50% reduced on Casual.</p>
 							<p class="spacer"><label class="cautiontext">Diet</label>: Can eat almost anything</p>
-							<p class="spacer"><label class="cautiontext">Advantages</label>:+5% Speed</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: Racial Tech (Rad-Bulb) (craft with [C]): Enables you to plant special flora that will generate unique X'ian resources. These can be used to heal, craft, and fight.</p>
 							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration</p>
 							<p class="spacer"><label class="cautiontext">Immunities</label>: Radiation Burn</p>
 					   </div>
@@ -3134,7 +3134,7 @@
 					  <div class="attributes-content">
  							<div class="item leftatt">
  							     <h3 class="leftatt">Attributes (%)</h3>
-								<div class="stat"><img src="images/health.png"><span>-5</span></div
+								<div class="stat"><img src="images/health.png"><span>-10</span></div
 								><div class="stat"><img src="images/energy.png"><span>10</span></div
 								><div class="stat"><img src="images/attack.png"><span>0</span></div
 								><div class="stat"><img src="images/defense.png"><span>0</span></div>
@@ -3142,12 +3142,12 @@
  							<div class="item rightatt">
  							    <h3 class="rightatt">Resistances (%)</h3>
 								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/fire.png"><span>-40</span></div
-								><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/poison.png"><span>-25</span></div
-								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>5</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>-25</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>5</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>25</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>-10</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>7</span></div
 								><div class="stat2"><img src="images/elements/radioactive.png"><span>50</span></div>
  							</div>
 					  </div>
@@ -3157,23 +3157,22 @@
 					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li>Moves slower in liquids than most races</li>
 							  <li>Increased hunger, requiring regular eating in order to be at their best.</li>
-							  <li>However, keeping fed means their bonuses are maxed out more. They get a +15% Damage bonus, +50% Radiation Resistance and +25% Poison resistance when fed. This total will reduce the hungier they become.</li>
-							  <li>Your Fire Resistance penalty will reduce the more fed you are, and increase when you reach 50% hunger to its maximum penalty.</li>
+							  <li>Keeping fed keeps your penalties and buffs stable. Your Resist values reduce based on your current Hunger (with 100% being the maximum).</li>
 						    </ul>
 						  </div>
 
 					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
 						  <div>
-						    <p>Hot biomes reduce a Radiens defense by 15%</p>
-						    <p>Irradiated biomes increase Power and Energy Regen by 14%</p>
+						    <p>Hot biomes reduce a X'ians defense by 15% and increases hunger rate.</p>
+						    <p>Irradiated, Toxic, Alien, Proto, Chromatic, Jungle and Fungal biomes increase Power and Energy Regen by 14%. Hunger rate reduced.</p>
+						    <p>Your Protection increases over time spent in an area to a maximum of +25. Leaving the area resets the bonus.</p>
 						  </div>
 
 					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li>Rapier, Dagger, Shortsword, Short Spear: +1% Crit Chance and +4 Crit Damage</li>
+							  <li>X'i weapons: +1.5% Crit Chance and +15% Protection</li>
 							</ul>
 						  </div>
 
@@ -3600,9 +3599,9 @@
 						  <img src="images/races/default2.png" class="small racepic"/>
 						</div>
 						<div class="textsplat">
-							<p class="indent">A strange and blobby sort of people. They are resilient, at least in regards to certain conditions...</p>
-							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore, can eat raw meat.</p>
-							<p class="spacer"><label class="cautiontext">Advantages</label>: None</p>
+							<p class="indent">Sentient symbiotes that are spawned via a disturbing biological process involving the deceased. An unusual culture steeped in philopsophy and exploration, as they try to come to grips with who they are.</p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Omnivore, but can also eat raw meat.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: Can form a sticky ball, or cling to walls (use Slime Race Tech Enabler)</p>
 							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration</p>
 							<p class="spacer"><label class="cautiontext">Immunities</label>: Slime, Webbing, poison</p>
 					   </div>
@@ -3626,7 +3625,7 @@
 								><div class="stat2"><img src="images/elements/poison.png"><span>20</span></div
 								><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
 								><div class="stat2"><img src="images/elements/cosmic.png"><span>0</span></div
-								><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>-25</span></div>
  							</div>
 					  </div>
 					</div>
@@ -3635,7 +3634,8 @@
 					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
 						  <div class="racial">
 							<ul>
-							  <li>Regenerates Health</li>
+							  <li>Regenerates Health constantly</li>
+							  <li>Extreme Hunger : the symbiote is constantly hungry, and must be maintained or risk death.</li>
 						    </ul>
 						  </div>
 
