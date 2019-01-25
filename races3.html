@@ -95,6 +95,7 @@
  				  <div id="race26"><a href="#hivewasp"><img src="images/races/wasp.png" /></a><span class="slick-toggle">Wasp</span></div>
                   <div id="race45"><a href="#webber"><img src="images/races/webber.png"/></a><span class="slick-toggle">Webber</span></div>
  				  <div id="race46"><a href="#woggle"><img src="images/races/woggle.png"/></a><span class="slick-toggle">Woggle</span></div>
+          <div id="race60"><a href="#xenonian"><img src="images/races/default.png" /></a><span class="slick-toggle">Xenonian</span></div>
  				  <!-- WIP
  				  <div id="race54"><a href="#lyceen"><img src="images/races/default.png"/></a><span class="slick-toggle">Lyceen</span></div>
  				  <div id="race55"><a href="#lombax"><img src="images/races/default.png"/></a><span class="slick-toggle">Lombax</span></div>
@@ -4068,8 +4069,67 @@
 					</div>
 			  </div>
 		</div>
-
-
+    <div class="itemrace" id="racetoggle60">
+      <a class="close" href="#">X</a>
+      <h1 class="large">Xenonian</h1>
+      <div class="racecontent">
+        <div class="raceinfo">
+          <div class="photo2">
+            <img src="images/races/xenonian2.png" class="small racepic" style="height:300px;width:300px;"/>
+          </div>
+          <div class="textsplat">
+            <p class="indent">The Xenonians are a race of slug-like creatures from the infamously toxic and polluted planet, Xen-789. They specialize in bio-weaponry, and of course, "terraforming."</p>
+            <p class="spacer"><label class="cautiontext">Diet</label>: Anything</p>
+            <p class="spacer"><label class="cautiontext">Advantages</label>: Bioluminescence</p>
+            <p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Exploration</p>
+            <p class="spacer"><label class="cautiontext">Immunities</label>: Slime, poison, (in-mod) diseases.</p>
+          </div>
+        </div>
+        <div class="attributes">
+          <div class="attributes-content">
+            <div class="item leftatt">
+              <h3 class="leftatt">Attributes (%)</h3>
+              <div class="stat"><img src="images/health.png"><span>0</span></div
+              ><div class="stat"><img src="images/energy.png"><span>0</span></div
+              ><div class="stat"><img src="images/attack.png"><span>0</span></div
+              ><div class="stat"><img src="images/defense.png"><span>0</span></div>
+            </div>
+            <div class="item rightatt">
+                <h3 class="rightatt">Resistances (%)</h3>
+              <div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+              ><div class="stat2"><img src="images/elements/electric.png"><span>-30</span></div
+              ><div class="stat2"><img src="images/elements/fire.png"><span>0</span></div
+              ><div class="stat2"><img src="images/elements/ice.png"><span>0</span></div
+              ><div class="stat2"><img src="images/elements/poison.png"><span>40</span></div
+              ><div class="stat2"><img src="images/elements/shadow.png"><span>0</span></div
+              ><div class="stat2"><img src="images/elements/cosmic.png"><span>-30</span></div
+              ><div class="stat2"><img src="images/elements/radioactive.png"><span>0</span></div>
+            </div>
+                </div>
+              </div>
+              <div id="accordion" class="race racestats">
+                <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+                <div class="racial">
+                  <ul>
+                    <li>Bioluminescence</li>
+                    <li>Immune to slime and poison effects.</li>
+                    <li>In mod: Immunity to plagued food.</li>
+                  </ul>
+                </div>
+                <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+                <div>
+                  <p>Being on planets that contain a large amount of toxins further increases poison resistance by 20%. This includes strange seas, atropus, and fungal.</p>
+                </div>
+                <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+                <div class="racial">
+                  <ul>
+                    <li>Syringes and injectors: +5% crit chance and +20% damage.</li>
+                    <li>Bio-weapons: +10% damage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 </div>
 
 <script>
@@ -4390,6 +4450,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle58").fadeIn();
+    });
+    $("#race60").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle60").fadeIn();
     });
 });
 
