@@ -51,9 +51,11 @@
 				  <div id="race43"><a href="#radien"><img src="images/races/radien.png"/></a><span class="slick-toggle">X'i (Radien)</span></div>
  				  <div id="race33"><a href="#mantizi"><img src="images/races/mantizi.png" /></a><span class="slick-toggle">Mantizi</span></div>
 				  <div id="race58"><a href="#Elduukhar"><img src="images/races/elduukhar.png" /></a><span class="slick-toggle">Elduukhar</span></div>
-                                  <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
-                                  <div id="race59"><a href="#veluu"><img src="images/races/veluu.png" /></a><span class="slick-toggle">Vel'uuish</span></div>
+                  <div id="race19"><a href="#nightar"><img src="images/races/nightar.png" /></a><span class="slick-toggle">Nightar</span></div>
+                  <div id="race59"><a href="#veluu"><img src="images/races/veluu.png" /></a><span class="slick-toggle">Vel'uuish</span></div>
 				  <div id="race50"><a href="#slimeperson"><img src="images/races/slime.png"/></a><span class="slick-toggle">Slime</span></div>
+ 				  <div id="race78"><a href="#juux"><img src="images/races/juux.png" /></a><span class="slick-toggle">Juux</span></div>
+
 
 				  <div id="race55"><a href="#aegi"><img src="images/races/default.png" /></a><span class="slick-toggle">Aegi</span></div>
  				  <div id="race56"><a href="#akkimari"><img src="images/races/default.png" /></a><span class="slick-toggle">Akkimari</span></div>
@@ -5323,6 +5325,75 @@
 					</div>
 			  </div>
 		</div>
+
+<div class="itemrace" id="racetoggle78">
+		  <a class="close" href="#">X</a>
+		  	<h1 class="large">Juux</h1>
+		  		<div class="racecontent">
+					<div class="raceinfo">
+						<div class="photo2">
+						  <img src="images/races/juux2.png" class="small racepic"/>
+						</div>
+						<div class="textsplat">
+							<p class="indent">Reptile-like creatures from a heat blasted world, the Juux have an unusual society rooted in foundations of </p>
+							<p class="spacer"><label class="cautiontext">Diet</label>: Special Herbivore. Can also eat 'robotic' food.</p>
+							<p class="spacer"><label class="cautiontext">Advantages</label>: +25 Max Food, Juux Harden [Racial Tech]</p>
+							<p class="spacer"><label class="cautiontext">Favored Playstyle</label>: Balanced</p>
+							<p class="spacer"><label class="cautiontext">Immunities</label>: Slipping, Burning</p>
+					   </div>
+					</div>
+
+					<div class="attributes">
+					  <div class="attributes-content">
+ 							<div class="item leftatt">
+ 							     <h3 class="leftatt">Attributes (%)</h3>
+								<div class="stat"><img src="images/health.png"><span>0</span></div
+								><div class="stat"><img src="images/energy.png"><span>0</span></div
+								><div class="stat"><img src="images/attack.png"><span>0</span></div
+								><div class="stat"><img src="images/defense.png"><span>0</span></div>
+ 							</div>
+ 							<div class="item rightatt">
+ 							    <h3 class="rightatt">Resistances (%)</h3>
+								<div class="stat2"><img src="images/elements/physical.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/electric.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/fire.png"><span>30</span></div
+								><div class="stat2"><img src="images/elements/ice.png"><span>20</span></div
+								><div class="stat2"><img src="images/elements/poison.png"><span>0</span></div
+								><div class="stat2"><img src="images/elements/shadow.png"><span>25</span></div
+								><div class="stat2"><img src="images/elements/cosmic.png"><span>25</span></div
+								><div class="stat2"><img src="images/elements/radioactive.png"><span>-20</span></div>
+ 							</div>
+					  </div>
+					</div>
+					<div id="accordion" class="race racestats">
+
+					  <h3>Racial Perks / Flaws <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li>Racial Tech: Juux Hardening. Pressing [DOWN] activates a defensive mode that increases Protection ny 25 and Physical Resistance by 25%.</li>
+							</ul>
+						  </div>
+
+					  <h3>Environmental Bonus <span class="down">+</span><span class="up">-</span></h3>
+						  <div>
+					            <p>On hot biomes, gain +10% Speed.</p>
+					            <p>On cold biomes, lose 10% Protection</p>
+						  </div>
+
+					  <h3>Combat Perks <span class="down">+</span><span class="up">-</span></h3>
+						  <div class="racial">
+							<ul>
+							  <li><label class="cautiontext">Shotgun</label>: +5% Damage</li>
+							  <li><label class="cautiontext">Rocket/Grenade Launcher</label>: +5% Damage</li>
+							  <li><label class="cautiontext">Quarterstaff, Staff, Wand</label>: +12% Protection, +10% Damage </li>
+							  <li><label class="cautiontext">Mace/Hammer/Dagger</label>: +12% Damage</li>
+							</ul>
+						  </div>
+
+					</div>
+			  </div>
+		</div>
+
 </div>
 
 <script>
@@ -5738,6 +5809,11 @@ $('.racerow').slick({
       $('.itemrace').hide();
       $(".modal").fadeIn();
       $("#racetoggle77").fadeIn();
+    });
+    $("#race78").click(function(){
+      $('.itemrace').hide();
+      $(".modal").fadeIn();
+      $("#racetoggle78").fadeIn();
     });
 });
 
