@@ -5,10 +5,10 @@
  * Licensed under the MIT license.
  */
 .justified-gallery {
-  width: 100%;
+  width: 75%;
   position: relative;
   overflow: hidden;
-  max-width:100%;
+  max-width:75%;
   text-align:center;
   margin:0 auto
 }
@@ -72,24 +72,24 @@
   display: none;
   position: absolute;
   bottom: 0;
-  padding: 5px;
+  padding: 1em;
   background-color: #000000;
   left: 0;
   right: 0;
   margin: 0;
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 300;
   font-family: sans-serif;
   animation-name: fadebox;
   animation-duration: 0.8s;
-  font-weight:600
+  font-weight:300
 }
 .justified-gallery > a > .caption.caption-visible,
 .justified-gallery > div > .caption.caption-visible {
   display: initial;
   filter: "alpha(opacity=70)";
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transition: opacity 500ms ease-in;
   -moz-transition: opacity 500ms ease-in;
   -o-transition: opacity 500ms ease-in;
@@ -131,4 +131,9 @@
   margin: 0 4px 0 4px;
   background-color: #000;
   border-radius: 6px;
+}
+
+
+@media screen and (max-width: 39em) {
+.justified-gallery {max-width:100%;width:100%}
 }
