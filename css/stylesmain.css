@@ -84,11 +84,10 @@ img {
 }
 
 section {display:block;}
-section.portfolio {padding:4em 0}
 
-section.about {padding:2rem 4rem 0rem 4rem;}
+section.about {padding:2rem;}
 
-section.contact {padding:4rem;}
+section.contact {padding:2rem;}
 
 section.details {
   margin:0 auto;
@@ -710,7 +709,7 @@ color:#519091 !important;
   color:#fff;
   text-align:center;
   font-weight:200;
-  font-size:3rem;
+  font-size:2rem;
   font-family: 'Poppins',serif;
 }
 
@@ -763,7 +762,7 @@ color:#519091 !important;
   display:block;
   text-align:center;
   width:100%;
-  padding:2rem 0;
+  padding:1rem 0;
   font-weight:600
   }  
 
