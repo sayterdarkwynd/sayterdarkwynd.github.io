@@ -5,12 +5,12 @@
  * Licensed under the MIT license.
  */
 .justified-gallery {
-  width: 75%;
+  width: 60%;
   position: relative;
   overflow: hidden;
   max-width:75%;
   text-align:center;
-  margin:0 auto
+  margin:0 auto;
 }
 .justified-gallery > a,
 .justified-gallery > div {
@@ -20,7 +20,9 @@
   /* background: #888888; To have gray placeholders while the gallery is loading with waitThumbnailsLoad = false */
   filter: "alpha(opacity=10)";
   opacity: 0.1;
+  border:1px solid #888;
 }
+
 .justified-gallery > a > img,
 .justified-gallery > div > img,
 .justified-gallery > a > a > img,
@@ -31,10 +33,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  filter: "alpha(opacity=0)";
+  /*filter: "alpha(opacity=0)";
   opacity: 0;
   filter: saturate(1);
-  -webkit-filter: saturate(0);
+  -webkit-filter: saturate(0);*/
 }
 
 .justified-gallery > a > img:hover,
@@ -47,11 +49,11 @@
   animation-duration: 0.5;
   -webkit-animation-name: imagesizer;
   -webkit-animation-duration: 0.5;  
-  -webkit-animation: saturator 3s infinite;  
+ /* -webkit-animation: saturator 3s infinite;  
   transition: saturation 1s;
   -webkit-transition: saturation 1s;
   filter: saturate(1);
-  -webkit-filter: saturate(1);
+  -webkit-filter: saturate(1);*/
 }
 
 @keyframes imagesizer {
@@ -88,8 +90,8 @@
 .justified-gallery > a > .caption.caption-visible,
 .justified-gallery > div > .caption.caption-visible {
   display: initial;
-  filter: "alpha(opacity=70)";
-  opacity: 1;
+  filter: "alpha(opacity=90)";
+  opacity: 0.90;
   -webkit-transition: opacity 500ms ease-in;
   -moz-transition: opacity 500ms ease-in;
   -o-transition: opacity 500ms ease-in;
