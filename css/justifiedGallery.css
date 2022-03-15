@@ -5,12 +5,12 @@
  * Licensed under the MIT license.
  */
 .justified-gallery {
-  width: 60%;
+  width: 80%;
   position: relative;
   overflow: hidden;
-  max-width:75%;
   text-align:center;
   margin:0 auto;
+  max-width:1440px;
 }
 .justified-gallery > a,
 .justified-gallery > div {
@@ -136,6 +136,12 @@
 }
 
 
-@media screen and (max-width: 39em) {
+@media screen and (max-width: 79em) {
+.justified-gallery {max-width:1440px;width:100%}
+}
+@media screen and (max-width: 69em) {
+.justified-gallery {max-width:100%;width:100%}
+}
+@media screen and (max-width: 59em) {
 .justified-gallery {max-width:100%;width:100%}
 }

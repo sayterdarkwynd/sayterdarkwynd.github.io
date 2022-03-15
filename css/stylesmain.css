@@ -395,8 +395,8 @@ ul.list li#work{ border:0;}
   line-height:1.8rem; 
   font-weight:300;
   margin:0 auto;
-  padding: 0.8rem 2em;
-  max-width:1024px;
+  padding: 0.8rem 0.8rem;
+  max-width:1440px;
 }
 
 
@@ -832,6 +832,7 @@ img.bg {
   .list-itemmed { width: 66.33%; }  
   .list-itemrace { width:25%; }  
   .list-itembig { width: 100%; } 
+  .plain p {max-width:1440px;}
   .plain img { width:auto;}
   .plain img.self { width:auto;padding:2rem 4rem;float:left;}  
   .bordernone {border-right:1px solid #bfbcb7;}
@@ -854,6 +855,7 @@ img.bg {
   .plain h1 { font-size:4.5em;}
   .plain h2 { font-size:2.0em;}
   .plain h3 { font-size:1.4em;}
+    .plain p {max-width:980px;}
   .box img.greeting {max-width:40%}
   .list-itemmid2 img { margin: 0 auto; width: auto; padding: 2em 1em;} 
   .portpic_container { width:100%;max-width:100%;margin:0 auto;}
@@ -864,7 +866,6 @@ img.bg {
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
   section.portfolio {padding:0} 
-  section.about {padding:4em 2em;}
   .bordernone {border-right:1px solid #bfbcb7;}
   .bordernone2 {border-right:0px solid #bfbcb7;}
   .bordernone3 {border-right:1px solid #bfbcb7;}
@@ -883,6 +884,7 @@ img.bg {
   .list-item .plain { width:100%}
   .plain h1 { font-size:3.5em;} 
   .plain img {width:100%;}
+  .plain p {max-width:720px;}
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
   .tagline { padding:4em 3em;}
@@ -911,7 +913,7 @@ img.bg {
   .clients img { padding: 2em;max-width: 45% !important;}
   .list-item { width: 100%; padding:0 2em; }
   .list-itemrace { width:100%; } 
-  .plain p { font-size:1.2em;}
+  .plain p { font-size:1.2em;max-width:480px;}
   .plain p.small { font-size:1.1em;}
   .container { padding:0;}
   .plain h1 { font-size:2.5em;}
