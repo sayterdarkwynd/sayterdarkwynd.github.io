@@ -72,6 +72,15 @@
 		  <div class="list-content">
 			<a name="work"></a>
 			<div id="basicExample" class="justified-gallery">
+				<a href="df2.html">
+					<img alt="Delta Freya II [Frackin' Universe]" src="images/thumbs/df2.png"/>
+				</a>
+				<a href="precursor.html">
+					<img alt="Precursor Ruins [Frackin' Universe]" src="images/thumbs/precursor.png"/>
+				</a>
+				<a href="scioutpost.html">
+					<img alt="Science Outpost [Frackin' Universe]" src="images/thumbs/scienceoutpost.png"/>
+				</a>				
 				<a class="gallery" href="images/port/fu/3.png">
 					<img alt="Crafting UI" src="images/thumbs/fu1_thumb.png"/>
 				</a>
@@ -143,7 +152,7 @@ $('#basicExample').justifiedGallery(
     }
   }
 ).on('jg.complete', function () {
-    $(this).find('a').colorbox({
+    $(this).find('a.gallery').colorbox({
         maxWidth : '80%',
         maxHeight : '80%',
         opacity : 0.8,

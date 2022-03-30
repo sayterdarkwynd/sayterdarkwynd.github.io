@@ -792,6 +792,11 @@ img.bg {
   left: 0;
 }
 
+
+.descriptor ul {font-weight:200;list-style-type:disc;display:inline-block;max-width:1280px;}
+.descriptor ul li {list-style-type:disc;text-align:left;line-height:1.6em;margin-bottom:0.5rem;}
+
+
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
