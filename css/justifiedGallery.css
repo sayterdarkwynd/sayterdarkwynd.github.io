@@ -136,10 +136,22 @@
 }
 
 
-@media screen and (max-width: 79em) {
+@media screen and (max-width: 3840px) {
 .justified-gallery {max-width:1440px;width:100%}
 }
 
-@media screen and (max-width: 78em) {
+@media screen and (max-width: 1200px) {
+.justified-gallery {max-width:1200px;width:100%}
+}
+
+@media screen and (max-width: 992px) {
+.justified-gallery {max-width:992px;width:100%}
+}
+
+@media screen and (max-width: 768px) {
+.justified-gallery {max-width:768px;width:100%}
+}
+
+@media screen and (max-width: 576px) {
 .justified-gallery {max-width:100%;width:100%}
 }
