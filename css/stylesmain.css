@@ -831,7 +831,8 @@ img.bg {
 
 /* media queries */
 
-iframe { aspect-ratio: 16 / 10; min-width: 100%; width:100% !important;}
+iframe { aspect-ratio: 16 / 10; min-width: 100%; width:100% !important;  max-width: 1640px;
+  max-height: 1280px;}
 
 @media screen and (min-width: 1200px) {
   .clients img { padding: 2em;max-width: 200px !important;}
