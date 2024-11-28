@@ -308,9 +308,10 @@ ul.list {
   justify-content:space-between;
   list-style-type:none;
   padding:0;
+  
 }
 
-ul.list li#work{ border:0;}
+ul.list li#work{ border:0;background-color:#222;}
 
 .list-item, .list-itembig, .list-itemmed, .list-itemrace {
   -webkit-flex-direction:column;
@@ -831,7 +832,7 @@ img.bg {
 
 /* media queries */
 
-iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto;}
+iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:720px}
 
 @media screen and (min-width: 1200px) {
   .clients img { padding: 2em;max-width: 200px !important;}
