@@ -244,7 +244,7 @@ a, .uncommontext {
 }
   
 a:hover { 
-color:#33aa22;
+color:#33aa22;/*e4f0d9*/
   transition: color 1.0s;
   -webkit-transition: color 1.0s;
 }
@@ -391,15 +391,48 @@ ul.list li#work{ border:0;background-color:#222;}
   padding:5em 0;
   }
 
-.plain p {
-  color: #eeeeee;
-  font-size:1rem;
-  line-height:1.8rem; 
-  font-weight:300;
+.plain {
   margin:0 auto;
   padding: 0.8rem 0.8rem;
   max-width:1440px;
 }
+
+.plain p {   
+  color: #eeeeee; font-size:1rem;
+  line-height:1.8rem; 
+  font-weight:300;
+}
+
+
+/* Pills */
+
+.pillbox {padding: 0.5rem 0;}
+.textpill {
+  display:inline-block;
+  padding:0.5rem;
+  font-size:12px;
+  border-radius:6px;
+  max-width:200px;
+  margin-right:0.5rem;
+  margin-bottom:0.5px;
+}
+
+.gamedesign {background-color:#220000;}
+.leveldesign {background-color:#002200;}
+.uidesign {background-color:#000022;}
+.narrativedesign{background-color:#150015;}
+.documentation{background-color:#150300;}
+.unity {background-color:#150c30;}
+.csharp {background-color:#150000;}
+.css {background-color:#15ac00;}
+.json {background-color:#153000;}
+.lua {background-color:#150440;}
+.js {background-color:#150740;}
+.digitaldesign {background-color:#150707;}
+.graphicdesign {background-color:#150077;}
+.webdesign {background-color:#157700;}
+.ftue {background-color:#77cfa2;}
+.pm {background-color:#00c3a5}
 
 
 /* skills */
@@ -454,7 +487,7 @@ line-height:1.4em;
 
 .plain ul { 
   list-style-type:none;
-  padding:0;
+  padding:0 1rem;
   text-align:center;
   display:inline-block;
   width:100%
@@ -563,10 +596,9 @@ color:#519091 !important;
 #menu {
 	position:relative;
 	width:100%; 
-	background-color: #222222;
 	z-index:9999;
 	border-bottom:1px solid #ccc;
-    background-color:#151515;
+  background-color:#151515;
   padding:2em;
 }
 
@@ -878,7 +910,7 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .tagline h3.portfolio {font-size:1.4rem;line-height:3rem}  
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
-  section.portfolio {padding:0 1rem;} 
+  section.portfolio {padding:1rem;} 
   .bordernone {border-right:1px solid #bfbcb7;}
   .bordernone2 {border-right:0px solid #bfbcb7;}
   .bordernone3 {border-right:1px solid #bfbcb7;}
@@ -906,7 +938,7 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .tagline h3.portfolio {font-size:1.2rem;line-height:3rem}  
   .list-item, .list-itembig, .list-itemmed, .list-itemrace {border-right:0;border-bottom:1px solid #bfbcb7}
   #menu .main_navigation ul {margin-top:0px;}
-  section.portfolio {padding:0 1rem;} 
+  section.portfolio {padding:1rem;} 
   .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #bfbcb7;}
   .textbox {padding:1em}
   .textbox p, .plain p {font-size:1em}
@@ -941,7 +973,7 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .main_navigation ul li {font-size:0.8rem}
   .main_navigation ul li a {line-height:35px;;font-size:0.8em}
   #menu .main_navigation ul li a {line-height:35px;font-size:1em}
-
+  section.portfolio {padding:0.5rem;} 
   .plain img.tinylogo { width:100%;}
   .skills ul p {max-width:100%;}
   .textbox p, .plain p {font-size:1em}
