@@ -331,11 +331,11 @@ ul.list li#work{ border:0;}
 }
 
 .textbox { 
-  padding:4em;
+  padding:2em;
   text-align:center;
 }
 .projecttextbox { 
-  padding:4em;
+  padding:2em;
   text-align:left;
   color:#eee;
   margin:0 auto;
@@ -917,7 +917,7 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto;}
 
 @media screen and (max-width: 576px) {
   .clients img { padding: 2em;max-width: 480px !important;}
-  .list-item { width: 100%; padding:0 2em; }
+  .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
   .plain p { font-size:1.2em;max-width:536px;}
   .plain p.small { font-size:1.1em;}
