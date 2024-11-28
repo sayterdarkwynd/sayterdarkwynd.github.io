@@ -889,7 +889,7 @@ img.bg {
   .list-item .plain { width:100%}
   .plain h1 { font-size:3.5em;} 
   .plain img {width:100%;}
-  .plain p {max-width:720px;}
+  .plain p {max-width:728px;}
   .box img.greeting {max-width:30%}
   .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
   .tagline { padding:4em 3em;}
@@ -918,7 +918,7 @@ img.bg {
   .clients img { padding: 2em;max-width: 45% !important;}
   .list-item { width: 100%; padding:0 2em; }
   .list-itemrace { width:100%; } 
-  .plain p { font-size:1.2em;max-width:480px;}
+  .plain p { font-size:1.2em;max-width:536px;}
   .plain p.small { font-size:1.1em;}
   .container { padding:0;}
   .plain h1 { font-size:2.5em;}
