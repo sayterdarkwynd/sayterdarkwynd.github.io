@@ -911,7 +911,7 @@ img.bg {
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}   
-    iframe {width:640px;}
+  iframe { aspect-ratio: 16 / 9; width: 100% !important;}
 }
 
 @media screen and (max-width: 576px) {
