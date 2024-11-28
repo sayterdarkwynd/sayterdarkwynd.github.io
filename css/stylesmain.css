@@ -63,7 +63,6 @@ body {
   background:#333;
 }
 
-
 p { 
   font-size:1em;
   line-height:1.2em;
@@ -308,7 +307,7 @@ ul.list {
   justify-content:space-between;
   list-style-type:none;
   padding:0;
-  
+
 }
 
 ul.list li#work{ border:0;background-color:#222;}
@@ -345,7 +344,10 @@ ul.list li#work{ border:0;background-color:#222;}
 
 .duotextbox {padding-top:2em;}
 .textbox ul li,.duotextbox ul li{display:block;line-height:1.6em}
-.textbox strong,.duotextbox strong {font-weight:600;color:#33aa22;}
+.textbox strong,.duotextbox strong {font-weight:600;}
+.titlebar {background-color:#33aa22;} 
+.greentext {color:#33aa22;}
+.titlbar strong {background-color:#ffefdc !important;}
 
 .textbox p, .textbox h1, .duotextbox p, .duotextbox h1 {
   padding:1em 1em !important;
@@ -353,9 +355,7 @@ ul.list li#work{ border:0;background-color:#222;}
   width:100%;
 }
 
-
-
-.sellbox a, .main_navigation a { font-weight:600 }
+.sellbox a, .main_navigation a { font-weight:600; }
 
 .sellbox li, .main_navigation li { 
  /* border-bottom:1px solid #519091;*/
@@ -552,10 +552,10 @@ color:#519091 !important;
   font-size:1.0rem;
   font-style:normal;
   display:block;
-  background:#222222;
+  background:#151515;
 }
 
-.namespace,.linkspace {display:block;text-align:center;width:100%}
+.namespace,.linkspace {display:block;text-align:center;width:100%;}
 .namespace p.heading {font-size:2rem;padding:1rem 0 0 0;font-weight:600;}
 .namespace p.subheading {font-size:1em;font-weight:300;}
 .linkspace {padding-bottom:1rem;}
@@ -566,6 +566,8 @@ color:#519091 !important;
 	background-color: #222222;
 	z-index:9999;
 	border-bottom:1px solid #ccc;
+    background-color:#151515;
+  padding:2em;
 }
 
   #menu .main_navigation .logo span {
@@ -833,6 +835,8 @@ img.bg {
 /* media queries */
 
 iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:720px}
+.right {max-width:50%;float:right;}
+.left {max-width:50%;float:left;}
 
 @media screen and (min-width: 1200px) {
   .clients img { padding: 2em;max-width: 200px !important;}
@@ -874,7 +878,7 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .tagline h3.portfolio {font-size:1.4rem;line-height:3rem}  
   .plain img.self {padding:0 0 4rem 0}
   .plain p.firstp {margin-top:0;}
-  section.portfolio {padding:1rem;} 
+  section.portfolio {padding:0 1rem;} 
   .bordernone {border-right:1px solid #bfbcb7;}
   .bordernone2 {border-right:0px solid #bfbcb7;}
   .bordernone3 {border-right:1px solid #bfbcb7;}
@@ -902,9 +906,9 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .tagline h3.portfolio {font-size:1.2rem;line-height:3rem}  
   .list-item, .list-itembig, .list-itemmed, .list-itemrace {border-right:0;border-bottom:1px solid #bfbcb7}
   #menu .main_navigation ul {margin-top:0px;}
-  section.portfolio {padding:1rem;} 
+  section.portfolio {padding:0 1rem;} 
   .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #bfbcb7;}
-  .textbox {padding:2em}
+  .textbox {padding:1em}
   .textbox p, .plain p {font-size:1em}
   .plain img.self { width:50%;padding:2em}
   section.contact {padding:2em 1em;}
@@ -914,6 +918,8 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}   
+  .right {max-width:100%;float:none;}
+  .left {max-width:100%;float:none;}
 }
 
 @media screen and (max-width: 576px) {
@@ -934,11 +940,8 @@ iframe { aspect-ratio: 16 / 10; width:100% !important; height:auto; max-width:72
   .main_navigation ul {margin-top:0}  
   .main_navigation ul li {font-size:0.8rem}
   .main_navigation ul li a {line-height:35px;;font-size:0.8em}
-  #menu .main_navigation ul li a {line-height:35px;font-size:0.8em}
-  .main_navigation ul li.start { margin-right:1.2em;}
-  .main_navigation ul li.end { margin-left:1.2em;}
-  .main_navigation ul li:nth-child(2) {margin-right:2.4em}
-  .main_navigation ul li:nth-child(3) {margin-left:2.4em}
+  #menu .main_navigation ul li a {line-height:35px;font-size:1em}
+
   .plain img.tinylogo { width:100%;}
   .skills ul p {max-width:100%;}
   .textbox p, .plain p {font-size:1em}
