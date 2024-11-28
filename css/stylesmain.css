@@ -831,6 +831,8 @@ img.bg {
 
 /* media queries */
 
+iframe { aspect-ratio: 16 / 10; min-width: 100% !important;}
+
 @media screen and (min-width: 1200px) {
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item {  width: 33.33%; }
@@ -911,7 +913,6 @@ img.bg {
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}   
-  iframe { aspect-ratio: 16 / 10; min-width: 100% !important;}
 }
 
 @media screen and (max-width: 576px) {
