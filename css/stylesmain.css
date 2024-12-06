@@ -809,7 +809,7 @@ iframe { aspect-ratio: 16 / 9; width:100% !important; height:auto; max-width:100
   font-size:1.2rem;
   margin-bottom:1rem;
 }
-.sectionheader {display:block;padding:1rem 0;font-weight:1.2em;color:#555;font-weight:600;font-size:1.2rem;}
+.sectionheader {display:block;padding:1rem 0;font-weight:1.2em;color:#33aa22;font-weight:600;font-size:1.2rem;}
 .subheader {display:block;padding:0 0.25rem 0 0;font-weight:0.9rem;color:#444 !important;background:#dedede;}
 
 ul.experience {margin:1rem 0 1rem 0;}
