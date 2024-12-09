@@ -408,8 +408,11 @@ ul.list li#work{ border:0;background-color:#222;}
   font-size:1rem;
   line-height:2rem; 
   font-weight:300;
-  margin-bottom:1rem;
+  margin:2rem 0 2rem 0;
+  padding:0 1rem 0 1rem;
 }
+
+.pspacer {margin:1rem 0 2rem 0 !important;}
 
 /* skills */
 .skillbox {
@@ -774,7 +777,6 @@ color:#519091 !important;
 ul li .logospace { border-bottom:none;}
 .contacttxt {font-size:3em;text-align:center;color:#fff;font-family:'Poppins',serif;}  
 .primary {font-size:1.4rem;}
-.plain p.firstp {margin-top:1.4em;}
 .contact img { margin:0 auto;text-align:center;width:auto; }
 
 img.bg {
@@ -808,7 +810,6 @@ iframe { aspect-ratio: 16 / 9; width:100% !important; height:auto; max-width:100
   padding:0.8rem;
   color:#fff;
   font-size:1.2rem;
-  margin-bottom:1rem;
 }
 
 .sectionheader {
@@ -825,12 +826,12 @@ iframe { aspect-ratio: 16 / 9; width:100% !important; height:auto; max-width:100
 .subheader {
   display:block;
   padding:0 0.25rem 0 0;
-  font-weight:0.9rem;
+  font-weight:0.8rem;
   color:#242731 !important;
   font-style:oblique;
 }
 
-ul.experience { margin:1rem 0 1rem 0; }
+ul.experience { margin:2rem 0 1rem 0; }
 ul.experience li {
   padding-left:1rem;
   padding-right:1rem;
@@ -893,7 +894,7 @@ ul.experience li {
 .photoshop {background-color:#000077;}
 
 .projecttitle {font-weight:600;font-size:1.2em;display:inline-block;color:#474259;}
-p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;height:2em;}
+p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;height:2em;margin:0;}
 
 .button {display:inline-block;border-radius:8px;padding:1rem;margin-bottom:1rem;font-weight:600;}
 .button:hover{}
