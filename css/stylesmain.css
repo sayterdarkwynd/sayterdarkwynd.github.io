@@ -723,11 +723,26 @@ color:#519091 !important;
   font-family: 'Poppins',serif;
 }
 
-.skills ul p {
-  font-size:1rem;
-  text-align:center;
-  }
-  
+.gamespace {
+  display:block;
+  padding:2rem;
+  background: linear-gradient(137deg, rgba(223,223,223,1) 0%, rgba(240,240,240,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.projectlinks {display:flex;flex-direction:row;width:100%;justify-content:space-between;}
+.projectcontent {display:flex;flex-direction:row;}
+.gamespace .button {display:inline;border-radius:8px;font-weight:600;}
+
+.gamevideo { justify-content:center; }
+.gamevideo iframe { aspect-ratio: 16 / 9;width: 100% !important;}
+
+.gamevideo {width: 100%; min-width: 400px; max-width: 800px;}
+.gamevideo_content {position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;}
+
+.gamedetails { padding:0 0 0 2rem; }
+.gamespace ul li { display:block; }
+
+.skills ul p { font-size:1rem;text-align:center;}
 .tagline { 
   width:100%; 
   padding:4em 4em;
@@ -845,12 +860,11 @@ h4 {font-size:24px;font-weight:bold;color:#4c7149;}
   font-style:oblique;
 }
 
-ul.experience { margin:2rem 0 1rem 0; }
+ul.experience { margin:0rem 0 1rem 0; }
 ul.experience li {
   padding-left:1rem;
   padding-right:1rem;
   line-height:1.6rem;
-  font-weight:300;
   font-size:0.9rem;
   color:#242731;
 }
@@ -1039,6 +1053,8 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:1px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;} 
+  .projectcontent {display:flex;flex-direction:column;}
+  .gamedetails { padding:0 0 0 0; }
 }
 
 @media screen and (max-width: 768px) {
@@ -1108,5 +1124,5 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
   .bordernone3 {border-right:0px solid #bfbcb7;}
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
-  .bordernone3a {border-right:0px solid #bfbcb7;} 
+  .bordernone3a {border-right:0px solid #bfbcb7;}
 }
