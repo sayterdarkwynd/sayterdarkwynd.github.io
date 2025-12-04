@@ -738,6 +738,7 @@ color:#519091 !important;
 
 .gamevideo {width: 100%; min-width: 400px; max-width: 800px;}
 .gamevideo_content {position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;}
+.abc {}
 
 .gamedetails { padding:0 0 0 2rem; }
 .gamespace ul li { display:block; }
