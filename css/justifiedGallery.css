@@ -151,9 +151,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .justified-gallery {max-width:840px;width:100%}
+    .justified-gallery {max-width:100%;width:100%}
 }
 
 @media screen and (max-width: 576px) {
-    .justified-gallery {max-width:840px;width:100%}
+    .justified-gallery {max-width:100%;width:100%}
 }

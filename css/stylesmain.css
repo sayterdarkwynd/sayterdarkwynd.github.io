@@ -291,6 +291,8 @@ color:#000;
   flex-direction:row;
   margin-right:1em; 
   height:100%;
+  position:fixed;
+  top:0;
 }
 
 ul.list {
@@ -566,12 +568,12 @@ color:#519091 !important;
   font-style:normal;
   display:block;
   background:#242731;
+  padding:40px 0 40px 0;
 }
 
 .namespace,.linkspace {display:block;text-align:center;width:100%;}
-.namespace p.heading {font-size:2rem;padding:1rem 0 0 0;font-weight:600;}
-.namespace p.subheading {font-size:1em;font-weight:300;color:#ccc;}
-.linkspace {padding-bottom:1rem;}
+.namespace p.heading {font-size:3rem;font-weight:600;}
+.namespace p.subheading {font-size:1.4em;font-weight:300;color:#ccc;}
 
 #menu {
 	position:relative;
@@ -632,7 +634,7 @@ color:#519091 !important;
   margin-top:20px;
 }
 
-.main_navigation ul li a { display:inline-block;line-height:20px;position:relative;font-size:1em}
+.main_navigation ul li a { display:inline-block;line-height:20px;position:relative;font-size:1.2em}
 .main_navigation ul li { margin:0 4px;}
 
 .main_navigation .logo,.work_navigation .logo {
@@ -715,12 +717,24 @@ color:#519091 !important;
   font-family: 'Poppins',serif;
 }
 
+.about {display:flex;padding:4rem 8rem;justify-content:center;flex-direction:column;}
+
+.about p {
+  color: #242731; 
+  /*text-shadow:1px 1px #18141459;*/
+  font-size:1.1rem;
+  line-height:2.2rem; 
+  font-weight:300;
+}
+
+.about b {font-weight:500;}
+.about a {font-weight:400;}
+.about .indent {text-indent:2em;}
+.about .emphasis {color:#33aa22;font-weight:500;font-size:1.2em;}
 .about h2,  .contact h2 {
-  padding:1em;
-  text-align:center;
-  font-weight:200;
+  font-weight:300;
   font-size:2rem;
-  font-family: 'Poppins',serif;
+  margin-bottom:8px;
 }
 
 .gamespace {
@@ -1000,6 +1014,30 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
 
 
 
+.justified-gallery span {
+  display:block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;  
+  margin:0 auto;
+  padding:0.5em 0;  
+  background:rgba(0, 0, 0, 0.65);
+  color:#e8e8e8;
+  text-align:center;
+  font-weight:500;
+}
+
+/* contact link css*/
+.sprite-container a:first-child {margin-left:8px;margin-right:8px;}
+.sprite-container a { display:inline-block; background: transparent url(../images/contactlinks_small.png) no-repeat scroll 0px 0px; width: 32px;height: 32px;}
+#linkedin {background-position: 0px 0px;} 
+#linkedin:hover {background-position: -32px 0px;} 
+#linkedin:active {background-position: -32px 0px;} 
+#reachout {background-position: 0px -32px;} 
+#reachout:hover {background-position: -32px -32px;} 
+#reachout:active {background-position: -32px -32px;} 
+
 
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
@@ -1029,6 +1067,7 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
 }
 
 @media screen and (max-width: 992px) {
+  .about {padding:4rem 4rem;}
   .list-content {padding:0;}
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item { width: 50%; }
@@ -1056,7 +1095,7 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
   .bordernone2a {border-right:1px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;} 
   .projectcontent {display:flex;flex-direction:column;}
-  .gamedetails { padding:0 0 0 0; }
+  .gamedetails { padding:0 0 0 0; margin-top:16px;}
 }
 
 @media screen and (max-width: 768px) {
@@ -1078,6 +1117,8 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
   .tagline h1.portfolio {font-size:1.6rem;line-height:3rem}
   .tagline h3.portfolio {font-size:1.2rem;line-height:3rem}  
   .list-item, .list-itembig, .list-itemmed, .list-itemrace {border-right:0;border-bottom:1px solid #bfbcb7}
+  .namespace p.heading {font-size:2.4rem;font-weight:600;}  
+  .namespace p.subheading {font-size:1.3rem;}  
   #menu .main_navigation ul {margin-top:0px;}
   .main_navigation .logo span {margin:auto;width:42px;height:42px;font-size:2rem;border-radius:50%;border:2px solid #bfbcb7;}
   .textbox {padding:1em}
@@ -1095,7 +1136,6 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
 }
 
 @media screen and (max-width: 576px) {
-  
   .clients img { padding: 2em;max-width: 480px !important;}
   .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
@@ -1114,7 +1154,7 @@ p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;heig
   .main_navigation ul li {font-size:0.8rem}
   .main_navigation ul li a {line-height:35px;;font-size:0.8em}
   #menu {padding:0;}
-  #menu .main_navigation ul li a {line-height:35px;font-size:1em;} 
+  #menu .main_navigation ul li a {line-height:35px;font-size:1.2em;} 
   .plain img.tinylogo { width:100%;}
   .skills ul p {max-width:100%;}
   .textbox p, .plain p {font-size:1em}
