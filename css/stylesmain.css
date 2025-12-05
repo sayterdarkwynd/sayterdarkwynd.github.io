@@ -559,7 +559,7 @@ color:#519091 !important;
 
 .overflowhidden {overflow:hidden;}
 .spacing_mid { letter-spacgin:0.120em }
-.darktext {color:#000;}
+.darktext {color:#242731;}
 .main_navigation,.tagline,.skills,.contact {width:100%;z-index:99}
 
 .main_navigation {
@@ -731,7 +731,7 @@ color:#519091 !important;
 .about b {font-weight:500;}
 .about a {font-weight:400;}
 .about .indent {text-indent:2em;}
-.about .emphasis {color:#33aa22;font-weight:500;font-size:1.2em;}
+.emphasis, .about .emphasis {color:#33aa22;font-weight:500;font-size:1.2em;}
 .about h2,  .contact h2 {
   font-weight:300;
   font-size:2rem;
@@ -747,13 +747,14 @@ color:#519091 !important;
 .projectlinks {display:flex;flex-direction:row;width:100%;justify-content:space-between;}
 .projectcontent {display:flex;flex-direction:row;}
 .gamespace .button {display:inline;border-radius:8px;font-weight:600;}
-
 .gamevideo { justify-content:center; }
 .gamevideo iframe { aspect-ratio: 16 / 9;width: 100% !important;}
-
 .gamevideo {width: 100%; min-width: 400px; max-width: 800px;}
 .gamevideo_content {position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;}
-.abc {}
+
+.projectdetails {display:flex;flex-flow:row wrap;}
+.projectdetails p {color:#242731;margin-right:16px;line-height:24px;}
+.projectdetails span {color:#242731;font-weight:500;}
 
 .gamedetails { padding:0 0 0 2rem; }
 .gamespace ul li { display:block; }
@@ -938,10 +939,8 @@ ul.experience li {
 .ddd {background-color:#b69040;}
 .photoshop {background-color:#000077;}
 .art {background-color:#770077;}
-
-.projecttitle {font-weight:600;font-size:1.2em;display:inline-block;color:#474259;}
+.projecttitle {font-weight:600;font-size:1.2em;display:inline-block;}
 p.available {color:#555;font-style:italic;text-shadow:none;line-height:1rem;height:2em;margin:0;}
-
 .button {display:inline-block;border-radius:8px;padding:1rem;margin-bottom:1rem;font-weight:600;}
 .button:hover{}
 
