@@ -76,15 +76,11 @@
 			    <li>&#8226; Aided in clearing hundreds of bugs.</li>
 			    <li>&#8226; C# programming where required.</li>   
 			  </ul>	 
-		  	<a href="zugaluHuntersMoon2.html" target="_new">Designing for Hunter's Moon</a>			 		
+		  	<a href="#designing">Designing for Hunter's Moon</a>			 		
   	  </div>	
   </section>
-  <section class="gamespace"> 
-		  		<span class="sectionheader"><h4>What is Hunter's Moon?</h4></span>	  
-		  		<p class="pspacer">A deckbuilder with a focus on rich narrative and story elements over fail-and-repeat gameplay, Hunter's Moon provides something different in the genre. We had a very short development window on this project (6 months from start to finish,) and had purchased rights to the code from <a href="https://store.steampowered.com/app/2644610/Menace_from_the_Deep/">Menace From the Deep</a> to provide the backbone of our project.</p>
-		  		<p class="pspacer">The Art Director had a very particular art style that needed to be emulated across the entire UI to provide a cohesive theme and mood, and the result is a steampunk adventure with a unique approach to the genre.</p>		
-  </section>
-    <section class="work darkgray">
+
+  <section class="work darkgray">
 		<ul class="list">
 		<li id="work" class="list-itembig topspace">
 		  <div class="list-content">
@@ -142,9 +138,44 @@
 		  </div>
 		</li>	
 	  </ul>
-    </section>
-   <div class="footer"></div>
+  </section>
+  <span id="designing"></span>
+  <section class="about"> 
+		<span class="sectionheader"><h4>What is Hunter's Moon?</h4></span>	  
+		<p class="pspacer">A deckbuilder with a focus on rich narrative and story elements over fail-and-repeat gameplay, Hunter's Moon provides something different in the genre. We had a very short development window on this project (6 months from start to finish,) and had purchased rights to the code from <a href="https://store.steampowered.com/app/2644610/Menace_from_the_Deep/">Menace From the Deep</a> to provide the backbone of our project.</p>
+		
+		<p class="pspacer">The Art Director had a very particular art style that needed to be emulated across the entire UI to provide a cohesive theme and mood, and the result is a steampunk adventure with a unique approach to the genre.</p>
+
+		<span class="sectionheader"><h4>Design for Hunter's Moon</h4></span>	  
+		<p>There were significant constraints on this project from the start: We only had 6 months to get this done, we were using an existing codebase we had purchased the rights to, and we did not have the time or manpower to make significant alterations to the UX/UI flow. This meant sacrifices were necessary to meet deadlines and milestone goals.</p>
+		<p>We would keep the visual design largely minimal and use few colors, matching the art style and theming of the amazing assets being designed by the art team - and take a risky gamble in replacing the core UI code with a custom system designed in-house by Zugalu to allow us to do what we wanted with interaction animations and narrative.</p>
+
+		<span class="sectionheader"><h4>The Card</h4></span>	
+		<p>Unhappy with the state of the default Menace from the Deep cards (they felt cramped and flat and did not use nearly enough screen space!) I intended to make significant changes to this element of gameplay - they were arguably the most important element and were absolutely essential to get right.</p><br/>
+
+		<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/comparison.png" style="width:100%;"/>
+		<center><p class="subheader">(left) Original Menace from the Deep card. (center) The first iteration for Hunters Moon cards. (right) The final card iteration.</p></center>	<br/>	
+
+		<p style="font-weight:bold;">The following changes and decisions were made in regards to card design:</p>
+		<p>
+			&#8226; Significantly increased card size to provide more padding for content and additional space for text.<br/>
+			&#8226; Remove the pointless 'type' text pillbox in place of an easily read icon in the top right.<br/>
+			&#8226; Increased font size from 18-20px to 24-36px to improve readability for accessibility and smaller resolutions.<br/>
+			&#8226; Reduce cognitive load by showing fewer text colors.<br/>
+			&#8226; Match a victorian-steampunk feel, with comic influence.<br/>
+			&#8226; Provide additional space for artwork to be displayed.
+		</p> 
+
+		<span class="sectionheader"><h4>The Battle Screen</h4></span>	
+		<p>As the vast majority of the game takes place within the confines of this interface, it was essential to get everything on this screen just right. Menace From The Deep had hit most of the necessary milestones - but there were usability concerns and odd stylistic choices that had to be rectified to suit our new design.</p>
+		<p>Users expect a certain experience in a deckbuilder interface, and we did not want to alienate anyone. We focused on trimming any excess visual fat - anything not necessary in combat was removed from view (relocated to tooltips, tutorials or menus) to allow players to focus their attention only on what is essential.</p>
+		<p>I settled on character stats, relics and tarot cards on the top left where the eye first rests, while any consumable or ability-type interactions were moved to the lower left where the players current Energy is displayed. All other card information occupies the bottom center and right frames. The top right of the screen was left for the settings menu, and any relevant resource displays that may have been required.</p><br/>
+		<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/BattleScreen.png" style="width:100%;"/>
+		<center><p class="subheader">The revamped battlescreen, with all actionable items in the lower left, character data and relics in the top left, card decks and turn info in the bottom right, and options and income/resources on the top right.</p></center>			
+  </section>  
+  <div class="footer"></div>
 </div>
+
 
 <!-- jQ plugins -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
