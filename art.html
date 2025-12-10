@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Chris DeChamplain - Level Designer / Game Designer</title>
-  <meta name="description" content="Chris DeChamplain - Level Designer / Game Designer">
+  <title>Chris DeChamplain - Game/Level Designer</title>
+  <meta name="description" content="Chris DeChamplain - Game/Level Designer">
   <meta name="author" content="Chris DeChamplain">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/colorbox.css">
@@ -11,48 +11,45 @@
   <link rel="stylesheet" href="css/stylesmain.css">
   <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
-	<div id="menu">
-		<nav class="main_navigation animate">
-	      <div class="namespace">
-	        <p class="heading"><a href="index.html">Chris DeChamplain</a></p>
-	        <p class="subheading">Game Designer / Level Designer</p>
-	      </div>
-	      <div class="linkspace">
-			<ul class="nostyle">
-				<li class="start"><a href="index.html">PROJECTS</a></li>
-				<li class="end"><a href="cdechamplain_resume.pdf" target=_new>RESUME/CV</a></li>
-				<!--<li class="end"><a href="#contact">CONTACT</a></li>-->
-			  <div class="sprite-container">
-			    <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout"></a>
-			    <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin"></a>
-			  </div>					
-			</ul>
-	      </div>
-		</nav>
-	</div>
-	<section class="about">
-		<div class="plain">
-			<a href="index.html" class="button">< Back</a><a href="zugalu.html" class="button" style="float:right">Next Project ></a>
-				<div class="portpic_container">
+	<div class="container">
+		<div id="menu" class="new_navigation animate darkpurple_bg">
+			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
+			<div class="linkspace">			
+				<a href="index.html" class="whitetext semibold heading">Home</a>
+				<a href="#about" class="whitetext semibold heading">About</a>
+				<a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold heading">Resume/CV</a>	
+				<a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
+				<a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a>	
+			</div>		
+		</div>
+    <section class="topspace darkpurple_bg">
+    	<div class="herocontent artimage">
+				<div class="heroleft">
+	    		<h1 class="white semibold xxlarge spacer_m textshadow_dark">Art & <span class="green">Illustration</span></h1>
+	    		<p class="white med2 base spacer_l textshadow_dark justifytext">Art, illustration or other creative endeavors I've completed.</p>				
+				</div>	
+    	</div>
+    </section>
+
+	  <span id="designing"></span>
+	  <section class="about"> 	
+				<div class="portpic_container spacer_l">
 			  	<img src="images/thumbs/mapthumb.png" class="portpic large" >
 			  	<span class="description">Realms of Lore : World Map Design</span>
 				</div>
 				<p>What is better than creating, bringing what you imagine in your head to reality on paper or a digital screen? I love to sit down and sketch, paint or color when the mood strikes me. I've worked on many projects including a comic called Sling (which sadly died before it got much leeway due to funding) which was a great challenge.</p>
-				<p>The majority of my creative work is done privately and most often related to my hobbies. Selected for you below are some samples of commissions I have had, or simply things I have tossed together over the years which show a little of what I can do.</p>				
-		</div>
-	</section>
+				<p>The majority of my creative work is done privately and most often related to my hobbies. Selected for you below are some samples of commissions I have had, or simply things I have tossed together over the years which show a little of what I can do.</p>	  
+	  </section>  
 
-    <section class="work">
-	  <ul class="list">
-		<li id="work" class="list-itembig topspace">
-		  <div class="list-content">
-			<a name="work"></a>
-			<div id="basicExample" class="justified-gallery">
+    <section class="work darkpurple_bg">
+    	<a name="work" id="projects"></a>
+    	<h1 class="white centertext semibold">Work Samples</h1>
+  		<div class="list-content">
+				<div id="basicExample" class="justified-gallery">
 				<a class="gallery" href="images/port/sketch/sketch1.png">
 					<img alt="Hunter Character Designs" src="images/thumbs/sketch1_thumb.png"/>
 				</a>
@@ -97,13 +94,22 @@
 				</a>
 				<a class="gallery" href="images/port/sketch/map1.png">
 					<img alt="Realms of Lore : World Map" src="images/thumbs/mapthumb2.png"/>
-				</a>
+				</a>		        				
+					<script>jQuery('a.gallery').colorbox();</script>
+				</div>
 			</div>
-		  </div>
-		</li>
-	  </ul>
     </section>
-   <div class="footer"></div>
+
+
+    <div class="footer darkpurple_bg">
+    	<a id="contact"><a/>
+			<div class="sprite-container">
+				<a href="cdechamplain_resume.pdf" target="_new" class="bold heading uncommontext">Resume/CV</a>	
+				<a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout"></a>
+				<a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin"></a>				
+			</div>
+    </div>
+	</div>
 </div>
 
 <!-- jQ plugins -->
@@ -114,7 +120,7 @@
 <script type="text/javascript">
 $('#basicExample').justifiedGallery(
   {
-  "rowHeight" : 200,
+  "rowHeight" : 132,
   "margins" : 20,
   "lastRow" : "nojustify",
   "cssAnimation" : true,
@@ -135,6 +141,5 @@ $('#basicExample').justifiedGallery(
     });
 });
 </script>
-
 </body>
 </html>

@@ -43,7 +43,7 @@ body {
   background-image: linear-gradient(180deg, rgb(221 202 249) 0%, rgb(231 215 254) 35%, rgb(244 235 249) 100%);
   background-attachment: fixed;
   background-size: cover;
-  max-width:1920px;
+
 }
 
 p {font-size: 1em;line-height:normal;font-size: clamp(1rem, 1vw, 18px);}
@@ -70,6 +70,7 @@ section.details {
 
 ul li {line-height:1em; display:inline;}
 ul li.center { margin:0 2em 0 2em; }
+.rightcontentgame ul li {line-height:1em; display:block;}
 img.bg {min-height: 100%;min-width: 1024px;width: 100%;height: auto;position: fixed;top: 0;left: 0;}
 iframe { aspect-ratio: 16 / 9; width:100% !important; height:auto; max-width:100%;}
 .clearfix {clear:both;}
@@ -97,7 +98,8 @@ p {padding:0 0 2rem 0;}
 .med2 { font-size: clamp(1.1rem, 1vw, 20px);}
 .heading { font-size: clamp(1.2rem, 1vw + 1rem, 20px);}
 .large { font-size: clamp(1.4rem, 1vw + 1rem, 24px); }
-.xlarge { font-size: clamp(1.2rem, 1vw + 3rem, 36px);}
+.xlarge { font-size: clamp(1.6rem, 1vw + 3rem, 36px);}
+.xxlarge { font-size: clamp(2rem, 1vw + 3rem, 48px);}
 
 /* font weights */
 .xtralight { font-weight:200; }
@@ -152,9 +154,11 @@ p {padding:0 0 2rem 0;}
 /* animated link colors */
 a.uncommontext { color:#80D859;transition: color 1.0s;-webkit-transition: color 1.0s;}
 a.uncommontext:hover { color:#EF804C;transition: color 1.0s;-webkit-transition: color 1.0s;}
+a.uncommonorangetext { color:#EF804C;transition: color 1.0s;-webkit-transition: color 1.0s;}
+a.uncommonorangetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: color 1.0s;}
 
 a.whitetext { color:#ecdefa;transition: color 1.0s;-webkit-transition: color 1.0s;}
-a.whitetext:hover { color:#000;transition: color 1.0s;-webkit-transition: color 1.0s;}
+a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: color 1.0s;}
 
 .textshadow_light {text-shadow:#ecdefa 2px 2px;}
 .textshadow_dark {text-shadow:#1F1A24 2px 2px;}
@@ -207,79 +211,15 @@ ul.list li#work{ border:0;}
 
 .footer { padding:2rem; width:100%;text-align:center;justify-content:center}
 
-.main_navigation,.tagline,.skills,.contact {width:100%;}
-.new_navigation {display:flex;justify-content:flex-start; font-style:normal;padding:1rem 2rem;}
-.new_navigation a {margin:0 16px;}
+/* navigation */
+#menu {position:fixed;width:100%;top:0;left:0; z-index:999;}
+.new_navigation { display:flex; justify-content:center; font-style:normal;padding:1rem 2rem;align-items:center;width:100%;}
+.new_navigation a {margin-right:8px;}
+.new_navigation .namespace {display:flex;justify-content:flex-start;align-items:center;width:100%;}
+.new_navigation .linkspace {display:flex;justify-content:flex-end;align-items:center;width:100%;}
+.topspace {padding-top:4rem;}
 
-.main_navigation {
-  font-weight:700;
-  z-index:9;
-  font-size:1.0rem;
-  font-style:normal;
-  display:block;
-  background:#3b2d4c;
-  padding:40px 0 40px 0;
-}
-
-.namespace,.linkspace {display:block;text-align:center;width:100%;}
-.namespace p.heading {font-size:3rem;font-weight:600;}
-.namespace p.subheading {font-size:1.4em;font-weight:300;color:#ccc;}
-.linkspace {text-align:center;width:100%;}
-
-#menu {position:relative;width:100%; }
-
-#menu .main_navigation .logo span {margin:auto;width:36px;height:36px;font-size:2rem;border-radius:50%;border:2px solid #bfbcb7;}
-#menu .main_navigation ul {
-  display:-webkit-box;
-  display: -webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:horizontal;
-  flex-direction:row;
-  -ms-flex-direction:row;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-  -ms-flex-align: center;
-  align-items:center;
-  -webkit-box-pack:center;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  margin-top:6px;
-}
-.main_navigation ul {
-  display:-webkit-box;
-  display: -webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:horizontal;
-  flex-direction:row;
-  -ms-flex-direction:row;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-  -ms-flex-align: center;
-  align-items:center;
-  -webkit-box-pack:center;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  margin-top:20px;
-}
-.main_navigation ul li a { display:inline-block;line-height:1;position:relative;font-size:1.2em}
-.main_navigation ul li { margin:0 4px;}
-.main_navigation .logo,.work_navigation .logo {margin:auto;width:100%;position:absolute;background:#222222;}
-.main_navigation .logo span {margin:auto;width:36px;height:36px;font-size:2rem;border-radius:50%;border:2px solid #bfbcb7;}
-.main_navigation .logo span:hover {border:2px solid #EF804C;transition: border 1.0s;-webkit-transition: border 1.0s;}
-.main_navigation .logo span:hover {background-color:#EF804C;transition: background-color 1.0s;-webkit-transition: background-color 1.0s;  	  }
-.main_navigation a.logo span.backbutton  { display:block}
-.main_navigation a.logo span.backbutton2 { display:none}
-.main_navigation a.logo:hover span.backbutton  { display:block}
-.main_navigation a.logo:hover span.backbutton2 { display:none}
-#menu .main_navigation .logo span:hover {border:2px solid #EF804C;transition: border 1.0s;-webkit-transition: border 1.0s;  	  }
-#menu .main_navigation li:hover { transition: border 1.0s;-webkit-transition: border 1.0s; }
-
+/* video embed */
 .embed { width:100%;text-align:center;margin:0 auto;padding:2em; }
 .embedsmall { display:flex;justify-content:space-between;width:100%;text-align:center;margin:0 auto;}
 .embedsmall iframe {max-width:24%;}
@@ -313,79 +253,31 @@ ul.list li#work{ border:0;}
 }
 
 /* Portfolio Site CSS */
-.about {display:flex;padding:4rem 2rem;justify-content:center;flex-direction:column;}
-.horizontal {display:flex;width:100%;flex-flow:row nowrap;justify-content:space-between;}
-.leftcontent {flex-basis:30%;border-bottom-right-radius:32px;padding:4rem 4rem 0 4rem;flex-grow:0;}
-.rightcontent {flex-basis:70%;padding:2rem 8rem;justify-content:center;}
+.about {display:flex;padding:2rem 8rem;justify-content:center;flex-direction:column;}
+/*.horizontal {display:flex;width:100%;flex-flow:row nowrap;justify-content:space-between;}
 
-/* project images*/
-.temperedhue, .huntersmoon {display: block;position: absolute; top:0; left: 0;width:100%;border-radius:24px;}
+.leftcontent {flex-basis:30%;border-bottom-right-radius:32px;padding:4rem 4rem 0 4rem;flex-grow:0;max-height:720px;}
+.rightcontent {flex-basis:70%;padding:2rem 8rem;justify-content:center;}*/
 
-.huntersmoon {
-  background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; 
-  background-size:cover;
-  background-position:0 55%;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-}
-.temperedhue {
-  background: #000 url('../images/zugalu/temperedhue/combat.gif') no-repeat; 
-  background-size:cover;
-  background-position:0 50%;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-}
+.flexbox {display:flex;width:100%;justify-content: space-between;flex-wrap:wrap;}
 
-.temperedhue:before {
-  content:"";
-  top:0;left:0;width:100%;height:100%;position:absolute;
-  background-size:cover;
-  background-position:0 50%;  
-  background: #000 url('../images/zugalu/temperedhue/combat.gif') no-repeat; 
-  background-size:cover; background-position:0 -374px;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-  filter: grayscale(100%);
-  transition:1s;
-  border-radius:24px;
-}
-.temperedhue:hover:before {
-  content:"";
-  top:0;left:0;width:100%;height:100%;position:absolute;
-  background-size:cover;
-  background-position:0 50%;  
-  background: #000 url('../images/zugalu/temperedhue/combat.gif') no-repeat; 
-  background-size:cover; background-position:0 -374px;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-  filter: grayscale(0%);
-  transition:1s;
-  border-radius:24px;
-}
-.huntersmoon:before {
-  content:"";
-  top:0;left:0;width:100%;height:100%;position:absolute;
-  background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; 
-  background-size:cover;
-  background-position:0 55%;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-  filter: grayscale(100%);
-  transition:1s;
-  border-radius:24px;
-}
-.huntersmoon:hover:before {
-  content:"";
-  top:0;left:0;width:100%;height:100%;position:absolute;
-  background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; 
-  background-size:cover;
-  background-position:0 55%;
-  -webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);
-  mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);
-  filter: grayscale(0%);
-  transition:1s;
-  border-radius:24px;
-}
+.horizontal {flex-direction: row;}
+.vertical {flex-direction: column;}
+
+.flex-item {align-self:center;text-align:center;}
+
+.leftcontent {padding:4rem;}
+.rightcontent {padding:2rem 8rem;justify-content:center;}
+.rightcontentgame {display:flex;padding:2rem 2rem;justify-content:center;flex-direction:row;}
+
+.herocontent {display:flex;flex-direction:row;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
+.heroleft {flex:1;flex-basis:50%;align-self: flex-start;margin-right:5%;z-index:1}
+.heroright {flex:1;flex-basis:50%;align-self: flex-start;z-index:1}
+.herocontent .roundedbutton {display:none;}
+.heroimage .splash {z-index:1;}
+.fixwidth {max-width:640px;margin:0 auto;}
+.justifytext {text-align: justify;}
+.exampleimage {justify-content:center;align-items:center;text-align:center;margin:0 auto;min-width:320px;max-width:860px;}
 
 /* fade overlay */
 .overlay {
@@ -422,8 +314,8 @@ ul.list li#work{ border:0;}
   display:inline-block;
   width:auto;
   text-align:right;
-  border-radius:8px;
-  padding:1rem 2rem;
+  border-radius:128px;
+  padding:0.8rem 2rem;
   transition:3s;
   opacity:0.9;
   background: linear-gradient(0deg,rgb(204, 255, 102) 0%,rgb(128, 216, 89)  100%);
@@ -445,7 +337,8 @@ ul.list li#work{ border:0;}
 .gamespace .button {display:inline;border-radius:8px;}
 .gamevideo { justify-content:center; }
 .gamevideo iframe { aspect-ratio: 16 / 9;width: 100% !important;}
-.gamevideo {width: 100%; min-width: 400px; max-width: 1280px;}
+.gamevideo {width: 100%; min-width: 420px; max-width: 1440px;margin:0 auto;}
+.expandedvideo {display:none;}
 .gamevideo_content {position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;}
 .gamedetails { padding:0 0 0 2rem; }
 .gamespace ul li { display:block; }
@@ -483,14 +376,14 @@ ul.list li#work{ border:0;}
 }
 
 ul.experience { margin:0rem 0 1rem 0; }
-ul.experience li {margin:0rem 0 0.5rem 0;}
+ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 /* Pills */
 .pillbox {padding: 0.5rem 0;}
 .textpill {
   display:inline-block;
   text-align:center;
-  border-radius:6px;
+  border-radius:128px;
   margin-right:0.5rem;
   margin-bottom:0.5rem;
   padding:8px;   
@@ -535,17 +428,74 @@ ul.experience li {margin:0rem 0 0.5rem 0;}
 .button:hover{}
 
 /* link container */
-.sprite-container { display:flex;justify-content:flex-start;align-items:center;width:100%; }
+.sprite-container { display:flex;justify-content:center;align-items:center;width:100%; }
 .sprite-container a { margin-right:16px;}
 .footer .sprite-container {justify-content:center;}
 
 #linkedin {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+#reachout {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px -48px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+
 #linkedin:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #linkedin:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
-#reachout {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px -48px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
 #reachout:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #reachout:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 
+#linkedin_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+#reachout_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px -32px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+
+#linkedin_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
+#linkedin_sm:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
+#reachout_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
+#reachout_sm:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
+
+/* project images*/
+
+.heroimage {background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.heroimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+
+.stemuliimage {background: #000 url('../images/stemuli/common/5.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.stemuliimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.dualuniverseimage {background: #000 url('../images/dualuniverse/gunbase/interior.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.dualuniverseimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.duoimage {background: #000 url('../images/duo/duo_level6_a.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.duoimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.fuimage {background: #000 url('../images/thumbs/frackinuniverse_thumb.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.fuimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.soulreaperimage {background: #000 url('../images/soulreaper/sr5.jpg') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.soulreaperimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.thriveimage {background: #000 url('../images/zugalu/Firebar.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.thriveimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+
+.artimage {background: #000 url('../images/thumbs/mapthumb.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.artimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.designimage {background: #000 url('../images/thumbs/mapthumb.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.designimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+.miscimage {background: #000 url('../images/leveldesigns/farmhand.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.miscimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 85%);}
+
+
+
+/* Experience Items Base */
+.huntersmoon,.temperedhue,.thrive,.stemuli,.dualuniverse,.soulreaper,.duo {background-size:cover;background-position:0 30%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);transition:1s;}
+
+/* disable greyscale on hover*/
+.huntersmoon:hover,.temperedhue:hover,.thrive:hover,.stemuli:hover,.dualuniverse:hover,.soulreaper:hover,.duo:hover {filter: grayscale(0%);}
+/* Apply dimensions and grayscale before */
+.temperedhue:before,.huntersmoon:before,.thrive:before,.stemuli:before,.dualuniverse:before,.soulreaper:before,.duo:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;}
+
+/* Applied images and positions*/
+.temperedhue:before {background: #000 url('../images/zugalu/temperedhue/combat.gif') no-repeat;background-size:cover;background-position:0 30%;}
+.huntersmoon:before {background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; background-size:cover;background-position:0 55%;}
+.thrive:before {background: #000 url('../images/zugalu/Firebar.png') no-repeat; background-size:cover;background-position:0 55%;}
+.stemuli:before {background: #000 url('../images/stemuli/common/5.png') no-repeat; background-size:cover;background-position:0 55%;}
+.dualuniverse:before {background: #000 url('../images/dualuniverse/shipyard/lobby.png') no-repeat; background-size:cover;background-position:0 55%;}
+.soulreaper:before {background: #000 url('../images/soulreaper/sr5.jpg') no-repeat; background-size:cover;background-position:0 55%;}
+.duo:before {background: #000 url('../images/duo/duo_level3_a.png') no-repeat; background-size:cover;background-position:0 55%;}
+
+.temperedhue:hover:before,.huntersmoon:hover:before,.thrive:hover:before,.stemuli:hover:before,.dualuniverse:hover:before,.soulreaper:hover:before,.duo:hover:before { filter: grayscale(0%);transition:1s; }
+
+
+.videoplayer {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;border-radius:36px;}
 
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
@@ -574,7 +524,6 @@ ul.experience li {margin:0rem 0 0.5rem 0;}
   .bordernone2a {border-right:1px solid #bfbcb7;}
   .bordernone3a {border-right:0;}  
   .work h1{padding:3rem 0 2rem 0;} 
-  .about {padding:12rem 8rem;}
   .gamespace {padding:2rem 2rem;} 
 }
 
@@ -596,6 +545,15 @@ ul.experience li {margin:0rem 0 0.5rem 0;}
   .projectcontent {display:flex;flex-direction:column;}
   .gamedetails { padding:0 0 0 0; margin-top:16px;}
   .rightcontent,.leftcontent{padding:2rem;}  
+  .herocontent {display:flex;flex-direction:column;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start}
+  .heroleft {flex:1;flex-basis:100%;align-self: flex-start;margin-right:5%;}
+  .heroright {flex:1;flex-basis:100%;align-self: flex-start;}
+  .heroright .gamevideo {display:none;}
+  .herocontent .roundedbutton {display:inline-block;}
+}
+
+@media screen and (max-width: 992px) { 
+
 }
 
 @media screen and (max-width: 768px) {
@@ -613,13 +571,17 @@ ul.experience li {margin:0rem 0 0.5rem 0;}
   .mask {mask-image: url('../images/game_bg_circle_purple_sm.png');mask-repeat:no-repeat;mask-position:center;mask-mode: alpha; mask-size:100px 100px;}
   .rightcontent .game_box p {padding: 1rem 0rem;}
   .new_navigation {justify-content:center;}
-  .new_navigation a{font-size:1.2rem;}  
   .indexpage {display:block;}
   .horizontal {flex-direction:column;}
-  #linkedin {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px 0px;} 
-  #reachout {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px -32px;} 
   .rightcontent,.leftcontent{flex-basis:100%;padding:2rem;}  
   .rightcontent h1.dullpurple {text-align:center;}
+  /*resize titlebar*/
+  .new_navigation {flex-direction:column;justify-content:flex-start;}
+  .new_navigation .namespace {width:100%;justify-content:flex-start;padding-bottom:16px;} 
+  .new_navigation .linkspace {width:100%;justify-content:center;}  
+  .new_navigation {padding:2rem;}
+  .topspace {padding-top:6rem;} 
+  .about {padding:2rem 2rem;}  
 }
 
 @media screen and (max-width: 576px) {
@@ -629,13 +591,13 @@ ul.experience li {margin:0rem 0 0.5rem 0;}
   .container { padding:0;}
   .box {position:relative;margin-top:1em}
   .box img.greeting {left:1em;top:0em;max-width:20%}
-  .main_navigation {display:block;}
-  .main_navigation ul {margin-top:0}  
-  .main_navigation ul li {font-size:0.8rem}
   .bordernone {border-right:0px solid #bfbcb7;}
   .bordernone2 {border-right:0px solid #bfbcb7;}
   .bordernone3 {border-right:0px solid #bfbcb7;}
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}
+
+}
+ 
 }
