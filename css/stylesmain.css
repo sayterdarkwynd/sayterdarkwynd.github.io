@@ -552,9 +552,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .herocontent .roundedbutton {display:inline-block;}
 }
 
-@media screen and (max-width: 992px) { 
-
-}
+@media screen and (max-width: 992px) { }
 
 @media screen and (max-width: 768px) {
   .work h1{padding:2rem 0 2rem 0;font-size:32px} 
