@@ -264,7 +264,8 @@ ul.list li#work{ border:0;}
 .leftcontent {padding:4rem;}
 .rightcontent {padding:2rem 8rem;justify-content:center;}
 .rightcontentgame {display:flex;padding:2rem 2rem;justify-content:center;flex-direction:row;}
-.herocontent {display:flex;flex-direction:row;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
+.herocontent {display:flex;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
+.herocontentmain {display:flex;flex-direction:row;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
 .heroleft {flex:1;flex-basis:50%;align-self: flex-start;margin-right:5%;z-index:1}
 .heroright {flex:1;flex-basis:50%;align-self: flex-start;z-index:1}
 .herocontent .roundedbutton {display:none;}
@@ -503,7 +504,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 
 /* media queries */
-@media screen and (max-width: 1480px) {
+@media screen and (min-width: 1480px) {
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item {  width: 33.33%; }
   .list-itemmid2 {  width: 100%; }
@@ -539,6 +540,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .gamedetails { padding:0 0 0 0; margin-top:16px;}
   .rightcontent,.leftcontent{padding:2rem;}  
   .herocontent {display:flex;flex-direction:column;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start}
+  .herocontentmain {display:flex;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start}  
   .heroleft {flex:1;flex-basis:100%;align-self: flex-start;margin-right:5%;}
   .heroright {flex:1;flex-basis:100%;align-self: flex-start;}
   .heroright .gamevideo {display:none;}
@@ -570,10 +572,31 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .new_navigation .namespace {width:100%;justify-content:center;padding-bottom:16px;} 
   .new_navigation .linkspace {width:100%;justify-content:center;}  
   .new_navigation {padding:2rem;}
-  .topspace {padding-top:6rem;} 
+  .topspace {padding-top:4rem;} 
   .about {padding:2rem 2rem;}  
   #menu {padding:1rem;}
   .herocontent {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}
+  .herocontentmain {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}  
+}
+
+@media screen and (max-width: 576px) {
+  .clients img { padding: 2em;max-width: 576px !important;}
+  .list-item { width: 100%; padding:1em; }
+  .list-itemrace { width:100%; } 
+  .container { padding:0;}
+  .box {position:relative;margin-top:1em}
+  .box img.greeting {left:1em;top:0em;max-width:20%}
+  .bordernone {border-right:0px solid #bfbcb7;}
+  .bordernone2 {border-right:0px solid #bfbcb7;}
+  .bordernone3 {border-right:0px solid #bfbcb7;}
+  .bordernonea {border-right:0px solid #bfbcb7;}
+  .bordernone2a {border-right:0px solid #bfbcb7;}
+  .bordernone3a {border-right:0px solid #bfbcb7;}
+  .new_navigation .namespace {padding-bottom:0px;} 
+  .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
+  .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
+  .linkspace .heading {font-size: clamp(0.2rem, 1vw + 1rem, 18px);}
+  .namespace .heading {font-size: clamp(1rem, 1vw + 1rem, 18px);}
 }
 
 @media screen and (max-width: 480px) {
@@ -591,6 +614,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .bordernone3a {border-right:0px solid #bfbcb7;}
   .new_navigation .namespace {padding-bottom:0px;} 
   .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
+  .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .linkspace .heading {font-size: clamp(0.2rem, 1vw + 1rem, 18px);}
   .namespace .heading {font-size: clamp(1rem, 1vw + 1rem, 18px);}
 }
