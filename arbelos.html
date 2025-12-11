@@ -12,9 +12,17 @@
   <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+	<script src="js/jquery.colorbox-min.js"></script>    
 </head>
 
 <body>
+	<div id="videoModal" class="modal">
+		<a class="closeBtn uncommongreentext" rel="modal:close" href="#">&times;</a>
+			<iframe src="https://www.youtube.com/embed/MX96z51wWNk" alt="STEMuli video" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>	   	
+	</div>		
 	<div class="container">
 		<div id="menu" class="new_navigation animate darkpurple_bg">
 			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
@@ -33,7 +41,7 @@
 	    		<h2 class="green semibold xlarge spacer_l textshadow_dark">2021</h2>
 	    		<p class="white med2 base spacer_l textshadow_dark justifytext">A unique educational sandbox designed to educate children aged K-8 in STEM topics and provide career growth opportunities by <b>Arbelos Interactive</b> and <b>STEMuli</b>.</p>
 	    		<p class="white med2 base spacer_l textshadow_dark justifytext">I worked as a <b>Level Designer</b> and <b>Game Designer</b>, creating Hub worlds for students to explore and interact with one another. My duties included:</p>					  
-	    		<ul class="experience spacer_s">	 
+	    		<ul class="experience spacer_s textshadow_dark">	 
 				  	<li class="white small">&#8226; I handled Game Design and Level Design elements of the project and managed documents.</li>
 				  	<li class="white small">&#8226; Designed and integrated levels via Unity, always ensuring 3C are respected.</li>						  		  	 
 				    <li class="white small">&#8226; Designed UX/UI elements.</li>     
@@ -62,7 +70,7 @@
 						</div>
 				  </div>  
 				</div>
-				<a href="zugaluHuntersMoon.html" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Watch Trailer</span></a>	
+				<a type="button" href="#videoModal" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall watchbtn" rel="modal:open">Watch Trailer</a>	
     	</div>
     </section>
 
@@ -109,31 +117,67 @@
     	<a name="work" id="projects"></a>
     	<h1 class="white centertext semibold">Work Samples</h1>
   		<div class="list-content">
-				<div id="basicExample" class="justified-gallery">
-				<a class="gallery" href="images/stemuli/common/10.png">
-					<img alt="Students can explore horizontally and vertically over a large region. Areas have numerous access routes from multiple directions." src="images/stemuli/common/10.png"/>
-				</a>				
+				<div id="basicExample" class="justified-gallery">		
 				<a class="gallery" href="images/stemuli/common/1.png">
 					<img alt="The Stadium is a great landmark for students to meet and mingle. I provided plenty of space and seating. Within the stadium students can participate in footraces and Soccer." src="images/stemuli/common/1.png"/>
 				</a>	
+				<a class="gallery" href="images/stemuli/common/2.png">
+					<img alt="Massive front stairs and a large upper balcony area." src="images/stemuli/common/2.png"/>
+				</a>					
 				<a class="gallery" href="images/stemuli/common/3.png">
 					<img alt="A fancy restaurant with a lovely patio where students can gather resource-fetch quests as well as gain roof access or simply mingle and chat." src="images/stemuli/common/3.png"/>
 				</a>	
 				<a class="gallery" href="images/stemuli/common/4.png">
 					<img alt="The central apartments create a living, breathing space for community, complete with plenty of seating, nature, a storefront and access to the driveable roads." src="images/stemuli/common/4.png"/>
-				</a>			
+				</a>
+				<a class="gallery" href="images/stemuli/common/5.png">
+					<img alt="A central city area with police station, and verticality present for players to climb and explore." src="images/stemuli/common/5.png"/>
+				</a>
+				<a class="gallery" href="images/stemuli/common/6.png">
+					<img alt="Apartment district." src="images/stemuli/common/6.png"/>
+				</a>							
+				<a class="gallery" href="images/stemuli/common/7.png">
+					<img alt="Trash-strewn alley." src="images/stemuli/common/7.png"/>
+				</a>
+				<a class="gallery" href="images/stemuli/common/8.png">
+					<img alt="Rooftop party areas accessible from street level." src="images/stemuli/common/8.png"/>
+				</a>
+				<a class="gallery" href="images/stemuli/common/9.png">
+					<img alt="Fields and forests greet players outside the city." src="images/stemuli/common/9.png"/>
+				</a>															
+				<a class="gallery" href="images/stemuli/common/10a.png">
+					<img alt="District map for the core student Hub." src="images/stemuli/common/10a.png"/>
+				</a>						
+				<a class="gallery" href="images/stemuli/common/11.png">
+					<img alt="Another rooftop area." src="images/stemuli/common/11.png"/>
+				</a>
+				<a class="gallery" href="images/stemuli/common/12.png">
+					<img alt="Another rooftop area." src="images/stemuli/common/12.png"/>
+				</a>								
 				<a class="gallery" href="images/stemuli/common/14.png">
 					<img alt="The Pond is a relaxing place away from the noise of the city area. Students have plenty of places to sit, explore, swim, climb or play hide-and-seek." src="images/stemuli/common/14.png"/>
 				</a>	
+				<a class="gallery" href="images/stemuli/common/15.png">
+					<img alt="The pond region." src="images/stemuli/common/15.png"/>
+				</a>					
 				<a class="gallery" href="images/stemuli/common/16.png">
 					<img alt="The Space Agency provides access to the SciFi level, as well as a place students can engage with quests related to science. They'll learn about space travel, physics and more." src="images/stemuli/common/16.png"/>
 				</a>		
+				<a class="gallery" href="images/stemuli/common/17.png">
+					<img alt="A park playground area with hide and seek, teeter-totters, slides and skate park." src="images/stemuli/common/17.png"/>
+				</a>	
+				<a class="gallery" href="images/stemuli/common/18.png">
+					<img alt="A bus stop for access to other Hubs" src="images/stemuli/common/18.png"/>
+				</a>									
 				<a class="gallery" href="images/stemuli/common/19.png">
 					<img alt="Clifftop is right beside the Pond and gives players some verticality to explore in the natural area, with rope bridges, cliffs and footpaths to explore." src="images/stemuli/common/19.png"/>
 				</a>													
 				<a class="gallery" href="images/stemuli/common/20.png">
 					<img alt="The region with bots and population can look quite bustling!" src="images/stemuli/common/20.png"/>
-				</a>	
+				</a>
+				<a class="gallery" href="images/stemuli/common/21.png">
+					<img alt="Mechanics garage and subway access to other Hubs." src="images/stemuli/common/21.png"/>
+				</a>						
 				<a class="gallery" href="images/stemuli/medieval/3.png">
 					<img alt="The Medieval map has many fantasy-themed elements for students to investigate." src="images/stemuli/medieval/3.png"/>
 				</a>	
@@ -163,10 +207,7 @@
 </div>
 
 <!-- jQ plugins -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="js/jquery.colorbox-min.js"></script>
 <script src="js/jquery.justifiedGallery.min.js"></script>
-
 <script type="text/javascript">
 $('#basicExample').justifiedGallery(
   {
@@ -189,6 +230,10 @@ $('#basicExample').justifiedGallery(
         transition : 'elastic',
         current : ''
     });
+});
+ $("#fade").modal({
+   fadeDuration: 1000,
+   fadeDelay: 0.50
 });
 </script>
 </body>

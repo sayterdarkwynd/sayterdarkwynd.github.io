@@ -12,9 +12,18 @@
   <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+	<script src="js/jquery.colorbox-min.js"></script>  
 </head>
 
 <body>
+	<div id="videoModal" class="modal">
+		<a class="closeBtn uncommongreentext" rel="modal:close" href="#">&times;</a>
+			<iframe src="https://www.youtube.com/embed/RcVjL-hofw4" alt="DUO Trailer" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>	   	
+				<p>Text</p>
+	</div>		
 	<div class="container">
 		<div id="menu" class="new_navigation animate darkpurple_bg">
 			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
@@ -33,7 +42,7 @@
 	    		<h2 class="green semibold xlarge spacer_l textshadow_dark">2019</h2>
 	    		<p class="white med2 base spacer_l textshadow_dark justifytext">Capstone project for the Game Level Design course at <b>Sheridan College</b>, where I fulfilled the roles of <b>Game Designer</b>, <b>Level Designer</b> and <b>Project Manager</b>.</p>
 	    		<p class="white med2 base spacer_l textshadow_dark justifytext">A two-character puzzle game played on a single controller, we had 4 months to complete the project.</p>
-					<ul class="experience spacer_s">	
+					<ul class="experience spacer_s textshadow_dark">	
 				  	<li class="white small">&#8226; As Level Designer, created 6 levels from greybox to completion.</li>
 				  	<li class="white small">&#8226; Managed the team, documentation and narrative.</li>						  	
 				    <li class="white small">&#8226; Visual effects, lighting, shaders and post-processing.</li> 
@@ -54,7 +63,7 @@
 						</div>
 				  </div>  
 				</div>
-				<a href="zugaluHuntersMoon.html" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Watch Trailer</span></a>	
+				<a type="button" href="#videoModal" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall watchbtn" rel="modal:open">Watch Trailer</a>	
     	</div>
     </section>
 
@@ -174,10 +183,7 @@
 </div>
 
 <!-- jQ plugins -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="js/jquery.colorbox-min.js"></script>
 <script src="js/jquery.justifiedGallery.min.js"></script>
-
 <script type="text/javascript">
 $('#basicExample').justifiedGallery(
   {
@@ -200,6 +206,10 @@ $('#basicExample').justifiedGallery(
         transition : 'elastic',
         current : ''
     });
+});
+ $("#fade").modal({
+   fadeDuration: 1000,
+   fadeDelay: 0.50
 });
 </script>
 </body>

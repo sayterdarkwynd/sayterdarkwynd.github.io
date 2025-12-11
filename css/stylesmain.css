@@ -496,21 +496,16 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 
 .videoplayer {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;border-radius:36px;}
+ 
+#videoModal { background:rgba(0,0,0,0.5);z-index:99999; }
+.modal {padding:4rem;}
+.modal iframe {width:100%;height:auto;}
+.closeBtn {float:right;color:#fff;font-size:2rem;}
+.closeBtn:hover,.closeBtn:focus { text-decoration: none;  cursor: pointer;}
+
 
 /* media queries */
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
-
-@media screen and (max-width: 4000px) { 
-  .main_navigation {display:none;}
-  .indexpage {display:none;}
-}
-
-@media screen and (min-width: 1480px) {
+@media screen and (max-width: 1480px) {
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item {  width: 33.33%; }
   .list-itemmid2 {  width: 100%; }
@@ -573,16 +568,17 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .horizontal {flex-direction:column;}
   .rightcontent,.leftcontent{flex-basis:100%;padding:2rem;}  
   .rightcontent h1.dullpurple {text-align:center;}
-  /*resize titlebar*/
   .new_navigation {flex-direction:column;justify-content:flex-start;}
-  .new_navigation .namespace {width:100%;justify-content:flex-start;padding-bottom:16px;} 
+  .new_navigation .namespace {width:100%;justify-content:center;padding-bottom:16px;} 
   .new_navigation .linkspace {width:100%;justify-content:center;}  
   .new_navigation {padding:2rem;}
   .topspace {padding-top:6rem;} 
   .about {padding:2rem 2rem;}  
+  #menu {padding:1rem;}
+  .herocontent {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   .clients img { padding: 2em;max-width: 480px !important;}
   .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
@@ -595,7 +591,10 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}
-
+  .new_navigation .namespace {padding-bottom:0px;} 
+  .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
+  .linkspace .heading {font-size: clamp(0.2rem, 1vw + 1rem, 18px);}
+  .namespace .heading {font-size: clamp(1rem, 1vw + 1rem, 18px);}
 }
- 
+
 }
