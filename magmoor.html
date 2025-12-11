@@ -2,56 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Chris DeChamplain - Level Designer / Game Designer</title>
-  <meta name="description" content="Chris DeChamplain - Level Designer / Game Designer">
+  <title>Chris DeChamplain - Game/Level Designer</title>
+  <meta name="description" content="Chris DeChamplain - Game/Level Designer">
   <meta name="author" content="Chris DeChamplain">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/colorbox.css">
   <link rel="stylesheet" href="css/justifiedGallery.css">
   <link rel="stylesheet" href="css/stylesmain.css">
-  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+	<script src="js/jquery.colorbox-min.js"></script>
 </head>
-
 <body>
-<div class="container">
-	<div id="menu">
-		<nav class="main_navigation animate">
-	      <div class="namespace">
-	        <p class="heading"><a href="index.html">Chris DeChamplain</a></p>
-	        <p class="subheading">Game Designer / Level Designer</p>
-	      </div>
-	      <div class="linkspace">
-			<ul class="nostyle">
-				<li class="start"><a href="index.html">PROJECTS</a></li>
-				<li class="end"><a href="cdechamplain_resume.pdf" target=_new>RESUME/CV</a></li>
-				<!--<li class="end"><a href="#contact">CONTACT</a></li>-->
-			  <div class="sprite-container">
-			    <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout"></a>
-			    <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin"></a>
-			  </div>					
-			</ul>
-	      </div>
-		</nav>
+	<div id="videoModal" class="modal">
+		<a class="closeBtn uncommongreentext" rel="modal:close" href="#">&times;</a>
+			<iframe src="https://www.youtube.com/embed/5u-7ctgcUbQ" alt="Announcement Trailer for Tempered Hue" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>	   	
+				<p>Text</p>
 	</div>
-  <section class="work">
-	  <ul class="list">
-		<li class="list-itemmid2 plain">
-				<p>A platformer level inspired by games of the past, such as Banjo Kazooie and Conker. I utilized the unity Boxy assets, and heavily modified the code to suit my needs. The end result is a plucky and fun map that spans forest, lava cavern and mountaintops. The goal was approximately 5 minutes of gameplay, with a relatively low difficulty.</p>
-				<p>Flow was extremely important in order to make the player enjoy they progress through the various biomes. To this end, a clear path was defined (and helped along with gem pickups as guides) through visuals. Verticality was especially useful in providing interest and agency to the player, allowing for various approaches to many situations through platforming and creative use of abilities.</p>
-				<br/><br/>
-          <div class="embed">
-              <iframe width="706" height="397" src="https://www.youtube.com/embed/iasjiY4-e9g" align = "center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="container">	
+		<div id="menu" class="new_navigation animate darkpurple_bg">
+			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
+			<div class="linkspace">			
+				<a href="index.html" class="whitetext semibold heading">Home</a>
+				<a href="#about" class="whitetext semibold heading">About</a>
+				<a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold heading">Resume</a>	
+				<a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
+				<a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a>	
+			</div>		
+		</div>
+    <section class="topspace darkpurple_bg">
+    	<div class="herocontent stemuliimage">
+				<div class="heroleft">
+	    		<h1 class="white semibold xxlarge spacer_m textshadow_dark">Magmar <span class="green">Caverns</span></h1>
+	    		<p class="white med2 base spacer_l textshadow_dark justifytext">A student level design project for <b>Sheridan College</b></p>			    	 
+					<div class="pillbox">		
+		  		  <span class="textpill tiny gamedesign">Game Design</span>	
+	    			<span class="textpill tiny leveldesign">Level Design</span>
+						<span class="textpill tiny documentation">Documentation</span> 			
+					</div>      							
+				</div>
+    	</div>
+    </section>		
 
-          </div>
-		</li>
+	  <span id="designing"></span>
+	  <section class="about"> 	 	
+			<h2 class="spacer_m semibold dullpurple spacer_l">Sheridan Platformer Level Design</h2> 
+				<p class="med2 base">A platformer level inspired by games of the past, such as Banjo Kazooie and Conker. I utilized the unity Boxy assets, and heavily modified the code to suit my needs. The end result is a plucky and fun map that spans forest, lava cavern and mountaintops. The goal was approximately 5 minutes of gameplay, with a relatively low difficulty.</p>
+				<p class="med2 base spacer_l">Flow was extremely important in order to make the player enjoy they progress through the various biomes. To this end, a clear path was defined (and helped along with gem pickups as guides) through visuals. Verticality was especially useful in providing interest and agency to the player, allowing for various approaches to many situations through platforming and creative use of abilities.</p>			
 
-		<li id="work" class="list-itembig topspace">
-		  <div class="list-content">
+			<a href="images/deltafreya/deltafull.png" target="_new" class="uncommonorangetext bold">Full Map (4mb) [Tiled View]</a>
+        <div class="embed">
+            <iframe width="706" height="397" src="https://www.youtube.com/embed/iasjiY4-e9g" align = "center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>					
+	  </section>
+
+    <section class="work darkpurple_bg">
+    	<a name="work" id="projects"></a>
+    	<h1 class="white centertext semibold">Samples</h1>
 			<a name="work"></a>
 			<div id="basicExample" class="justified-gallery">
 				<a class="gallery" href="images/platformer/forestregion1.png">
@@ -99,24 +110,20 @@
 				<a class="gallery" href="images/platformer/pond.png">
 					<img alt="Mountain Region" src="images/platformer/pond_thumb.png"/>
 				</a>
-
 			</div>
 		  </div>
 		</li>
 	  </ul>
-    </section>
-   <div class="footer"></div>
+  </section>
+  <div class="footer"></div>
 </div>
 
 <!-- jQ plugins -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="js/jquery.colorbox-min.js"></script>
 <script src="js/jquery.justifiedGallery.min.js"></script>
-
 <script type="text/javascript">
 $('#basicExample').justifiedGallery(
   {
-  "rowHeight" : 300,
+  "rowHeight" : 132,
   "margins" : 20,
   "lastRow" : "nojustify",
   "cssAnimation" : true,
@@ -136,8 +143,10 @@ $('#basicExample').justifiedGallery(
         current : ''
     });
 });
+ $("#fade").modal({
+   fadeDuration: 1000,
+   fadeDelay: 0.50
+});
 </script>
-
-
 </body>
 </html>
