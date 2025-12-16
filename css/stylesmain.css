@@ -325,6 +325,8 @@ ul.list li#work{ border:0;}
 .roundedbutton:hover span {padding-right: 25px;}
 .roundedbutton:hover span:after {opacity: 1;right: 0;}
 
+.outlinedbutton {background:rgba(236,222,250,0.1);border:2px solid #ecdefa;border-radius:92px;padding:1rem 2rem;transition: 0.5s}
+.outlinedbutton:hover {background:rgba(236,222,250,0.2);border:2px solid #80D859;border-radius:92px;padding:1rem 2rem;transition: 0.5s}
 
 /* end animated button*/
 .plain {width:100%;}
