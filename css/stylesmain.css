@@ -161,7 +161,7 @@ a.whitetext { color:#ecdefa;transition: color 1.0s;-webkit-transition: color 1.0
 a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: color 1.0s;}
 
 .textshadow_light {text-shadow:#ecdefa 2px 2px;}
-.textshadow_dark {text-shadow:#1F1A24 2px 2px;}
+.textshadow_dark {text-shadow:#1F1A24 2px 4px 4px;}
 .boxshadow_light {box-shadow:#ecdefa 0.5rem 0.5rem;}
 .boxshadow_darksmall {box-shadow:#1F1A24 0.25rem 0.25rem;}
 .boxshadow_dark {box-shadow:#1F1A24 0.5rem 0.5rem;}
