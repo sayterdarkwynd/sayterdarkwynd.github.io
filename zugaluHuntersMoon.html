@@ -66,7 +66,6 @@
     	</div>
     </section>
 
-	  <span id="designing"></span>
 	  <section class="about"> 	
 			<div class="projectdetails spacer_l">
       	<span><span class="semibold">Platform :</span> PC, Steamdeck, Console</span>
@@ -74,7 +73,7 @@
       	<span><span class="semibold">Tools Used :</span> Unity</span>
 				<span><span class="semibold">Duration :</span> 6 months</span>
 				<span><span class="semibold">Team Size :</span> 15</span>
-      </div>	  	
+      </div>	  
       <h2 class="spacer_m semibold dullpurple">Lead Level Designer / UX UI Designer</h2>		  	
   		<ul class="experience spacer_s">	
 		  	<li>&#8226; Design and implement the game UX/UI.</li>
@@ -82,7 +81,15 @@
 		  	<li>&#8226;	Determined UX/UI flows, interaction feedback, audio and visual effect requirements to provide rich player experiences. 	  	
 		    <li>&#8226; Produced digital art for icons, consumables and relic art for over 100+ items.</li>
 		    <li>&#8226; C# programming where required.</li>   
-			</ul>		 					   	
+			</ul>		      
+			<div class="button-group">
+				<span id="designing"></span> 
+	  		<a href="#designing" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Design Process</span></a>
+	  		<a href="#work" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Work Samples</span></a>			
+			</div>			
+  	</section>   
+
+  	<section class="about">   					   	
 			<h2 class="spacer_m semibold dullpurple">Design for Hunter's Moon</h2>   
 			<p>A deckbuilder with a focus on rich narrative and story elements over fail-and-repeat gameplay, Hunter's Moon provides something different in the genre. The Art Director had a very particular art style that needed to be emulated across the entire UI to provide a cohesive theme and mood, and the result is a steampunk adventure with a unique approach to the genre.</p>
 			<p>There were significant constraints on this project from the start: We only had 6 months to get this done, we were using an existing codebase we had purchased the rights to, and we did not have the time or manpower to make significant alterations to the UX/UI flow. This meant sacrifices were necessary to meet deadlines and milestone goals.</p>
@@ -107,13 +114,13 @@
 			<p>Users expect a certain experience in a deckbuilder interface, and we did not want to alienate anyone. We focused on trimming any excess visual fat - anything not necessary in combat was removed from view (relocated to tooltips, tutorials or menus) to allow players to focus their attention only on what is essential.</p>
 			<p>I settled on character stats, relics and tarot cards on the top left where the eye first rests, while any consumable or ability-type interactions were moved to the lower left where the players current Energy is displayed. All other card information occupies the bottom center and right frames. The top right of the screen was left for the settings menu, and any relevant resource displays that may have been required.</p>
 			<img alt="The reworked battle screen interface." src="images/zugalu/huntersmoon/BattleScreen.png" class="exampleimage"/>
+			<a name="work" id="projects"></a>
 			<p class="subheader greytext">The revamped battlescreen, with all actionable items in the lower left, character data and relics in the top left, card decks and turn info in the bottom right, and options and income/resources on the top right.</p>	
 	  </section>  
-
+    	
     <section class="work darkpurple_bg">
-    	<a name="work" id="projects"></a>
     	<h1 class="white centertext semibold">Work Samples</h1>
-  		<div class="list-content">
+  		<div class="list-content" style="padding:0;">
 				<div id="basicExample" class="justified-gallery">
 					<a class="gallery" href="images/zugalu/huntersmoon/Agent_Deck.png">
 						<img alt="The Agent interface for the characters Deck." src="images/zugalu/huntersmoon/Agent_Deck.png"/>
@@ -168,7 +175,6 @@
 			</div>
     </section>
 
-
     <div class="footer darkpurple_bg">
     	<a id="contact"><a/>
 			<div class="sprite-container">
@@ -187,7 +193,7 @@
 $('#basicExample').justifiedGallery(
   {
   "rowHeight" : 132,
-  "margins" : 20,
+  "margins" : 5,
   "lastRow" : "nojustify",
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
