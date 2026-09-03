@@ -470,14 +470,15 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 
 /* Experience Items Base */
-.huntersmoon,.temperedhue,.thrive,.stemuli,.dualuniverse,.soulreaper,.duo {background-size:cover;background-position:0 30%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);transition:1s;}
+.vaultofages,.huntersmoon,.temperedhue,.thrive,.stemuli,.dualuniverse,.soulreaper,.duo {background-size:cover;background-position:0 30%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);transition:1s;}
 
 /* disable greyscale on hover*/
-.huntersmoon:hover,.temperedhue:hover,.thrive:hover,.stemuli:hover,.dualuniverse:hover,.soulreaper:hover,.duo:hover {filter: grayscale(0%);}
+.vaultofages:hover,.huntersmoon:hover,.temperedhue:hover,.thrive:hover,.stemuli:hover,.dualuniverse:hover,.soulreaper:hover,.duo:hover {filter: grayscale(0%);}
 /* Apply dimensions and grayscale before */
-.temperedhue:before,.huntersmoon:before,.thrive:before,.stemuli:before,.dualuniverse:before,.soulreaper:before,.duo:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;}
+.vaultofages:before,.temperedhue:before,.huntersmoon:before,.thrive:before,.stemuli:before,.dualuniverse:before,.soulreaper:before,.duo:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;}
 
 /* Applied images and positions*/
+.vaultofages:before {background: #000 url('../images/zugalu/vaultofages/vaultofages.png') no-repeat; background-size:cover;background-position:0 55%;}
 .temperedhue:before {background: #000 url('../images/zugalu/temperedhue/combat.gif') no-repeat;background-size:cover;background-position:0 30%;}
 .huntersmoon:before {background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; background-size:cover;background-position:0 55%;}
 .thrive:before {background: #000 url('../images/zugalu/Firebar.png') no-repeat; background-size:cover;background-position:0 55%;}
