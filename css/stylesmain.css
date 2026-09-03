@@ -441,7 +441,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 .heroimage {background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .heroimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
-.dndimage {background: #000 url('../images/daggerheart/vaultofages.png') no-repeat; background-size:cover;background-position:0 0%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
+.dndimage {background: #000 url('../images/daggerheart/vaultofages.png') no-repeat; background-size:cover;background-position:0 42%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .dndimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 
 .stemuliimage {background: #000 url('../images/stemuli/common/5.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
@@ -488,7 +488,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .soulreaper:before {background: #000 url('../images/soulreaper/sr5.jpg') no-repeat; background-size:cover;background-position:0 55%;}
 .duo:before {background: #000 url('../images/duo/duo_level3_a.png') no-repeat; background-size:cover;background-position:0 55%;}
 
-.temperedhue:hover:before,.huntersmoon:hover:before,.thrive:hover:before,.stemuli:hover:before,.dualuniverse:hover:before,.soulreaper:hover:before,.duo:hover:before { filter: grayscale(0%);transition:1s; }
+.vaultofages:hover:before,.temperedhue:hover:before,.huntersmoon:hover:before,.thrive:hover:before,.stemuli:hover:before,.dualuniverse:hover:before,.soulreaper:hover:before,.duo:hover:before { filter: grayscale(0%);transition:1s; }
 
 
 .videoplayer {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;border-radius:36px;}
