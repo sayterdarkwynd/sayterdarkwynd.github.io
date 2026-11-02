@@ -88,37 +88,59 @@
 	  		<a href="#work" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Work Samples</span></a>			
 			</div>			
   	</section>   
-
   	<section class="about">   					   	
 			<h2 class="spacer_m semibold dullpurple">Design for Hunter's Moon</h2>   
-			<p>A deckbuilder with a focus on rich narrative and story elements over fail-and-repeat gameplay, Hunter's Moon provides something different in the genre. The Art Director had a very particular art style that needed to be emulated across the entire UI to provide a cohesive theme and mood, and the result is a steampunk adventure with a unique approach to the genre.</p>
-			<p>There were significant constraints on this project from the start: We only had 6 months to get this done, we were using an existing codebase we had purchased the rights to, and we did not have the time or manpower to make significant alterations to the UX/UI flow. This meant sacrifices were necessary to meet deadlines and milestone goals.</p>
-			<p>We would keep the visual design largely minimal and use few colors, matching the art style and theming of the amazing assets being designed by the art team - and take a risky gamble in replacing the core UI code with a custom system designed in-house by Zugalu to allow us to do what we wanted with interaction animations and narrative.</p>
-
-			<h2 class="spacer_m semibold dullpurple">Card Redesign</h2>
-			<p>Unhappy with the state of the default Menace from the Deep cards (they felt cramped and flat and did not use nearly enough screen space!) I intended to make significant changes to this element of gameplay - they were arguably the most important element and were absolutely essential to get right.</p>
-			<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/comparison.png" class="exampleimage"/>
-			<p class="subheader greytext">(left) Original Menace from the Deep card. (center) The first iteration for Hunters Moon cards. (right) The final card iteration.</p>
-			<p class="semibold greytext">The following changes and decisions were made in regards to card design:</p>
-			<p>
-				&#8226; Significantly increased card size to provide more padding for content and additional space for text.<br/>
-				&#8226; Remove the pointless 'type' text pillbox in place of an easily read icon in the top right.<br/>
-				&#8226; Increased font size from 18-20px to 24-36px to improve readability for accessibility and smaller resolutions.<br/>
-				&#8226; Reduce cognitive load by showing fewer text colors.<br/>
-				&#8226; Match a victorian-steampunk feel, with comic influence.<br/>
-				&#8226; Provide additional space for artwork to be displayed.
-			</p> 
-
-			<h2 class="spacer_m semibold dullpurple">The Battle Screen</h2>
-			<p>As the vast majority of the game takes place within the confines of this interface, it was essential to get everything on this screen just right. Menace From The Deep had hit most of the necessary milestones - but there were usability concerns and odd stylistic choices that had to be rectified to suit our new design.</p>
-			<p>Users expect a certain experience in a deckbuilder interface, and we did not want to alienate anyone. We focused on trimming any excess visual fat - anything not necessary in combat was removed from view (relocated to tooltips, tutorials or menus) to allow players to focus their attention only on what is essential.</p>
-			<p>I settled on character stats, relics and tarot cards on the top left where the eye first rests, while any consumable or ability-type interactions were moved to the lower left where the players current Energy is displayed. All other card information occupies the bottom center and right frames. The top right of the screen was left for the settings menu, and any relevant resource displays that may have been required.</p>
-			<img alt="The reworked battle screen interface." src="images/zugalu/huntersmoon/BattleScreen.png" class="exampleimage"/>
-			<a name="work" id="projects"></a>
-			<p class="subheader greytext">The revamped battlescreen, with all actionable items in the lower left, character data and relics in the top left, card decks and turn info in the bottom right, and options and income/resources on the top right.</p>	
+			<p>There were significant constraints on this project from the start: We had 6 months to get this done, but were using an existing codebase and art (Menace From the Deep), and we did not have the time or manpower to make significant alterations to the UX flow.</p>
+			<p>I designed comic-themed UI art to match the characters and environments, created new icons and decorative elements, and drew item art for relics, consumables and other collectibles.</p>
+			<p>In terms of the UX/UI layout and design, I completely redesigned the cards, refined the battle screen, reworked the 'Travel' screen, redesigned the Hub area, but otherwise focused on improvements and refinements to the existing design.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Card Redesign</span></h2></button> 
+			<div class="panel">
+				<p>As the most important element of the game, nailing this design was essential. This was a heavily iterative process. The original draft in Menace from the Deep is small, cramped, and difficult to read in smaller resolutions, and the information is presented in a way that feels counter-intuitive to the player. I made the following changes in regards to card design:</p>
+				<p>
+					&#8226; Increased card size to provide more padding for content and additional space for text, matching the approximate size used in other popular games in this genre.<br/>
+					&#8226; Removed the pointless 'type' text pillbox in place of an easily read icon in the top right.<br/>
+					&#8226; Increased font size from 18-20px to 24-36px to improve readability for accessibility and smaller resolutions.<br/>
+					&#8226; Reduced cognitive load by showing fewer text colors.<br/>
+					&#8226; Matched a victorian-steampunk feel, with comic influence.<br/>
+					&#8226; Improved visuals by providing additional space for artwork.
+				</p> 				
+				<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/comparison.png"/>
+				<p class="subheader greytext">(left) Original Menace from the Deep card. (center) The first iteration for Hunters Moon cards. (right) The final card iteration.</p>
+				<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/CardDesigns.png"/>
+				<p class="subheader greytext">Final cards for each tier, and Cursed cards.</p>
+			</div>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>The Battle Screen</span></h2></button>
+			<div class="panel">
+				<p>There were usability concerns and stylistic choices in Menace from the Deep that had to be rectified to suit Hunter's Moon. I focused on trimming any excess visuals - anything unnecessary was removed from view and instead placed in tooltips, tutorials or menus.</p>
+				<p>I placed character stats, items and modifiers on the top left, and consumables and abilities requiring a keypress on the lower left near the Energy display. Cards occupy the bottom center, fanning out across the display, and the Discard, Draw and Exhaust piles were set around the Turn button. The top right of the screen held any acquired resource totals, and the settings menu button.</p>
+				<img alt="The reworked battle screen interface." src="images/zugalu/huntersmoon/BattleScreen.png" class="exampleimage"/>
+				<a name="work" id="projects"></a>
+				<p class="subheader greytext">The revamped battlescreen.</p>	
+			</div>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>The Hub</span></h2></button>
+			<div class="panel">
+				<p>Players spend a lot of time in the hub screen, so I wanted to be certain it was intuitive to use, and easily understood. I placed buttons for each respective section over the relevant position on the HUD, and unified these screens in terms of design space.</p>
+				<img alt="The Hub screen." src="images/zugalu/huntersmoon/HUB_Base.png" class="exampleimage"/>
+				<p class="subheader greytext">The revamped Hub area.</p>	
+				<img alt="The Card screen." src="images/zugalu/huntersmoon/Agent_Deck.png" class="exampleimage"/>
+				<p class="subheader greytext">The Dossiers 'Deck' screen.</p>	
+				<img alt="The Talent screen." src="images/zugalu/huntersmoon/Agent_Talents.png" class="exampleimage"/>
+				<p class="subheader greytext">The Dossiers 'Talent' screen.</p>	
+				<img alt="The Select Agent screen." src="images/zugalu/huntersmoon/HUB_AgentSelect.png" class="exampleimage"/>
+				<p class="subheader greytext">The Start Mission 'Select Agent' screen.</p>	
+				<img alt="The Select Mission screen." src="images/zugalu/huntersmoon/HUB_MissionSelect.png" class="exampleimage"/>
+				<p class="subheader greytext">The Start Mission 'Select Mission' screen.</p>	
+			</div>	
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Icons & Item Art</span></h2></button> 
+			<div class="panel">
+				<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/HuntersMoon_Icons.png"/>
+				<p class="subheader greytext">Icon designs</p>
+				<img alt="The original card, and my iterations on the design." src="images/zugalu/huntersmoon/relics.png"/>
+				<p class="subheader greytext">Item art</p>			
+			</div>					
 	  </section>  
-    	
     <section class="work darkpurple_bg">
+    	<a name="work" id="projects"></a>
     	<h1 class="white centertext semibold">Work Samples</h1>
   		<div class="list-content" style="padding:0;">
 				<div id="basicExample" class="justified-gallery">
@@ -193,7 +215,7 @@
 $('#basicExample').justifiedGallery(
   {
   "rowHeight" : 132,
-  "margins" : 5,
+  "margins" : 20,
   "lastRow" : "nojustify",
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
@@ -216,6 +238,23 @@ $('#basicExample').justifiedGallery(
    fadeDuration: 1000,
    fadeDelay: 0.50
 });
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 </script>
 </body>
 </html>

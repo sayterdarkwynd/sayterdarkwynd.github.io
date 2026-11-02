@@ -105,106 +105,114 @@
 		<section class="about">
 			<h2 class="spacer_m semibold dullpurple">Design for Thrive</h2>   
 			<p>As Lead Game Designer on this ambitious city-builder, I drew on my expertise in UX/UI Design to create the visual language for the games interface as desired by the Game Director and other stakeholders, designed the FTUE experience for new players, and conceptualized and implemented all interface art. I was also responsible for the designing and documentation of game mechanics, features, systems and pitches.</p>
-			<h2 class="spacer_m semibold dullpurple">UI</h2>   
-		  <p>The sheer amount of information required to present to players in a city-builder can threaten cognitive overload right out of the gate - therefore UI that facilitated the information in a manageable way was critical for the Thrive interface. There were some narrow design constraints that limited what was possible to produce in time for release, which forced some creative thinking on what ould realistically be accomplished. In the end, I avoided fancy animation, decorative panel art and backgrounds to only focus on readability and presentation.</p>	
-		  <p>Ultrawide displays are favored by over 40% of our target audience - a high enough value to ensure each in-game screen conformed to both standard and ultrawide resolutions without losing fidelity.</p>	
-		  <p>To improve readability, icons and color-coded text were applied to keywords.</p>
 
-		  <h2 class="spacer_m semibold dullpurple">The Four Panel HUD</h2>   
-			<div class="docs">			
-				<img class="exampleimage" alt="'Thrive : Heavy Lies the Crown' - City Builder/RTS (Zugalu Entertainment)" src="images/zugalu/interface.png" style="max-width:50%;"/>	 				  
-				<img class="exampleimage" alt="'Thrive : Heavy Lies the Crown' - City Builder/RTS (Zugalu Entertainment)" src="images/zugalu/interface2.png" style="max-width:50%;"/>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>UX/UI</span></h2></button>
+			<div class="panel">	
+			  <p>The sheer amount of information required to present to players in a city-builder can threaten cognitive overload right out of the gate - therefore UI that facilitated the information in a manageable way was critical for the Thrive interface. There were some narrow design constraints that limited what was possible to produce in time for release, which forced some creative thinking on what ould realistically be accomplished. In the end, I avoided fancy animation, decorative panel art and backgrounds to only focus on readability and presentation.</p>	
+			  <p>Ultrawide displays are favored by over 40% of our target audience - a high enough value to ensure each in-game screen conformed to both standard and ultrawide resolutions without losing fidelity.</p>	
+			  <p>To improve readability, icons and color-coded text were applied to keywords.</p>	
+		  	<h2 class="spacer_m semibold dullpurple">Four Panel HUD</h2>   
+				<div class="docs">			
+					<img class="exampleimage" alt="'Thrive : Heavy Lies the Crown' - City Builder/RTS (Zugalu Entertainment)" src="images/zugalu/interface.png" style="max-width:50%;"/>	 				  
+					<img class="exampleimage" alt="'Thrive : Heavy Lies the Crown' - City Builder/RTS (Zugalu Entertainment)" src="images/zugalu/interface2.png" style="max-width:50%;"/>
+				</div>
+				<p class="subheader greytext">(top) The in-game hud, and (bottom) a breakdown of the panel setup .</p>
+				<p>The interface had to convey a lot of data at any given time. The client wanted to divide the display into four 'panels' to break up this information. We agreed on the following:</p>   		
+				<ul class="experience" style="margin:0 0 2rem 0;">
+					<li>&#8226; <span class="bold purple">Stats Panel</span> : Non-structural data is handled on this side of the interface. This includes Trade, Edicts, Diplomacy, Research, Jobs, Stats and Events panels.</li>							
+					<li>&#8226; <span class="bold purple">HUD</span> : Conveys real-time numerical feedback on resource totals, happiness, wealth, time, date, and any other relevant information with immediate access needs. It also covers the 'Waelgrim' bar, and the tray buttons for the Stats Panel and Info Panel.</li>
+					<li>&#8226; <span class="bold purple">Info Panel</span> : Shows information on structures the player interacts with. Holds relevant information needed on production, resources, population and other key metrics.</li>
+					<li>&#8226; <span class="bold purple">Build Bar</span> : All elements related to placing or removing structures. Military unit information is displayed when interacting with combat units similar to RTS genre.</li>
+					<li>&#8226; <span class="bold purple">Tooltips</span> : The unsung hero. These handled virtually all other information that did not need to be static. This allowed far less visible information at any given time, and with contextually relevant data.</li>			
+				</ul>	
+
+				<div class="docs">			
+					<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/tooltip1.png"/>
+					<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/tooltip3.png"/>
+				</div>
+				<p class="subheader greytext">Examples of tooltips provided in-game.</p>	
+				<img class="exampleimage" alt="An example of a fire alert." src="images/zugalu/firealert.png"/>
+				<p class="subheader greytext">Fires, Construction, Deconstruction and Health all display above their respective structures when relevant.</p>
+				<img class="exampleimage" alt="Unit HP bars." src="images/zugalu/unithp.png"/>
+				<p class="subheader greytext">Units for healthbars are minimal in the gameplay space so players can focus on combat.</p>		
+				<img class="exampleimage" alt="Unit HP bars." src="images/zugalu/buildbar.png"/>
+				<p class="subheader greytext">The Build Bar, where players select which structure to build. Shown here displaying various Hover States.</p>	
 			</div>
-			<p class="subheader greytext">(top) The in-game hud, and (bottom) a breakdown of the panel setup .</p>
-			<p>The interface had to convey a lot of data at any given time. The client wanted to divide the display into four 'panels' to break up this information. We agreed on the following:</p>   		
-			<ul class="experience" style="margin:0 0 2rem 0;">
-				<li>&#8226; <span class="bold purple">Stats Panel</span> : Non-structural data is handled on this side of the interface. This includes Trade, Edicts, Diplomacy, Research, Jobs, Stats and Events panels.</li>							
-				<li>&#8226; <span class="bold purple">HUD</span> : Conveys real-time numerical feedback on resource totals, happiness, wealth, time, date, and any other relevant information with immediate access needs. It also covers the 'Waelgrim' bar, and the tray buttons for the Stats Panel and Info Panel.</li>
-				<li>&#8226; <span class="bold purple">Info Panel</span> : Shows information on structures the player interacts with. Holds relevant information needed on production, resources, population and other key metrics.</li>
-				<li>&#8226; <span class="bold purple">Build Bar</span> : All elements related to placing or removing structures. Military unit information is displayed when interacting with combat units similar to RTS genre.</li>
-			</ul>		
 
-			<h2 class="spacer_m semibold dullpurple">Tooltips</h2>   
-			<p>I opted to utilize tooltips as the primary means to display critical data to the player: as UI elements they are small, easily adjusted, and can be universally applied dynamically based on the intended content.</p>	
-			<div class="docs">			
-				<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/tooltip1.png"/>
-				<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/tooltip3.png"/>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Icons</span></h2></button>
+			<div class="panel">	 
+				<p>Thrive needed well more than 100 icons to meet our needs. I opted for full-color rather than monochromatic to provide more visual variety (especially in terms of harvested resources.) I digitally painted each and got them into sprite atlases.</p>
+				<img alt="Resource icon examples." src="images/zugalu/icons1a.png"/>
+				<p class="subheader greytext">Examples of some Resource icons.</p>
 			</div>
-			<p class="subheader greytext">Examples of tooltips provided in-game.</p>
 
-	    <h2 class="spacer_m semibold dullpurple">Icon Design</h2>   
-			<p>Thrive needed a huge array of icons to convey information to players. We had too few artists to manage this, so I took on the task. Initially, icons were monocolored, but as the project evolved we elected to add more flavor and style to these assets. I hand-painted each one digitally, and then relocated them to a sprite atlas to save on memory, sized at 128x128 pixels to allow both large and small display without losing detail, should the need arise.</p>
-			<img class="exampleimage" alt="Resource icon examples." src="images/zugalu/icons1a.png"/>
-			<p class="subheader greytext">Examples of some Resource icons.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>FTUE</span></h2></button>
+			<div class="panel">	 
+				<p>I chose to guide the player through their first hour or two of gameplay by directly teaching each core mechanic via text popups triggered by specific gameplay actions or progression milestones so they feel organic. Any structures required to complete a step trigger a tooltip when hovered over.</p>
+				<p>To help trim the fat in the tutorial and reduce reading to only the bare minimum required, I designed a 'Help' system that functioned similarly to an encyclopedia in the Civilization games: At any moment the player can open the panels and get information on the currently selected structure, unit or interface.</p>
 
-			<h2 class="spacer_m semibold dullpurple">Alerts</h2> 
-			<p>Status effects need to display in a way that players can make sense of them at a glance. I opted for a minimalist style: hovering billboard displays. The 'healthbars' tick down in realtime, with subtle animations. Above them, the icon for the implied status appears.</p>	
+				<img alt="An FTUE text panel." src="images/zugalu/ftue.png"/>
+				<p class="subheader greytext">An FTUE panel, complete with hoverable building images with tooltips, and inline RichText icons.</p>
+				<div class="docs">			
+					<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/helppanelsample.png"/>
+					<img class="exampleimage" alt="An example of a tooltip." src="images/zugalu/tuto2.png"/>
+				</div>								
+				<p class="subheader greytext">(left) The 'Help' panel pullout. It contains textual information on all gameplay topics, with collapsible sections for easy reading. (right) Onscreen objective display for Tutorials.</p>								
+			</div>
 
-			<img class="exampleimage" alt="An example of a fire alert." src="images/zugalu/firealert.png"/>
-			<p class="subheader greytext">Fires, Construction, Deconstruction and Health all display above their respective structures when relevant.</p>
-			<img class="exampleimage" alt="Unit HP bars." src="images/zugalu/unithp.png"/>
-			<p class="subheader greytext">Units for healthbars are minimal in the gameplay space so players can focus on combat.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Choice</span></h2></button>
+			<div class="panel">	 
+    		<p>Choice was a key pillar of Thrive; Every 2 to 3 days of gametime, narrative choices are presented by government advisors. The selections a player makes from these conversations affects the narrative of the game and drives progression. By mid-game these options lead the player down Tyrannical or Benevolent paths with different playstyles and unit or structure options.</p>
+				<img lt="The Narrative Event icon." src="images/zugalu/hudindicator.png"/>
+				<p class="subheader greytext">When an event is ready, a player is prompted with an onscreen alert within the HUD.</p>
 
-			<h2 class="spacer_m semibold dullpurple">FTUE</h2> 
-			<p>I chose to guide the player through their first hour or two of gameplay by directly teaching each core mechanic via text popups triggered by specific gameplay actions or progression milestones so they feel organic. Any structures required to complete a step trigger a tooltip when hovered over.</p>
+    		<p>Early on, a design choice was made to not show players the result of these options; We wanted to drive replayability by not gamifying these selections. This avoids the psychological tendency to make choices solely for their statistical output.</p>
+				<img alt="An event text panel." src="images/zugalu/event1.png" style="width:100%;"/>
+				<p class="subheader greytext">Advisors speak with players every 2 to 3 game days.</p>	
 
-			<img class="exampleimage" alt="An FTUE text panel." src="images/zugalu/ftue.png"/>
-			<p class="subheader greytext">An FTUE panel, complete with hoverable building images with tooltips, and inline RichText icons.</p>	
+				<img alt="An FTUE text panel." src="images/zugalu/choice.png"/>
+				<p class="subheader greytext">Choices are all weighted, giving points for Benevolent or Tyrannical leadership that ultimately lead to a particular style of rule (and the units available to that ethos.) The player is never informed of the points they gain to prevent gamification of choices.</p>	
+				<img alt="An example of a tooltip." alt="A players reward for their choice." src="images/zugalu/reward.png"/>
+				<p class="subheader greytext">Every choice has some form of meaningful outcome. This can vary from resources, to citizens, to unlocked technology.</p>
+			</div>
 
-			<p>To help trim the fat in the tutorial and reduce reading to only the bare minimum required, I designed a 'Help' system that functioned similarly to an encyclopedia in the Civilization games: At any moment the player can open the panels and get information on the currently selected structure, unit or interface.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Tome of Knowledge</span></h2></button>
+			<div class="panel">	 
+				<p>In addition to Narrative choices, players can significantly change how the game operates via the Tome of Knowledge (the research system in Thrive.) The choices a player makes provide immediate adjustments to specific structures, classes of citizen, military units or trade actions. These choices can be made only once specific prerequisites are met, and are permanently applied to their kingdom.</p>
+				<p>In addition, players unlock 'Masteries' throughout the game which can provide significant game-changing specializations to their empire. They can select only 3 of these, though they are able to change them when they elect to do so.</p>
+				<img alt="The Tome of Knowledge." src="images/zugalu/research.png"/>
+				<p class="subheader greytext">Every choice has some form of meaningful outcome. This can vary from resources, to citizens, to unlocked technology.</p>	
+				<img alt="The Tome of Knowledge options." src="images/zugalu/res2.png"/>
+				<p class="subheader greytext">The two different options available from the Food Stores item on the Tome of Knowledge.</p>	
+			</div>
 
-			<img class="exampleimage" alt="A help panel." src="images/zugalu/helppanelsample.png" style="max-width:25%;"/> 				
-			<p class="subheader greytext">The 'Help' panel pullout. It contains textual information on all gameplay topics, with collapsible sections for easy reading.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>World Map</span></h2></button>
+			<div class="panel">	
+				<p>Rather than a 3d map, I chose a hand-drawn look to provide a more illustrative approach. To access it, the player merely uses the mouse-wheel to zoom in and out. When they reach a certain zoom threshold, the map will load in rather than the gameplay area. This choice was made for two reasons: it was fluid and intuitive, and it solved our problem with rendering too many entities at maximum zoom levels.</p>
+				<img alt="The in-game map, rendered in real-time." src="images/zugalu/map2.png"/>
+				<p class="subheader greytext">The map displays real-time unit positions, military fortifications, provinces, trade units and other details.</p>				
+			</div>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Resource Production</span></h2></button>
+			<div class="panel">	
+				<p>Another key feature required in the UI was real-time tracking of production, allowing users to keep an eye on metrics important to their kingdoms. Real-time graphing, production tracking, and a wealth of options in how that data is displayed were necessary to bring this feature from concept to completion. Iteration was essential to completing this interface.</p>
+				<img alt="The in-game map, rendered in real-time." src="images/zugalu/stats.png"/>
+				<p class="subheader greytext">The Statistics panel provides all the real-time tracking a player could need.</p>
+				<img alt="Cash management." src="images/zugalu/Stats2.png"/>
+				<p class="subheader greytext">Wealth can be tracked down to the last detail, complete with collapsible menus and real-time updates.</p>				
+			</div>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>Multiplayer</span></h2></button>
+			<div class="panel">	
+				<a href="https://docs.google.com/spreadsheets/d/1N1_uKSC3DlLdPHQOU3Wj7cuTdwaRFvGtbP28JcXO2LA/edit?usp=sharing" target="_new">Thrive Combat, Influence, Edicts and Masteries spreadsheet.</a>
+				<p>Thrive attempted to break new ground: typically, city-builders do not have multiplayer combat. We sought an 'Age of Empires' feel to combat. I arranged this through careful balance of unit stats, resource costs, required changes to animations, sound effect requirements, progression unlocks and a wealth of adjustments and feature additions to UX/UI.</p>
+				<p>I also designed a basic form of 'rock, paper, scissors' with our unit balance - certain types of troop were exceptionally effective against others - to drive strategic force composition and discourage spamming nothing but cheap and easy to field units. Instead, players need to react with appropriate forces to counter opponents.</p> 
 
-			<img class="exampleimage" alt="An onscreen objective display." src="images/zugalu/tuto2.png" style="max-width:25%;"/>
-			<p class="subheader greytext">Onscreen objective display for Tutorials.</p>
-
-    	<h2 class="spacer_m semibold dullpurple">Player Agency</h2> 
-    	<p>Choice was a key pillar of Thrive; Every 2 to 3 days of gametime, narrative choices are presented by government advisors. The selections a player makes from these conversations affects the narrative of the game and drives progression. By mid-game these options lead the player down Tyrannical or Benevolent paths with different playstyles and unit or structure options.</p>
-			<img class="exampleimage" alt="The Narrative Event icon." src="images/zugalu/hudindicator.png"/>
-			<p class="subheader greytext">When an event is ready, a player is prompted with an onscreen alert within the HUD.</p>
-
-    	<p>Early on, a design choice was made to not show players the result of these options; We wanted to drive replayability by not gamifying these selections. This avoids the psychological tendency to make choices solely for their statistical output.</p>
-			<img alt="An event text panel." src="images/zugalu/event1.png" style="width:100%;"/>
-			<p class="subheader greytext">Advisors speak with players every 2 to 3 game days.</p>	
-
-			<img class="exampleimage" alt="An FTUE text panel." src="images/zugalu/choice.png"/>
-			<p class="subheader greytext">Choices are all weighted, giving points for Benevolent or Tyrannical leadership that ultimately lead to a particular style of rule (and the units available to that ethos.) The player is never informed of the points they gain to prevent gamification of choices.</p>	
-
-			<img class="exampleimage" alt="An example of a tooltip." alt="A players reward for their choice." src="images/zugalu/reward.png"/>
-			<p class="subheader greytext">Every choice has some form of meaningful outcome. This can vary from resources, to citizens, to unlocked technology.</p>	
-
-		<h2 class="spacer_m semibold dullpurple">Tome of Knowledge</h2>
-		<p>In addition to Narrative choices, players can significantly change how the game operates via the Tome of Knowledge (the research system in Thrive.) The choices a player makes provide immediate adjustments to specific structures, classes of citizen, military units or trade actions. These choices can be made only once specific prerequisites are met, and are permanently applied to their kingdom.</p>
-		<p>In addition, players unlock 'Masteries' throughout the game which can provide significant game-changing specializations to their empire. They can select only 3 of these, though they are able to change them when they elect to do so.</p>
-		<img class="exampleimage" alt="The Tome of Knowledge." src="images/zugalu/research.png"/>
-		<p class="subheader greytext">Every choice has some form of meaningful outcome. This can vary from resources, to citizens, to unlocked technology.</p>	
-
-		<img class="exampleimage" alt="The Tome of Knowledge options." src="images/zugalu/res2.png"/>
-		<p class="subheader greytext">The two different options available from the Food Stores item on the Tome of Knowledge.</p>	
-
-		<h2 class="spacer_m semibold dullpurple">Map</h2> 
-		<p>Rather than a 3d map, I chose a hand-drawn look to emulate an old-timey feel. To access it, the player merely uses the mouse-wheel to zoom in and out. When they reach a certain zoom threshold, the map will load in rather than the gameplay area. This choice was made for two reasons: it was fluid and intuitive, and it solved our problem with rendering too many entities at maximum zoom levels.</p>
-		<img class="exampleimage" alt="The in-game map, rendered in real-time." src="images/zugalu/map2.png"/>
-		<p class="subheader greytext">The map displays real-time unit positions, military fortifications, provinces, trade units and other details.</p>
-
-		<h2 class="spacer_m semibold dullpurple">Production</h2> 
-		<p>Another key feature required in the UI was real-time tracking of production, allowing users to keep an eye on metrics important to their kingdoms. Real-time graphing, production tracking, and a wealth of options in how that data is displayed were necessary to bring this feature from concept to completion. Iteration was essential to completing this interface.</p>
-		<img class="exampleimage" alt="The in-game map, rendered in real-time." src="images/zugalu/stats.png"/>
-		<p class="subheader greytext">The Statistics panel provides all the real-time tracking a player could need.</p>
-		<img class="exampleimage" alt="Cash management." src="images/zugalu/stats2.png"/>
-		<p class="subheader greytext">Wealth can be tracked down to the last detail, complete with collapsible menus and real-time updates.</p>
-
-		<h2 class="spacer_m semibold dullpurple">Multiplayer Combat and Trade</h2> 
-		<a href="https://docs.google.com/spreadsheets/d/1N1_uKSC3DlLdPHQOU3Wj7cuTdwaRFvGtbP28JcXO2LA/edit?usp=sharing" target="_new">Thrive Combat, Influence, Edicts and Masteries spreadsheet.</a>
-		<p>Thrive attempted to break new ground: typically, city-builders do not have multiplayer combat. We sought an 'Age of Empires' feel to combat. I arranged this through careful balance of unit stats, resource costs, required changes to animations, sound effect requirements, progression unlocks and a wealth of adjustments and feature additions to UX/UI.</p>
-		<p>I also designed a basic form of 'rock, paper, scissors' with our unit balance - certain types of troop were exceptionally effective against others - to drive strategic force composition and discourage spamming nothing but cheap and easy to field units. Instead, players need to react with appropriate forces to counter opponents.</p> 
-
-		<p>Throughout the multiplayer implementation process there were many complications. We learned an important lesson as a result: <span style="font-style:oblique;font-weight:600;">Do not start multiplayer implementation past the halfway point in development. Scope properly, far in advance.</span> While in the end I was successful in meeting expectations for combat design, complications proved extremely expensive and necessitated cuts in other areas that impacted quality.</p>
-		<img class="exampleimage" alt="Multiplayer victory." src="images/zugalu/victoryscreen.png"/>
-		<p class="subheader greytext">The multiplayer Victory screen.</p>	 
+				<p>Throughout the multiplayer implementation process there were many complications. We learned an important lesson as a result: <span style="font-style:oblique;font-weight:600;">Do not start multiplayer implementation past the halfway point in development. Scope properly, far in advance.</span> While in the end I was successful in meeting expectations for combat design, complications proved extremely expensive and necessitated cuts in other areas that impacted quality.</p>
+				<img alt="Multiplayer victory." src="images/zugalu/victoryscreen.png"/>
+				<p class="subheader greytext">The multiplayer Victory screen.</p>	 						
+			</div>
 		<span id="work"></span> 
   </section>  
+
   <section class="about">
 		<h2 class="spacer_m semibold dullpurple">Documentation Samples</h2>
 		<div class="docs">
@@ -327,6 +335,23 @@ $('#basicExample').justifiedGallery(
    fadeDuration: 1000,
    fadeDelay: 0.50
 });
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 </script>
 </body>
 </html>

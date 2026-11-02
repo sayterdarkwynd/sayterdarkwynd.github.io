@@ -183,6 +183,30 @@ a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: col
   top:0;
 }
 
+.accordion {
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom:4px;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.accordion span { position: relative; transition: 0.5s; }
+.accordion span:after { content: '\00bb'; position: absolute; opacity: 0; right: -20px; transition: 0.5s; }
+.accordion:hover span { padding-right: 25px; }
+.accordion:hover span:after { opacity: 1; right: 0; }
+
+.panel {
+  padding: 1rem 0;
+  display: none;
+  overflow: hidden;
+}
+
 ul.list {display:-webkit-flexbox;display:-ms-flexbox;display:flex;-webkit-flex:4;flex:4;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;justify-content:space-between;padding:0;}
 ul.list li#work{ border:0;}
 
@@ -256,7 +280,7 @@ ul.list li#work{ border:0;}
 .about {display:flex;padding:2rem 8rem;justify-content:center;flex-direction:column;}
 .button-group {display: flex;flex-direction: row;gap: 1rem;justify-content: center;}
 
-.docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;}
+.docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;font-size:14px;}
 .docs a {display:inline-block;flex:1;text-align:center;width:auto;max-width:300px;margin-bottom:16px;margin-right:8px;align-self:center;}
 .docs img {display:inline-block;max-width:50%;height:auto;justify-content:center;align-self:center;transition:1s;}
 
@@ -594,8 +618,8 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .new_navigation .namespace {padding-bottom:0px;} 
   .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
-  .linkspace .heading {font-size: clamp(0.2rem, 1vw + 1rem, 18px);}
-  .namespace .heading {font-size: clamp(1rem, 1vw + 1rem, 18px);}
+  .linkspace .heading {font-size: clamp(0.2rem, 0.7vw + 0.7rem, 18px);}
+  .namespace .heading {font-size: clamp(0.5rem, 0.7vw + 0.7rem, 18px);}
 }
 
 @media screen and (max-width: 480px) {

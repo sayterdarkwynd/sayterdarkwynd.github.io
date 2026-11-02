@@ -23,9 +23,9 @@
 		<div id="menu" class="new_navigation animate darkpurple_bg">
 			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game / Level Designer</span></a></div>
 			<div class="linkspace">			
-				<a href="#projects" class="whitetext semibold heading">Projects</a>
-				<a href="#about" class="whitetext semibold heading">About</a>
-				<a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold heading">Resume</a>	
+				<a href="#projects" class="whitetext semibold ">Projects</a>
+				<a href="#about" class="whitetext semibold ">About</a>
+				<a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold ">Resume</a>	
 				<a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
 				<a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a>	
 			</div>		
@@ -185,6 +185,24 @@ $("#basicExample").justifiedGallery(
     }
   }
 );
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 </script>
 </body>
 </html>

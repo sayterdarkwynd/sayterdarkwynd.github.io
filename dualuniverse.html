@@ -40,14 +40,14 @@
 				<div class="heroleft">
 	    		<h1 class="white semibold xxlarge spacer_m textshadow_dark">Dual Universe</h1>
 	    		<h2 class="green semibold xlarge spacer_l textshadow_dark">2021</h2>
-	    		<p class="white med2 base spacer_l textshadow_dark justifytext">The latest project from <b>Zugalu</b>.</p>
-	    		<p class="white med2 base spacer_l textshadow_dark justifytext">I worked as the <b>UX/UI Designer</b> on this project to rework the entire interface. My duties included:</p>
+	    		<p class="white med2 base spacer_l textshadow_dark justifytext">Novaquark</p>
+	    		<p class="white med2 base spacer_l textshadow_dark justifytext">I worked as the <b>Level Designer</b> on this project. My duties included:</p>
 	    		<ul class="experience spacer_s textshadow_dark">	
-				  	<li class="white small">&#8226; Design and implement the game UX/UI.</li>
-				  	<li class="white small">&#8226; Worked collaboratively with the Creative Director, art and design teams to meet milestone requirements.</li>						  	
-				  	<li class="white small">&#8226;	Determined UX/UI flows, interaction feedback, audio and visual effect requirements to provide rich player experiences. 	  	
-				    <li class="white small">&#8226; Produced digital art for icons, consumables and relic art for over 100+ items.</li>
-				    <li class="white small">&#8226; C# programming where required.</li>   
+				  	<li class="white small">&#8226; Blockouts and implementation of levels, player hubs, ships and instanced areas.</li>
+				  	<li class="white small">&#8226; Design and implement the FTUE (First Time User Experience) for core game features and mechanics.</li>						  	
+				  	<li class="white small">&#8226;	Level and Game Design documentation. 	  	
+				    <li class="white small">&#8226; HTML and CSS scripting for in-game interfaces, maps, signs, and player-facing elements.</li>
+				    <li class="white small">&#8226; Collaboration with team members to construct enormous megastructures.</li>   
 					</ul>			  
 					<div class="pillbox">		
       			<span class="textpill tiny gamedesign">Level Design</span>
@@ -99,18 +99,57 @@
 			</div>	
 		</section>
 		<section class="about">	  	  
-				<h2 class="spacer_m semibold dullpurple">Design for Dual Universe</h2>   
-		  	<p>Dual Universe, a product of <a class="uncommonorangetext" href="https://www.linkedin.com/company/novaquark/mycompany/">Novaquark</a>, is a spacefaring MMO centered on social systems, market simulation, building, and complex physics. These aspects all combine to produce a truly unique experience that blends the creativity of Minecraft with the depth of Eve Online.</p>
-		  	<p>Level Design on this project was largely centered around the First-Time user experience, with a focus on tutorials and gameplay guidance. Careful planning, thorough documentation and rapid prototyping were all necessary to ensure the highest quality of added content. Puzzles and events were a part of this as well.</p>
-			<img alt="An isometric mockup for one of the cavern components." src="images/dualuniverse/dual1.png" class="exampleimage"/>
-			<center><p class="subheader greytext">Samples from the level design documentation for the Labrynth.</p></center>
-			<img alt="An isometric mockup for one of the cavern components." src="images/dualuniverse/dual2.png" class="exampleimage"/>
-			<center><p class="subheader greytext">Samples from the level design documentation for the Labrynth</p></center>			
-
+			<h2 class="spacer_m semibold dullpurple">Design for Dual Universe</h2>   
+		  <p>A spacefaring MMO with voxel-based crafting and deep physics, every design on this project was manually built, block by block through its voxel crafting system. My primary responsibilities were crafting the FTUE (First Time User Experience) tutorial areas, building player hubs and instances, and building spacecraft for use by players as templates within the in-game markets.</p>
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>FTUE - Basic Building</span></h2></button> 
+			<div class="panel">
+				<p>I was in charge of the design and scripting for the Mining, Building and Market tutorials - no small task, as these systems were all complicated. Of the three, the voxel building tutorials were the most complex - there were many tricks and techniques a player would need to learn to make the most of the system. I devised a 'clean-room' style approach that I would use for both the Basic and Advanced versions. Each room would teach a separate technique of the Build Tool, and challenge the player to use that knowledge before progressing. To reduce cognitive load, I split this into two separate tutorials (Basic and Advanced, respectively.)</p>	
+			  <img alt="Tutorial 1" src="images/dualuniverse/build/build_tuto2_room1.png"/>
+				<center><p class="subheader greytext">The Basic Building rooms taught the basics of choosing a block in the player inventory, and placing it in a space to form a specific voxel shape. Players advanced through these in sequence.</p></center>				
+			  <img alt="Tutorial 2" src="images/dualuniverse/build/build_tuto2_room2.png"/>
+				<center><p class="subheader greytext">The second room taught players how to cut or copy shapes from existing voxel builds, and paste them in other locations.</p></center>
+			  <img alt="Tutorial 3" src="images/dualuniverse/build/build_tuto2_room3.png"/>
+				<center><p class="subheader greytext">The first room to pull on what they learned in previous sections, I tasked players with using the copy/paste technique, paired with voxel placement, to create combinations of polygon shapes they copied from the corners. Once completed, the exit opened.</p></center>
+			  <img alt="Tutorial 4" src="images/dualuniverse/build/build_tuto2_room4.png"/>
+				<center><p class="subheader greytext">I iterated on this learning in the following room - players were presented with miscellaneous neon-green shapes, and had to mimic each one in sequence. The last would teach them how to deform voxels to create an angular effect simply through placement.</p></center>	
+			  <img alt="Tutorial 5" src="images/dualuniverse/build/build_tuto2_room5.png"/>
+				<center><p class="subheader greytext">The final room changed things up. Here, they were given a selection of placeable objects - a door and some windows. They were instructed on how to use them. Once placed in accordance with the tutorial requirements, the door opened.</p></center>			
+			  <img alt="Tutorial 6" src="images/dualuniverse/build/builld_tuto2_exterior.png"/>
+				<center><p class="subheader greytext">The player has access outside the building now, and had to locate the exit - this is where we instructed them on how to locate and follow waypoints.</p></center>		
+			</div>
+			
+			<button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>FTUE - Advanced Building</span></h2></button>
+			<div class="panel">
+				<p> In the Advanced tutorial, the player expanded on existing Build Tool knowledge, and learned how to create complex shapes, smooth voxels, add or remove volume, change selected tiles, and more.</p>
+			  <img alt="Tutorial 7" src="images/dualuniverse/advbuild/9.png"/>
+				<center><p class="subheader greytext">The Advanced Build Tutorial allowed players chose the order of completion, and tackle more advanced elements of voxelcraft.</p></center>	
+			  <img alt="Tutorial 9" src="images/dualuniverse/advbuild/2.png"/>
+				<center><p class="subheader greytext">The Smoothing Tool room taught the basics of the smoothe tool, and tasks the player with copying this cat shape, and then smoothing it out.</p></center>
+			  <img alt="Tutorial 8" src="images/dualuniverse/advbuild/1.png"/>
+				<center><p class="subheader greytext">In this room, players were taught how to target an area and apply a smoothing filter to the entire area rather than small, targetted segments.</p></center>			
+			  <img alt="Tutorial 9" src="images/dualuniverse/advbuild/7.png"/>
+				<center><p class="subheader greytext">I then tasked the player with learning the advanced aspects of the copy/paste tool.</p></center>
+				<img alt="Tutorial 9" src="images/dualuniverse/advbuild/5.png"/>
+				<center><p class="subheader greytext">Finally, by using voxels to connect colored zones of matching block colors, I taught players to create angular components, and complex polygons.</p></center>	
+			</div>											  
+		  <button class="accordion white_bg"><h2 class="spacer_m semibold dullpurple"><span>The Cube</span></h2></button>
+			<div class="panel">
+		  	<p>A unique challenge of working Dual Universe that truly engaged the entire level design team was a Megastructure we simply called <b>'the Cube'</b>. This kilometer-wide dungeon was a massive maze containing many complex puzzles using the games wiring. I began this herculean task by constructing the initial entrance section and exterior greebles for the enormous object.</p>
+			  <img alt="Enormous dungeon entrance" src="images/dualuniverse/labyrinth/cc2.png"/>
+				<center><p class="subheader greytext">The final entrance to scale, and thousands of greebled details.</p></center>	
+				<p>The first puzzle - hidden switches that had to be triggered in a sequence to open the forcefield doors into the primary entrance shaft, was within the lobby area. I also used CSS, HTML and digital art to create custom screen interfaces to convey data to the player.</p>
+				<img alt="Labyrinth Lobby" src="images/dualuniverse/labyrinth/thumbs/lobby.png"/>
+				<center><p class="subheader greytext">The priamry lobby with hidden switches and custom data screen.</p></center>	
+				<img alt="An isometric mockup for one of the cavern components." src="images/dualuniverse/dual1.png" class="exampleimage"/>
+				<center><p class="subheader greytext">Samples from the level design documentation for the Labrynth.</p></center>
+				<img alt="An isometric mockup for one of the cavern components." src="images/dualuniverse/dual2.png" class="exampleimage"/>
+				<center><p class="subheader greytext">Samples from the level design documentation for the Labrynth</p></center>					  	
+		  </div>
 	  </section> 
+
 		<section class="about" style="display:block;">
 			<h2 class="spacer_m semibold dullpurple">Documentation</h2> 
-			<div class="button-group">	 
+			<div class="docs">	 
 			  <a class="roundedbutton green_bg boxshadow_darksmall darkpurple bold" href="documents/LDD Labrynth.pdf" target="_new">LDD - Labrynth (Dual Universe)</a>
 			  <a class="roundedbutton green_bg boxshadow_darksmall darkpurple bold" href="documents/LDD Basic Market Tutorial.pdf" target="_new">LDD - Market Tutorial (Dual Universe)</a>    
 	 		  <a class="roundedbutton green_bg boxshadow_darksmall darkpurple bold" href="documents/LDD Basic Mining Tutorial.pdf" target="_new">LDD - Mining Tutorial (Dual Universe)</a>
@@ -300,6 +339,24 @@ $('#basicExample').justifiedGallery(
    fadeDuration: 1000,
    fadeDelay: 0.50
 });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 </script>
 </body>
 </html>
