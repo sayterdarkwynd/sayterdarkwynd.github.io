@@ -192,20 +192,18 @@ a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: col
   outline: none;
   transition: 0.4s;
   margin-bottom:4px;
+  background-color:#5E3E82;
+  color:#ecdefa;
 }
-.active, .accordion:hover {
-  background-color: #ccc;
-}
+.accordion:hover {background-color: #80D859;}
+.accordion:hover h2 {color:#5E3E82;}
+.active h2 {color:#ecdefa;}
 .accordion span { position: relative; transition: 0.5s; }
 .accordion span:after { content: '\00bb'; position: absolute; opacity: 0; right: -20px; transition: 0.5s; }
 .accordion:hover span { padding-right: 25px; }
 .accordion:hover span:after { opacity: 1; right: 0; }
 
-.panel {
-  padding: 1rem 0;
-  display: none;
-  overflow: hidden;
-}
+.panel {padding: 1rem 0;display: none;overflow: hidden;}
 
 ul.list {display:-webkit-flexbox;display:-ms-flexbox;display:flex;-webkit-flex:4;flex:4;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;justify-content:space-between;padding:0;}
 ul.list li#work{ border:0;}
