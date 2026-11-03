@@ -232,11 +232,10 @@ ul.list li#work{ border:0;}
 .list-itemmid h3, .list-itemmid2 h3 { font-size:1.4em;font-weight:400;padding:0 0 5em 0;font-family: 'Poppins',serif;}
 .list-itemmid p, .list-itemmid2 p { text-align:left;padding:0 1em 0 1em;}
 .last {margin-bottom:5em;}
-
 .footer { padding:2rem; width:100%;text-align:center;justify-content:center}
 
 /* navigation */
-#menu {position:fixed;width:100%;top:0;left:0; z-index:999;}
+#menu {position:fixed;width:100%;top:0;left:0; z-index:999; }
 .new_navigation { display:flex; justify-content:center; font-style:normal;padding:1rem 2rem;align-items:center;width:100%;}
 .new_navigation a {margin-right:8px;}
 .new_navigation .namespace {display:flex;justify-content:flex-start;align-items:center;width:100%;}
@@ -277,20 +276,12 @@ ul.list li#work{ border:0;}
 }
 
 /* Portfolio Site CSS */
-.about {
-  display:flex;
-  padding:4rem 4rem;
-  justify-content:center;
-  flex-direction:column;
-}
+.about {display:flex;padding:4rem 4rem;justify-content:center;flex-direction:column;}
 /*.about:nth-child(n + 2 of .about) {padding:2rem 4rem 4rem 4rem;}*/
-
 .button-group {display: flex;flex-direction: row;gap: 1rem;justify-content: center;}
-
 .docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;font-size:14px;}
 .docs a {display:inline-block;flex:1;text-align:center;width:auto;max-width:300px;margin-bottom:16px;margin-right:8px;align-self:center;}
 .docs img {display:inline-block;max-width:50%;height:auto;justify-content:center;align-self:center;transition:1s;}
-
 .flexbox {display:flex;width:100%;justify-content: space-between;flex-wrap:wrap;}
 .horizontal {flex-direction: row;}
 .vertical {flex-direction: column;}
@@ -324,16 +315,7 @@ ul.list li#work{ border:0;}
   mask-image: linear-gradient(to bottom, #3b2d4c, transparent 95%);
 }
 
-.game_box {
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:24px;
-  padding:3rem;
-  margin:0 0 1rem 0px;
-}
-
+.game_box {position:relative;display:flex;align-items:center;justify-content:center;border-radius:24px;padding:3rem;margin:0 0 1rem 0px;}
 .game_box .image_container {position:absolute;width:256px;height:256px;left:-128px;background: transparent url('../images/game_bg_circle_purple.png') no-repeat;}
 .mask {mask-image: url('../images/game_bg_circle_purple.png');mask-repeat:no-repeat;mask-position:center;mask-mode: alpha; mask-size:230px 230px;}
 .game_box img {width:100%;height:100%;}
@@ -377,26 +359,8 @@ ul.list li#work{ border:0;}
 .contact a {display:block;text-align:center;width:100%;padding:1rem 0;} 
 .descriptor ul {display:inline-block;max-width:1280px;}
 .descriptor ul li {text-align:left;line-height:1.6em;margin-bottom:0.5rem;}
-
-.headline {
-  display:inline-block;
-  background: rgb(21,21,21);
-  background: linear-gradient(90deg, rgba(36,39,49,1) 0%, rgba(96,99,109,1) 35%, rgba(136,139,149,1) 100%);
-  width :100%;
-  border-radius:8px;
-  padding:0.8rem;
-  color:#fff;
-  font-size:1.2rem;
-}
-
-.subheader {
-  display:block;
-  padding:0.5rem 0 1rem 0;
-  text-align:center;
-  justify-content:center;
-  font-style:oblique;
-}
-
+.headline {display:inline-block;background: rgb(21,21,21);background: linear-gradient(90deg, rgba(36,39,49,1) 0%, rgba(96,99,109,1) 35%, rgba(136,139,149,1) 100%);width :100%;border-radius:8px;padding:0.8rem;color:#fff;font-size:1.2rem;}
+.subheader {display:block;padding:0.5rem 0 1rem 0;text-align:center;justify-content:center;font-style:oblique;}
 ul.experience { margin:0rem 0 1rem 0; }
 ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
@@ -454,30 +418,24 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .sprite-container { display:flex;justify-content:center;align-items:center;width:100%; }
 .sprite-container a { margin-right:16px;}
 .footer .sprite-container {justify-content:center;}
-
 #linkedin {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
 #reachout {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px -48px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
-
 #linkedin:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #linkedin:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 #reachout:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #reachout:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
-
 #linkedin_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
 #reachout_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px -32px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
-
 #linkedin_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #linkedin_sm:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 #reachout_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #reachout_sm:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 
 /* project images*/
-
 .heroimage {background: #000 url('../images/zugalu/huntersmoon/BattleScreen.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .heroimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 .dndimage {background: #000 url('../images/daggerheart/vaultofages.png') no-repeat; background-size:cover;background-position:0 42%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .dndimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
-
 .stemuliimage {background: #000 url('../images/stemuli/common/5.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .stemuliimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 .dualuniverseimage {background: #000 url('../images/dualuniverse/gunbase/interior.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
@@ -494,15 +452,12 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .temperedhueimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 .ttdimage {background: #000 url('../images/tabletop/GreyDragonMines2a.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .ttdimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
-
 .artimage {background: #000 url('../images/thumbs/mapthumb.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .artimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 .designimage {background: #000 url('../images/thumbs/mapthumb.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .designimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
 .miscimage {background: #000 url('../images/leveldesigns/farmhand.png') no-repeat; background-size:cover;background-position:0 55%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 100%);}
 .miscimage:before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;filter: grayscale(100%);transition:1s;border-radius:24px;background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.7) 99%);}
-
-
 
 /* Experience Items Base */
 .vaultofages,.huntersmoon,.temperedhue,.thrive,.stemuli,.dualuniverse,.soulreaper,.duo {background-size:cover;background-position:0 30%;-webkit-mask-image: linear-gradient(to bottom,#3b2d4c, black);mask-image: linear-gradient(to bottom, #3b2d4c, black 95%);transition:1s;}
@@ -521,9 +476,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .dualuniverse:before {background: #000 url('../images/dualuniverse/shipyard/lobby.png') no-repeat; background-size:cover;background-position:0 55%;}
 .soulreaper:before {background: #000 url('../images/soulreaper/sr5.jpg') no-repeat; background-size:cover;background-position:0 55%;}
 .duo:before {background: #000 url('../images/duo/duo_level3_a.png') no-repeat; background-size:cover;background-position:0 55%;}
-
 .vaultofages:hover:before,.temperedhue:hover:before,.huntersmoon:hover:before,.thrive:hover:before,.stemuli:hover:before,.dualuniverse:hover:before,.soulreaper:hover:before,.duo:hover:before { filter: grayscale(0%);transition:1s; }
-
 
 .videoplayer {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;border-radius:36px;}
 .smallvideocontainer {display:flex;flex-direction:row;justify-content:space-between}
