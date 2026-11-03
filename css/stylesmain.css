@@ -277,7 +277,12 @@ ul.list li#work{ border:0;}
 }
 
 /* Portfolio Site CSS */
-.about {display:flex;padding:4rem 4rem;justify-content:center;flex-direction:column;}
+.about {
+  display:flex;
+  padding:4rem 4rem;
+  justify-content:center;
+  flex-direction:column;
+}
 /*.about:nth-child(n + 2 of .about) {padding:2rem 4rem 4rem 4rem;}*/
 
 .button-group {display: flex;flex-direction: row;gap: 1rem;justify-content: center;}
@@ -291,7 +296,7 @@ ul.list li#work{ border:0;}
 .vertical {flex-direction: column;}
 .flex-item {align-self:center;text-align:center;}
 .leftcontent {padding:4rem;}
-.rightcontent {padding:2rem 8rem;justify-content:center;}
+.rightcontent {padding:4rem;justify-content:center;}
 .rightcontentgame {display:flex;padding:2rem 2rem;justify-content:center;flex-direction:row;}
 .herocontent {display:flex;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
 .herocontentmain {display:flex;flex-direction:row;width:100%;padding:4rem;justify-content:space-between;align-items:flex-start;}
@@ -299,7 +304,7 @@ ul.list li#work{ border:0;}
 .heroright {flex:1;flex-basis:50%;align-self: flex-start;z-index:1}
 .herocontent .roundedbutton {display:none;}
 .heroimage .splash {z-index:1;}
-.fixwidth {max-width:640px;margin:0 auto;}
+.fixwidth {max-width:1080px;margin:0 auto;}
 .justifytext {text-align: justify;}
 .exampleimage {justify-content:center;align-items:center;text-align:center;margin:0 auto;min-width:320px;max-width:860px;}
 
@@ -322,12 +327,11 @@ ul.list li#work{ border:0;}
 .game_box {
   position:relative;
   display:flex;
-  flex: 0 0 100%;
   align-items:center;
   justify-content:center;
   border-radius:24px;
   padding:3rem;
-  margin:0 0 24px 0px;
+  margin:0 0 1rem 0px;
 }
 
 .game_box .image_container {position:absolute;width:256px;height:256px;left:-128px;background: transparent url('../images/game_bg_circle_purple.png') no-repeat;}
@@ -533,6 +537,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 
 /* media queries */
 @media screen and (min-width: 1480px) {
+  .fixwidth {max-width:1480px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item {  width: 33.33%; }
   .list-itemmid2 {  width: 100%; }
@@ -549,7 +554,8 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .gamespace {padding:2rem 2rem;} 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  .fixwidth {max-width:1200px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item { width: 50%; }
   .list-itemrace { width:50%; }
@@ -575,9 +581,34 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .herocontent .roundedbutton {display:inline-block;}
 }
 
-@media screen and (max-width: 992px) { }
+@media screen and (max-width: 992px) { 
+  .fixwidth {max-width:992px;margin:0 auto;}
+  .work h1{padding:2rem 0 2rem 0;font-size:32px} 
+  .clients img { padding: 2em;max-width: 200px !important;}
+  .list-item { width: 50%; }
+  .list-itemrace { width:50%; }
+  .list-itemmed { width: 75%; }    
+  .list-itembig { width: 100%;} 
+  .box img.greeting {max-width:30%}
+  .list-itemmid2 img { margin: 0 auto; width: 70px; padding: 2em 1em;}  
+  .list-item, .list-itembig, .list-itemmed, .list-itemrace {border-right:0;}
+  #menu .main_navigation ul {margin-top:0px;}
+  .game_box .image_container {position:absolute;width:128px;height:128px;left:-64px;background: transparent url('../images/game_bg_circle_purple_sm.png') no-repeat;}
+  .mask {mask-image: url('../images/game_bg_circle_purple_sm.png');mask-repeat:no-repeat;mask-position:center;mask-mode: alpha; mask-size:100px 100px;}
+  .rightcontent .game_box p {padding: 1rem 0rem;}
+  .new_navigation {justify-content:center;}
+  .indexpage {display:block;}
+  .horizontal {flex-direction:column;}
+  .rightcontent,.leftcontent{flex-basis:100%;padding:2rem;}  
+  .rightcontent h1.dullpurple {text-align:center;}
+  .topspace {padding-top:4rem;} 
+  .about {padding:2rem 2rem;}  
+  .herocontent {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}
+  .herocontentmain {padding:4rem 2rem;justify-content:space-between;align-items:flex-start} 
+}
 
 @media screen and (max-width: 768px) {
+  .fixwidth {max-width:768px;margin:0 auto;}
   .work h1{padding:2rem 0 2rem 0;font-size:32px} 
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item { width: 50%; }
@@ -608,6 +639,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 }
 
 @media screen and (max-width: 576px) {
+  .fixwidth {max-width:576px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 576px !important;}
   .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
@@ -620,14 +652,13 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}
-  .new_navigation .namespace {padding-bottom:0px;} 
   .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .linkspace .heading {font-size: clamp(0.2rem, 0.7vw + 0.7rem, 18px);}
-  .namespace .heading {font-size: clamp(0.5rem, 0.7vw + 0.7rem, 18px);}
 }
 
 @media screen and (max-width: 480px) {
+  .fixwidth {max-width:480px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 480px !important;}
   .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
@@ -640,11 +671,9 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .bordernonea {border-right:0px solid #bfbcb7;}
   .bordernone2a {border-right:0px solid #bfbcb7;}
   .bordernone3a {border-right:0px solid #bfbcb7;}
-  .new_navigation .namespace {padding-bottom:0px;} 
   .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .linkspace .heading {font-size: clamp(0.2rem, 1vw + 1rem, 18px);}
-  .namespace .heading {font-size: clamp(1rem, 1vw + 1rem, 18px);}
 }
 
 }
