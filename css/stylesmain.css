@@ -487,7 +487,6 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .closeBtn {float:right;color:#fff;font-size:2rem;}
 .closeBtn:hover,.closeBtn:focus { text-decoration: none;  cursor: pointer;}
 
-
 /* media queries */
 @media screen and (min-width: 1480px) {
   .fixwidth {max-width:1480px;margin:0 auto;}
@@ -508,7 +507,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 }
 
 @media screen and (max-width: 1280px) {
-  .fixwidth {max-width:1200px;margin:0 auto;}
+  .fixwidth {max-width:1280px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 200px !important;}
   .list-item { width: 50%; }
   .list-itemrace { width:50%; }
@@ -608,10 +607,14 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
   .herocontent {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .herocontentmain {padding:6rem 2rem;justify-content:space-between;align-items:flex-start}
   .linkspace .heading {font-size: clamp(0.2rem, 0.7vw + 0.7rem, 18px);}
+  .gamebox_text h1 {font-size:24px;}
+  .gamebox_text h3 {font-size:18px;}
+  .gamebox_text .rightfloat {float:none;}
+  .gamebox_text .roundedbutton {width:100%;}
 }
 
 @media screen and (max-width: 480px) {
-  .fixwidth {max-width:480px;margin:0 auto;}
+  .fixwidth {max-width:368px;margin:0 auto;}
   .clients img { padding: 2em;max-width: 480px !important;}
   .list-item { width: 100%; padding:1em; }
   .list-itemrace { width:100%; } 
