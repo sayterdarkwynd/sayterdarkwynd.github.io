@@ -317,7 +317,10 @@ ul.list li#work{ border:0;}
 
 .game_box {
   position:relative;
-  display:flex;align-items:center;justify-content:center;
+  display:flex;
+  flex: 0 0 100%;
+  align-items:center;
+  justify-content:center;
   border-radius:24px;
   padding:3rem;
   margin:0 0 24px 0px;
@@ -326,7 +329,7 @@ ul.list li#work{ border:0;}
 .game_box .image_container {position:absolute;width:256px;height:256px;left:-128px;background: transparent url('../images/game_bg_circle_purple.png') no-repeat;}
 .mask {mask-image: url('../images/game_bg_circle_purple.png');mask-repeat:no-repeat;mask-position:center;mask-mode: alpha; mask-size:230px 230px;}
 .game_box img {width:100%;height:100%;}
-.gamebox_text {z-index:1;justify-content:center;}
+.gamebox_text {z-index:1;justify-content:center;width:100%;}
 
 /* animated button */
 .rightfloat {float:right;}

@@ -9,36 +9,43 @@
   <link rel="stylesheet" href="css/colorbox.css">
   <link rel="stylesheet" href="css/justifiedGallery.css">
   <link rel="stylesheet" href="css/stylesmain.css">
+  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
-	<script src="js/jquery.colorbox-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+  <script src="js/jquery.colorbox-min.js"></script>    
 </head>
+
 <body>
 	<div id="videoModal" class="modal">
 		<a class="closeBtn uncommongreentext" rel="modal:close" href="#">&times;</a>
 			<iframe src="https://www.youtube.com/embed/5u-7ctgcUbQ" alt="Announcement Trailer for Tempered Hue" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>	   	
-				<p>Text</p>
-	</div>
-	<div class="container">	
-		<div id="menu" class="new_navigation animate darkpurple_bg">
-			<div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
-			<div class="linkspace">			
-				<a href="index.html" class="whitetext semibold heading">Home</a>
-				<a href="#about" class="whitetext semibold heading">About</a>
-				<a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold heading">Resume</a>	
-				<a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
-				<a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a>	
-			</div>		
-		</div>
+	</div> 
+  <div class="container">
+    <!-- Menu -->
+    <section id="menu" class="new_navigation animate darkpurple_bg">
+      <div class="namespace">
+        <a href="index.html">
+          <span class="white heading base">Chris DeChamplain - Game / Level Designer</span>
+        </a>
+      </div>
+      <div class="linkspace">     
+        <a href="index.html" class="whitetext semibold">Home</a>
+        <a href="#about" class="whitetext semibold">About</a>
+        <a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold">Resume</a> 
+        <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
+        <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a> 
+      </div>    
+    </section>
+    <!-- Start Hero Section -->
     <section class="topspace darkpurple_bg">
     	<div class="herocontent stemuliimage">
 				<div class="heroleft">
 	    		<h1 class="white semibold xxlarge spacer_m textshadow_dark">Precursor <span class="green">Ruins</span></h1>
-	    		<p class="white med2 base spacer_l textshadow_dark justifytext">A complicated level with numerous paths, backtracking and abilities.</p>			    	 
-					<div class="pillbox">		
+	    		<p class="white med2 base spacer_l textshadow_dark justifytext">A complicated level with numerous paths, backtracking and abilities.</p>
+	    		<div class="pillbox">		
 		  		  <span class="textpill tiny gamedesign">Game Design</span>	
 	    			<span class="textpill tiny leveldesign">Level Design</span>
 						<span class="textpill tiny art">Sprites</span> 
@@ -46,40 +53,37 @@
 					</div>      							
 				</div>
     	</div>
-    </section>		
-
-	  <span id="designing"></span>
-	  <section class="about"> 	 	
+    </section>
+    <!-- Start Content -->  
+	  <section class="about">
+	  	<span id="designing"></span> 	 	
 			<h2 class="spacer_m semibold dullpurple spacer_l">Metroidvania Experience</h2> 
 			<p class="med2 base spacer_l">Heavily inspired by Super Metroid, this dungeon will encourage exploration, backtracking and playing through complex and dangerous platforming elements. There are quite a few secrets, most of which require specialized gear to access. This is a mid-to-endgame level dungeon, and can be punishing to the unprepared. I handled the following:</p>
-
       <h2 class="spacer_m semibold dullpurple">Project Experience</h2>		
 			<ul class="experience spacer_s">	
-				  	<li>&#8226; Created more than 30 new tile sprites.
-				  	<li>&#8226; Created more than 200 original pieces of artwork, including machines, armor, weapons, and monsters.
-				  	<li>&#8226; Wrote and implemented all narrative elements including tomes containing dozens of pages of lore.
-				  	<li>&#8226; Created and tested puzzle-based gameplay elements.
-				  	<li>&#8226; Handled all lighting and atmospheric elements.	
-				  	<li>&#8226; Created unique loot and rewards for players to locate.
-				  	<li>&#8226; Implemented new status and particle effects exclusive to the level.	
-				  	<li>&#8226; Responsible for sound design.
-				  	<li>&#8226; Iterations and improvements on existing content on an ongoing basis.
+		  	<li>&#8226; Created more than 30 new tile sprites.
+		  	<li>&#8226; Created more than 200 original pieces of artwork, including machines, armor, weapons, and monsters.
+		  	<li>&#8226; Wrote and implemented all narrative elements including tomes containing dozens of pages of lore.
+		  	<li>&#8226; Created and tested puzzle-based gameplay elements.
+		  	<li>&#8226; Handled all lighting and atmospheric elements.	
+		  	<li>&#8226; Created unique loot and rewards for players to locate.
+		  	<li>&#8226; Implemented new status and particle effects exclusive to the level.	
+		  	<li>&#8226; Responsible for sound design.
+		  	<li>&#8226; Iterations and improvements on existing content on an ongoing basis.
 			</ul>		
 			<a href="images/precursor/precursordungeon2.png" target="_new" class="uncommonorangetext bold">Full Map (1.5mb) [Tiled]</a>
-			  <div class="embed">
+		  <div class="embed">
 				<iframe width="706" height="397" src="https://www.youtube.com/embed/leHEDkTeqcc" align="center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<iframe width="706" height="397" src="https://www.youtube.com/embed/22E9UyzquYU" align="center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<iframe width="706" height="397" src="https://www.youtube.com/embed/nU2zymyU0FQ" align="center" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  </div>				
+		  </div>				
 	  </section>
-
-  
-		 
+    <!-- Gallery -->
     <section class="work darkpurple_bg">
-    	<a name="work" id="projects"></a>
-    	<h1 class="white centertext semibold">Samples</h1>
-			<a name="work"></a>
-			<div id="basicExample" class="justified-gallery">
+      <a name="work" id="projects"></a>
+      <h1 class="white centertext semibold">Work Samples</h1>
+      <div class="list-content">
+        <div id="basicExample" class="justified-gallery">
 				<a class="gallery" href="images/precursor/precursor1.png">
 					<img alt="The opening section sees the player within a dark cavern, winding their way to mysterious technology." src="images/precursor/precursor1_thumb.png"/>
 				</a>
@@ -94,23 +98,31 @@
 				</a>
 				<a class="gallery" href="images/precursor/precursor5.png">
 					<img alt="A boss battle in a large, industrial style facility ends the mission." src="images/precursor/precursor5_thumb.png"/>
-				</a>
-			</div>
-		  </div>
-		</li>
-	  </ul>
-  </section>
-  <div class="footer"></div>
-</div>
+				</a>                      
+          <script>jQuery('a.gallery').colorbox();</script>
+        </div>
+      </div>
+    </section>            
+    <!-- Footer -->
+    <section class="footer darkpurple_bg">
+      <a id="contact"><a/>
+      <div class="sprite-container">
+        <a href="cdechamplain_resume.pdf" target="_new" class="bold whitetext">Resume</a> 
+        <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout"></a>
+        <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin"></a>        
+      </div>
+    </section>
+  </div>
 
 <!-- jQ plugins -->
 <script src="js/jquery.justifiedGallery.min.js"></script>
 <script type="text/javascript">
-$('#basicExample').justifiedGallery(
+$("#basicExample").justifiedGallery(
   {
   "rowHeight" : 132,
   "margins" : 20,
-  "lastRow" : "nojustify",
+  "maxRowsCount" : 1,
+  "lastRow" : "justify",
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
   "captionSettings" : {
@@ -119,19 +131,8 @@ $('#basicExample').justifiedGallery(
     nonVisibleOpacity : 0
     }
   }
-).on('jg.complete', function () {
-    $(this).find('a').colorbox({
-        maxWidth : '80%',
-        maxHeight : '80%',
-        opacity : 0.8,
-        transition : 'elastic',
-        current : ''
-    });
-});
- $("#fade").modal({
-   fadeDuration: 1000,
-   fadeDelay: 0.50
-});
+);
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
@@ -149,6 +150,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-</script>
-</body>
+  </script>
+  </body>
 </html>

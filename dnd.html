@@ -9,38 +9,42 @@
   <link rel="stylesheet" href="css/colorbox.css">
   <link rel="stylesheet" href="css/justifiedGallery.css">
   <link rel="stylesheet" href="css/stylesmain.css">
+  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
-  <script src="js/jquery.colorbox-min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>    
 </head>
 
 <body>
   <div id="videoModal" class="modal">
     <a class="closeBtn uncommongreentext" rel="modal:close" href="#">&times;</a>
-      <iframe src="https://www.youtube.com/embed/leHEDkTeqcc" alt="Precursor dungeon walkthrough" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>     
-        <p>Text</p>
-  </div>    
+      <iframe src="https://www.youtube.com/embed/5u-7ctgcUbQ" alt="Announcement Trailer for Tempered Hue" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer"></iframe>     
+  </div>
   <div class="container">
-    <div id="menu" class="new_navigation animate darkpurple_bg">
-      <div class="namespace"><a href="index.html"><span class="white heading base">Chris DeChamplain - Game/Level Designer</span></a></div>
+    <!-- Menu -->
+    <section id="menu" class="new_navigation animate darkpurple_bg">
+      <div class="namespace">
+        <a href="index.html">
+          <span class="white heading base">Chris DeChamplain - Game / Level Designer</span>
+        </a>
+      </div>
       <div class="linkspace">     
-        <a href="index.html" class="whitetext semibold heading">Home</a>
-        <a href="#about" class="whitetext semibold heading">About</a>
-        <a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold heading">Resume</a> 
+        <a href="index.html" class="whitetext semibold">Home</a>
+        <a href="#about" class="whitetext semibold">About</a>
+        <a href="cdechamplain_resume.pdf" target="_new" class="whitetext semibold">Resume</a> 
         <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout_sm"></a>
         <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin_sm"></a> 
       </div>    
-    </div>
-
+    </section>
+    <!-- Start Hero Section -->
     <section class="topspace darkpurple_bg">
       <div class="herocontent dndimage">
         <div class="heroleft">
           <h1 class="white semibold xxlarge spacer_m textshadow_dark">Tabletop Gaming</h1>
           <p class="white med2 base spacer_l textshadow_dark justifytext">I adore tabletop gaming, and most of my hobby time involves playing games with my friends. I spend a great deal of time writing, mapping and planning quests, encounters and adventures, narratives and more to share through this medium.</p>  
-
           <div class="pillbox">   
             <span class="textpill tiny gamedesign">Game Design</span> 
             <span class="textpill tiny leveldesign">Level Design</span>
@@ -53,14 +57,14 @@
         </div>
       </div>
     </section>
-
-    <span id="designing"></span>
-    <section class="about">        
-      <h2 class="spacer_m semibold dullpurple spacer_l">Design for Tabletop Games</h2> 
+    <!-- Start Content -->  
+<section class="about">
+      <span id="designing"></span>     
+      <h2 class="spacer_l semibold dullpurple">Design for Tabletop Games</h2> 
         <p>In the tabletop space, game design takes a similar shape to the digital space. Differences of course exist (such as using Theatre of the Mind over state of the art 3D graphics), but those differences diminish as traditional styles of playing adapt to the modern world. Virtual Tabletops (VTTs) have allowed the hobby to flourish online, and products like Dungeondraft and D&D Beyond make things more accessible than ever before.</p>
         <p>Here, you'll find examples of some things I've created for this space that I have used in my own games or shared with others - or simply created for fun!</p>
 
-      <h2 class="spacer_m semibold dullpurple">Published Products</h2>
+      <h2 class="spacer_l semibold dullpurple">Published Products</h2>
       <p>With the <i>Vault of Ages</i>, I've been drawing and designing magic items for the new RPG 'Daggerheart' from Darrington Press. I saw a need for such content with this new IP, and aim to fill that void with high quality content for players and GMs, and get to practice my art and hone game design and technical writing skills in this medium at the same time!</p>
 
       <p>Part of the design challenge for Daggerheart is creating succinct, simple technical writing for any mechanics that are player facing; The game is designed with the intention of using cards for player abilities and features. Space is essential to avoid shrinking fonts to an unreadable size while still leaving room for art in a 2.5 x 3.5 inch space.</p>
@@ -70,7 +74,6 @@
         <a href="#work" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall"><span>Work Samples</span></a>      
       </div> 
       <br/><br/>
-
       <div class="smallvideocontainer spacer_l">
         <a style="margin-right:20px !important;">
           <img src="images/daggerheart/p3.png"/>
@@ -82,7 +85,6 @@
           <img src="images/daggerheart/p1.png"/>
         </a>                      
       </div>
-
       <div class="smallvideocontainer spacer_l">
         <a href="https://heartofdaggers.com/products/vault-of-ages-volume-1/" target="_new" style="margin-right:20px !important;">
           <img alt="Vault of Ages Volume 1 Cover" src="images/Work/Daggerheart_Cover1.jpg"/>
@@ -99,8 +101,8 @@
       <div class="docs spacer_m">
         <a class="roundedbutton green_bg boxshadow_darksmall darkpurple bold" href="https://homebrewery.naturalcrit.com/share/imUH9vsSqzka" target="_new">The Bloodhold Heart</a>
       </div>              
-    </section>
-
+    </section> 
+    <!-- Gallery -->
     <section class="work darkpurple_bg">
       <a name="work" id="projects"></a>
       <h1 class="white centertext semibold">Work Samples</h1>
@@ -144,35 +146,31 @@
           </a>
           <a class="gallery" href="images/tabletop/GreyDragonMines2a.png">
             <img alt="Greydragon Mine Center" src="images/tabletop/GreyDragonMines2a.png"/>
-          </a>                  
+          </a>                     
           <script>jQuery('a.gallery').colorbox();</script>
         </div>
       </div>
-    </section>
-
-
- 
-
-    <div class="footer darkpurple_bg">
+    </section>            
+    <!-- Footer -->
+    <section class="footer darkpurple_bg">
       <a id="contact"><a/>
       <div class="sprite-container">
-        <a href="index.html" target="_new" class="semibold whitetext">Home</a>  
-        <a href="cdechamplain_resume.pdf" target="_new" class="semibold whitetext">Resume</a> 
+        <a href="cdechamplain_resume.pdf" target="_new" class="bold whitetext">Resume</a> 
         <a href="mailto:cdechamplain@gmail.com>cdechamplain@gmail.com" id="reachout"></a>
         <a href="https://www.linkedin.com/in/chris-dechamplain-bb259523/" id="linkedin"></a>        
       </div>
-    </div>
+    </section>
   </div>
-</div>
 
 <!-- jQ plugins -->
 <script src="js/jquery.justifiedGallery.min.js"></script>
 <script type="text/javascript">
-$('#basicExample').justifiedGallery(
+$("#basicExample").justifiedGallery(
   {
   "rowHeight" : 132,
   "margins" : 20,
-  "lastRow" : "nojustify",
+  "maxRowsCount" : 1,
+  "lastRow" : "justify",
   "cssAnimation" : true,
   "imagesAnimationDuration" : 240,
   "captionSettings" : {
@@ -181,19 +179,8 @@ $('#basicExample').justifiedGallery(
     nonVisibleOpacity : 0
     }
   }
-).on('jg.complete', function () {
-    $(this).find('a').colorbox({
-        maxWidth : '80%',
-        maxHeight : '80%',
-        opacity : 0.8,
-        transition : 'elastic',
-        current : ''
-    });
-});
- $("#fade").modal({
-   fadeDuration: 1000,
-   fadeDelay: 0.50
-});
+);
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
@@ -211,6 +198,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-</script>
-</body>
+  </script>
+  </body>
 </html>
