@@ -195,13 +195,15 @@ a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: col
   background-color:#5E3E82;
   color:#ecdefa;
 }
+
 .accordion:hover {background-color: #80D859;}
 .accordion:hover h2 {color:#5E3E82;}
 .active h2 {color:#ecdefa;}
+.accordion span:before { content: '\00bb';margin-right:1rem;}
 .accordion span { position: relative; transition: 0.5s; }
-.accordion span:after { content: '\00bb'; position: absolute; opacity: 0; right: -20px; transition: 0.5s; }
 .accordion:hover span { padding-right: 25px; }
 .accordion:hover span:after { opacity: 1; right: 0; }
+.active span:before { content: '\00ab';margin-right:1rem;}
 
 .panel {padding: 1rem 0;display: none;overflow: hidden;}
 
@@ -275,7 +277,9 @@ ul.list li#work{ border:0;}
 }
 
 /* Portfolio Site CSS */
-.about {display:flex;padding:2rem 8rem;justify-content:center;flex-direction:column;}
+.about {display:flex;padding:4rem 4rem;justify-content:center;flex-direction:column;}
+/*.about:nth-child(n + 2 of .about) {padding:2rem 4rem 4rem 4rem;}*/
+
 .button-group {display: flex;flex-direction: row;gap: 1rem;justify-content: center;}
 
 .docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;font-size:14px;}
