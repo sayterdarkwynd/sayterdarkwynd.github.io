@@ -197,7 +197,7 @@ a.whitetext:hover { color:#80D859;transition: color 1.0s;-webkit-transition: col
 
 .accordion:hover {background-color: #80D859;}
 .accordion:hover h2 {color:#5E3E82;}
-.active h2 {color:#ecdefa;}
+/*.active h2 {color:#ecdefa;}*/
 .accordion span:before { content: '\00bb';margin-right:1rem;}
 .accordion span { position: relative; transition: 0.5s; }
 .accordion:hover span { padding-right: 25px; }
