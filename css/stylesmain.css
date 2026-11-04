@@ -277,7 +277,7 @@ ul.list li#work{ border:0;}
 /* Portfolio Site CSS */
 .about {display:flex;padding:4rem 4rem;justify-content:center;flex-direction:column;}
 /*.about:nth-child(n + 2 of .about) {padding:2rem 4rem 4rem 4rem;}*/
-.button-group {display: flex;flex-direction: row;gap: 1rem;justify-content: center;}
+.button-group {display: flex; flex-direction: row;gap: 1rem;justify-content: center;}
 .docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;font-size:14px;}
 .docs a {display:inline-block;flex:1;text-align:center;width:auto;max-width:300px;margin-bottom:16px;margin-right:8px;align-self:center;}
 .docs img {display:inline-block;max-width:50%;height:auto;justify-content:center;align-self:center;transition:1s;}
@@ -586,7 +586,8 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
   .about {padding:2rem 2rem;}  
   #menu {padding:1rem;}
   .herocontent {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}
-  .herocontentmain {padding:4rem 2rem;justify-content:space-between;align-items:flex-start}  
+  .herocontentmain {padding:4rem 2rem;justify-content:space-between;align-items:flex-start} 
+  .button-group {display: flex; flex-direction: column;gap: 1rem;justify-content: center;} 
 }
 
 @media screen and (max-width: 576px) {
