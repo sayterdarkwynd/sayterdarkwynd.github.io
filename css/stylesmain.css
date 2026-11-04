@@ -463,6 +463,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
   background-color:#5E3E82;
   color:#ecdefa;
 }
+.active.accordion {background-color:#3b2d4c;}
 .active h2 {color:#ecdefa;}
 .accordion span:before { content: '\00bb';margin-right:1rem;}
 .accordion span { position: relative; transition: 0.5s; }
