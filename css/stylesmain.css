@@ -322,7 +322,7 @@ ul.list li#work{ border:0;}
 
 /* animated button */
 .rightfloat {float:right;}
-.roundedbutton {display:inline-flex;align-items: center;justify-content: center;width:auto;text-align:right;border-radius:128px;padding:0.7rem 2rem;transition:1s;opacity:0.95;background: linear-gradient(0deg,rgb(204, 255, 102) 0%,rgb(128, 216, 89)  100%);backdrop-filter: blur(24px);}
+.roundedbutton {display:inline-flex;align-items: center;justify-content: center;width:auto;text-align:center;border-radius:128px;padding:0.7rem 2rem;transition:1s;opacity:0.95;background: linear-gradient(0deg,rgb(204, 255, 102) 0%,rgb(128, 216, 89)  100%);backdrop-filter: blur(24px);}
 .roundedbutton:hover { background: linear-gradient(0deg, rgb(128, 216, 89) 0%, rgb(204, 255, 102) 100%); }
 .roundedbutton:active { transform: translateY(4px); }
 .roundedbutton span { position: relative; transition: 0.5s; }
