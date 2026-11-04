@@ -19,7 +19,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Lato', sans-serif;  /*was initially Poppins*/
   height: auto;
 }
 
@@ -32,10 +32,10 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 
-@font-face {font-family: 'Poppins', sans-serif;}
+@font-face {font-family: 'Lato', Tahoma, sans-serif;}
 
 body {
-  font-family: 'Poppins', Fallback, sans-serif;
+  font-family: 'Lato', Tahoma, sans-serif;
   font-size:1em;
   width:100%;
   padding:0;
@@ -43,10 +43,9 @@ body {
   background-image: linear-gradient(180deg, rgb(221 202 249) 0%, rgb(231 215 254) 35%, rgb(244 235 249) 100%);
   background-attachment: fixed;
   background-size: cover;
-
 }
 
-p {font-size: 1em;line-height:normal;font-size: clamp(1rem, 1vw, 18px);}
+p {line-height:1.5rem;font-size: clamp(1rem, 1vw, 20px);}
 a {text-decoration:none;padding:0;margin:0;}
 b {font-weight:600;}
 h1 {font-weight:500;font-size: 2em;}
@@ -106,8 +105,8 @@ p {padding:0 0 2rem 0;}
 .light { font-weight:300; }
 .base { font-weight:400; }
 .semibold { font-weight:600; }
-.bold { font-weight:700; }
-.xtrabold { font-weight:800; }
+.bold { font-weight:800; }
+.xtrabold { font-weight:900; }
 
 .centertext {text-align:center;}
 .indent {text-indent:2em;}
@@ -362,7 +361,7 @@ ul.list li#work{ border:0;}
 .headline {display:inline-block;background: rgb(21,21,21);background: linear-gradient(90deg, rgba(36,39,49,1) 0%, rgba(96,99,109,1) 35%, rgba(136,139,149,1) 100%);width :100%;border-radius:8px;padding:0.8rem;color:#fff;font-size:1.2rem;}
 .subheader {display:block;padding:0.5rem 0 1rem 0;text-align:center;justify-content:center;font-style:oblique;}
 ul.experience { margin:0rem 0 1rem 0; }
-ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
+ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
 
 /* Pills */
 .pillbox {padding: 0.5rem 0;}
@@ -418,14 +417,14 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;}
 .sprite-container { display:flex;justify-content:center;align-items:center;width:100%; }
 .sprite-container a { margin-right:16px;}
 .footer .sprite-container {justify-content:center;}
-#linkedin {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
-#reachout {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px -48px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+#linkedin {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px 0px;transition:0.5s;filter: invert(86%) sepia(5%) saturate(100%) hue-rotate(1deg) brightness(113%) contrast(86%);} 
+#reachout {width: 48px;height: 48px;background: transparent url(../images/contactlinks_colorize_large.png) no-repeat scroll 0px -48px;transition:0.5s;filter: invert(86%) sepia(5%) saturate(100%) hue-rotate(1deg) brightness(113%) contrast(86%);} 
 #linkedin:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #linkedin:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 #reachout:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #reachout:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
-#linkedin_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px 0px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
-#reachout_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px -32px;transition:1.0s;filter: invert(86%) sepia(5%) saturate(2289%) hue-rotate(207deg) brightness(113%) contrast(86%);} 
+#linkedin_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px 0px;transition:0.5s;filter: invert(86%) sepia(5%) saturate(100%) hue-rotate(1deg) brightness(113%) contrast(86%);} 
+#reachout_sm {width: 32px;height: 32px;background: transparent url(../images/contactlinks_colorize.png) no-repeat scroll 0px -32px;transition:0.5s;filter: invert(86%) sepia(5%) saturate(100%) hue-rotate(1deg) brightness(113%) contrast(86%);} 
 #linkedin_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
 #linkedin_sm:active {transition:1.0s;filter: invert(60%) sepia(26%) saturate(1291%) hue-rotate(330deg) brightness(98%) contrast(92%);} 
 #reachout_sm:hover {transition:1.0s;filter: invert(82%) sepia(24%) saturate(1023%) hue-rotate(50deg) brightness(91%) contrast(91%);} 
