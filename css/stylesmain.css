@@ -609,7 +609,7 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
   .gamebox_text h1 {font-size:24px;}
   .gamebox_text h3 {font-size:18px;}
   .gamebox_text .rightfloat {float:none;}
-  .gamebox_text .roundedbutton {width:100%;}
+  .herocontent .roundedbutton,.gamebox_text .roundedbutton {width:100%;}
 }
 
 @media screen and (max-width: 480px) {
