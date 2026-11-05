@@ -452,6 +452,11 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
 .modal iframe {width:100%;height:auto;}
 .closeBtn {float:right;color:#fff;font-size:2rem;}
 
+.revealme {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .accordion {
   cursor: pointer;
   padding: 1rem;

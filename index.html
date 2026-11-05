@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Chris DeChamplain - Game/Level Designer</title>
-  <meta name="description" content="Chris DeChamplain - Game/Level Designer">
+  <title>Chris DeChamplain - Game Designer / UI Artist</title>
+  <meta name="description" content="Chris DeChamplain - Game Designer / UI Artist">
   <meta name="author" content="Chris DeChamplain">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/colorbox.css">
   <link rel="stylesheet" href="css/justifiedGallery.css">
   <link rel="stylesheet" href="css/stylesmain.css">
-  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -24,7 +23,7 @@
 		<section id="menu" class="new_navigation animate darkpurple_bg">
 			<div class="namespace">
 				<a href="index.html">
-					<span class="white heading base">Chris DeChamplain - Game / Level Designer</span>
+					<span class="white heading base revealme">Chris DeChamplain - Game Designer / UI Artist</span>
 				</a>
 			</div>
 			<div class="linkspace">			
@@ -40,7 +39,7 @@
     	<div class="herocontentmain heroimage">
     		<div class="heroleft">
 	    		<h1 class="white semibold xlarge spacer_m textshadow_dark centertext fixwidth">CHRIS DECHAMPLAIN</h1>
-	    		<h2 class="lightpurple base large spacer_l textshadow_dark centertext fixwidth">Game / Level Designer</h2>
+	    		<h2 class="lightpurple base large spacer_l textshadow_dark centertext fixwidth">Game Designer / UI Artist</h2>
 	    		<p class="white med2 base spacer_l textshadow_dark centertext fixwidth justifytext">A creative with 15+ years of experience designing gameplay systems, mechanics, interfaces, art and user experiences across multiple disciplines. I specialize in Game Design and UI Art and Design, but can handle nearly any design-oriented tasks thrown at me.</p>	  
 					<div class="sprite-container layer">
 						<a href="cdechamplain_resume.pdf" target="_new" class="roundedbutton green_bg darkpurple bold boxshadow_darksmall rightfloat" style="height:48px;"><span>Resume/CV</span></a>
@@ -212,6 +211,22 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(window).on('scroll', function() {
+    $('.namespace .revealme').css(
+        'opacity',
+        $(this).scrollTop() > 100 ? 1 : 0
+    );
+});
+function updateHeader() {
+    $('.namespace .revealme').css(
+        'opacity',
+        $(window).scrollTop() > 100 ? '1' : '0'
+    );
+}
+
+$(window).on('scroll', updateHeader);
+updateHeader();
 	</script>
 	</body>
 </html>
