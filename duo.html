@@ -84,18 +84,89 @@
       </div>		  	
 	  	<h2 class="spacer_m semibold dullpurple">Game / Level Designer</h2>
 			<ul class="experience spacer_s">	
-		  	<li>&#8226; As Project Manager, created and managed tickets and epochs and ensured that each team member met their required objectives via Hack'n'Plan.</li>
+		  	<li>&#8226; As Project Manager, created and delegated tasks to team members and ensured the timely completion of milestones.</li>
 		  	<li>&#8226; Responsible for the Game Pitch.</li>						  	
-		  	<li>&#8226;	Wrote and implemented all narrative elements.</li> 	
-		    <li>&#8226; Worked iteratively with programmers to test and fine-tune the character controller, puzzle functionality and overall gameplay.</li>
-		    <li>&#8226; Responsible for Camera, Character and Control elements (3C) across all levels.</li> 
-		  	<li>&#8226; Handled all lighting-related elements within the game.</li>
-		  	<li>&#8226; Solely responsible for Level Design, including prototyping, implementation and testing.</li>						  	
-		  	<li>&#8226;	DCreated shaders required for interactive water and snow.</li> 	  	
+		  	<li>&#8226;	Wrote and implemented narrative elements.</li> 	
+		    <li>&#8226; Worked iteratively with programmers to prototype, test and implement character controls, features and gameplay functionality.</li>
+		    <li>&#8226; Responsible for Camera, Character and Control elements (3C) across all levels.</li>
+		    <li>&#8226; Designed and created level blockouts.</li>
+		  	<li>&#8226; Designed and implemented game mechanics, systems, particles, textures, UX/UI and visual effects.</li>
 		    <li>&#8226; Planned and implemented puzzle-based gameplay.</li>
-		    <li>&#8226; Responsible for textures and materials.</li> 
 			</ul>  
 	  </section>
+		<section class="about">
+			<p>DUO utilized a character controller that moved <i>both</i> of the characters, with each using one of the dual sticks. Each had unique features that required them to work together in order to progress. The human character (Yukka) could climb, push and pull objects, and interact with environmental elements. TR34D, the robot, could enter small areas, traverse regions lethal to Yukka, interface with machines, and burn hostile flora and ice blocks with a flamethrower. Additionally, each character could interface with switches that matched their color-coding (Yellow and Red, respectively.)</p>
+
+			<p>Levels required interactive elements, multiple routes to ensure that each playable character was able to reach the exit, and reliable means to teach, test and challenge players. We split teaching these gameplay elements across 6 stages, and completed a vertical slice with plenty of time to spare before the deadline.</p>
+
+			<button class="accordion"><h2 class="semibold"><span>Level 1</span></h2></button>
+			<div class="panel">			
+				<p>Level 1 introduced players to Yukka through narrative, and then taught and reinforced the Push and Burn mechanics. I created a bleak, desperate feel through dense snow particles, dense fog, snow shaders to deform terrain underfoot, and harsh arctic sound effects.</p>
+				<img src="images/duo/duo_level1_b.png"/>			
+      	<p class="subheader greytext">Players begann with Yukka at the ruins of her spacecraft. They learned the Push mechanic, and pushed a block to access the second character.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level1_c.png"/>
+					<img class="exampleimage" src="images/duo/duo_level1_a.png"/>
+				</div>	
+				<p class="subheader greytext">(left) A birds-eye view of level 1. (right) A player pushes a crate to gain access to TR34D.</p>	
+      </div>
+			<button class="accordion"><h2 class="semibold"><span>Level 2</span></h2></button>
+			<div class="panel">			
+				<p>In the second stage, players learned that TR34D could enter areas Yukka cannot and traverse deadly freezing cold water. Players were also introduced to color-coded switches and the climbing mechanic for Yukka. By guiding TR34D along the frozen river, and burn a plant to allow Yukka to trigger a switch. This lowered a section of the level for TR34D to access additional elements, eventually leading to the exit.</p>	
+				<img src="images/duo/duo_level2_a.png"/>			
+      	<p class="subheader greytext">TR34D traverses a frozen river to reach Yukka and burn a plant to cinders.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level2_b.png"/>
+					<img class="exampleimage" src="images/duo/duo_level2_c.png"/>
+				</div>	
+				<p class="subheader greytext">(left) Freed, Yukka pushes a block onto a switch. (right) Yukka, having accessed the upper tier of the level via climbing, waits for TR34D to burn a plant at the opposite side of the river.</p>		      
+      </div>
+			<button class="accordion"><h2 class="semibold"><span>Level 3</span></h2></button>
+			<div class="panel">			
+				<p>Next, players learned that Yukka can knock objects over and create paths that were previously not available, and introduced players to additional gameplay mechanics - moving platforms and timed switches.</p>	
+				<img src="images/duo/duo_level3_a.png"/>			
+      	<p class="subheader greytext">Here, Yukka has kicked over large ice blocks to provide TR34D access.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level3_b.png"/>
+					<img class="exampleimage" src="images/duo/duo_level3_c.png"/>
+				</div>	
+				<p class="subheader greytext">(left) Yukka moves a yellow crate to a yellow switch in order to lower terrain for Tr34D to traverse. (right) Revealing the northern half of the level introduced alien ruins, leading to further narrative revelations, and introduced players to moving platforms.</p>		      
+      </div>
+			<button class="accordion"><h2 class="semibold"><span>Level 4</span></h2></button>
+			<div class="panel">			
+				<p>In the fourth level, players were introduced to the games big threat - alien machines intent on killing them. Now, players would need to use the two characters to complete puzzle elements to open and reach the exit, all while avoiding the deadly new enemy and its patrol path. It responded only to objects it could see, and players could block that vision with objects.</p>	
+				<img src="images/duo/duo_level4_a.png"/>			
+      	<p class="subheader greytext">The bleak alien landscape began to change in level 4, which was further complicated when they opened the door and freed the enemy robot.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level4_b.png"/>
+					<img class="exampleimage" src="images/duo/duo_level4_c.png"/>
+				</div>	
+				<p class="subheader greytext">(left) An aerial view of the arena, with puzzle elements in all areas. Players could avoid the enemy on the vertical section. (right) The enemy robot on patrol, its red glare about to find the player.</p>
+			</div>
+			<button class="accordion"><h2 class="semibold"><span>Level 5</span></h2></button>
+			<div class="panel">			
+				<p>Now within alien territory, Yukka and TR3AD had to contend with additional elements. Directional switches opened areas in one particular direction, and TR3AD gained access to alien computers, allowing him to activate or deactivate their technology.</p>	
+				<img src="images/duo/duo_level5_a.png"/>			
+      	<p class="subheader greytext">Yukka reveals a directional switch, leading her into the alien temple upon figuring out the puzzle.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level5_b.png"/>
+					<img class="exampleimage" src="images/duo/duo_level5_c.png"/>
+				</div>	
+				<p class="subheader greytext">(left) Tread has accessed alien tech, and then activated a switch to raise a bridge, allowing Yukka to cross with her crate. (right) The temple door opens while Yukka awaits TR34D.</p>
+			</div>
+			<button class="accordion"><h2 class="semibold"><span>Level 6</span></h2></button>
+			<div class="panel">			
+				<p>Now within alien territory, Yukka and TR3AD had to contend with additional elements. Directional switches opened areas in one particular direction, and TR3AD gained access to alien computers, allowing him to activate or deactivate their technology.</p>	
+				<img src="images/duo/duo_level6_a.png"/>			
+      	<p class="subheader greytext">A birds-eye view of the first half of this level.</p>
+				<div class="docs">			
+					<img class="exampleimage" src="images/duo/duo_level6_b.png"/>
+					<img class="exampleimage" src="images/duo/duo_level6_d.png"/>
+				</div>	
+				<p class="subheader greytext">(left) Tread discovers he can use alien portals to teleport to new areas and reveals a gauntlet of puzzles. (right) The final puzzle section of the vertical slice, using all introduced mechanics.</p>
+			</div>					                
+    </section>
+
     <!-- Gallery -->
     <section class="work darkpurple_bg">
     	<a name="work" id="projects"></a>
