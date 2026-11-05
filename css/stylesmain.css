@@ -46,7 +46,7 @@ body {
 }
 
 p {line-height:1.5rem;font-size: clamp(1rem, 1vw, 20px);}
-a {text-decoration:none;padding:0;margin:0;}
+a {text-decoration:none;padding:0;margin:0;color:#EF804C;}
 b {font-weight:600;}
 h1 {font-weight:500;font-size: 2em;}
 h2 {font-weight:500;font-size: 1.7em;}
@@ -213,6 +213,7 @@ ul.list li#work{ border:0;}
 #menu {position:fixed;width:100%;top:0;left:0; z-index:999; }
 .new_navigation { display:flex; justify-content:center; font-style:normal;padding:1rem 2rem;align-items:center;width:100%;}
 .new_navigation a {margin-right:8px;}
+.new_navigation a:last-child {margin-right:0px;}
 .new_navigation .namespace {display:flex;justify-content:flex-start;align-items:center;width:100%;}
 .new_navigation .linkspace {display:flex;justify-content:flex-end;align-items:center;width:100%;}
 .topspace {padding-top:4rem;}
@@ -256,7 +257,7 @@ ul.list li#work{ border:0;}
 /* Portfolio Site CSS */
 .about {display:flex;padding:4rem 4rem;justify-content:center;flex-direction:column;}
 /*.about:nth-child(n + 2 of .about) {padding:2rem 4rem 4rem 4rem;}*/
-.button-group {display: flex; flex-direction: row;gap: 1rem;justify-content: center;}
+.button-group {display: flex; flex-direction: row;gap: 1rem;justify-content: left;flex-wrap:wrap;flex: 0 0 33%;}
 .docs {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;font-size:14px;}
 .docs a {display:inline-block;flex:1;text-align:center;width:auto;max-width:300px;margin-bottom:16px;margin-right:8px;align-self:center;}
 .docs img {display:inline-block;max-width:50%;height:auto;justify-content:center;align-self:center;transition:1s;}
@@ -444,8 +445,8 @@ ul.experience li {margin:0rem 0 0.5rem 0;display:block;text-indent:1rem;}
 .soulreaper:before {background: #000 url('../images/soulreaper/sr5.jpg') no-repeat; background-size:cover;background-position:0 55%;}
 .duo:before {background: #000 url('../images/duo/duo_level3_a.png') no-repeat; background-size:cover;background-position:0 55%;}
 .videoplayer {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;border-radius:36px;}
-.smallvideocontainer {display:flex;flex-direction:row;justify-content:space-between}
-.smallvideocontainer iframe {width:25% !important;padding-right:5px;}
+.smallvideocontainer {display:flex;flex-direction:row;justify-content:space-between;flex-wrap:wrap;}
+.smallvideocontainer iframe {width:50% !important;margin:0.5rem;}
 #videoModal { background:rgba(0,0,0,0.5);z-index:99999; }
 .modal {padding:4rem;}
 .modal iframe {width:100%;height:auto;}
