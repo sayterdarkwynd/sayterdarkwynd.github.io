@@ -175,58 +175,67 @@
 
 	</div>
 
-<!-- jQ plugins -->
-<script src="js/jquery.justifiedGallery.min.js"></script>
-<script type="text/javascript">
-$("#basicExample").justifiedGallery(
-  {
-  "rowHeight" : 132,
-  "margins" : 20,
-  "maxRowsCount" : 1,
-  "lastRow" : "justify",
-  "cssAnimation" : true,
-  "imagesAnimationDuration" : 240,
-  "captionSettings" : {
-    animationDuration :200,
-    visibleOpacity:0.9,
-    nonVisibleOpacity : 0
-    }
-  }
-);
+	<!-- jQ plugins -->
+	<script src="js/jquery.justifiedGallery.min.js"></script>
+	<script type="text/javascript">
+	$("#basicExample").justifiedGallery(
+	  {
+	  "rowHeight" : 132,
+	  "margins" : 20,
+	  "maxRowsCount" : 1,
+	  "lastRow" : "justify",
+	  "cssAnimation" : true,
+	  "imagesAnimationDuration" : 240,
+	  "captionSettings" : {
+	    animationDuration :200,
+	    visibleOpacity:0.9,
+	    nonVisibleOpacity : 0
+	    }
+	  }
+	);
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    /* Toggle between adding and removing the "active" class,
+	    to highlight the button that controls the panel */
+	    this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+	    /* Toggle between hiding and showing the active panel */
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	      panel.style.display = "none";
+	    } else {
+	      panel.style.display = "block";
+	    }
+	  });
+	}
 
-$(window).on('scroll', function() {
-    $('.namespace .revealme').css(
-        'opacity',
-        $(this).scrollTop() > 100 ? 1 : 0
-    );
-});
-function updateHeader() {
-    $('.namespace .revealme').css(
-        'opacity',
-        $(window).scrollTop() > 100 ? '1' : '0'
-    );
-}
+	function updateNamespace() {
+	    if ($(window).scrollTop() > 100) {
+	        $('.namespace').stop(true, true).fadeIn(500);
+	    } else {
+	        $('.namespace').stop(true, true).fadeOut(500);
+	    }
+	}
+	$(window).on('scroll', updateNamespace);
+	updateNamespace();
 
-$(window).on('scroll', updateHeader);
-updateHeader();
+	$(window).on('scroll', function() {
+	    $('.namespace .revealme').css(
+	        'opacity',
+	        $(this).scrollTop() > 100 ? 1 : 0
+	    );
+	});
+	function updateHeader() {
+	    $('.namespace .revealme').css(
+	        'opacity',
+	        $(window).scrollTop() > 100 ? '1' : '0'
+	    );
+	}
+	$(window).on('scroll', updateHeader);
+	updateHeader();
 	</script>
 	</body>
 </html>
